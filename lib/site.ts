@@ -1,0 +1,50 @@
+export const site = {
+  brand: "Todd Spencer",
+  legalName: "Todd Spencer Real Estate",
+  tagline: "The Local Insider for Living in New Braunfels",
+  description:
+    "A trusted local insider helping people live, buy, and thrive in New Braunfels. River life, neighborhood guides, and no pressure real estate.",
+
+  // Contact
+  phone: "(512) 665-3747",
+  phoneHref: "tel:+15126653747",
+  email: "todd@todd-spencer.com",
+  emailHref: "mailto:todd@todd-spencer.com",
+  websiteUrl: "https://todd-spencer.com",
+
+  // Brokerage placeholder (update with actual brokerage details)
+  brokerage: {
+    name: "Brokerage",
+    licenseLine: "Texas Real Estate Commission",
+    address: "New Braunfels, Texas",
+  },
+
+  // Brand mark
+  logoSrc: "/images/todd-logo.png",
+  logoAlt: "Todd Spencer logo",
+
+  // Open Graph
+  ogImage: "/images/og-todd-spencer-new-braunfels.jpg",
+
+  // Agent portrait
+  agentName: "Todd Spencer",
+  agentPortraitSrc: "/images/todd-spencer-editorial-portrait.jpg",
+  agentPortraitAlt:
+    "Editorial portrait of Todd Spencer along the Comal riverwalk in New Braunfels at golden hour.",
+
+  // Social
+  social: {
+    facebook: "https://www.facebook.com/ToddSpencerNewBraunfelsRealtor",
+    instagram: "https://www.instagram.com/toddspencer.realtor",
+    linkedin: "https://www.linkedin.com/in/todd-spencer-411810b0/",
+    youtube: "https://www.youtube.com/@ToddSpencer-x7b",
+  },
+
+  // Route paths
+  contactPath: "/contact",
+  neighborhoodsPath: "/neighborhoods",
+  aboutPath: "/about",
+  blogPath: "/blog",
+} as const;
+
+export type SiteConfig = typeof site;
