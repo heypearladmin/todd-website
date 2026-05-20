@@ -50,21 +50,32 @@ export function HomeHero() {
         />
       </motion.div>
 
+      {/*
+        Layered overlay system — each layer earns its keep:
+        1. Bottom-up ink wash anchors copy in the lower half (mid-stop strengthened from /55 to /68 so headline area stays readable on bright frames).
+        2. Top scrim softens the sky just enough for the eyebrow without crushing the warm sunlight.
+        3. Left-side directional wash adds a quiet vignette behind the text column so the right side of the hero stays open and cinematic.
+        4. Warm copper + primary halos preserved — they're the warm cinematic atmosphere.
+      */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-t from-ink via-ink/55 to-ink/10"
+        className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-t from-ink/95 via-ink/68 to-ink/15"
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-1/2 bg-gradient-to-b from-ink/45 via-ink/10 to-transparent"
+        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-2/5 bg-gradient-to-b from-ink/55 via-ink/15 to-transparent"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-y-0 left-0 -z-10 hidden w-3/5 bg-gradient-to-r from-ink/45 via-ink/15 to-transparent md:block"
       />
       <motion.div
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-10"
         style={{ y: reduce ? 0 : haloY }}
       >
-        <div className="absolute -top-24 left-1/3 h-[42rem] w-[42rem] -translate-x-1/2 rounded-full bg-copper/[0.12] blur-[140px]" />
-        <div className="absolute bottom-[-12rem] right-[-8rem] h-[36rem] w-[36rem] rounded-full bg-primary-soft/[0.14] blur-[160px]" />
+        <div className="absolute -top-24 left-1/3 h-[42rem] w-[42rem] -translate-x-1/2 rounded-full bg-copper/[0.14] blur-[140px]" />
+        <div className="absolute bottom-[-12rem] right-[-8rem] h-[36rem] w-[36rem] rounded-full bg-primary-soft/[0.16] blur-[160px]" />
       </motion.div>
 
       <div className="relative z-10 flex min-h-[88vh] min-h-[88svh] flex-col">
@@ -81,24 +92,34 @@ export function HomeHero() {
               transition={tFast}
               className="flex items-center gap-3"
             >
-              <span className="h-px w-10 bg-paper/55" aria-hidden />
-              <span className="eyebrow !text-paper/75">{heroContent.eyebrow}</span>
+              <span className="h-px w-10 bg-paper/70" aria-hidden />
+              <span
+                className="eyebrow !text-paper/90"
+                style={{ textShadow: "0 1px 14px rgba(15, 22, 38, 0.45)" }}
+              >
+                {heroContent.eyebrow}
+              </span>
             </motion.div>
 
             <motion.h1
               variants={fadeUp}
               transition={t}
               className="display-xl mt-8 text-paper"
+              style={{
+                textShadow:
+                  "0 1px 1px rgba(15, 22, 38, 0.35), 0 2px 24px rgba(15, 22, 38, 0.45)",
+              }}
             >
               {heroContent.headlineBefore}
               <br className="hidden md:block" />{" "}
-              <span className="italic text-paper/95">{heroContent.headlineItalic}</span>
+              <span className="italic text-paper">{heroContent.headlineItalic}</span>
             </motion.h1>
 
             <motion.p
               variants={fadeUp}
               transition={t}
-              className="dek mt-8 !text-paper/80"
+              className="dek mt-8 max-w-[36rem] !text-paper/95"
+              style={{ textShadow: "0 1px 16px rgba(15, 22, 38, 0.42)" }}
             >
               {heroContent.dek}
             </motion.p>
@@ -125,13 +146,21 @@ export function HomeHero() {
         <div className="section-wrap relative pb-8 pt-10 sm:pb-10">
           <div className="flex items-end justify-between gap-6">
             <div className="hidden sm:block">
-              <span className="caption !text-paper/55">
+              <span
+                className="caption !text-paper/75"
+                style={{ textShadow: "0 1px 12px rgba(15, 22, 38, 0.4)" }}
+              >
                 New Braunfels · Comal and Guadalupe corridors
               </span>
             </div>
-            <div className="flex items-center gap-3 text-paper/65">
-              <span className="caption !text-paper/55">Scroll</span>
-              <span aria-hidden className="block h-10 w-px bg-paper/35" />
+            <div className="flex items-center gap-3 text-paper/80">
+              <span
+                className="caption !text-paper/75"
+                style={{ textShadow: "0 1px 12px rgba(15, 22, 38, 0.4)" }}
+              >
+                Scroll
+              </span>
+              <span aria-hidden className="block h-10 w-px bg-paper/45" />
             </div>
           </div>
         </div>

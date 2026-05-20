@@ -12,10 +12,10 @@ export const site = {
   emailHref: "mailto:todd@todd-spencer.com",
   websiteUrl: "https://todd-spencer.com",
 
-  // Brokerage placeholder (update with actual brokerage details)
+  // Brokerage
   brokerage: {
-    name: "Brokerage",
-    licenseLine: "Texas Real Estate Commission",
+    name: "LPT Realty, LLC",
+    licenseLine: "Licensed in Texas",
     address: "New Braunfels, Texas",
   },
 

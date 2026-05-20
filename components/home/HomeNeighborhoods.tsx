@@ -7,12 +7,13 @@ import { neighborhoods } from "@/lib/home-content";
 import { fadeUp, transitionBase, viewportOnce } from "./motion";
 
 /**
- * Five featured neighborhoods, asymmetric magazine spread.
+ * Six featured neighborhoods, asymmetric magazine spread.
  *  0 Gruene               col-7 large
  *  1 Downtown NB          col-5 tall companion
  *  2 Canyon Lake          col-12 cinematic full bleed
  *  3 Vintage Oaks         col-6
  *  4 Veramendi            col-6
+ *  5 RiverChase           col-12 cinematic full bleed (closing showpiece)
  */
 const layout = [
   { col: "lg:col-span-7", aspect: "aspect-[5/4]", size: "lg", indent: false },
@@ -20,6 +21,7 @@ const layout = [
   { col: "lg:col-span-12", aspect: "aspect-[21/9] md:aspect-[24/8]", size: "xl", indent: false },
   { col: "lg:col-span-6", aspect: "aspect-[4/3]", size: "md", indent: false },
   { col: "lg:col-span-6", aspect: "aspect-[4/3]", size: "md", indent: false },
+  { col: "lg:col-span-12", aspect: "aspect-[21/9] md:aspect-[24/8]", size: "xl", indent: false },
 ] as const;
 
 export function HomeNeighborhoods() {
@@ -41,7 +43,7 @@ export function HomeNeighborhoods() {
               <span className="tick" aria-hidden />
               <p className="eyebrow">Featured neighborhoods</p>
             </div>
-            <h2 className="display-lg mt-6 text-ink">Five places to start.</h2>
+            <h2 className="display-lg mt-6 text-ink">Six places to start.</h2>
           </motion.div>
           <motion.p variants={fadeUp} transition={t} className="dek lg:col-span-5">
             School paths, tube put ins, porch hours, and walk to water pockets. The quiet details that never fit on an MLS row.

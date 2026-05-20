@@ -255,6 +255,18 @@ export const neighborhoods: Neighborhood[] = [
     imageAlt:
       "Aerial photograph of Veramendi development in New Braunfels with rolling Hill Country terrain and trail network.",
   },
+  {
+    slug: "riverchase",
+    title: "RiverChase",
+    dek: "Limestone bluffs, slow river bends, and the kind of evenings where porch light, cicada song, and a slow Hill Country breeze all arrive at once. Quiet acreage minutes from town — upscale, easygoing, and built for the long stay.",
+    vibe: "Hill Country river homes",
+    href: "/neighborhoods/riverchase",
+    // Placeholder asset — reuse existing Hill Country aerial until a RiverChase-specific frame is delivered.
+    // Suggested replacement filename: /images/neighborhood-riverchase-hill-country.webp
+    imageSrc: "/images/insight-real-estate-trends.webp",
+    imageAlt:
+      "Aerial editorial photograph of a Hill Country residential neighborhood near New Braunfels with rolling oak canopy and soft late afternoon light.",
+  },
 ];
 
 /* ─────────────────────────── Social Proof ─────────────────────────── */

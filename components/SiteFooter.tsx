@@ -79,7 +79,7 @@ export function SiteFooter() {
 
         {/* link rail */}
         <div className="mt-20 grid grid-cols-2 gap-8 border-t border-ink/[0.08] pt-14 md:grid-cols-12 md:gap-10">
-          <div className="md:col-span-4">
+          <div className="md:col-span-3">
             <p className="caption !text-ink/50">Contact</p>
             <ul className="mt-4 space-y-2.5 text-[0.9375rem]">
               <li>
@@ -129,12 +129,13 @@ export function SiteFooter() {
             </ul>
           </div>
 
-          <div className="md:col-span-2">
+          <div className="md:col-span-3">
             <p className="caption !text-ink/50">Brokerage</p>
-            <p className="mt-4 text-[0.875rem] leading-relaxed text-ink/55">
+            <p className="mt-4 text-[0.9375rem] leading-relaxed text-ink/70">
               {site.brokerage.name}
-              <br />
-              <span className="text-[0.8125rem]">{site.brokerage.licenseLine}</span>
+            </p>
+            <p className="mt-1.5 text-[0.8125rem] leading-relaxed tracking-wide text-ink/55">
+              {site.brokerage.licenseLine}
             </p>
           </div>
         </div>
