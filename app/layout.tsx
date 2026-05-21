@@ -29,9 +29,14 @@ export const metadata: Metadata = {
     template: `%s · ${site.brand}`,
   },
   description: site.description,
+  alternates: {
+    canonical: site.websiteUrl,
+  },
   openGraph: {
     title: `${site.brand} · New Braunfels`,
     description: site.description,
+    url: site.websiteUrl,
+    siteName: site.brand,
     type: "website",
     locale: "en_US",
     images: [
@@ -48,6 +53,17 @@ export const metadata: Metadata = {
     title: `${site.brand} · New Braunfels`,
     description: site.description,
     images: [site.ogImage],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 

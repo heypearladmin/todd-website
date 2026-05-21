@@ -4,6 +4,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { findBlogArticle, getAllBlogSlugs } from "@/lib/home-content";
 import { site } from "@/lib/site";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { blogPostingSchema, breadcrumbSchema } from "@/lib/seo/schemas";
 
 type Params = { slug: string };
 
@@ -19,13 +21,17 @@ export async function generateMetadata({
   const { slug } = await params;
   const article = findBlogArticle(slug);
   if (!article) return {};
+  const url = `${site.websiteUrl}/blog/${slug}`;
   return {
     title: article.title,
     description: article.dek,
+    alternates: { canonical: url },
     openGraph: {
       title: article.title,
       description: article.dek,
+      url,
       type: "article",
+      authors: [site.agentName],
       images: [{ url: article.imageSrc, alt: article.imageAlt }],
     },
   };
@@ -59,6 +65,28 @@ export default async function BlogArticlePage({
   if (!article) notFound();
 
   return (
+    <>
+      <JsonLd
+        schema={
+          blogPostingSchema({
+            title: article.title,
+            description: article.dek,
+            imageUrl: article.imageSrc,
+            imageAlt: article.imageAlt,
+            slug: article.slug,
+            category: article.category,
+          }) as Record<string, unknown>
+        }
+      />
+      <JsonLd
+        schema={
+          breadcrumbSchema([
+            { name: "Home", href: "/" },
+            { name: "Journal", href: "/blog" },
+            { name: article.title, href: `/blog/${article.slug}` },
+          ]) as Record<string, unknown>
+        }
+      />
     <main id="main" className="bg-paper">
       {/* hero */}
       <section className="relative isolate overflow-hidden bg-ink text-paper">
@@ -138,5 +166,6 @@ export default async function BlogArticlePage({
         </div>
       </section>
     </main>
+    </>
   );
 }
