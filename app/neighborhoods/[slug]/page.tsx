@@ -8,6 +8,8 @@ import {
   getRelatedNeighborhoods,
 } from "@/lib/home-content";
 import { site } from "@/lib/site";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { articleSchema, breadcrumbSchema } from "@/lib/seo/schemas";
 
 type Params = { slug: string };
 
@@ -23,12 +25,15 @@ export async function generateMetadata({
   const { slug } = await params;
   const n = findNeighborhood(slug);
   if (!n) return {};
+  const url = `${site.websiteUrl}/neighborhoods/${slug}`;
   return {
     title: `${n.title} · Neighborhood guide`,
     description: n.dek,
+    alternates: { canonical: url },
     openGraph: {
       title: `${n.title} · ${site.brand}`,
       description: n.dek,
+      url,
       type: "article",
       images: [{ url: n.imageSrc, alt: n.imageAlt }],
     },
@@ -64,6 +69,27 @@ export default async function NeighborhoodPage({
   const related = getRelatedNeighborhoods(n.slug, 2);
 
   return (
+    <>
+      <JsonLd
+        schema={
+          articleSchema({
+            title: `${n.title} · Neighborhood Guide · New Braunfels`,
+            description: n.dek,
+            imageUrl: n.imageSrc,
+            imageAlt: n.imageAlt,
+            urlPath: `/neighborhoods/${n.slug}`,
+          }) as Record<string, unknown>
+        }
+      />
+      <JsonLd
+        schema={
+          breadcrumbSchema([
+            { name: "Home", href: "/" },
+            { name: "Neighborhoods", href: "/neighborhoods" },
+            { name: n.title, href: `/neighborhoods/${n.slug}` },
+          ]) as Record<string, unknown>
+        }
+      />
     <main id="main" className="bg-paper">
       {/* hero */}
       <section className="relative isolate overflow-hidden bg-ink text-paper">
@@ -203,5 +229,6 @@ export default async function NeighborhoodPage({
         </section>
       ) : null}
     </main>
+    </>
   );
 }

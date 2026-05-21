@@ -4,6 +4,15 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact",
   description: `Get in touch with ${site.brand}.`,
+  alternates: {
+    canonical: `${site.websiteUrl}/contact`,
+  },
+  openGraph: {
+    title: `Contact ${site.brand}`,
+    description: `Get in touch with ${site.brand}. Buying, selling, or curious about New Braunfels real estate.`,
+    url: `${site.websiteUrl}/contact`,
+    type: "website",
+  },
 };
 
 export default function ContactPage() {

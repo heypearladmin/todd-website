@@ -2,15 +2,37 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { exploreTiles } from "@/lib/home-content";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { breadcrumbSchema } from "@/lib/seo/schemas";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Explore New Braunfels",
   description:
     "Restaurants, river life, live music, breweries, hidden gems, weekend rhythm, neighborhood guides, and family days. A premium local read.",
+  alternates: {
+    canonical: `${site.websiteUrl}/explore`,
+  },
+  openGraph: {
+    title: "Explore New Braunfels · Todd Spencer",
+    description:
+      "Restaurants, river life, live music, breweries, hidden gems, weekend rhythm, neighborhood guides, and family days.",
+    url: `${site.websiteUrl}/explore`,
+    type: "website",
+  },
 };
 
 export default function ExploreIndexPage() {
   return (
+    <>
+      <JsonLd
+        schema={
+          breadcrumbSchema([
+            { name: "Home", href: "/" },
+            { name: "Explore New Braunfels", href: "/explore" },
+          ]) as Record<string, unknown>
+        }
+      />
     <main id="main" className="bg-paper">
       {/* page intro */}
       <section className="section-wrap py-20 md:py-28 lg:py-32">
@@ -87,5 +109,6 @@ export default function ExploreIndexPage() {
         </div>
       </section>
     </main>
+    </>
   );
 }

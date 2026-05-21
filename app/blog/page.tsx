@@ -2,15 +2,37 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { insightCards } from "@/lib/home-content";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { breadcrumbSchema } from "@/lib/seo/schemas";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Journal",
   description:
     "Field notes from New Braunfels. Moving guides, cost of living, lifestyle rituals, and real estate trends.",
+  alternates: {
+    canonical: `${site.websiteUrl}/blog`,
+  },
+  openGraph: {
+    title: "Journal · Todd Spencer",
+    description:
+      "Field notes from New Braunfels. Moving guides, cost of living, lifestyle rituals, and real estate trends.",
+    url: `${site.websiteUrl}/blog`,
+    type: "website",
+  },
 };
 
 export default function BlogIndexPage() {
   return (
+    <>
+      <JsonLd
+        schema={
+          breadcrumbSchema([
+            { name: "Home", href: "/" },
+            { name: "Journal", href: "/blog" },
+          ]) as Record<string, unknown>
+        }
+      />
     <main id="main" className="bg-paper">
       <section className="section-wrap py-20 md:py-28 lg:py-32">
         <div className="flex items-center gap-3">
@@ -58,5 +80,6 @@ export default function BlogIndexPage() {
         </div>
       </section>
     </main>
+    </>
   );
 }
