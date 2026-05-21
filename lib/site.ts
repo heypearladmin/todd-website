@@ -45,6 +45,11 @@ export const site = {
   neighborhoodsPath: "/neighborhoods",
   aboutPath: "/about",
   blogPath: "/blog",
+  termsPath: "/terms",
+  policiesPath: "/policies",
+
+  // A2P 10DLC / Twilio compliance — company name shown in SMS & AI consent copy.
+  complianceCompanyName: "LPT Realty",
 } as const;
 
 export type SiteConfig = typeof site;

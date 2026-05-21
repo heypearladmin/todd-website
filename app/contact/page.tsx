@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { ContactForm } from "@/components/ContactForm";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { breadcrumbSchema } from "@/lib/seo/schemas";
 
@@ -18,9 +19,6 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
-
-const INPUT_CLASS =
-  "w-full rounded-[14px] border border-ink/[0.10] bg-paper px-4 py-3.5 text-[0.9375rem] text-ink placeholder:text-ink/30 shadow-inset-frame transition-[border-color,box-shadow] duration-300 ease-editorial focus:border-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/[0.12] focus:ring-offset-0";
 
 export default function ContactPage() {
   return (
@@ -62,79 +60,7 @@ export default function ContactPage() {
 
             {/* Form ─ left column */}
             <div className="lg:col-span-7">
-              <form className="grid gap-6">
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-                  <div className="grid gap-2.5">
-                    <label htmlFor="name" className="eyebrow !text-ink/55">
-                      Name
-                    </label>
-                    <input
-                      id="name"
-                      name="name"
-                      type="text"
-                      autoComplete="name"
-                      required
-                      placeholder="Your name"
-                      className={INPUT_CLASS}
-                    />
-                  </div>
-                  <div className="grid gap-2.5">
-                    <label htmlFor="email" className="eyebrow !text-ink/55">
-                      Email
-                    </label>
-                    <input
-                      id="email"
-                      name="email"
-                      type="email"
-                      autoComplete="email"
-                      required
-                      placeholder="your@email.com"
-                      className={INPUT_CLASS}
-                    />
-                  </div>
-                </div>
-
-                <div className="grid gap-2.5">
-                  <label htmlFor="phone" className="eyebrow !text-ink/55">
-                    Phone{" "}
-                    <span className="normal-case tracking-normal text-ink/35 font-normal">
-                      (optional)
-                    </span>
-                  </label>
-                  <input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    autoComplete="tel"
-                    placeholder="(512) 000-0000"
-                    className={INPUT_CLASS}
-                  />
-                </div>
-
-                <div className="grid gap-2.5">
-                  <label htmlFor="message" className="eyebrow !text-ink/55">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={5}
-                    required
-                    placeholder="Tell me where you are in your search..."
-                    className={`${INPUT_CLASS} resize-none`}
-                  />
-                </div>
-
-                <div className="flex flex-wrap items-center gap-5 pt-1">
-                  <button type="submit" className="btn-primary">
-                    Send a note
-                    <span aria-hidden className="text-base">→</span>
-                  </button>
-                  <p className="text-[0.8125rem] text-ink/40">
-                    Usually replies within one business day
-                  </p>
-                </div>
-              </form>
+              <ContactForm />
             </div>
 
             {/* Sidebar ─ right column */}
