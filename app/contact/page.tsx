@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 import { site } from "@/lib/site";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { breadcrumbSchema } from "@/lib/seo/schemas";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: `Get in touch with ${site.brand}.`,
+  description: `Get in touch with ${site.brand}. Buying, selling, or curious about New Braunfels real estate.`,
   alternates: {
     canonical: `${site.websiteUrl}/contact`,
   },
@@ -15,64 +19,193 @@ export const metadata: Metadata = {
   },
 };
 
+const INPUT_CLASS =
+  "w-full rounded-[14px] border border-ink/[0.10] bg-paper px-4 py-3.5 text-[0.9375rem] text-ink placeholder:text-ink/30 shadow-inset-frame transition-[border-color,box-shadow] duration-300 ease-editorial focus:border-primary/40 focus:outline-none focus:ring-2 focus:ring-primary/[0.12] focus:ring-offset-0";
+
 export default function ContactPage() {
   return (
-    <main id="main" className="bg-paper">
-      <section className="section-wrap py-24 md:py-32 lg:py-40">
-        <p className="type-eyebrow">Contact</p>
-        <h1 className="type-display mt-4 max-w-3xl">
-          Tell me the chapter you are in.
-        </h1>
-        <p className="type-dek mt-6 max-w-measure-wide">
-          Send a note. Buying, selling, or just curious about the market here.
-          I read every message and respond within a business day.
-        </p>
+    <>
+      <JsonLd
+        schema={
+          breadcrumbSchema([
+            { name: "Home", href: "/" },
+            { name: "Contact", href: "/contact" },
+          ]) as Record<string, unknown>
+        }
+      />
+      <main id="main" className="bg-paper">
+        {/* ── intro ── */}
+        <section className="relative isolate overflow-hidden bg-paper-deep">
+          <div aria-hidden className="paper-grain pointer-events-none absolute inset-0 opacity-70" />
+          <div
+            aria-hidden
+            className="pointer-events-none absolute -top-32 right-[15%] -z-10 h-[32rem] w-[32rem] rounded-full bg-copper/[0.09] blur-[160px]"
+          />
+          <div className="section-wrap relative py-24 md:py-32 lg:py-36">
+            <div className="flex items-center gap-3">
+              <span className="tick" aria-hidden />
+              <p className="eyebrow">Contact</p>
+            </div>
+            <h1 className="display-lg mt-6 max-w-3xl text-ink">
+              Tell me the chapter you are in.
+            </h1>
+            <p className="dek mt-6">
+              Buying, selling, relocating, or just curious about the market. I read every
+              message and reply within a business day.
+            </p>
+          </div>
+        </section>
 
-        <form className="mt-12 grid max-w-2xl gap-6">
-          <div className="grid gap-2">
-            <label htmlFor="name" className="type-eyebrow text-ink/60">
-              Name
-            </label>
-            <input
-              id="name"
-              name="name"
-              type="text"
-              required
-              className="border border-ink/15 bg-paper px-4 py-3 text-base text-ink shadow-inset-frame focus:border-accent focus:outline-none"
-            />
+        {/* ── form + sidebar ── */}
+        <section className="section-wrap py-20 md:py-28 lg:py-32">
+          <div className="grid grid-cols-1 gap-x-16 gap-y-16 lg:grid-cols-12">
+
+            {/* Form ─ left column */}
+            <div className="lg:col-span-7">
+              <form className="grid gap-6">
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                  <div className="grid gap-2.5">
+                    <label htmlFor="name" className="eyebrow !text-ink/55">
+                      Name
+                    </label>
+                    <input
+                      id="name"
+                      name="name"
+                      type="text"
+                      autoComplete="name"
+                      required
+                      placeholder="Your name"
+                      className={INPUT_CLASS}
+                    />
+                  </div>
+                  <div className="grid gap-2.5">
+                    <label htmlFor="email" className="eyebrow !text-ink/55">
+                      Email
+                    </label>
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      autoComplete="email"
+                      required
+                      placeholder="your@email.com"
+                      className={INPUT_CLASS}
+                    />
+                  </div>
+                </div>
+
+                <div className="grid gap-2.5">
+                  <label htmlFor="phone" className="eyebrow !text-ink/55">
+                    Phone{" "}
+                    <span className="normal-case tracking-normal text-ink/35 font-normal">
+                      (optional)
+                    </span>
+                  </label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    autoComplete="tel"
+                    placeholder="(512) 000-0000"
+                    className={INPUT_CLASS}
+                  />
+                </div>
+
+                <div className="grid gap-2.5">
+                  <label htmlFor="message" className="eyebrow !text-ink/55">
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows={5}
+                    required
+                    placeholder="Tell me where you are in your search..."
+                    className={`${INPUT_CLASS} resize-none`}
+                  />
+                </div>
+
+                <div className="flex flex-wrap items-center gap-5 pt-1">
+                  <button type="submit" className="btn-primary">
+                    Send a note
+                    <span aria-hidden className="text-base">→</span>
+                  </button>
+                  <p className="text-[0.8125rem] text-ink/40">
+                    Usually replies within one business day
+                  </p>
+                </div>
+              </form>
+            </div>
+
+            {/* Sidebar ─ right column */}
+            <aside className="lg:col-span-4 lg:col-start-9">
+              {/* Portrait */}
+              <div className="relative aspect-[4/3] overflow-hidden rounded-[22px] bg-ink/[0.04] shadow-surface ring-1 ring-ink/[0.06]">
+                <Image
+                  src={site.agentPortraitSrc}
+                  alt={site.agentPortraitAlt}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 380px"
+                  className="object-cover object-[center_20%]"
+                />
+                <div
+                  aria-hidden
+                  className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/35 via-transparent to-transparent"
+                />
+              </div>
+
+              {/* Contact details */}
+              <div className="mt-8 space-y-5">
+                <div>
+                  <p className="eyebrow">Call or text</p>
+                  <a
+                    href={site.phoneHref}
+                    className="mt-2 block text-[1.125rem] font-medium text-ink transition-colors duration-300 ease-editorial hover:text-primary"
+                  >
+                    {site.phone}
+                  </a>
+                </div>
+                <div className="hairline" />
+                <div>
+                  <p className="eyebrow">Email</p>
+                  <a
+                    href={site.emailHref}
+                    className="mt-2 block text-[1rem] text-ink/70 transition-colors duration-300 ease-editorial hover:text-primary"
+                  >
+                    {site.email}
+                  </a>
+                </div>
+                <div className="hairline" />
+                <div>
+                  <p className="eyebrow">Brokerage</p>
+                  <p className="mt-2 text-[0.9375rem] text-ink/65">
+                    {site.brokerage.name}
+                  </p>
+                  <p className="mt-0.5 text-[0.875rem] text-ink/40">
+                    {site.brokerage.licenseLine}
+                  </p>
+                </div>
+              </div>
+
+              {/* Soft CTA */}
+              <div className="mt-8 rounded-[18px] bg-paper-deep p-6 ring-1 ring-ink/[0.07]">
+                <p className="eyebrow">Not ready to reach out?</p>
+                <p className="mt-3 text-[0.9375rem] leading-[1.72] text-ink/65">
+                  Start with the neighborhood guides. They cover what most agents
+                  won&apos;t tell you until the second showing.
+                </p>
+                <Link
+                  href={site.neighborhoodsPath}
+                  className="mt-5 inline-flex items-center gap-2.5 text-sm font-medium text-primary transition-colors duration-300 ease-editorial hover:text-copper"
+                >
+                  Browse neighborhoods
+                  <span aria-hidden className="block h-px w-8 bg-current" />
+                </Link>
+              </div>
+            </aside>
           </div>
-          <div className="grid gap-2">
-            <label htmlFor="email" className="type-eyebrow text-ink/60">
-              Email
-            </label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              required
-              className="border border-ink/15 bg-paper px-4 py-3 text-base text-ink shadow-inset-frame focus:border-accent focus:outline-none"
-            />
-          </div>
-          <div className="grid gap-2">
-            <label htmlFor="message" className="type-eyebrow text-ink/60">
-              Message
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              rows={6}
-              required
-              className="border border-ink/15 bg-paper px-4 py-3 text-base text-ink shadow-inset-frame focus:border-accent focus:outline-none"
-            />
-          </div>
-          <button
-            type="submit"
-            className="btn-primary justify-self-start"
-          >
-            Send note
-          </button>
-        </form>
-      </section>
-    </main>
+        </section>
+      </main>
+    </>
   );
 }
