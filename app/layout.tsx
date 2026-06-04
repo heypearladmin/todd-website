@@ -99,6 +99,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KBF8X0KTKW');`,
           }}
         />
+        <Script
+          id="search-atlas-otto"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `var script=document.createElement("script");script.setAttribute("nowprocket","");script.setAttribute("nitro-exclude","");script.src="https://reports.heypearl.io/scripts/dynamic_optimization.js";script.dataset.uuid="2d02d0c8-91ea-4b98-befd-20d028eecbd8";script.id="sa-dynamic-optimization";document.head.appendChild(script);`,
+          }}
+        />
       </body>
     </html>
   );
