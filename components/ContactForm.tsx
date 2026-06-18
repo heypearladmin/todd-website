@@ -9,15 +9,11 @@ type Status = "idle" | "submitting" | "ok" | "error";
 /**
  * ContactForm
  *
- * A2P 10DLC / Twilio / GoHighLevel AI Dialer compliant contact form.
- *
- * Compliance rules enforced here:
- *  - Consent checkbox is NOT pre-checked (defaults to false).
- *  - Submit button is disabled until consent is checked.
- *  - Consent text discloses SMS + AI calling, STOP/HELP, message frequency,
- *    and message & data rates, and links to /terms and /policies.
- *  - All fields use native HTML validation as a baseline (so the form
- *    remains compliant even with JS disabled — the checkbox is `required`).
+ * A2P 10DLC compliant contact form with two optional consent checkboxes:
+ *  - Non-marketing (transactional): opt-in to property inquiry follow-ups via SMS
+ *  - Marketing/promotional: opt-in to market updates and listings via SMS
+ * Both checkboxes default to unchecked. Submit is enabled once required fields
+ * are filled regardless of checkbox state (consent is optional per A2P guidelines).
  */
 export function ContactForm() {
   const [firstName, setFirstName] = useState("");
@@ -25,14 +21,14 @@ export function ContactForm() {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
-  const [consent, setConsent] = useState(false); // MUST default to false
+  const [consentTransactional, setConsentTransactional] = useState(false);
+  const [consentMarketing, setConsentMarketing] = useState(false);
   const [status, setStatus] = useState<Status>("idle");
   const [feedback, setFeedback] = useState("");
 
   const company = site.complianceCompanyName;
 
   const canSubmit =
-    consent &&
     firstName.trim().length > 0 &&
     lastName.trim().length > 0 &&
     email.trim().length > 0 &&
@@ -42,11 +38,6 @@ export function ContactForm() {
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    if (!consent) {
-      setStatus("error");
-      setFeedback("Please review and check the consent box to continue.");
-      return;
-    }
     setStatus("submitting");
     setFeedback("");
     try {
@@ -60,7 +51,8 @@ export function ContactForm() {
       setEmail("");
       setPhone("");
       setMessage("");
-      setConsent(false);
+      setConsentTransactional(false);
+      setConsentMarketing(false);
     } catch {
       setStatus("error");
       setFeedback("Something went wrong. Please try again or call directly.");
@@ -161,42 +153,42 @@ export function ContactForm() {
       </div>
 
       {/* ───────────── A2P 10DLC consent block ─────────────
-          Checkbox is NOT pre-checked and is `required`. Submit is also
-          gated by `canSubmit` so the button stays disabled until consent
-          is given and required fields are filled. */}
-      <div className="mt-2 rounded-2xl border border-ink/[0.08] bg-paper-deep/40 p-5 shadow-inset-frame">
-        <label htmlFor="consent" className="flex items-start gap-3 cursor-pointer">
+          Both checkboxes are optional and NOT pre-checked.
+          Submit is enabled once required fields are filled. */}
+      <div className="mt-2 space-y-4 rounded-2xl border border-ink/[0.08] bg-paper-deep/40 p-5 shadow-inset-frame">
+        <label htmlFor="consent-transactional" className="flex items-start gap-3 cursor-pointer">
           <input
-            id="consent"
-            name="consent"
+            id="consent-transactional"
+            name="consent_transactional"
             type="checkbox"
-            required
-            checked={consent}
-            onChange={(e) => setConsent(e.target.checked)}
+            checked={consentTransactional}
+            onChange={(e) => setConsentTransactional(e.target.checked)}
             className="mt-1 h-5 w-5 shrink-0 cursor-pointer rounded border-ink/30 text-primary accent-primary focus:ring-2 focus:ring-primary/40 focus:ring-offset-2 focus:ring-offset-paper"
-            aria-describedby="contact-consent-text"
           />
-          <span
-            id="contact-consent-text"
-            className="text-[0.875rem] leading-[1.7] text-ink/75"
-          >
-            I agree to receive text messages and phone calls from {company} at the phone
-            number provided. Message frequency varies. Message &amp; data rates may
-            apply. Reply STOP to unsubscribe. Reply HELP for help. By submitting this
-            form, you agree to our{" "}
-            <Link href={site.termsPath} className="editorial-link">
-              Terms &amp; Conditions
-            </Link>{" "}
-            and{" "}
-            <Link href={site.policiesPath} className="editorial-link">
-              Privacy Policy
-            </Link>
-            .
-            <span className="mt-3 block text-ink/65">
-              By providing your phone number, you consent to receive calls and text
-              messages, including automated calls and AI-assisted communications, from{" "}
-              {company}.
-            </span>
+          <span className="text-[0.875rem] leading-[1.7] text-ink/75">
+            I consent to receive non-marketing text messages from{" "}
+            <strong className="font-semibold text-ink">{company}</strong> regarding
+            real estate inquiries, property updates, and appointment reminders.
+            Message frequency varies, message &amp; data rates may apply. Reply HELP
+            for assistance, reply STOP to opt out.
+          </span>
+        </label>
+
+        <label htmlFor="consent-marketing" className="flex items-start gap-3 cursor-pointer">
+          <input
+            id="consent-marketing"
+            name="consent_marketing"
+            type="checkbox"
+            checked={consentMarketing}
+            onChange={(e) => setConsentMarketing(e.target.checked)}
+            className="mt-1 h-5 w-5 shrink-0 cursor-pointer rounded border-ink/30 text-primary accent-primary focus:ring-2 focus:ring-primary/40 focus:ring-offset-2 focus:ring-offset-paper"
+          />
+          <span className="text-[0.875rem] leading-[1.7] text-ink/75">
+            I consent to receive marketing text messages from{" "}
+            <strong className="font-semibold text-ink">{company}</strong> regarding
+            new listings, market updates, and real estate promotions. Message
+            frequency varies, message &amp; data rates may apply. Reply HELP for
+            assistance, reply STOP to opt out.
           </span>
         </label>
       </div>
@@ -210,6 +202,16 @@ export function ContactForm() {
         >
           {status === "submitting" ? "Sending" : "Send note"}
         </button>
+
+        <p className="text-[0.8125rem] text-ink/50">
+          <Link href={site.policiesPath} className="editorial-link !text-ink/50 hover:!text-ink/80">
+            Privacy Policy
+          </Link>
+          {" | "}
+          <Link href={site.termsPath} className="editorial-link !text-ink/50 hover:!text-ink/80">
+            Terms and Conditions
+          </Link>
+        </p>
 
         {feedback ? (
           <p
