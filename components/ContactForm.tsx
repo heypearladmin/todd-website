@@ -41,9 +41,12 @@ export function ContactForm() {
     setStatus("submitting");
     setFeedback("");
     try {
-      // TODO: wire to a real endpoint (e.g. POST /api/contact) when backend is ready.
-      // Form is intentionally inert today so no submissions are silently lost.
-      await new Promise((r) => setTimeout(r, 600));
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ firstName, lastName, email, phone, message, consentTransactional, consentMarketing }),
+      });
+      if (!res.ok) throw new Error(await res.text());
       setStatus("ok");
       setFeedback("Thanks — your message has been received. I will respond within a business day.");
       setFirstName("");
