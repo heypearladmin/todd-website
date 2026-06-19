@@ -13,6 +13,24 @@ function ghlHeaders() {
   };
 }
 
+async function addNote(contactId: string, message: string, consentTransactional: boolean, consentMarketing: boolean) {
+  await fetch(`${GHL_BASE}/contacts/${contactId}/notes`, {
+    method: "POST",
+    headers: ghlHeaders(),
+    body: JSON.stringify({
+      body: `Website inquiry:\n\n${message}\n\n---\nTransactional SMS: ${consentTransactional ? "Yes" : "No"}\nMarketing SMS: ${consentMarketing ? "Yes" : "No"}`,
+    }),
+  }).catch((e) => console.error("GHL add note failed:", e));
+}
+
+async function addTag(contactId: string) {
+  await fetch(`${GHL_BASE}/contacts/${contactId}/tags`, {
+    method: "POST",
+    headers: ghlHeaders(),
+    body: JSON.stringify({ tags: ["heypearl"] }),
+  }).catch((e) => console.error("GHL add tag failed:", e));
+}
+
 export async function POST(request: NextRequest) {
   if (!GHL_API_KEY || !GHL_LOCATION_ID) {
     console.error("Missing GHL environment variables");
@@ -40,7 +58,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
   }
 
-  // Create contact in GHL with the "heypearl" tag to trigger the workflow
+  // Step 1: Create contact WITHOUT tag so GHL registers the "Contact Created" event cleanly
   const createRes = await fetch(`${GHL_BASE}/contacts/`, {
     method: "POST",
     headers: ghlHeaders(),
@@ -50,7 +68,6 @@ export async function POST(request: NextRequest) {
       email,
       phone,
       locationId: GHL_LOCATION_ID,
-      tags: ["heypearl"],
       source: "todd-spencer.com",
     }),
   });
@@ -58,45 +75,32 @@ export async function POST(request: NextRequest) {
   const createData = await createRes.json() as {
     contact?: { id: string };
     meta?: { contactId?: string };
-    message?: string;
   };
 
-  // Duplicate contact — treat as success, grab the existing contact id
+  // Duplicate contact — add note to existing contact and still add tag to re-trigger
   if (!createRes.ok) {
     if (createRes.status === 400 && createData.meta?.contactId) {
-      const contact = { id: createData.meta.contactId };
-      if (message) {
-        await fetch(`${GHL_BASE}/contacts/${contact.id}/notes`, {
-          method: "POST",
-          headers: ghlHeaders(),
-          body: JSON.stringify({
-            body: `Website inquiry (returning contact):\n\n${message}\n\n---\nTransactional SMS: ${consentTransactional ? "Yes" : "No"}\nMarketing SMS: ${consentMarketing ? "Yes" : "No"}`,
-          }),
-        }).catch((e) => console.error("GHL add note failed:", e));
-      }
+      const contactId = createData.meta.contactId;
+      await Promise.all([
+        addNote(contactId, message!, !!consentTransactional, !!consentMarketing),
+        addTag(contactId),
+      ]);
       return NextResponse.json({ success: true });
     }
     console.error("GHL create contact failed:", createRes.status, createData);
     return NextResponse.json({ error: "Failed to create contact" }, { status: 502 });
   }
 
-  const { contact } = createData as { contact: { id: string } };
-
-  // Add the form message + consent flags as a note on the contact
-  if (contact?.id) {
-    const consentLine = [
-      `Transactional SMS consent: ${consentTransactional ? "Yes" : "No"}`,
-      `Marketing SMS consent: ${consentMarketing ? "Yes" : "No"}`,
-    ].join("\n");
-
-    await fetch(`${GHL_BASE}/contacts/${contact.id}/notes`, {
-      method: "POST",
-      headers: ghlHeaders(),
-      body: JSON.stringify({
-        body: `Website inquiry:\n\n${message}\n\n---\n${consentLine}`,
-      }),
-    }).catch((e) => console.error("GHL add note failed:", e));
+  const contactId = createData.contact?.id;
+  if (!contactId) {
+    return NextResponse.json({ error: "No contact ID returned" }, { status: 502 });
   }
+
+  // Step 2: Add note and tag separately — tag addition triggers the GHL workflow
+  await Promise.all([
+    addNote(contactId, message!, !!consentTransactional, !!consentMarketing),
+    addTag(contactId),
+  ]);
 
   return NextResponse.json({ success: true });
 }
