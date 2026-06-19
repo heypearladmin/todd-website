@@ -25,8 +25,12 @@ export function NewsletterForm({ variant = "footer" }: { variant?: "footer" | "i
     setStatus("submitting");
     setMessage("");
     try {
-      // TODO: wire to a real endpoint, e.g. POST /api/newsletter
-      await new Promise((r) => setTimeout(r, 600));
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      if (!res.ok) throw new Error(await res.text());
       setStatus("ok");
       setMessage("You are on the list. Thanks for signing up.");
       setEmail("");
