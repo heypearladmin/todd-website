@@ -55,13 +55,32 @@ export async function POST(request: NextRequest) {
     }),
   });
 
+  const createData = await createRes.json() as {
+    contact?: { id: string };
+    meta?: { contactId?: string };
+    message?: string;
+  };
+
+  // Duplicate contact — treat as success, grab the existing contact id
   if (!createRes.ok) {
-    const err = await createRes.text();
-    console.error("GHL create contact failed:", createRes.status, err);
+    if (createRes.status === 400 && createData.meta?.contactId) {
+      const contact = { id: createData.meta.contactId };
+      if (message) {
+        await fetch(`${GHL_BASE}/contacts/${contact.id}/notes`, {
+          method: "POST",
+          headers: ghlHeaders(),
+          body: JSON.stringify({
+            body: `Website inquiry (returning contact):\n\n${message}\n\n---\nTransactional SMS: ${consentTransactional ? "Yes" : "No"}\nMarketing SMS: ${consentMarketing ? "Yes" : "No"}`,
+          }),
+        }).catch((e) => console.error("GHL add note failed:", e));
+      }
+      return NextResponse.json({ success: true });
+    }
+    console.error("GHL create contact failed:", createRes.status, createData);
     return NextResponse.json({ error: "Failed to create contact" }, { status: 502 });
   }
 
-  const { contact } = await createRes.json() as { contact: { id: string } };
+  const { contact } = createData as { contact: { id: string } };
 
   // Add the form message + consent flags as a note on the contact
   if (contact?.id) {
