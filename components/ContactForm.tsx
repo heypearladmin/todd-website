@@ -20,7 +20,6 @@ export function ContactForm() {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
   const [consentTransactional, setConsentTransactional] = useState(false);
   const [consentMarketing, setConsentMarketing] = useState(false);
   const [status, setStatus] = useState<Status>("idle");
@@ -33,7 +32,6 @@ export function ContactForm() {
     lastName.trim().length > 0 &&
     email.trim().length > 0 &&
     phone.trim().length > 0 &&
-    message.trim().length > 0 &&
     status !== "submitting";
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
@@ -44,7 +42,7 @@ export function ContactForm() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ firstName, lastName, email, phone, message, consentTransactional, consentMarketing }),
+        body: JSON.stringify({ firstName, lastName, email, phone, consentTransactional, consentMarketing }),
       });
       if (!res.ok) throw new Error(await res.text());
       setStatus("ok");
@@ -53,7 +51,6 @@ export function ContactForm() {
       setLastName("");
       setEmail("");
       setPhone("");
-      setMessage("");
       setConsentTransactional(false);
       setConsentMarketing(false);
     } catch {
@@ -136,21 +133,6 @@ export function ContactForm() {
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
           placeholder="(555) 555-5555"
-          className={inputClass}
-        />
-      </div>
-
-      <div className="grid gap-2">
-        <label htmlFor="message" className="eyebrow !text-ink/60">
-          Message
-        </label>
-        <textarea
-          id="message"
-          name="message"
-          rows={6}
-          required
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
           className={inputClass}
         />
       </div>

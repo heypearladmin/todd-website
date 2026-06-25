@@ -13,12 +13,12 @@ function ghlHeaders() {
   };
 }
 
-async function addNote(contactId: string, message: string, consentTransactional: boolean, consentMarketing: boolean) {
+async function addNote(contactId: string, consentTransactional: boolean, consentMarketing: boolean) {
   await fetch(`${GHL_BASE}/contacts/${contactId}/notes`, {
     method: "POST",
     headers: ghlHeaders(),
     body: JSON.stringify({
-      body: `Website inquiry:\n\n${message}\n\n---\nTransactional SMS: ${consentTransactional ? "Yes" : "No"}\nMarketing SMS: ${consentMarketing ? "Yes" : "No"}`,
+      body: `Website inquiry from todd-spencer.com\n\nTransactional SMS: ${consentTransactional ? "Yes" : "No"}\nMarketing SMS: ${consentMarketing ? "Yes" : "No"}`,
     }),
   }).catch((e) => console.error("GHL add note failed:", e));
 }
@@ -44,17 +44,16 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Invalid request body" }, { status: 400 });
   }
 
-  const { firstName, lastName, email, phone, message, consentTransactional, consentMarketing } = body as {
+  const { firstName, lastName, email, phone, consentTransactional, consentMarketing } = body as {
     firstName?: string;
     lastName?: string;
     email?: string;
     phone?: string;
-    message?: string;
     consentTransactional?: boolean;
     consentMarketing?: boolean;
   };
 
-  if (!firstName || !lastName || !email || !phone || !message) {
+  if (!firstName || !lastName || !email || !phone) {
     return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
   }
 
@@ -82,7 +81,7 @@ export async function POST(request: NextRequest) {
     if (createRes.status === 400 && createData.meta?.contactId) {
       const contactId = createData.meta.contactId;
       await Promise.all([
-        addNote(contactId, message!, !!consentTransactional, !!consentMarketing),
+        addNote(contactId, !!consentTransactional, !!consentMarketing),
         addTag(contactId),
       ]);
       return NextResponse.json({ success: true });
@@ -98,7 +97,7 @@ export async function POST(request: NextRequest) {
 
   // Step 2: Add note and tag separately — tag addition triggers the GHL workflow
   await Promise.all([
-    addNote(contactId, message!, !!consentTransactional, !!consentMarketing),
+    addNote(contactId, !!consentTransactional, !!consentMarketing),
     addTag(contactId),
   ]);
 
