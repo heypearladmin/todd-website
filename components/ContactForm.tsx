@@ -1,8 +1,15 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { site } from "@/lib/site";
+
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
 
 type Status = "idle" | "submitting" | "ok" | "error";
 
@@ -16,6 +23,7 @@ type Status = "idle" | "submitting" | "ok" | "error";
  * are filled regardless of checkbox state (consent is optional per A2P guidelines).
  */
 export function ContactForm() {
+  const router = useRouter();
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -45,14 +53,14 @@ export function ContactForm() {
         body: JSON.stringify({ firstName, lastName, email, phone, consentTransactional, consentMarketing }),
       });
       if (!res.ok) throw new Error(await res.text());
-      setStatus("ok");
-      setFeedback("Thanks — your message has been received. I will respond within a business day.");
-      setFirstName("");
-      setLastName("");
-      setEmail("");
-      setPhone("");
-      setConsentTransactional(false);
-      setConsentMarketing(false);
+      window.gtag?.("event", "form_submit", {
+        event_category: "contact",
+        event_label: "contact_form",
+      });
+      window.gtag?.("event", "contact_form_submit", {
+        event_category: "lead",
+      });
+      router.push("/thank-you");
     } catch {
       setStatus("error");
       setFeedback("Something went wrong. Please try again or call directly.");

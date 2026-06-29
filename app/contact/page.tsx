@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { PhoneLink } from "@/components/PhoneLink";
 import { ContactForm } from "@/components/ContactForm";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { breadcrumbSchema } from "@/lib/seo/schemas";
@@ -84,12 +85,7 @@ export default function ContactPage() {
               <div className="mt-8 space-y-5">
                 <div>
                   <p className="eyebrow">Call or text</p>
-                  <a
-                    href={site.phoneHref}
-                    className="mt-2 block text-[1.125rem] font-medium text-ink transition-colors duration-300 ease-editorial hover:text-primary"
-                  >
-                    {site.phone}
-                  </a>
+                  <PhoneLink className="mt-2 block text-[1.125rem] font-medium text-ink transition-colors duration-300 ease-editorial hover:text-primary" />
                 </div>
                 <div className="hairline" />
                 <div>
