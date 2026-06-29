@@ -5,7 +5,6 @@ import { HomeMarket } from "@/components/home/HomeMarket";
 import { HomeNeighborhoods } from "@/components/home/HomeNeighborhoods";
 import { HomeSocialProof } from "@/components/home/HomeSocialProof";
 import { HomeTrust } from "@/components/home/HomeTrust";
-import { HomeVideoAuthority } from "@/components/home/HomeVideoAuthority";
 import { JsonLd } from "@/components/seo/JsonLd";
 import {
   organizationSchema,
@@ -61,7 +60,6 @@ export default function HomePage() {
         <HomeHero />
         <HomeTrust />
         <HomeExplore />
-        <HomeVideoAuthority />
         <HomeNeighborhoods />
         <HomeSocialProof />
         <HomeMarket />
