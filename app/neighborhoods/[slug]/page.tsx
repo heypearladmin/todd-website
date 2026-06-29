@@ -9,7 +9,7 @@ import {
 } from "@/lib/home-content";
 import { site } from "@/lib/site";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { articleSchema, breadcrumbSchema } from "@/lib/seo/schemas";
+import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/seo/schemas";
 
 type Params = { slug: string };
 
@@ -28,35 +28,17 @@ export async function generateMetadata({
   const url = `${site.websiteUrl}/neighborhoods/${slug}`;
   return {
     title: `${n.title} · Neighborhood guide`,
-    description: n.dek,
+    description: n.details?.shortAnswer ?? n.dek,
     alternates: { canonical: url },
     openGraph: {
       title: `${n.title} · ${site.brand}`,
-      description: n.dek,
+      description: n.details?.shortAnswer ?? n.dek,
       url,
       type: "article",
       images: [{ url: n.imageSrc, alt: n.imageAlt }],
     },
   };
 }
-
-const KNOW_BLOCKS = [
-  {
-    eyebrow: "School and walkability",
-    title: "Day to day rhythm",
-    body: "Schools, sidewalks, walk to coffee, and the small frictions that matter once you live somewhere. A working list, updated as the neighborhood changes.",
-  },
-  {
-    eyebrow: "Outdoors",
-    title: "River, trails, and parks",
-    body: "Closest put ins, shaded walks, and the parks locals actually use. Where to be on a Saturday morning and where to go when you need quiet on a Tuesday.",
-  },
-  {
-    eyebrow: "Market",
-    title: "How homes move here",
-    body: "Inventory trends, common floor plans, and the price bands that move quickly. Plain English, current as of the season.",
-  },
-];
 
 export default async function NeighborhoodPage({
   params,
@@ -67,6 +49,7 @@ export default async function NeighborhoodPage({
   const n = findNeighborhood(slug);
   if (!n) notFound();
   const related = getRelatedNeighborhoods(n.slug, 2);
+  const d = n.details;
 
   return (
     <>
@@ -74,7 +57,7 @@ export default async function NeighborhoodPage({
         schema={
           articleSchema({
             title: `${n.title} · Neighborhood Guide · New Braunfels`,
-            description: n.dek,
+            description: n.details?.shortAnswer ?? n.dek,
             imageUrl: n.imageSrc,
             imageAlt: n.imageAlt,
             urlPath: `/neighborhoods/${n.slug}`,
@@ -90,6 +73,11 @@ export default async function NeighborhoodPage({
           ]) as Record<string, unknown>
         }
       />
+      {d?.faqs && d.faqs.length > 0 && (
+        <JsonLd
+          schema={faqSchema(d.faqs) as Record<string, unknown>}
+        />
+      )}
     <main id="main" className="bg-paper">
       {/* hero */}
       <section className="relative isolate overflow-hidden bg-ink text-paper">
@@ -133,34 +121,259 @@ export default async function NeighborhoodPage({
         </div>
       </section>
 
-      {/* what to know */}
-      <section className="section-wrap py-20 md:py-28 lg:py-32">
-        <div className="grid gap-x-12 gap-y-8 lg:grid-cols-12 lg:items-end">
-          <div className="lg:col-span-7">
+      {d ? (
+        <>
+          {/* short answer */}
+          <section className="section-wrap py-14 md:py-20">
+            <div className="max-w-3xl">
+              <div className="flex items-center gap-3">
+                <span className="tick" aria-hidden />
+                <p className="eyebrow">The short answer</p>
+              </div>
+              <p className="mt-6 text-[1.125rem] leading-[1.8] text-ink/80 md:text-[1.1875rem]">
+                {d.shortAnswer}
+              </p>
+            </div>
+          </section>
+
+          {/* overview */}
+          <section className="section-wrap border-t border-ink/[0.07] py-14 md:py-20">
+            <div className="grid gap-x-16 gap-y-8 lg:grid-cols-12">
+              <div className="lg:col-span-4">
+                <div className="flex items-center gap-3">
+                  <span className="tick" aria-hidden />
+                  <p className="eyebrow">Overview</p>
+                </div>
+                <h2 className="display-md mt-5 text-ink">Living in {n.title}.</h2>
+              </div>
+              <div className="lg:col-span-7 lg:col-start-6">
+                {d.overview.split("\n\n").map((para, i) => (
+                  <p
+                    key={i}
+                    className="mt-5 text-[1.0625rem] leading-[1.78] text-ink/75 first:mt-0"
+                  >
+                    {para}
+                  </p>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* best for */}
+          <section className="section-wrap border-t border-ink/[0.07] py-14 md:py-20">
+            <div className="grid gap-x-16 gap-y-8 lg:grid-cols-12">
+              <div className="lg:col-span-4">
+                <div className="flex items-center gap-3">
+                  <span className="tick" aria-hidden />
+                  <p className="eyebrow">Best for</p>
+                </div>
+                <h2 className="display-md mt-5 text-ink">Who thrives here.</h2>
+              </div>
+              <ul className="lg:col-span-7 lg:col-start-6 space-y-4 mt-0">
+                {d.bestFor.map((item) => (
+                  <li key={item} className="flex gap-3 text-[1.0625rem] leading-[1.75] text-ink/75">
+                    <span aria-hidden className="mt-[0.6em] h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+
+          {/* housing */}
+          <section className="section-wrap border-t border-ink/[0.07] py-14 md:py-20">
+            <div className="grid gap-x-16 gap-y-8 lg:grid-cols-12">
+              <div className="lg:col-span-4">
+                <div className="flex items-center gap-3">
+                  <span className="tick" aria-hidden />
+                  <p className="eyebrow">Housing</p>
+                </div>
+                <h2 className="display-md mt-5 text-ink">What the market looks like.</h2>
+              </div>
+              <div className="lg:col-span-7 lg:col-start-6">
+                {d.housing.split("\n\n").map((para, i) => (
+                  <p
+                    key={i}
+                    className="mt-5 text-[1.0625rem] leading-[1.78] text-ink/75 first:mt-0"
+                  >
+                    {para}
+                  </p>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* lifestyle */}
+          <section className="section-wrap border-t border-ink/[0.07] py-14 md:py-20">
+            <div className="grid gap-x-16 gap-y-8 lg:grid-cols-12">
+              <div className="lg:col-span-4">
+                <div className="flex items-center gap-3">
+                  <span className="tick" aria-hidden />
+                  <p className="eyebrow">Lifestyle</p>
+                </div>
+                <h2 className="display-md mt-5 text-ink">Day to day rhythm.</h2>
+              </div>
+              <div className="lg:col-span-7 lg:col-start-6">
+                {d.lifestyle.split("\n\n").map((para, i) => (
+                  <p
+                    key={i}
+                    className="mt-5 text-[1.0625rem] leading-[1.78] text-ink/75 first:mt-0"
+                  >
+                    {para}
+                  </p>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* commute + schools side by side */}
+          <section className="section-wrap border-t border-ink/[0.07] py-14 md:py-20">
+            <div className="grid gap-8 md:grid-cols-2 md:gap-12">
+              <div>
+                <div className="flex items-center gap-3">
+                  <span className="tick" aria-hidden />
+                  <p className="eyebrow">Commute</p>
+                </div>
+                <h2 className="display-sm mt-5 text-ink">Getting to work.</h2>
+                <p className="mt-5 text-[1.0625rem] leading-[1.78] text-ink/75">{d.commute}</p>
+              </div>
+              <div>
+                <div className="flex items-center gap-3">
+                  <span className="tick" aria-hidden />
+                  <p className="eyebrow">Schools</p>
+                </div>
+                <h2 className="display-sm mt-5 text-ink">Education options.</h2>
+                <p className="mt-5 text-[1.0625rem] leading-[1.78] text-ink/75">{d.schools}</p>
+              </div>
+            </div>
+          </section>
+
+          {/* pros and cons */}
+          <section className="section-wrap border-t border-ink/[0.07] py-14 md:py-20">
             <div className="flex items-center gap-3">
               <span className="tick" aria-hidden />
-              <p className="eyebrow">What to know</p>
+              <p className="eyebrow">Trade-offs</p>
             </div>
-            <h2 className="display-lg mt-6 text-ink">Living in {n.title}.</h2>
-          </div>
-          <p className="dek lg:col-span-5">
-            A field guide in progress. The honest pace of the neighborhood, the small details that take a while to learn, and the parts that surprise people in a good way.
-          </p>
-        </div>
+            <h2 className="display-md mt-5 text-ink">Pros and cons.</h2>
+            <div className="mt-10 grid gap-8 md:grid-cols-2 md:gap-12">
+              <div>
+                <p className="caption !text-ink/50 mb-5">What works well</p>
+                <ul className="space-y-4">
+                  {d.prosAndCons.pros.map((pro) => (
+                    <li key={pro} className="flex gap-3 text-[1.0rem] leading-[1.72] text-ink/75">
+                      <span aria-hidden className="mt-[0.55em] h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
+                      <span>{pro}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <p className="caption !text-ink/50 mb-5">What to know going in</p>
+                <ul className="space-y-4">
+                  {d.prosAndCons.cons.map((con) => (
+                    <li key={con} className="flex gap-3 text-[1.0rem] leading-[1.72] text-ink/75">
+                      <span aria-hidden className="mt-[0.55em] h-1.5 w-1.5 flex-shrink-0 rounded-full bg-ink/25" />
+                      <span>{con}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </section>
 
-        <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-7">
-          {KNOW_BLOCKS.map((b) => (
-            <article
-              key={b.title}
-              className="rounded-[24px] border border-ink/[0.08] bg-paper p-7 shadow-surface md:p-8"
-            >
-              <p className="caption !text-ink/50">{b.eyebrow}</p>
-              <h3 className="display-sm mt-4 text-ink">{b.title}</h3>
-              <p className="mt-4 text-[0.9375rem] leading-[1.72] text-ink/65">{b.body}</p>
-            </article>
-          ))}
-        </div>
-      </section>
+          {/* faqs */}
+          {d.faqs.length > 0 && (
+            <section className="section-wrap border-t border-ink/[0.07] py-14 md:py-20">
+              <div className="flex items-center gap-3">
+                <span className="tick" aria-hidden />
+                <p className="eyebrow">Common questions</p>
+              </div>
+              <h2 className="display-md mt-5 text-ink">What buyers ask about {n.title}.</h2>
+              <div className="mt-10 space-y-0 divide-y divide-ink/[0.07]">
+                {d.faqs.map((faq) => (
+                  <details key={faq.question} className="group py-6">
+                    <summary className="flex cursor-pointer items-start justify-between gap-6 list-none">
+                      <h3 className="display-sm text-ink">{faq.question}</h3>
+                      <span
+                        aria-hidden
+                        className="mt-1 flex-shrink-0 text-ink/40 transition-transform duration-300 group-open:rotate-45"
+                      >
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                          <path d="M10 4v12M4 10h12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                        </svg>
+                      </span>
+                    </summary>
+                    <p className="mt-4 text-[1.0rem] leading-[1.78] text-ink/70 max-w-3xl">
+                      {faq.answer}
+                    </p>
+                  </details>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* market notes */}
+          <section className="section-wrap border-t border-ink/[0.07] py-14 md:py-20">
+            <div className="grid gap-x-16 gap-y-8 lg:grid-cols-12">
+              <div className="lg:col-span-4">
+                <div className="flex items-center gap-3">
+                  <span className="tick" aria-hidden />
+                  <p className="eyebrow">Market notes</p>
+                </div>
+                <h2 className="display-md mt-5 text-ink">How homes move here.</h2>
+              </div>
+              <div className="lg:col-span-7 lg:col-start-6">
+                <p className="text-[1.0625rem] leading-[1.78] text-ink/75">{d.marketNotes}</p>
+              </div>
+            </div>
+          </section>
+        </>
+      ) : (
+        /* fallback: original placeholder blocks */
+        <section className="section-wrap py-20 md:py-28 lg:py-32">
+          <div className="grid gap-x-12 gap-y-8 lg:grid-cols-12 lg:items-end">
+            <div className="lg:col-span-7">
+              <div className="flex items-center gap-3">
+                <span className="tick" aria-hidden />
+                <p className="eyebrow">What to know</p>
+              </div>
+              <h2 className="display-lg mt-6 text-ink">Living in {n.title}.</h2>
+            </div>
+            <p className="dek lg:col-span-5">
+              A field guide in progress. The honest pace of the neighborhood, the small details that take a while to learn, and the parts that surprise people in a good way.
+            </p>
+          </div>
+
+          <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-7">
+            {[
+              {
+                eyebrow: "School and walkability",
+                title: "Day to day rhythm",
+                body: "Schools, sidewalks, walk to coffee, and the small frictions that matter once you live somewhere. A working list, updated as the neighborhood changes.",
+              },
+              {
+                eyebrow: "Outdoors",
+                title: "River, trails, and parks",
+                body: "Closest put ins, shaded walks, and the parks locals actually use. Where to be on a Saturday morning and where to go when you need quiet on a Tuesday.",
+              },
+              {
+                eyebrow: "Market",
+                title: "How homes move here",
+                body: "Inventory trends, common floor plans, and the price bands that move quickly. Plain English, current as of the season.",
+              },
+            ].map((b) => (
+              <article
+                key={b.title}
+                className="rounded-[24px] border border-ink/[0.08] bg-paper p-7 shadow-surface md:p-8"
+              >
+                <p className="caption !text-ink/50">{b.eyebrow}</p>
+                <h3 className="display-sm mt-4 text-ink">{b.title}</h3>
+                <p className="mt-4 text-[0.9375rem] leading-[1.72] text-ink/65">{b.body}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* tour cta */}
       <section className="relative isolate overflow-hidden bg-paper-deep py-section-y md:py-section-y-md">

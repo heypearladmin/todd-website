@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { findBlogArticle, findJournalPost, getAllBlogSlugs } from "@/lib/home-content";
 import { site } from "@/lib/site";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { blogPostingSchema, breadcrumbSchema } from "@/lib/seo/schemas";
+import { blogPostingSchema, breadcrumbSchema, faqSchema } from "@/lib/seo/schemas";
 
 type Params = { slug: string };
 
@@ -89,6 +89,11 @@ export default async function BlogArticlePage({
           ]) as Record<string, unknown>
         }
       />
+      {journalPost?.faqs && journalPost.faqs.length > 0 && (
+        <JsonLd
+          schema={faqSchema(journalPost.faqs) as Record<string, unknown>}
+        />
+      )}
     <main id="main" className="bg-paper">
       {/* hero */}
       <section className="relative isolate overflow-hidden bg-ink text-paper">
@@ -203,6 +208,33 @@ export default async function BlogArticlePage({
                 </section>
               ))}
             </>
+          )}
+
+          {journalPost?.faqs && journalPost.faqs.length > 0 && (
+            <section className="border-t border-ink/[0.08] pt-10">
+              <p className="caption !text-ink/50">Common questions</p>
+              <h2 className="display-md mt-4 text-ink">Frequently asked questions.</h2>
+              <div className="mt-8 space-y-0 divide-y divide-ink/[0.07]">
+                {journalPost.faqs.map((faq) => (
+                  <details key={faq.question} className="group py-6">
+                    <summary className="flex cursor-pointer items-start justify-between gap-6 list-none">
+                      <h3 className="display-sm text-ink">{faq.question}</h3>
+                      <span
+                        aria-hidden
+                        className="mt-1 flex-shrink-0 text-ink/40 transition-transform duration-300 group-open:rotate-45"
+                      >
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                          <path d="M10 4v12M4 10h12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                        </svg>
+                      </span>
+                    </summary>
+                    <p className="mt-4 text-[1.0rem] leading-[1.78] text-ink/70 max-w-3xl">
+                      {faq.answer}
+                    </p>
+                  </details>
+                ))}
+              </div>
+            </section>
           )}
 
           <section className="border-t border-ink/[0.08] pt-10">
