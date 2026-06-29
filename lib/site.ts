@@ -23,8 +23,8 @@ export const site = {
   logoSrc: "/images/todd-logo.png",
   logoAlt: "Todd Spencer logo",
 
-  // Open Graph
-  ogImage: "/images/og-todd-spencer-new-braunfels.jpg",
+  // Open Graph — must be an absolute URL so social previews work in production
+  ogImage: "https://todd-spencer.com/images/og-todd-spencer-new-braunfels.jpg",
 
   // Agent portrait
   agentName: "Todd Spencer",

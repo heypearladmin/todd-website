@@ -21,7 +21,7 @@ const body = Open_Sans({
   weight: ["400", "500", "600"],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://todd-spencer.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
