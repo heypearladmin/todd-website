@@ -761,7 +761,7 @@ export const googleReviewStats = {
   rating: "5.0",
   count: "120+",
   source: "Google Reviews",
-  href: "https://www.google.com/search?q=Todd+Spencer+Realtor+New+Braunfels",
+  href: "https://www.google.com/maps/place/Todd+Spencer,+REALTOR%C2%AE/@29.8444127,-99.4899049,8z/data=!3m1!4b1!4m6!3m5!1s0x4bc390cbe2cc144b:0x143deca60dd0bcc4!8m2!3d29.850971!4d-98.1705181!16s%2Fg%2F11mf057bzq",
 };
 
 export type StoryWin = {
