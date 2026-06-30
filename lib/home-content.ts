@@ -923,6 +923,7 @@ export type JournalPost = {
   intro: string;
   sections: JournalSection[];
   faqs?: JournalFaq[];
+  isNew?: boolean;
 };
 
 export const journalPosts: JournalPost[] = [
@@ -1503,6 +1504,7 @@ export const journalPosts: JournalPost[] = [
   },
   {
     slug: "cost-of-living-new-braunfels-vs-austin-san-antonio",
+    isNew: true,
     eyebrow: "Relocation guide",
     title: "Cost of Living in New Braunfels vs Austin vs San Antonio",
     dek: "How housing costs, property taxes, utilities, groceries, and everyday expenses compare across three of the most popular Texas cities for relocation.",
@@ -1586,6 +1588,7 @@ export const journalPosts: JournalPost[] = [
   },
   {
     slug: "best-time-to-buy-sell-home-new-braunfels",
+    isNew: true,
     eyebrow: "Market guide",
     title: "Best Time to Buy or Sell a Home in New Braunfels",
     dek: "How seasons, interest rates, inventory cycles, and local demand patterns affect your timing — and what a New Braunfels agent sees that the national headlines miss.",

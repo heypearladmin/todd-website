@@ -65,6 +65,11 @@ export default function BlogIndexPage() {
                   />
                   <div className="absolute left-6 top-6 flex items-center gap-2 text-paper/85">
                     <span className="caption !text-paper/70">{post.eyebrow}</span>
+                    {post.isNew && (
+                      <span className="rounded-full bg-primary px-2.5 py-0.5 text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-paper">
+                        New
+                      </span>
+                    )}
                   </div>
                 </div>
                 <div className="mt-6">
