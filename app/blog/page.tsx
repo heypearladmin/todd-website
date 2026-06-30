@@ -63,8 +63,8 @@ export default function BlogIndexPage() {
                     aria-hidden
                     className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/45 via-ink/[0.08] to-transparent"
                   />
-                  <div className="absolute left-6 top-6 flex items-center gap-2 text-paper/85">
-                    <span className="caption !text-paper/70">{post.eyebrow}</span>
+                  <div className="absolute left-6 top-6 flex items-center gap-2">
+                    <span className="caption rounded-full bg-ink/60 px-3 py-1 !text-paper backdrop-blur-sm">{post.eyebrow}</span>
                     {post.isNew && (
                       <span className="rounded-full bg-primary px-2.5 py-0.5 text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-paper">
                         New
@@ -104,8 +104,8 @@ export default function BlogIndexPage() {
                       aria-hidden
                       className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/45 via-ink/[0.08] to-transparent"
                     />
-                    <div className="absolute left-6 top-6 flex items-center gap-2 text-paper/85">
-                      <span className="caption !text-paper/70">{card.eyebrow}</span>
+                    <div className="absolute left-6 top-6 flex items-center gap-2">
+                      <span className="caption rounded-full bg-ink/60 px-3 py-1 !text-paper backdrop-blur-sm">{card.eyebrow}</span>
                     </div>
                   </div>
                   <div className="mt-6">

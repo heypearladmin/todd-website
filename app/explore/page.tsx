@@ -76,8 +76,8 @@ export default function ExploreIndexPage() {
                       aria-hidden
                       className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/30 via-transparent to-transparent"
                     />
-                    <div className="absolute left-6 top-6 flex items-center gap-2 text-paper/85 sm:left-8 sm:top-8">
-                      <span className="caption !text-paper/70">
+                    <div className="absolute left-6 top-6 flex items-center gap-2 sm:left-8 sm:top-8">
+                      <span className="caption rounded-full bg-ink/60 px-3 py-1 !text-paper backdrop-blur-sm">
                         № {String(i + 1).padStart(2, "0")} / 08
                       </span>
                       <span aria-hidden className="h-px w-6 bg-paper/40" />

@@ -120,12 +120,12 @@ export default async function BlogArticlePage({
           <div className="flex items-center gap-3">
             <Link
               href={site.blogPath}
-              className="caption !text-paper/65 transition-colors duration-cinema ease-cinema hover:!text-paper"
+              className="caption !text-paper transition-colors duration-cinema ease-cinema hover:!text-paper/80"
             >
               Journal
             </Link>
-            <span aria-hidden className="h-px w-6 bg-paper/40" />
-            <span className="caption !text-paper/65">{article.category}</span>
+            <span aria-hidden className="h-px w-6 bg-paper/60" />
+            <span className="caption !text-paper">{article.category}</span>
           </div>
           <h1 className="display-xl mt-6 max-w-4xl !text-paper">{article.title}</h1>
           <p className="dek mt-8 max-w-2xl !text-paper/80">{article.dek}</p>

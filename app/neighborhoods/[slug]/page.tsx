@@ -104,12 +104,12 @@ export default async function NeighborhoodPage({
           <div className="flex items-center gap-3">
             <Link
               href={site.neighborhoodsPath}
-              className="caption !text-paper/65 transition-colors duration-cinema ease-cinema hover:!text-paper"
+              className="caption !text-paper transition-colors duration-cinema ease-cinema hover:!text-paper/80"
             >
               Neighborhoods
             </Link>
-            <span aria-hidden className="h-px w-6 bg-paper/40" />
-            <span className="caption !text-paper/65">New Braunfels</span>
+            <span aria-hidden className="h-px w-6 bg-paper/60" />
+            <span className="caption !text-paper">New Braunfels</span>
           </div>
           <h1 className="display-xl mt-6 max-w-4xl !text-paper">{n.title}</h1>
           <p className="mt-6">

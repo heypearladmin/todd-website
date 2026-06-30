@@ -928,6 +928,164 @@ export type JournalPost = {
 
 export const journalPosts: JournalPost[] = [
   {
+    slug: "cost-of-living-new-braunfels-vs-austin-san-antonio",
+    isNew: true,
+    eyebrow: "Relocation guide",
+    title: "Cost of Living in New Braunfels vs Austin vs San Antonio",
+    dek: "How housing costs, property taxes, utilities, groceries, and everyday expenses compare across three of the most popular Texas cities for relocation.",
+    imageSrc: "/images/cost-of-living-new-braunfels.png",
+    imageAlt: "Quiet residential street in New Braunfels, Texas at golden hour with limestone homes and mature oak trees.",
+    category: "Market Insights",
+    publishDate: "June 2026",
+    intro: "New Braunfels has become one of the fastest-growing cities in Texas, and for good reason. Positioned between Austin and San Antonio, it offers Hill Country scenery, a strong sense of community, and a cost of living that tends to surprise people who have been priced out of the larger metros. This guide breaks down what it actually costs to live in New Braunfels compared to Austin and San Antonio — across housing, taxes, utilities, groceries, and everyday life.",
+    sections: [
+      {
+        eyebrow: "Housing costs",
+        heading: "Home Prices and Rent",
+        body: "Housing is typically the biggest factor in any cost-of-living comparison, and this is where New Braunfels stands out most clearly relative to Austin.",
+        subsections: [
+          {
+            heading: "Median home prices",
+            body: "",
+            bulletPoints: [
+              "New Braunfels: median home price in the mid-$300,000s to low $400,000s depending on neighborhood and lot size",
+              "Austin: median home price consistently above $500,000 in most desirable zip codes, significantly higher in central and east Austin",
+              "San Antonio: generally the most affordable of the three, with medians in the mid-$200,000s to low $300,000s",
+            ],
+          },
+          {
+            heading: "What your budget gets you",
+            body: "In New Braunfels, a $400,000 budget puts you in a newer single-family home in a master-planned community like Veramendi or an established neighborhood closer to the river. In Austin, that same budget is competitive only in outer suburbs or older homes that may need work. In San Antonio, $400,000 buys significantly more square footage and lot size.",
+          },
+          {
+            heading: "Rental market",
+            body: "Rental rates in New Braunfels have risen with demand but remain below Austin levels. A three-bedroom home in New Braunfels typically rents for less than a comparable property in Austin's suburbs, and more than a similar home in San Antonio's outer neighborhoods.",
+          },
+        ],
+      },
+      {
+        eyebrow: "Property taxes",
+        heading: "Texas Property Tax Rates",
+        body: "Texas has no state income tax, which shifts more of the tax burden onto property owners. All three cities have meaningful property tax rates, though the differences between them matter less than the value of the home being taxed.",
+        bulletPoints: [
+          "New Braunfels (Comal County): effective rates typically around 1.8% to 2.1% depending on the school district and municipal utility district",
+          "Austin (Travis County): effective rates often between 1.9% and 2.4%, with higher assessed values amplifying the dollar impact",
+          "San Antonio (Bexar County): effective rates typically between 2.0% and 2.5%, though lower home values offset some of the rate difference",
+          "Homestead exemptions are available in all three cities and meaningfully reduce the taxable value for primary residences",
+        ],
+      },
+      {
+        eyebrow: "Everyday expenses",
+        heading: "Groceries, Utilities, and Daily Life",
+        body: "Outside of housing and taxes, the cost of everyday life in New Braunfels, Austin, and San Antonio is relatively similar — all three are Texas cities with access to major grocery chains, similar utility infrastructure, and comparable fuel costs.",
+        subsections: [
+          {
+            heading: "Groceries",
+            body: "Grocery costs are broadly similar across all three cities. New Braunfels has access to H-E-B, which consistently ranks among the most affordable and well-stocked grocery retailers in the state. Austin's higher-end neighborhoods skew toward Whole Foods and Central Market, which carry premium prices. San Antonio also has strong H-E-B coverage with competitive pricing.",
+          },
+          {
+            heading: "Utilities",
+            body: "Electric bills in Central Texas run higher in summer due to air conditioning demand. New Braunfels residents are served by different providers depending on their location — some areas fall under New Braunfels Utilities, others are in deregulated territory. Monthly electricity costs for an average home typically range from $120 to $220 in summer months across all three cities.",
+          },
+          {
+            heading: "Dining and entertainment",
+            body: "Austin's restaurant scene carries Austin prices — dining out regularly in trendy neighborhoods adds up quickly. New Braunfels has a growing food scene anchored by Gruene and the historic downtown, with prices that reflect a smaller city. San Antonio offers strong value across its restaurant landscape, particularly in the established neighborhoods.",
+          },
+        ],
+      },
+      {
+        eyebrow: "Commute and time costs",
+        heading: "Getting to Work from New Braunfels",
+        body: "One factor that rarely shows up in cost-of-living calculators is commute time. For buyers who work in Austin or San Antonio, where you live in New Braunfels matters as much as the home price.",
+        bulletPoints: [
+          "San Antonio: approximately 30 to 40 minutes from central New Braunfels under normal traffic conditions via IH-35",
+          "Austin: approximately 45 to 60 minutes under normal conditions; morning rush on IH-35 north can extend this significantly",
+          "Remote and hybrid workers have the most flexibility and can take full advantage of New Braunfels pricing without absorbing daily commute costs",
+          "Fuel costs, vehicle wear, and commute time should be factored into any serious cost comparison",
+        ],
+      },
+      {
+        eyebrow: "The bottom line",
+        heading: "Is New Braunfels Actually More Affordable?",
+        body: "For buyers moving from Austin, New Braunfels typically offers meaningfully lower home prices with a comparable quality of life — Hill Country scenery, good schools, outdoor recreation, and a strong sense of community. The trade-off is a longer commute for Austin-based workers. For buyers coming from San Antonio, New Braunfels is generally comparable in price or slightly higher, but offers a different lifestyle: smaller city feel, river access, and proximity to the Hill Country. For remote workers or retirees not tied to a commute, New Braunfels often represents strong value — particularly in neighborhoods like Vintage Oaks, River Chase, and Canyon Lake where the land and lifestyle justify the price point.",
+      },
+    ],
+  },
+  {
+    slug: "best-time-to-buy-sell-home-new-braunfels",
+    isNew: true,
+    eyebrow: "Market guide",
+    title: "Best Time to Buy or Sell a Home in New Braunfels",
+    dek: "How seasons, interest rates, inventory cycles, and local demand patterns affect your timing — and what a New Braunfels agent sees that the national headlines miss.",
+    imageSrc: "/images/best-time-to-buy-sell-new-braunfels.png",
+    imageAlt: "Aerial view of a Texas Hill Country neighborhood in spring with rolling green hills and winding roads.",
+    category: "Market Insights",
+    publishDate: "June 2026",
+    intro: "One of the most common questions buyers and sellers ask is some version of: should I wait, or should I move now? The honest answer is that timing the market perfectly is rarely possible — but understanding how the New Braunfels market moves through the year can help you make a more informed decision. National real estate headlines rarely reflect what is happening in a specific Hill Country city. This guide covers what actually drives timing in the New Braunfels market.",
+    sections: [
+      {
+        eyebrow: "For sellers",
+        heading: "When Is the Best Time to List in New Braunfels?",
+        body: "Seller timing comes down to two things: when buyers are most active and when competition from other listings is manageable.",
+        subsections: [
+          {
+            heading: "Spring (March through May)",
+            body: "Spring is historically the strongest selling season in New Braunfels. Buyers who want to close before the school year ends are active, days on market tend to be shorter, and homes presented well in spring light photograph better. Listing in late March or April often means more showings, stronger offers, and less time sitting.",
+          },
+          {
+            heading: "Summer (June through August)",
+            body: "Summer demand in New Braunfels stays strong partly because of the city's river and Hill Country appeal — buyers from Austin and San Antonio are actively looking for second homes and primary residences during this period. The trade-off is more competition from other sellers. Relocating families with school-aged children are still active in June and early July.",
+          },
+          {
+            heading: "Fall and winter",
+            body: "Fewer listings come to market in fall and winter, which means less competition for sellers who are willing to list during this window. Serious buyers are still active year-round in New Braunfels — particularly retirees and remote workers who are not tied to school calendars. Homes that are well-priced and well-presented in November and December sometimes move faster than expected because they face less competition.",
+          },
+        ],
+      },
+      {
+        eyebrow: "For buyers",
+        heading: "When Is the Best Time to Buy in New Braunfels?",
+        body: "For buyers, the calculus is different. The goal is not just favorable pricing — it is finding inventory that fits your needs and negotiating from a reasonable position.",
+        subsections: [
+          {
+            heading: "Fall and winter advantage",
+            body: "Buyers who search in October through January often find more room to negotiate. Sellers who have been on the market through summer are sometimes more willing to consider price reductions, closing cost contributions, or repair credits. Inventory thins out, but so does competition from other buyers.",
+          },
+          {
+            heading: "Spring competition",
+            body: "If your priority is selection — the widest range of available homes — spring is when inventory peaks. The trade-off is that you are competing with more buyers, multiple-offer situations are more common, and inspection negotiation can be tighter. Being pre-approved and ready to move quickly matters more in spring than at any other time of year.",
+          },
+          {
+            heading: "Interest rates matter more than season",
+            body: "In any given year, a meaningful shift in mortgage rates can outweigh seasonal patterns entirely. A rate drop in September can create more buyer demand than a typical spring, and a rate spike in April can cool what would otherwise be a hot season. Monitoring rate trends alongside seasonal patterns gives a more complete picture than either alone.",
+          },
+        ],
+      },
+      {
+        eyebrow: "New Braunfels specifically",
+        heading: "What Makes This Market Different from the National Average",
+        body: "",
+        bulletPoints: [
+          "New Braunfels attracts year-round buyers — retirees, remote workers, and second-home buyers are not seasonal the way primary-residence buyers in northern climates are",
+          "The river and Hill Country lifestyle drives summer interest in ways that do not apply to most Texas suburbs",
+          "New construction in master-planned communities like Veramendi and Vintage Oaks creates an alternative to resale that affects resale pricing and timing",
+          "Proximity to Austin and San Antonio means local demand is influenced by conditions in both metros simultaneously",
+          "Comal County's consistent population growth means the market tends to absorb inventory more quickly than slower-growth Texas counties",
+        ],
+      },
+      {
+        eyebrow: "Practical guidance",
+        heading: "What Actually Matters More Than Timing",
+        body: "For most buyers and sellers, personal readiness matters more than market timing. Waiting for the perfect moment often costs more in opportunity than the difference between a good market and a slightly better one. The buyers who do best in New Braunfels are the ones who understand the local market well enough to recognize a well-priced home when they see it — and move decisively. The sellers who do best are the ones who price correctly from the start and present their home well, regardless of season. A local agent who works this market specifically — not one covering a broad swath of Central Texas — can give you a realistic read on what conditions look like right now, not six months ago when the national headlines were written.",
+      },
+      {
+        eyebrow: "Ready to talk timing?",
+        heading: "Ask Todd About Current Market Conditions",
+        body: "Market conditions in New Braunfels change throughout the year, and the best read on current timing comes from someone who is actively working here. If you are trying to decide whether to list now or wait, or whether to buy before rates shift again, a conversation is the fastest way to get a straight answer.",
+      },
+    ],
+  },
+  {
     slug: "2026-new-braunfels-real-estate-market-report",
     eyebrow: "Market report",
     title: "2026 New Braunfels Real Estate Market Report",
@@ -1499,164 +1657,6 @@ export const journalPosts: JournalPost[] = [
           "Farmers markets showcasing local produce and artisan crafts",
           "Grocery stores, diverse dining options, and essential services all within reach",
         ],
-      },
-    ],
-  },
-  {
-    slug: "cost-of-living-new-braunfels-vs-austin-san-antonio",
-    isNew: true,
-    eyebrow: "Relocation guide",
-    title: "Cost of Living in New Braunfels vs Austin vs San Antonio",
-    dek: "How housing costs, property taxes, utilities, groceries, and everyday expenses compare across three of the most popular Texas cities for relocation.",
-    imageSrc: "/images/cost-of-living-new-braunfels.png",
-    imageAlt: "Quiet residential street in New Braunfels, Texas at golden hour with limestone homes and mature oak trees.",
-    category: "Market Insights",
-    publishDate: "June 2026",
-    intro: "New Braunfels has become one of the fastest-growing cities in Texas, and for good reason. Positioned between Austin and San Antonio, it offers Hill Country scenery, a strong sense of community, and a cost of living that tends to surprise people who have been priced out of the larger metros. This guide breaks down what it actually costs to live in New Braunfels compared to Austin and San Antonio — across housing, taxes, utilities, groceries, and everyday life.",
-    sections: [
-      {
-        eyebrow: "Housing costs",
-        heading: "Home Prices and Rent",
-        body: "Housing is typically the biggest factor in any cost-of-living comparison, and this is where New Braunfels stands out most clearly relative to Austin.",
-        subsections: [
-          {
-            heading: "Median home prices",
-            body: "",
-            bulletPoints: [
-              "New Braunfels: median home price in the mid-$300,000s to low $400,000s depending on neighborhood and lot size",
-              "Austin: median home price consistently above $500,000 in most desirable zip codes, significantly higher in central and east Austin",
-              "San Antonio: generally the most affordable of the three, with medians in the mid-$200,000s to low $300,000s",
-            ],
-          },
-          {
-            heading: "What your budget gets you",
-            body: "In New Braunfels, a $400,000 budget puts you in a newer single-family home in a master-planned community like Veramendi or an established neighborhood closer to the river. In Austin, that same budget is competitive only in outer suburbs or older homes that may need work. In San Antonio, $400,000 buys significantly more square footage and lot size.",
-          },
-          {
-            heading: "Rental market",
-            body: "Rental rates in New Braunfels have risen with demand but remain below Austin levels. A three-bedroom home in New Braunfels typically rents for less than a comparable property in Austin's suburbs, and more than a similar home in San Antonio's outer neighborhoods.",
-          },
-        ],
-      },
-      {
-        eyebrow: "Property taxes",
-        heading: "Texas Property Tax Rates",
-        body: "Texas has no state income tax, which shifts more of the tax burden onto property owners. All three cities have meaningful property tax rates, though the differences between them matter less than the value of the home being taxed.",
-        bulletPoints: [
-          "New Braunfels (Comal County): effective rates typically around 1.8% to 2.1% depending on the school district and municipal utility district",
-          "Austin (Travis County): effective rates often between 1.9% and 2.4%, with higher assessed values amplifying the dollar impact",
-          "San Antonio (Bexar County): effective rates typically between 2.0% and 2.5%, though lower home values offset some of the rate difference",
-          "Homestead exemptions are available in all three cities and meaningfully reduce the taxable value for primary residences",
-        ],
-      },
-      {
-        eyebrow: "Everyday expenses",
-        heading: "Groceries, Utilities, and Daily Life",
-        body: "Outside of housing and taxes, the cost of everyday life in New Braunfels, Austin, and San Antonio is relatively similar — all three are Texas cities with access to major grocery chains, similar utility infrastructure, and comparable fuel costs.",
-        subsections: [
-          {
-            heading: "Groceries",
-            body: "Grocery costs are broadly similar across all three cities. New Braunfels has access to H-E-B, which consistently ranks among the most affordable and well-stocked grocery retailers in the state. Austin's higher-end neighborhoods skew toward Whole Foods and Central Market, which carry premium prices. San Antonio also has strong H-E-B coverage with competitive pricing.",
-          },
-          {
-            heading: "Utilities",
-            body: "Electric bills in Central Texas run higher in summer due to air conditioning demand. New Braunfels residents are served by different providers depending on their location — some areas fall under New Braunfels Utilities, others are in deregulated territory. Monthly electricity costs for an average home typically range from $120 to $220 in summer months across all three cities.",
-          },
-          {
-            heading: "Dining and entertainment",
-            body: "Austin's restaurant scene carries Austin prices — dining out regularly in trendy neighborhoods adds up quickly. New Braunfels has a growing food scene anchored by Gruene and the historic downtown, with prices that reflect a smaller city. San Antonio offers strong value across its restaurant landscape, particularly in the established neighborhoods.",
-          },
-        ],
-      },
-      {
-        eyebrow: "Commute and time costs",
-        heading: "Getting to Work from New Braunfels",
-        body: "One factor that rarely shows up in cost-of-living calculators is commute time. For buyers who work in Austin or San Antonio, where you live in New Braunfels matters as much as the home price.",
-        bulletPoints: [
-          "San Antonio: approximately 30 to 40 minutes from central New Braunfels under normal traffic conditions via IH-35",
-          "Austin: approximately 45 to 60 minutes under normal conditions; morning rush on IH-35 north can extend this significantly",
-          "Remote and hybrid workers have the most flexibility and can take full advantage of New Braunfels pricing without absorbing daily commute costs",
-          "Fuel costs, vehicle wear, and commute time should be factored into any serious cost comparison",
-        ],
-      },
-      {
-        eyebrow: "The bottom line",
-        heading: "Is New Braunfels Actually More Affordable?",
-        body: "For buyers moving from Austin, New Braunfels typically offers meaningfully lower home prices with a comparable quality of life — Hill Country scenery, good schools, outdoor recreation, and a strong sense of community. The trade-off is a longer commute for Austin-based workers. For buyers coming from San Antonio, New Braunfels is generally comparable in price or slightly higher, but offers a different lifestyle: smaller city feel, river access, and proximity to the Hill Country. For remote workers or retirees not tied to a commute, New Braunfels often represents strong value — particularly in neighborhoods like Vintage Oaks, River Chase, and Canyon Lake where the land and lifestyle justify the price point.",
-      },
-    ],
-  },
-  {
-    slug: "best-time-to-buy-sell-home-new-braunfels",
-    isNew: true,
-    eyebrow: "Market guide",
-    title: "Best Time to Buy or Sell a Home in New Braunfels",
-    dek: "How seasons, interest rates, inventory cycles, and local demand patterns affect your timing — and what a New Braunfels agent sees that the national headlines miss.",
-    imageSrc: "/images/best-time-to-buy-sell-new-braunfels.png",
-    imageAlt: "Aerial view of a Texas Hill Country neighborhood in spring with rolling green hills and winding roads.",
-    category: "Market Insights",
-    publishDate: "June 2026",
-    intro: "One of the most common questions buyers and sellers ask is some version of: should I wait, or should I move now? The honest answer is that timing the market perfectly is rarely possible — but understanding how the New Braunfels market moves through the year can help you make a more informed decision. National real estate headlines rarely reflect what is happening in a specific Hill Country city. This guide covers what actually drives timing in the New Braunfels market.",
-    sections: [
-      {
-        eyebrow: "For sellers",
-        heading: "When Is the Best Time to List in New Braunfels?",
-        body: "Seller timing comes down to two things: when buyers are most active and when competition from other listings is manageable.",
-        subsections: [
-          {
-            heading: "Spring (March through May)",
-            body: "Spring is historically the strongest selling season in New Braunfels. Buyers who want to close before the school year ends are active, days on market tend to be shorter, and homes presented well in spring light photograph better. Listing in late March or April often means more showings, stronger offers, and less time sitting.",
-          },
-          {
-            heading: "Summer (June through August)",
-            body: "Summer demand in New Braunfels stays strong partly because of the city's river and Hill Country appeal — buyers from Austin and San Antonio are actively looking for second homes and primary residences during this period. The trade-off is more competition from other sellers. Relocating families with school-aged children are still active in June and early July.",
-          },
-          {
-            heading: "Fall and winter",
-            body: "Fewer listings come to market in fall and winter, which means less competition for sellers who are willing to list during this window. Serious buyers are still active year-round in New Braunfels — particularly retirees and remote workers who are not tied to school calendars. Homes that are well-priced and well-presented in November and December sometimes move faster than expected because they face less competition.",
-          },
-        ],
-      },
-      {
-        eyebrow: "For buyers",
-        heading: "When Is the Best Time to Buy in New Braunfels?",
-        body: "For buyers, the calculus is different. The goal is not just favorable pricing — it is finding inventory that fits your needs and negotiating from a reasonable position.",
-        subsections: [
-          {
-            heading: "Fall and winter advantage",
-            body: "Buyers who search in October through January often find more room to negotiate. Sellers who have been on the market through summer are sometimes more willing to consider price reductions, closing cost contributions, or repair credits. Inventory thins out, but so does competition from other buyers.",
-          },
-          {
-            heading: "Spring competition",
-            body: "If your priority is selection — the widest range of available homes — spring is when inventory peaks. The trade-off is that you are competing with more buyers, multiple-offer situations are more common, and inspection negotiation can be tighter. Being pre-approved and ready to move quickly matters more in spring than at any other time of year.",
-          },
-          {
-            heading: "Interest rates matter more than season",
-            body: "In any given year, a meaningful shift in mortgage rates can outweigh seasonal patterns entirely. A rate drop in September can create more buyer demand than a typical spring, and a rate spike in April can cool what would otherwise be a hot season. Monitoring rate trends alongside seasonal patterns gives a more complete picture than either alone.",
-          },
-        ],
-      },
-      {
-        eyebrow: "New Braunfels specifically",
-        heading: "What Makes This Market Different from the National Average",
-        body: "",
-        bulletPoints: [
-          "New Braunfels attracts year-round buyers — retirees, remote workers, and second-home buyers are not seasonal the way primary-residence buyers in northern climates are",
-          "The river and Hill Country lifestyle drives summer interest in ways that do not apply to most Texas suburbs",
-          "New construction in master-planned communities like Veramendi and Vintage Oaks creates an alternative to resale that affects resale pricing and timing",
-          "Proximity to Austin and San Antonio means local demand is influenced by conditions in both metros simultaneously",
-          "Comal County's consistent population growth means the market tends to absorb inventory more quickly than slower-growth Texas counties",
-        ],
-      },
-      {
-        eyebrow: "Practical guidance",
-        heading: "What Actually Matters More Than Timing",
-        body: "For most buyers and sellers, personal readiness matters more than market timing. Waiting for the perfect moment often costs more in opportunity than the difference between a good market and a slightly better one. The buyers who do best in New Braunfels are the ones who understand the local market well enough to recognize a well-priced home when they see it — and move decisively. The sellers who do best are the ones who price correctly from the start and present their home well, regardless of season. A local agent who works this market specifically — not one covering a broad swath of Central Texas — can give you a realistic read on what conditions look like right now, not six months ago when the national headlines were written.",
-      },
-      {
-        eyebrow: "Ready to talk timing?",
-        heading: "Ask Todd About Current Market Conditions",
-        body: "Market conditions in New Braunfels change throughout the year, and the best read on current timing comes from someone who is actively working here. If you are trying to decide whether to list now or wait, or whether to buy before rates shift again, a conversation is the fastest way to get a straight answer.",
       },
     ],
   },
