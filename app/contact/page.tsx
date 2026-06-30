@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { EmailLink } from "@/components/EmailLink";
 import { PhoneLink } from "@/components/PhoneLink";
 import { ContactForm } from "@/components/ContactForm";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -90,12 +91,7 @@ export default function ContactPage() {
                 <div className="hairline" />
                 <div>
                   <p className="eyebrow">Email</p>
-                  <a
-                    href={site.emailHref}
-                    className="mt-2 block text-[1rem] text-ink/70 transition-colors duration-300 ease-editorial hover:text-primary"
-                  >
-                    {site.email}
-                  </a>
+                  <EmailLink className="mt-2 block text-[1rem] text-ink/70 transition-colors duration-300 ease-editorial hover:text-primary" />
                 </div>
                 <div className="hairline" />
                 <div>

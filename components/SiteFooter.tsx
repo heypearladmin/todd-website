@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { EmailLink } from "@/components/EmailLink";
 import { NewsletterForm } from "@/components/NewsletterForm";
 import { newsletterCopy } from "@/lib/home-content";
 import { site } from "@/lib/site";
@@ -88,9 +89,7 @@ export function SiteFooter() {
                 </a>
               </li>
               <li>
-                <a href={site.emailHref} className="editorial-link break-all">
-                  {site.email}
-                </a>
+                <EmailLink className="editorial-link break-all" />
               </li>
               <li className="pt-2 text-[0.8125rem] leading-relaxed text-ink/55">
                 {site.brokerage.address}
