@@ -18,6 +18,8 @@ const socialLinks: { label: string; href: string }[] = [
   { label: "Instagram", href: site.social.instagram },
   { label: "LinkedIn", href: site.social.linkedin },
   { label: "YouTube", href: site.social.youtube },
+  { label: "Zillow", href: site.social.zillow },
+  { label: "Realtor.com", href: site.social.realtorCom },
 ];
 
 export function SiteFooter() {

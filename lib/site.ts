@@ -38,6 +38,8 @@ export const site = {
     instagram: "https://www.instagram.com/toddspencer.realtor",
     linkedin: "https://www.linkedin.com/in/todd-spencer-411810b0/",
     youtube: "https://www.youtube.com/@ToddSpencer-x7b",
+    zillow: "https://www.zillow.com/profile/todd_spencer3",
+    realtorCom: "https://www.realtor.com/realestateagents/619d6efa8f0fdce36f22bbb5",
   },
 
   // Route paths
