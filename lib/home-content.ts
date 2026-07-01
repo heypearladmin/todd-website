@@ -936,7 +936,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/cost-of-living-new-braunfels.png",
     imageAlt: "Quiet residential street in New Braunfels, Texas at golden hour with limestone homes and mature oak trees.",
     category: "Market Insights",
-    publishDate: "June 2026",
+    publishDate: "July 1, 2026",
     intro: "New Braunfels has become one of the fastest-growing cities in Texas, and for good reason. Positioned between Austin and San Antonio, it offers Hill Country scenery, a strong sense of community, and a cost of living that tends to surprise people who have been priced out of the larger metros. This guide breaks down what it actually costs to live in New Braunfels compared to Austin and San Antonio — across housing, taxes, utilities, groceries, and everyday life.",
     sections: [
       {
@@ -1020,7 +1020,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/best-time-to-buy-sell-new-braunfels.png",
     imageAlt: "Aerial view of a Texas Hill Country neighborhood in spring with rolling green hills and winding roads.",
     category: "Market Insights",
-    publishDate: "June 2026",
+    publishDate: "June 26, 2026",
     intro: "One of the most common questions buyers and sellers ask is some version of: should I wait, or should I move now? The honest answer is that timing the market perfectly is rarely possible — but understanding how the New Braunfels market moves through the year can help you make a more informed decision. National real estate headlines rarely reflect what is happening in a specific Hill Country city. This guide covers what actually drives timing in the New Braunfels market.",
     sections: [
       {
@@ -1093,7 +1093,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/2026 New Braunfels Real Estate Market Report 06_11.png",
     imageAlt: "Aerial view of New Braunfels Hill Country residential corridor at soft afternoon light.",
     category: "Market Insights",
-    publishDate: "June 2026",
+    publishDate: "June 23, 2026",
     intro: "As we move deeper into 2026, the New Braunfels real estate market is experiencing dynamic changes that reflect broader trends in Texas residential real estate. Buyers and sellers alike seek clarity on current home prices and the factors driving these shifts. This report covers property values, emerging housing trends, neighborhood insights, and predictions for the remainder of the year.",
     sections: [
       {
@@ -1203,7 +1203,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/How Todd Differentiates His Services From Other New Braunfels Real Estate Agents 06_11.png",
     imageAlt: "Cinematic editorial photograph of a New Braunfels neighborhood street at golden hour.",
     category: "About Todd",
-    publishDate: "June 2026",
+    publishDate: "June 19, 2026",
     intro: "In the competitive landscape of New Braunfels real estate, standing out requires more than a license and a lockbox. Todd Spencer employs a unique approach focused on hyperlocal insight and personalized service, catering to both buyers and sellers. This article explores how that specialized knowledge creates a tailored experience addressing the specific needs of relocating buyers and local sellers alike.",
     sections: [
       {
@@ -1292,7 +1292,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/Moving to New Braunfels_ A Complete Relocation Guide 06_11.png",
     imageAlt: "Wide editorial photograph of New Braunfels Hill Country at golden hour with river bend in foreground.",
     category: "Relocation",
-    publishDate: "June 2026",
+    publishDate: "June 16, 2026",
     intro: "Relocating to New Braunfels is an exciting venture filled with vibrant community life, scenic natural beauty, and a rich cultural heritage. This guide covers the essential aspects of moving here, providing in-depth insights into neighborhoods, real estate trends, living costs, and community engagement. Whether you are drawn to the Hill Country vistas or the lively local festivals, this guide equips you with the information you need for a successful move.",
     sections: [
       {
@@ -1416,7 +1416,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/New Braunfels Relocation Welcome Packet 06_11.png",
     imageAlt: "Warm editorial flat lay of a New Braunfels welcome packet with local map and coffee on paper.",
     category: "Relocation",
-    publishDate: "June 2026",
+    publishDate: "June 12, 2026",
     intro: "Relocating to a new city can be both exciting and daunting, especially when it involves finding the right neighborhood, understanding the housing market, and ensuring your new home meets your family's needs. This welcome packet serves as your comprehensive guide for exploring New Braunfels, covering neighborhoods, schools, lifestyle, and cost of living.",
     sections: [
       {
@@ -1500,7 +1500,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/River Chase Neighborhood Guide 06_11.png",
     imageAlt: "Aerial editorial photograph of River Chase neighborhood in New Braunfels with Hill Country terrain and oak canopy.",
     category: "Neighborhoods",
-    publishDate: "June 2026",
+    publishDate: "June 9, 2026",
     intro: "River Chase, a vibrant community in New Braunfels, offers a unique blend of scenic beauty, residential harmony, and thriving real estate opportunities. This guide covers everything from current market conditions to the lifestyle River Chase fosters, with insights from someone who knows the neighborhood well.",
     sections: [
       {
@@ -1569,7 +1569,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/What Makes River Chase Unique in New Braunfels_ 06_11.png",
     imageAlt: "Scenic view of River Chase green space and natural landscape in New Braunfels Hill Country.",
     category: "Neighborhoods",
-    publishDate: "June 2026",
+    publishDate: "June 5, 2026",
     intro: "Nestled in the landscape of New Braunfels, River Chase stands out as a community that combines natural beauty with modern living. Whether you are a relocating buyer, a retiree seeking tranquility, or a family looking for a vibrant lifestyle, River Chase caters to diverse needs and offers a rich tapestry of experiences. Here is a close look at what makes this neighborhood more than just a place to live.",
     sections: [
       {
