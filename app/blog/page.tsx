@@ -75,7 +75,10 @@ export default function BlogIndexPage() {
                 <div className="mt-6">
                   <h2 className="display-sm text-ink">{post.title}</h2>
                   <p className="mt-3 text-[0.9375rem] leading-[1.7] text-ink/65">{post.dek}</p>
-                  <span className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors duration-cinema ease-cinema group-hover:text-copper">
+                  {post.publishDate && (
+                    <p className="mt-2 text-[0.8125rem] text-ink/45">{post.publishDate}</p>
+                  )}
+                  <span className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors duration-cinema ease-cinema group-hover:text-copper">
                     Continue reading
                     <span aria-hidden className="block h-px w-8 bg-primary transition-all duration-cinema ease-cinema group-hover:w-12 group-hover:bg-copper" />
                   </span>
