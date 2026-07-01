@@ -3,7 +3,7 @@ export const site = {
   legalName: "Todd Spencer Real Estate",
   tagline: "The Local Insider for Living in New Braunfels",
   description:
-    "A trusted local insider helping people live, buy, and thrive in New Braunfels. River life, neighborhood guides, and no pressure real estate.",
+    "A trusted local insider helping people live, buy, and thrive in New Braunfels and Comal County. River life, neighborhood guides, and no pressure real estate.",
 
   // Contact
   phone: "(512) 665-3747",

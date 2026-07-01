@@ -19,7 +19,7 @@ const homepageFaqs = [
   {
     question: "What areas do you serve?",
     answer:
-      "I work throughout New Braunfels, Gruene, Canyon Lake, River Chase, Vintage Oaks, Veramendi, and the broader Comal and Guadalupe County areas. Whether you're looking for a home on the Comal River, a Hill Country acreage lot, or a neighborhood with easy access to I-35, I know these communities street by street. If you're not sure which area fits your lifestyle, that's exactly the conversation I love to have.",
+      "I work throughout New Braunfels and Comal County — including Canyon Lake, River Chase (my home neighborhood), Vintage Oaks, Veramendi, and the Gruene Historic District. Whether you're looking for a home on the Comal River, a Hill Country acreage lot, or a neighborhood with easy access to I-35, I know these communities street by street. If you're not sure which area fits your lifestyle, that's exactly the conversation I love to have.",
   },
   {
     question: "Why work with a local agent instead of searching on my own?",
