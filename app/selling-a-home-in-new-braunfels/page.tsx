@@ -5,18 +5,25 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { breadcrumbSchema, faqSchema, servicePageSchema } from "@/lib/seo/schemas";
 
 export const metadata: Metadata = {
-  title: "New Braunfels Listing Agent — Sell Your Home With Local Expertise",
+  title: "Sell Your Home in New Braunfels — Todd Spencer",
   description:
-    "Selling a home in New Braunfels takes local knowledge. Todd Spencer has helped New Braunfels homeowners sell in every neighborhood — Gruene, River Chase, Vintage Oaks, Veramendi, Canyon Lake. 120+ five-star reviews.",
+    "Selling in New Braunfels? Todd Spencer brings local pricing expertise, professional marketing, and 120+ five-star reviews to every listing.",
   alternates: {
     canonical: `${site.websiteUrl}/selling-a-home-in-new-braunfels`,
   },
   openGraph: {
-    title: "New Braunfels Listing Agent — Sell Your Home With Local Expertise",
+    title: "Sell Your Home in New Braunfels, TX",
     description:
-      "Selling a home in New Braunfels takes local knowledge. Todd Spencer has helped New Braunfels homeowners sell in every neighborhood. 120+ five-star reviews.",
+      "Todd Spencer helps New Braunfels homeowners sell with local pricing expertise, professional marketing, and a track record buyers trust.",
     url: `${site.websiteUrl}/selling-a-home-in-new-braunfels`,
     type: "website",
+    images: [{ url: "https://todd-spencer.com/images/og-todd-spencer-new-braunfels.jpg", width: 1200, height: 630, alt: "Todd Spencer — New Braunfels Real Estate" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sell Your Home in New Braunfels, TX",
+    description: "Selling your New Braunfels home? Todd Spencer brings local expertise and 120+ five-star reviews to every listing.",
+    images: ["https://todd-spencer.com/images/og-todd-spencer-new-braunfels.jpg"],
   },
 };
 

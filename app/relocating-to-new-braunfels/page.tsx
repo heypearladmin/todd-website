@@ -5,18 +5,25 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { breadcrumbSchema, faqSchema, servicePageSchema } from "@/lib/seo/schemas";
 
 export const metadata: Metadata = {
-  title: "Relocating to New Braunfels, Texas — Your Local Guide to Moving Here",
+  title: "Relocating to New Braunfels, TX — Todd Spencer",
   description:
-    "New Braunfels sits at the crossroads of the Texas Hill Country and two major metros. Todd Spencer has helped hundreds of families relocate here — with honest neighborhood guidance, video walkthroughs, and a process built around your timeline.",
+    "Relocating to New Braunfels? Todd Spencer guides families through neighborhoods, pricing, and the move — with local knowledge and no pressure.",
   alternates: {
     canonical: `${site.websiteUrl}/relocating-to-new-braunfels`,
   },
   openGraph: {
-    title: "Relocating to New Braunfels, Texas — Your Local Guide to Moving Here",
+    title: "Relocating to New Braunfels, TX",
     description:
-      "New Braunfels sits at the crossroads of the Texas Hill Country and two major metros. Todd Spencer has helped hundreds of families relocate here with honest neighborhood guidance and no pressure.",
+      "Todd Spencer guides families relocating to New Braunfels with honest neighborhood advice, video walkthroughs, and a process built around your timeline.",
     url: `${site.websiteUrl}/relocating-to-new-braunfels`,
     type: "website",
+    images: [{ url: "https://todd-spencer.com/images/og-todd-spencer-new-braunfels.jpg", width: 1200, height: 630, alt: "Todd Spencer — New Braunfels Real Estate" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Relocating to New Braunfels, TX",
+    description: "Relocating to New Braunfels? Local agent Todd Spencer guides you through neighborhoods, pricing, and the move.",
+    images: ["https://todd-spencer.com/images/og-todd-spencer-new-braunfels.jpg"],
   },
 };
 

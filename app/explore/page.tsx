@@ -19,6 +19,13 @@ export const metadata: Metadata = {
       "Restaurants, river life, live music, breweries, hidden gems, weekend rhythm, neighborhood guides, and family days.",
     url: `${site.websiteUrl}/explore`,
     type: "website",
+    images: [{ url: "https://todd-spencer.com/images/og-todd-spencer-new-braunfels.jpg", width: 1200, height: 630, alt: "Todd Spencer — New Braunfels Real Estate Agent" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Explore New Braunfels, TX",
+    description: "Discover the best of New Braunfels — rivers, trails, dining, music, and local culture.",
+    images: ["https://todd-spencer.com/images/og-todd-spencer-new-braunfels.jpg"],
   },
 };
 

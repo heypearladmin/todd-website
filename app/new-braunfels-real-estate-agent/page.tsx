@@ -5,18 +5,25 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { breadcrumbSchema, faqSchema, realEstateAgentSchema, servicePageSchema } from "@/lib/seo/schemas";
 
 export const metadata: Metadata = {
-  title: "New Braunfels Real Estate Agent — Todd Spencer, LPT Realty",
+  title: "New Braunfels Real Estate Agent — Todd Spencer",
   description:
-    "Todd Spencer is a full-service New Braunfels real estate agent with LPT Realty, helping buyers and sellers navigate Comal and Guadalupe County's market. 120+ five-star reviews. Call (512) 665-3747.",
+    "Todd Spencer is a full-service New Braunfels real estate agent with LPT Realty. 120+ five-star reviews. Buyers, sellers, and relocators welcome.",
   alternates: {
     canonical: `${site.websiteUrl}/new-braunfels-real-estate-agent`,
   },
   openGraph: {
-    title: "New Braunfels Real Estate Agent — Todd Spencer, LPT Realty",
+    title: "New Braunfels Real Estate Agent — Todd Spencer",
     description:
-      "Todd Spencer is a full-service New Braunfels real estate agent with LPT Realty, helping buyers and sellers navigate Comal and Guadalupe County's market. 120+ five-star reviews.",
+      "Full-service real estate agent in New Braunfels, TX. Todd Spencer helps buyers and sellers navigate Comal County with local expertise and 120+ reviews.",
     url: `${site.websiteUrl}/new-braunfels-real-estate-agent`,
     type: "website",
+    images: [{ url: "https://todd-spencer.com/images/og-todd-spencer-new-braunfels.jpg", width: 1200, height: 630, alt: "Todd Spencer — New Braunfels Real Estate" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "New Braunfels Real Estate Agent — Todd Spencer",
+    description: "New Braunfels real estate agent Todd Spencer — LPT Realty. 120+ five-star reviews. Buyers and sellers welcome.",
+    images: ["https://todd-spencer.com/images/og-todd-spencer-new-braunfels.jpg"],
   },
 };
 

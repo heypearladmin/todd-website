@@ -19,6 +19,13 @@ export const metadata: Metadata = {
       "Featured New Braunfels neighborhoods. Gruene, Downtown New Braunfels, Canyon Lake, Vintage Oaks, and Veramendi.",
     url: `${site.websiteUrl}/neighborhoods`,
     type: "website",
+    images: [{ url: "https://todd-spencer.com/images/og-todd-spencer-new-braunfels.jpg", width: 1200, height: 630, alt: "Todd Spencer — New Braunfels Real Estate Agent" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "New Braunfels Neighborhoods Guide",
+    description: "Explore every New Braunfels neighborhood — Gruene, Veramendi, Vintage Oaks, River Chase, and more.",
+    images: ["https://todd-spencer.com/images/og-todd-spencer-new-braunfels.jpg"],
   },
 };
 

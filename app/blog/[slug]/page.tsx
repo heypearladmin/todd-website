@@ -19,6 +19,11 @@ export async function generateStaticParams() {
   return getAllBlogSlugs().map((slug) => ({ slug }));
 }
 
+function truncate(str: string, max: number): string {
+  if (str.length <= max) return str;
+  return str.slice(0, max - 1).trimEnd() + "…";
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -28,17 +33,26 @@ export async function generateMetadata({
   const article = findBlogArticle(slug);
   if (!article) return {};
   const url = `${site.websiteUrl}/blog/${slug}`;
+  const ogTitle = truncate(article.title, 60);
+  const metaDesc = truncate(article.dek, 160);
+  const twDesc = truncate(article.dek, 125);
   return {
     title: article.title,
-    description: article.dek,
+    description: metaDesc,
     alternates: { canonical: url },
     openGraph: {
-      title: article.title,
-      description: article.dek,
+      title: ogTitle,
+      description: metaDesc,
       url,
       type: "article",
       authors: [site.agentName],
       images: [{ url: article.imageSrc, alt: article.imageAlt }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: ogTitle,
+      description: twDesc,
+      images: [article.imageSrc],
     },
   };
 }

@@ -19,6 +19,13 @@ export const metadata: Metadata = {
       "Field notes from New Braunfels. Moving guides, cost of living, lifestyle rituals, and real estate trends.",
     url: `${site.websiteUrl}/blog`,
     type: "website",
+    images: [{ url: "https://todd-spencer.com/images/og-todd-spencer-new-braunfels.jpg", width: 1200, height: 630, alt: "Todd Spencer — New Braunfels Real Estate Agent" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "New Braunfels Real Estate Journal",
+    description: "Local guides and market insights for New Braunfels buyers, sellers, and newcomers.",
+    images: ["https://todd-spencer.com/images/og-todd-spencer-new-braunfels.jpg"],
   },
 };
 

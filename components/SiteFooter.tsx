@@ -13,6 +13,14 @@ const footerNav: { label: string; href: string }[] = [
   { label: "Contact", href: site.contactPath },
 ];
 
+const serviceLinks: { label: string; href: string }[] = [
+  { label: "Real Estate Agent", href: "/new-braunfels-real-estate-agent" },
+  { label: "Buying a Home", href: "/buying-a-home-in-new-braunfels" },
+  { label: "Selling a Home", href: "/selling-a-home-in-new-braunfels" },
+  { label: "Relocating", href: "/relocating-to-new-braunfels" },
+  { label: "Home Valuation", href: "/new-braunfels-home-valuation" },
+];
+
 const socialLinks: { label: string; href: string }[] = [
   { label: "Facebook", href: site.social.facebook },
   { label: "Instagram", href: site.social.instagram },
@@ -81,8 +89,8 @@ export function SiteFooter() {
         </div>
 
         {/* link rail */}
-        <div className="mt-20 grid grid-cols-2 gap-8 border-t border-ink/[0.08] pt-14 md:grid-cols-12 md:gap-10">
-          <div className="md:col-span-3">
+        <div className="mt-20 grid grid-cols-2 gap-8 border-t border-ink/[0.08] pt-14 sm:grid-cols-3 md:grid-cols-5 md:gap-10">
+          <div>
             <p className="caption !text-ink/50">Contact</p>
             <ul className="mt-4 space-y-2.5 text-[0.9375rem]">
               <li>
@@ -99,7 +107,20 @@ export function SiteFooter() {
             </ul>
           </div>
 
-          <div className="md:col-span-3">
+          <div>
+            <p className="caption !text-ink/50">Services</p>
+            <ul className="mt-4 space-y-2.5 text-[0.9375rem]">
+              {serviceLinks.map((l) => (
+                <li key={l.href}>
+                  <Link href={l.href} className="editorial-link">
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
             <p className="caption !text-ink/50">Sections</p>
             <ul className="mt-4 space-y-2.5 text-[0.9375rem]">
               {footerNav.map((l) => (
@@ -112,7 +133,7 @@ export function SiteFooter() {
             </ul>
           </div>
 
-          <div className="md:col-span-3">
+          <div>
             <p className="caption !text-ink/50">Off site</p>
             <ul className="mt-4 space-y-2.5 text-[0.9375rem]">
               {socialLinks.map((s) => (
@@ -130,7 +151,7 @@ export function SiteFooter() {
             </ul>
           </div>
 
-          <div className="md:col-span-3">
+          <div>
             <p className="caption !text-ink/50">Brokerage</p>
             <p className="mt-4 text-[0.9375rem] leading-relaxed text-ink/70">
               {site.brokerage.name}

@@ -5,18 +5,25 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { breadcrumbSchema, faqSchema, servicePageSchema } from "@/lib/seo/schemas";
 
 export const metadata: Metadata = {
-  title: "New Braunfels Home Valuation: Find Out What Your Home Is Really Worth",
+  title: "New Braunfels Home Valuation — Free CMA by Todd Spencer",
   description:
-    "Todd Spencer provides free, no-obligation home valuations grounded in real local data and firsthand knowledge of New Braunfels neighborhoods — Gruene, Vintage Oaks, Veramendi, Canyon Lake, River Chase. Call (512) 665-3747.",
+    "Get a free, no-obligation home valuation from Todd Spencer — grounded in real Comal County data, not algorithms. Call (512) 665-3747.",
   alternates: {
     canonical: `${site.websiteUrl}/new-braunfels-home-valuation`,
   },
   openGraph: {
-    title: "New Braunfels Home Valuation: Find Out What Your Home Is Really Worth",
+    title: "New Braunfels Home Valuation — Free CMA",
     description:
-      "Free, no-obligation home valuations grounded in real local data and firsthand knowledge of New Braunfels neighborhoods. No algorithms — just a local agent who knows your street.",
+      "Free home valuations grounded in real New Braunfels market data. Local expertise, no algorithms, no pressure.",
     url: `${site.websiteUrl}/new-braunfels-home-valuation`,
     type: "website",
+    images: [{ url: "https://todd-spencer.com/images/og-todd-spencer-new-braunfels.jpg", width: 1200, height: 630, alt: "Todd Spencer — New Braunfels Real Estate" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "New Braunfels Home Valuation — Free CMA",
+    description: "Find out what your New Braunfels home is really worth. Free CMA from local agent Todd Spencer.",
+    images: ["https://todd-spencer.com/images/og-todd-spencer-new-braunfels.jpg"],
   },
 };
 

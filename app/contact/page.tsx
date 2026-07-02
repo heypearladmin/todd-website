@@ -19,6 +19,13 @@ export const metadata: Metadata = {
     description: `Get in touch with ${site.brand}. Buying, selling, or curious about New Braunfels real estate.`,
     url: `${site.websiteUrl}/contact`,
     type: "website",
+    images: [{ url: "https://todd-spencer.com/images/og-todd-spencer-new-braunfels.jpg", width: 1200, height: 630, alt: "Todd Spencer — New Braunfels Real Estate Agent" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Todd Spencer — New Braunfels Agent",
+    description: "Reach Todd Spencer for buying, selling, or relocating in New Braunfels and Comal County.",
+    images: ["https://todd-spencer.com/images/og-todd-spencer-new-braunfels.jpg"],
   },
 };
 

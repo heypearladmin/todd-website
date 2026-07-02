@@ -5,18 +5,25 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { breadcrumbSchema, faqSchema, servicePageSchema } from "@/lib/seo/schemas";
 
 export const metadata: Metadata = {
-  title: "Buying a Home in New Braunfels, TX — A Local Buyer's Guide",
+  title: "Buying a Home in New Braunfels, TX — Todd Spencer",
   description:
-    "Todd Spencer has guided hundreds of buyers through the New Braunfels market — from first-time purchases in Veramendi to move-up homes on Canyon Lake. 120+ five-star reviews. Local expertise, no pressure.",
+    "Buying a home in New Braunfels? Todd Spencer guides buyers through every neighborhood, price range, and property type in Comal County. 120+ reviews.",
   alternates: {
     canonical: `${site.websiteUrl}/buying-a-home-in-new-braunfels`,
   },
   openGraph: {
-    title: "Buying a Home in New Braunfels, TX — A Local Buyer's Guide",
+    title: "Buying a Home in New Braunfels, TX",
     description:
-      "Todd Spencer has guided hundreds of buyers through the New Braunfels market — from first-time purchases in Veramendi to move-up homes on Canyon Lake. 120+ five-star reviews.",
+      "Todd Spencer guides New Braunfels buyers from first search to closing — local knowledge, no pressure, 120+ five-star reviews.",
     url: `${site.websiteUrl}/buying-a-home-in-new-braunfels`,
     type: "website",
+    images: [{ url: "https://todd-spencer.com/images/og-todd-spencer-new-braunfels.jpg", width: 1200, height: 630, alt: "Todd Spencer — New Braunfels Real Estate" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Buying a Home in New Braunfels, TX",
+    description: "Buying a home in New Braunfels? Local agent Todd Spencer knows every neighborhood and price point in Comal County.",
+    images: ["https://todd-spencer.com/images/og-todd-spencer-new-braunfels.jpg"],
   },
 };
 
