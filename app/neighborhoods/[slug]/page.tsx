@@ -9,7 +9,7 @@ import {
 } from "@/lib/home-content";
 import { site } from "@/lib/site";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/seo/schemas";
+import { neighborhoodPlaceSchema, breadcrumbSchema, faqSchema } from "@/lib/seo/schemas";
 
 type Params = { slug: string };
 
@@ -55,11 +55,10 @@ export default async function NeighborhoodPage({
     <>
       <JsonLd
         schema={
-          articleSchema({
-            title: `${n.title} · Neighborhood Guide · New Braunfels`,
+          neighborhoodPlaceSchema({
+            name: `${n.title}, New Braunfels, TX`,
             description: n.details?.shortAnswer ?? n.dek,
             imageUrl: n.imageSrc,
-            imageAlt: n.imageAlt,
             urlPath: `/neighborhoods/${n.slug}`,
           }) as Record<string, unknown>
         }

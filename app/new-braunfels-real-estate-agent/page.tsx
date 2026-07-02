@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { breadcrumbSchema, faqSchema, localBusinessSchema } from "@/lib/seo/schemas";
+import { breadcrumbSchema, faqSchema, realEstateAgentSchema, servicePageSchema } from "@/lib/seo/schemas";
 
 export const metadata: Metadata = {
   title: "New Braunfels Real Estate Agent — Todd Spencer, LPT Realty",
@@ -112,7 +112,17 @@ const faqs = [
 export default function NewBraunfelsRealEstateAgentPage() {
   return (
     <>
-      <JsonLd schema={localBusinessSchema() as Record<string, unknown>} />
+      <JsonLd schema={realEstateAgentSchema() as Record<string, unknown>} />
+      <JsonLd
+        schema={
+          servicePageSchema({
+            name: "New Braunfels Real Estate Agent",
+            description: "Full-service real estate representation for buyers and sellers in New Braunfels and Comal County, TX.",
+            urlPath: "/new-braunfels-real-estate-agent",
+            serviceType: "Real Estate Agent Services",
+          }) as Record<string, unknown>
+        }
+      />
       <JsonLd
         schema={
           breadcrumbSchema([

@@ -7,6 +7,12 @@ import { site } from "@/lib/site";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { blogPostingSchema, breadcrumbSchema, faqSchema } from "@/lib/seo/schemas";
 
+function parsePublishDate(date?: string): string {
+  if (!date) return "2026-01-07";
+  const d = new Date(date);
+  return isNaN(d.getTime()) ? "2026-01-07" : d.toISOString().split("T")[0];
+}
+
 type Params = { slug: string };
 
 export async function generateStaticParams() {
@@ -77,6 +83,8 @@ export default async function BlogArticlePage({
             imageAlt: article.imageAlt,
             slug: article.slug,
             category: article.category,
+            datePublished: parsePublishDate(journalPost?.publishDate),
+            dateModified: parsePublishDate(journalPost?.publishDate),
           }) as Record<string, unknown>
         }
       />

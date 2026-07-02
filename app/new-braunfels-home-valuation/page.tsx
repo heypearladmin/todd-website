@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { breadcrumbSchema, faqSchema } from "@/lib/seo/schemas";
+import { breadcrumbSchema, faqSchema, servicePageSchema } from "@/lib/seo/schemas";
 
 export const metadata: Metadata = {
   title: "New Braunfels Home Valuation: Find Out What Your Home Is Really Worth",
@@ -112,6 +112,16 @@ const faqs = [
 export default function NewBraunfelsHomeValuationPage() {
   return (
     <>
+      <JsonLd
+        schema={
+          servicePageSchema({
+            name: "New Braunfels Home Valuation",
+            description: "Real estate services provided by Todd Spencer, LPT Realty, in New Braunfels and Comal County, TX.",
+            urlPath: "/new-braunfels-home-valuation",
+            serviceType: "Home Valuation Services",
+          }) as Record<string, unknown>
+        }
+      />
       <JsonLd
         schema={
           breadcrumbSchema([

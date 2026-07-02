@@ -269,6 +269,65 @@ export function blogPostingSchema(opts: {
   } as const;
 }
 
+export function neighborhoodPlaceSchema(opts: {
+  name: string;
+  description: string;
+  imageUrl: string;
+  urlPath: string;
+}) {
+  const absoluteImage = opts.imageUrl.startsWith("http")
+    ? opts.imageUrl
+    : `${BASE}${opts.imageUrl}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "Place",
+    name: opts.name,
+    description: opts.description,
+    image: {
+      "@type": "ImageObject",
+      url: absoluteImage,
+    },
+    url: `${BASE}${opts.urlPath}`,
+    containedInPlace: {
+      "@type": "City",
+      name: "New Braunfels",
+      sameAs: "https://en.wikipedia.org/wiki/New_Braunfels,_Texas",
+    },
+    containsPlace: {
+      "@type": "State",
+      name: "Texas",
+    },
+  } as const;
+}
+
+export function servicePageSchema(opts: {
+  name: string;
+  description: string;
+  urlPath: string;
+  serviceType: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: opts.name,
+    description: opts.description,
+    url: `${BASE}${opts.urlPath}`,
+    serviceType: opts.serviceType,
+    provider: {
+      "@type": "RealEstateAgent",
+      name: site.agentName,
+      url: BASE,
+      telephone: site.phone,
+      email: site.email,
+    },
+    areaServed: {
+      "@type": "City",
+      name: "New Braunfels",
+      sameAs: "https://en.wikipedia.org/wiki/New_Braunfels,_Texas",
+    },
+  } as const;
+}
+
 export function faqSchema(items: Array<{ question: string; answer: string }>) {
   return {
     "@context": "https://schema.org",

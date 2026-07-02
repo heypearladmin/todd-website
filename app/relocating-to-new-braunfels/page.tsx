@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { breadcrumbSchema, faqSchema } from "@/lib/seo/schemas";
+import { breadcrumbSchema, faqSchema, servicePageSchema } from "@/lib/seo/schemas";
 
 export const metadata: Metadata = {
   title: "Relocating to New Braunfels, Texas — Your Local Guide to Moving Here",
@@ -112,6 +112,16 @@ const faqs = [
 export default function RelocatingToNewBraunfelsPage() {
   return (
     <>
+      <JsonLd
+        schema={
+          servicePageSchema({
+            name: "Relocation to New Braunfels",
+            description: "Real estate services provided by Todd Spencer, LPT Realty, in New Braunfels and Comal County, TX.",
+            urlPath: "/relocating-to-new-braunfels",
+            serviceType: "Relocation Services",
+          }) as Record<string, unknown>
+        }
+      />
       <JsonLd
         schema={
           breadcrumbSchema([
