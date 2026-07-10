@@ -928,6 +928,240 @@ export type JournalPost = {
 
 export const journalPosts: JournalPost[] = [
   {
+    slug: "buying-land-new-braunfels-questions",
+    isNew: true,
+    eyebrow: "LAND BUYER GUIDE",
+    title: "What Questions Should You Ask Before Buying Land in New Braunfels?",
+    dek: "Before you make an offer on a raw lot in Comal County, there are four questions every buyer needs answered: utilities, zoning, buildability, and access. Here is how to get those answers.",
+    imageSrc: "/images/website-blog-buying-land-new-braunfels-questions.png",
+    imageAlt: "Wide view of undeveloped Texas Hill Country land near New Braunfels with rolling terrain, live oak trees, and a clear blue sky",
+    category: "Buyer Guide",
+    publishDate: "July 9, 2026",
+    intro: "Buying land in New Braunfels sounds simple — find a piece of property, make an offer, build your dream home. In practice, land purchases are more complex than buying an existing home because you are not just evaluating what is there. You are evaluating what you can do with it. Four questions should drive every land purchase conversation: Are utilities already available? What can you actually build? Is the land physically easy to build on? And how do you legally reach it? Get these answers before you fall in love with the view.",
+    sections: [
+      {
+        eyebrow: "QUESTION ONE",
+        heading: "Are Utilities Already Available?",
+        body: "Utility availability is the first thing to verify because it determines both whether the land is buildable at all and how much it will cost to get a home functional. In Comal County, there is no single answer — utility access varies significantly depending on whether a parcel is inside city limits, in a subdivision with existing infrastructure, or in a rural stretch of unincorporated county land.",
+        subsections: [
+          {
+            heading: "Water: City, Co-op, or Well",
+            body: "Inside New Braunfels city limits and in established subdivisions, you are typically connecting to city water or a water co-op line that already runs along the road. You pay a tap-in fee — usually between $2,000 and $6,000 depending on meter size and the utility provider — and you are connected. On rural parcels, especially those outside utility service areas, you are drilling a water well. In Comal County's Hill Country terrain, that means drilling through limestone, sometimes 200 to 400 feet deep. A residential water well typically costs $8,000 to $20,000 depending on depth and the driller. Before buying, ask for a water availability letter from the utility district if one exists, or commission a well log review from a licensed water well driller to assess likely success on that specific parcel.",
+          },
+          {
+            heading: "Sewer: City Line or Septic System",
+            body: "Many parcels outside established subdivisions in Comal County are not on city sewer. That means you are installing an On-Site Sewage Facility, which in Texas is regulated by the state and implemented through the county. A conventional septic system on a suitable lot costs $8,000 to $15,000 installed. If the soil is rocky, thin, or has poor percolation — which is common in the Hill Country — you may need an aerobic septic system, which can run $15,000 to $25,000 and requires an ongoing maintenance contract. Before buying any rural or semi-rural parcel, request a perc test or soil evaluation to confirm a compliant OSSF can be installed. If the land cannot support a legal septic system, it cannot support a home.",
+          },
+          {
+            heading: "Electric and Gas",
+            body: "Electric service in Comal County is handled by several providers — Guadalupe Valley Electric Cooperative (GVEC), Pedernales Electric Cooperative, and in some areas the City of New Braunfels Utilities. If the lot is in a subdivision, electric likely runs along the road already. On rural tracts, extending a line from the nearest transformer can cost thousands of dollars per linear foot depending on how far you are from the grid — this is called a line extension, and the co-op typically charges you for it. Natural gas is only available in parts of the city and some established areas; propane tanks are the norm for rural cooking, heating, and appliances. Ask the relevant electric co-op for a service feasibility letter before closing on a rural parcel.",
+          },
+        ],
+      },
+      {
+        eyebrow: "QUESTION TWO",
+        heading: "What Can You Actually Build?",
+        body: "Zoning and deed restrictions determine what you are legally allowed to construct on a piece of land. In Comal County, this is not always a simple lookup — zoning applies inside city limits, but most rural land in the county is unzoned, which creates both opportunity and risk depending on what your neighbors are planning.",
+        subsections: [
+          {
+            heading: "Inside City Limits: Standard Zoning Applies",
+            body: "If the parcel is within the New Braunfels city limits, it carries a zoning designation — residential, commercial, agricultural, or a mixed-use category. The zoning code dictates minimum lot size, setbacks, maximum building height, allowed uses, and whether an accessory dwelling unit or detached garage apartment is permitted. You can look up a parcel's zoning on the City of New Braunfels GIS map or request a zoning verification letter from the Planning Department. If the current zoning does not match your intended use, you can apply for a variance or rezoning — but those processes take time and are not guaranteed to succeed.",
+          },
+          {
+            heading: "Outside City Limits: Deed Restrictions Over Zoning",
+            body: "On unincorporated Comal County land, there is no zoning ordinance. That sounds like freedom, but what governs most platted subdivisions outside city limits is the Declaration of Covenants, Conditions, and Restrictions — the deed restrictions filed with the county when the subdivision was created. These documents can be highly specific: minimum square footage, allowed exterior materials, prohibition on mobile homes, livestock limits, or restrictions on short-term rentals. Reviewing the deed restrictions is non-negotiable before purchasing any lot in a subdivision. Raw, unplatted land outside a subdivision and outside city limits may have no restrictions at all — meaning a neighbor could legally park RVs, run livestock, or build a commercial structure adjacent to you without your consent.",
+          },
+          {
+            heading: "ETJ: The In-Between Zone",
+            body: "Land in the Extraterritorial Jurisdiction — the ring of land outside city limits where the City of New Braunfels has annexation authority — is in a regulatory gray zone. The city can enforce subdivision platting rules and some development standards here, but full zoning does not apply. Buyers looking at ETJ land should contact the City's Planning Department to understand what regulations would apply to their specific project and whether the city has any near-term annexation plans that could change the situation.",
+          },
+        ],
+      },
+      {
+        eyebrow: "QUESTION THREE",
+        heading: "Is the Land Easy to Build On?",
+        body: "Even when utilities are available and zoning permits your intended use, the physical characteristics of the land can make construction dramatically more expensive — or in some cases, impractical. The Hill Country terrain around New Braunfels is beautiful, but it comes with real construction challenges.",
+        subsections: [
+          {
+            heading: "Soil and Rock: The Limestone Reality",
+            body: "Much of Comal County sits on Edwards Plateau limestone. Close to the surface, that limestone can make excavation for foundations, utilities, and septic systems significantly more expensive. A standard residential foundation that costs $15,000 on deep clay soil can cost $40,000 or more on ledge rock requiring blasting or specialized equipment. Before purchasing a raw lot, hire a geotechnical engineer or ask a local builder to walk the property. They can identify rock outcrops, assess soil depth, and give you a realistic estimate of what foundation work will cost on that specific site.",
+          },
+          {
+            heading: "Topography: Slope and Drainage",
+            body: "Sloped lots in the Hill Country offer views but add cost. Every foot of grade change requires retaining walls, stepped foundations, or creative grading — all of which add to the construction budget. Lots with natural drainage draws or seasonal creek beds crossing them may be subject to floodplain setbacks regulated by FEMA and the city or county. Run the parcel address through FEMA's Flood Map Service Center and the Comal County floodplain maps before committing. Building in or near a floodplain often requires elevation certificates, flood insurance, and sometimes engineered fill — costs that can quickly exceed the savings you thought you were getting on a lower-priced lot.",
+          },
+          {
+            heading: "Tree Canopy and Environmental Constraints",
+            body: "Live oaks, cedar, and native vegetation on a lot contribute to its visual appeal but can also create constraints. The City of New Braunfels has a tree ordinance that protects heritage trees — trees above a certain caliper diameter — from removal without a permit. In some cases, building placement has to accommodate protected trees, which limits where you can situate the home on the lot. Outside city limits, tree removal is less regulated, but buyers purchasing land with significant tree cover should still walk the site with a local builder to understand how the canopy interacts with the intended building envelope, solar orientation, and fire clearance.",
+          },
+        ],
+      },
+      {
+        eyebrow: "QUESTION FOUR",
+        heading: "How Do You Legally Reach the Property?",
+        body: "A parcel of land you cannot legally access is worth nothing, regardless of how beautiful it is. Access — legal, documented, all-weather access — is something buyers frequently overlook when falling in love with rural or semi-rural land in Comal County.",
+        subsections: [
+          {
+            heading: "Recorded Easements vs. Handshake Arrangements",
+            body: "Many rural parcels in Texas are accessed via an easement across a neighboring property — a recorded right-of-way that gives the owner of the landlocked parcel the legal right to cross someone else's land to reach a public road. The critical word is recorded. An easement that exists only in conversation, family tradition, or a handshake between previous owners may not be legally enforceable against a new owner who purchases the neighboring land. Before buying any parcel that is not directly fronting a public road, have a title company or real estate attorney verify that a legally recorded access easement exists and that it runs with the land — meaning it transfers to you at closing.",
+          },
+          {
+            heading: "Road Conditions and Maintenance Responsibility",
+            body: "Even if legal access exists, the condition of the road matters. A caliche or dirt easement road that is passable in dry weather may be impassable after heavy rain — and emergency services may not be able to reach you during a weather event. Ask who is responsible for maintaining the easement road. If it is a shared private road used by multiple property owners, is there a road maintenance agreement in place? Are all owners contributing to upkeep? The absence of a maintenance agreement often signals a situation that will become expensive and contentious over time.",
+          },
+          {
+            heading: "Utility Access Along Your Easement",
+            body: "A right-of-way easement for vehicle access does not automatically include the right to run utility lines — electric, water, or fiber — along that same path. If your plan involves running utility infrastructure from the public road across neighboring land to reach your parcel, verify that the existing easement language covers utility corridors, or that the neighboring landowner is willing to grant a separate utility easement. This issue is more common than buyers expect, and sorting it out after closing is far more difficult than confirming it before.",
+          },
+        ],
+      },
+      {
+        eyebrow: "THE BOTTOM LINE",
+        heading: "Land Purchases Reward Diligence",
+        body: "Raw land in New Braunfels and Comal County remains one of the more compelling long-term investments in the Texas Hill Country corridor. But unlike a finished home, you cannot walk through it and form an intuitive sense of what you are buying. The due diligence is the product. Utility feasibility, zoning and deed restrictions, physical buildability, and verified legal access are the four pillars that determine whether a piece of land is actually worth what the seller is asking. Get clear answers on all four before you put earnest money down. A good buyer's agent — one who has done land transactions in this market — can help you structure the right contingencies and connect you with the engineers, geotechs, and title experts who can give you real answers rather than guesses.",
+        bulletPoints: [
+          "Request a utility feasibility letter from the relevant water and electric providers before closing",
+          "Pull deed restrictions from the county clerk's records and read them fully, not just the summary",
+          "Walk the site with a local builder before making an offer on any raw land",
+          "Have a title attorney verify that legal, recorded access exists and runs with the land",
+          "Check FEMA flood maps and county floodplain data for any parcel near drainage or creek features",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Can I buy land in New Braunfels and put a manufactured or modular home on it?",
+        answer: "It depends entirely on where the land is. Inside New Braunfels city limits, manufactured homes are generally not permitted in standard residential zones and are restricted to designated manufactured housing parks. In unincorporated Comal County, it depends on the subdivision's deed restrictions — many explicitly prohibit manufactured homes while allowing site-built or modular construction. Modular homes, which are built to the same IRC building code as site-built homes, are generally treated the same as stick-built construction and are more broadly permitted. Always check both the zoning and deed restrictions before assuming either type is allowed.",
+      },
+      {
+        question: "How long does it take to build on raw land in New Braunfels once I own it?",
+        answer: "From land purchase to move-in, a typical custom home in Comal County takes 12 to 24 months when you factor in permitting, utility connections, site preparation, and construction. The timeline stretches when utility infrastructure requires extensions, when rock excavation is needed, or when permitting backlogs at the city or county level slow approvals. Buyers who are working against a deadline — a lease expiration, a school year start, a job relocation — should build significant schedule buffer into their land-to-home plan.",
+      },
+      {
+        question: "Do I need a survey before buying land in New Braunfels?",
+        answer: "Yes, always. A current boundary survey from a licensed Texas land surveyor confirms the exact dimensions and location of the parcel, identifies any encroachments from neighboring structures or fences, and locates any existing easements crossing the property. Many lenders require a survey for land loans. Even when not required, a survey is one of the best investments you can make in a land purchase — the cost runs $800 to $2,500 depending on parcel size and complexity, which is a small amount relative to the risk of a boundary dispute after closing.",
+      },
+      {
+        question: "What is a perc test and do I need one?",
+        answer: "A percolation test — perc test — measures how quickly soil absorbs water, which determines whether a conventional septic system can be installed on a parcel. In Texas, the Texas Commission on Environmental Quality regulates on-site sewage facilities, and a site evaluation including a soil analysis is required before an OSSF permit is issued. If you are buying land that will not be connected to city sewer, making your offer contingent on a passing perc test and a confirmed OSSF permit application is essential. Land that fails a perc test cannot legally have a traditional septic system installed — which in practice means it cannot have a home on it.",
+      },
+    ],
+  },
+  {
+    slug: "are-utilities-available-new-braunfels-land",
+    isNew: true,
+    eyebrow: "LAND BUYER GUIDE",
+    title: "Are Utilities Available? What New Braunfels Land Buyers Need to Know",
+    dek: "Utility availability is the single most overlooked factor in Comal County land purchases. Here is how to verify water, sewer, electric, and gas access — and what to do when they are not already there.",
+    imageSrc: "/images/website-blog-utilities-available-new-braunfels-land.png",
+    imageAlt: "Texas Hill Country rural road near New Braunfels with utility poles running alongside an unpaved lane through live oak trees and open ranchland",
+    category: "Buyer Guide",
+    publishDate: "July 6, 2026",
+    intro: "Of all the questions a land buyer in New Braunfels can ask, utility availability is the one that most directly determines what a piece of ground is actually worth. A lot with city water, sewer, and electric at the curb is a fundamentally different asset than a lot requiring well drilling, septic installation, and a half-mile electric line extension — even if the two parcels sit a few miles apart and carry similar asking prices. Getting clear on utilities before you make an offer is not due diligence for the cautious buyer. It is due diligence for every buyer.",
+    sections: [
+      {
+        eyebrow: "WATER",
+        heading: "Where Your Water Will Come From",
+        body: "Water access in Comal County breaks into two categories: connection to an existing utility system, or drilling your own well. Which one applies to a specific parcel depends on its location relative to water service areas — and those service areas vary significantly across the county.",
+        subsections: [
+          {
+            heading: "City and Co-op Water Service Areas",
+            body: "New Braunfels Utilities (NBU) provides water service within the city limits and some adjacent areas. Outside city limits, Canyon Regional Water Authority, Kendall-Hays County Water Control and Improvement District, and several smaller co-ops serve different parts of the county. If a parcel is within a service area, connection typically involves a tap-in fee — ranging from $2,000 to $6,000 or more depending on the provider and meter size — plus the cost of running the line from the meter at the street to the home. To confirm service availability, contact the relevant utility directly and request a will-serve letter or availability confirmation for the specific parcel address or legal description.",
+          },
+          {
+            heading: "Well Water: What Rural Buyers Need to Know",
+            body: "On parcels outside utility service areas, a private water well is the primary option. In the Hill Country terrain west and northwest of New Braunfels, wells typically penetrate the Edwards or Trinity aquifer through limestone bedrock. Depths range widely — 150 feet to over 500 feet is common depending on location and the target aquifer. Drilling costs in Comal County run approximately $25 to $45 per foot for a standard residential well, which puts a 300-foot well in the $7,500 to $13,500 range before pump installation, pressure tank, and water quality testing. Budget $10,000 to $20,000 for a complete water well system. Before purchasing rural land, review the Texas Water Development Board's groundwater database to see historical well logs in the area, and consult a licensed water well driller familiar with the specific geology of the parcel's location.",
+          },
+          {
+            heading: "Water Quality Testing",
+            body: "Even when a well is successfully drilled, water quality in parts of Comal County can include elevated levels of minerals, sulfur, hardness, or in some areas bacteria — particularly in shallower wells tapping into the Trinity aquifer. A basic water quality test runs $50 to $200 through a certified lab and should test for bacteria, nitrates, pH, hardness, and any contaminants relevant to the specific location. If you are purchasing land with an existing well, make the purchase contingent on a passing water quality test. Treatment systems — softeners, filtration, UV purification — can address most quality issues, but knowing what you are dealing with before closing lets you negotiate or budget accordingly.",
+          },
+        ],
+      },
+      {
+        eyebrow: "SEWER",
+        heading: "Sewer Connection or Septic: How Comal County Handles Wastewater",
+        body: "Sewer access follows a similar pattern to water — connected systems exist in established areas, and everything beyond them relies on on-site solutions. For the majority of land purchases in Comal County outside of developed subdivisions, you are installing a septic system. The question is which type, and whether the land can support one.",
+        subsections: [
+          {
+            heading: "Connecting to City or District Sewer",
+            body: "NBU and several special utility districts operate wastewater collection systems in and around New Braunfels. If a lot fronts a road with a sewer main running beneath it, connection involves a tap-in fee — typically $3,000 to $8,000 — and the cost of running a lateral from the home to the main. For properties set back from the road or at lower elevation than the main, additional lift pump systems may be required. Confirm sewer availability directly with NBU or the relevant district before assuming connection is possible. Not all roads with water service have sewer service, and the absence of sewer significantly changes the cost and complexity of building on a parcel.",
+          },
+          {
+            heading: "Conventional Septic Systems",
+            body: "On parcels with suitable soil — sufficient depth above bedrock, adequate percolation, and appropriate setbacks from property lines and water features — a conventional aerobic or anaerobic septic system is the standard solution. In Texas, On-Site Sewage Facilities are regulated by TCEQ and permitted through the county. Comal County Environmental Health oversees OSSF permits and requires a site evaluation before any permit is issued. A conventional system with a standard tank and drain field typically costs $8,000 to $15,000 installed, including permitting. System size is determined by the number of bedrooms in the planned home.",
+          },
+          {
+            heading: "Aerobic Septic Systems and Problem Soils",
+            body: "When conventional systems are not feasible — typically because of shallow rock, poor soil percolation, a high water table, or lot size constraints — an aerobic treatment unit (ATU) is required. ATUs treat wastewater to a higher standard before dispersing it, which allows installation in conditions where conventional systems would fail. The trade-off is cost: an ATU system runs $15,000 to $28,000 installed and requires an ongoing maintenance contract — typically $300 to $500 per year — for the life of the system. Some parcels in the Hill Country that appear beautiful on the surface cannot support any compliant OSSF due to bedrock within inches of grade. A failed perc test before closing is vastly preferable to discovering this problem after you own the land.",
+          },
+        ],
+      },
+      {
+        eyebrow: "ELECTRIC",
+        heading: "Getting Power to Your Property",
+        body: "Electric service is the utility most buyers assume will be simple. In established subdivisions, it usually is — lines run along the roads and connection is a standard process. On rural land, however, distance from the nearest transformer can make electric access one of the most expensive parts of a land purchase.",
+        subsections: [
+          {
+            heading: "Who Provides Electric Service in Comal County",
+            body: "Electric service in Comal County is divided among several providers based on service territory. Guadalupe Valley Electric Cooperative (GVEC) serves the largest share of rural Comal County land west and south of New Braunfels. Pedernales Electric Cooperative covers areas farther north and west. New Braunfels Utilities provides electric service within the city and some adjacent areas. Each co-op has its own service area map — verify which provider serves a specific parcel before assuming who to call. A parcel just across a road from a GVEC line may actually be in Pedernales territory, or vice versa.",
+          },
+          {
+            heading: "Line Extension Costs",
+            body: "If the nearest transformer or distribution line is far from the parcel, the co-op will charge you for a line extension — the cost of running new infrastructure to your property. Extension costs vary by co-op but are generally calculated per linear foot of new line, plus any poles, transformers, and right-of-way work required. Costs of $5,000 to $30,000 or more for rural line extensions are not uncommon, and some co-ops require a refundable deposit that is partially returned as other customers connect to the same line over time. Request a line extension estimate from the serving co-op early in your due diligence process — before you are emotionally committed to a parcel — so the number can inform your offer.",
+          },
+          {
+            heading: "Solar and Off-Grid Alternatives",
+            body: "On remote parcels where grid extension is prohibitively expensive, solar with battery storage is an increasingly viable alternative. Modern solar-plus-battery systems from providers like Tesla Powerwall, Enphase, or similar can power a well-insulated home with typical usage patterns. A whole-home off-grid system sized for a 2,000 to 3,000 square foot home typically costs $40,000 to $80,000 installed, including panels, battery bank, backup generator, and charge controller. For buyers purchasing remote land at a significant discount relative to serviced lots, the math occasionally works in favor of off-grid — but it requires realistic planning and a builder experienced in off-grid construction.",
+          },
+        ],
+      },
+      {
+        eyebrow: "GAS AND FIBER",
+        heading: "Natural Gas, Propane, and Internet Connectivity",
+        body: "Beyond the four core utilities, two additional infrastructure questions matter significantly to quality of life and resale value in Comal County: fuel source for heating and cooking, and internet connectivity for remote workers and families with streaming and work-from-home needs.",
+        subsections: [
+          {
+            heading: "Natural Gas vs. Propane",
+            body: "Natural gas lines exist in parts of New Braunfels city and some established suburban areas. Outside those corridors, propane is the standard fuel for range cooking, water heating, space heating, and backup generators. Propane requires a tank — either owned or leased from your propane supplier — sized to the home's annual usage. A 500-gallon tank is typical for a primary residence; larger homes or those with propane-fired pool heaters or whole-home generators may need 1,000 gallons or more. Propane costs fluctuate with energy markets but average $2.50 to $4.00 per gallon in the New Braunfels area. Annual fuel costs for a moderately sized home heating and cooking on propane typically run $1,200 to $2,500.",
+          },
+          {
+            heading: "Internet Access on Rural Land",
+            body: "Internet connectivity on rural Comal County land has improved considerably in recent years but remains uneven. GVEC operates a fiber broadband network — GVEC Fiber — that has expanded steadily into rural areas of the county and provides gigabit speeds where available. Spectrum and Grande serve established suburban areas. On parcels outside wired broadband coverage, options include fixed wireless from local providers, satellite internet via Starlink (which delivers 50 to 250 Mbps in most of the area), and cellular-based home internet from AT&T or T-Mobile where signal strength allows. For remote workers or buyers who work from home, confirming real-world connectivity at a specific parcel address — not just coverage maps, which are often optimistic — is a material part of due diligence.",
+          },
+        ],
+      },
+      {
+        eyebrow: "BEFORE YOU CLOSE",
+        heading: "The Utility Due Diligence Checklist",
+        body: "Utility availability is not something to verify casually. The following steps should be part of every land purchase due diligence process in Comal County, completed before the inspection contingency deadline so you have the option to walk away if the numbers do not work.",
+        bulletPoints: [
+          "Contact NBU or the relevant water co-op and request a written will-serve letter for the specific parcel",
+          "Contact the serving electric co-op and request a written line extension estimate if the parcel is not in an established subdivision",
+          "For rural parcels, consult a licensed water well driller to review the Texas Water Development Board well log database for the area",
+          "Commission a site evaluation and perc test through a licensed OSSF installer before closing on any parcel requiring septic",
+          "Check GVEC Fiber and Spectrum coverage maps, then test real signal strength at the site using a smartphone and Starlink's coverage tool",
+          "Confirm natural gas availability with NBU or Centerpoint if gas appliances are part of your building plan",
+          "Add utility contingency language to the purchase contract giving you the right to terminate if utility access is not feasible within your budget",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "How do I find out which utility providers serve a specific parcel in Comal County?",
+        answer: "For water, start with New Braunfels Utilities (NBU) and Canyon Regional Water Authority — between them, they cover much of the county's served areas. The Texas Water Development Board's interactive maps can help identify which groundwater conservation district a parcel falls within for well-water planning. For electric, the Public Utility Commission of Texas maintains a service territory lookup tool at puc.texas.gov that identifies the certificated provider for any Texas address. For sewer, contact NBU or the relevant municipal utility district. Your buyer's agent and a local title company can also help identify the relevant utility contacts for a specific property.",
+      },
+      {
+        question: "Can I negotiate utility costs into my land purchase price?",
+        answer: "Yes, and you should. If due diligence reveals that a parcel requires a $20,000 electric line extension and a $22,000 aerobic septic system that the seller's asking price did not anticipate, that information is legitimate grounds for renegotiating the purchase price or asking the seller to contribute to infrastructure costs as a condition of closing. Sellers who have not done their own utility due diligence may not realize the cost gap between their parcel and a served lot nearby. Coming to the renegotiation conversation with actual vendor quotes — not estimates — strengthens your position considerably.",
+      },
+      {
+        question: "What is a will-serve letter and why does it matter?",
+        answer: "A will-serve letter is a written commitment from a utility provider that they are able and willing to extend service to a specific parcel under standard terms and at a specified cost. It is not a guarantee of service — it can have conditions attached — but it is the clearest documentation available before closing that the utility infrastructure is accessible. Without a will-serve letter, you are relying on the utility's verbal assurance, which is not binding and has no recourse if service turns out to be unavailable or far more expensive than stated. For land purchases involving utility connections, make a will-serve letter a required deliverable before the inspection contingency deadline.",
+      },
+    ],
+  },
+  {
     slug: "new-braunfels-property-tax-guide",
     isNew: true,
     eyebrow: "BUYER GUIDE",
@@ -3351,6 +3585,24 @@ export const journalPosts: JournalPost[] = [
         body: "For buyers moving from Austin, New Braunfels typically offers meaningfully lower home prices with a comparable quality of life — Hill Country scenery, good schools, outdoor recreation, and a strong sense of community. The trade-off is a longer commute for Austin-based workers. For buyers coming from San Antonio, New Braunfels is generally comparable in price or slightly higher, but offers a different lifestyle: smaller city feel, river access, and proximity to the Hill Country. For remote workers or retirees not tied to a commute, New Braunfels often represents strong value — particularly in neighborhoods like Vintage Oaks, River Chase, and Canyon Lake where the land and lifestyle justify the price point.",
       },
     ],
+    faqs: [
+      {
+        question: "Is New Braunfels cheaper than Austin?",
+        answer: "Yes, in most cases. The median home price in New Braunfels is generally $100,000 to $150,000 lower than comparable homes in desirable Austin zip codes. Everyday expenses like groceries and utilities are similar across both cities, so housing is where most of the savings show up. The trade-off for Austin workers is commute time — roughly 45 to 60 minutes under normal traffic conditions on IH-35.",
+      },
+      {
+        question: "How does the cost of living in New Braunfels compare to San Antonio?",
+        answer: "San Antonio is generally the most affordable of the three cities, with lower median home prices than New Braunfels. However, New Braunfels offers a smaller-city lifestyle, direct river and Hill Country access, and strong school districts that appeal to families and retirees who are willing to pay a modest premium for a different quality of life. Everyday costs — groceries, utilities, dining — are closely comparable between the two.",
+      },
+      {
+        question: "Do New Braunfels property taxes offset the lower home prices?",
+        answer: "Property tax rates in Comal County are competitive with Travis and Bexar Counties — roughly 1.8% to 2.1% effective rate depending on school district and any MUD overlays. The key difference is that lower home values in New Braunfels mean the dollar amount owed is often less than on a comparable-rate Austin home assessed at a higher value. The homestead exemption, including the $100,000 school district exemption, meaningfully reduces the taxable value for primary residence owners in all three cities.",
+      },
+      {
+        question: "Is New Braunfels a good place to live for remote workers?",
+        answer: "Yes — New Braunfels is one of the strongest relocation markets in Texas for remote workers. Lower housing costs relative to Austin, Hill Country lifestyle, river access, and improving fiber internet coverage make it a compelling choice. GVEC Fiber has expanded into many areas of Comal County, and Starlink provides reliable backup connectivity in more rural parcels. Remote workers should verify real-world connectivity at a specific address rather than relying on coverage maps alone.",
+      },
+    ],
   },
   {
     slug: "best-time-to-buy-sell-home-new-braunfels",
@@ -3422,6 +3674,24 @@ export const journalPosts: JournalPost[] = [
         eyebrow: "Ready to talk timing?",
         heading: "Ask Todd About Current Market Conditions",
         body: "Market conditions in New Braunfels change throughout the year, and the best read on current timing comes from someone who is actively working here. If you are trying to decide whether to list now or wait, or whether to buy before rates shift again, a conversation is the fastest way to get a straight answer.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is the best month to sell a home in New Braunfels?",
+        answer: "March through May historically produces the strongest seller outcomes in New Braunfels — more active buyers, shorter days on market, and better photography conditions. That said, the New Braunfels market sees year-round demand from retirees, remote workers, and second-home buyers, so a well-priced, well-presented home in any month can move quickly. Fall and winter listings face less competition from other sellers, which can work in a motivated seller's favor.",
+      },
+      {
+        question: "Is it a buyer's market or seller's market in New Braunfels right now?",
+        answer: "Market conditions in New Braunfels shift throughout the year and are best assessed with current local data rather than national headlines. As of 2026, the market has normalized from the peak competition of 2021-2022, with more inventory available and more room for buyers to negotiate than in prior years. Specific neighborhoods and price bands vary — some segments remain tight while others have softened. A conversation with a local agent gives you a real-time read that no report can.",
+      },
+      {
+        question: "Should I wait for interest rates to drop before buying in New Braunfels?",
+        answer: "Waiting for rates to drop is a gamble that has cost many buyers more than the rate difference itself. When rates dropped in late 2024, demand spiked and prices rose quickly in markets like New Braunfels — buyers who waited for a better rate ended up paying a higher price. The more reliable approach is to buy at a price you can afford at today's rate, with the understanding that refinancing is an option if rates fall meaningfully in the future. A local lender can model both scenarios for your specific situation.",
+      },
+      {
+        question: "How long does it take to sell a home in New Braunfels?",
+        answer: "Days on market in New Braunfels vary significantly by neighborhood, price point, and condition. Well-priced homes in desirable areas like Vintage Oaks, River Chase, and Gruene can still move in under 30 days. Homes that are overpriced, need work, or are in less-demand segments may sit 60 to 90 days or more. Spring listings that are priced correctly from day one consistently outperform homes that start high and chase the market down with reductions.",
       },
     ],
   },
@@ -3621,6 +3891,24 @@ export const journalPosts: JournalPost[] = [
         heading: "How to Access Todd's Services",
         eyebrow: "Get in touch",
         body: "Clients interested in working with Todd can reach out directly for a personalized consultation. Todd provides thorough support in consultation and contract negotiation, including detailed contract review, negotiation strategy development, and ongoing availability throughout the process. Visit todd-spencer.com or call (512) 665-3747.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What makes Todd Spencer different from other New Braunfels real estate agents?",
+        answer: "Todd has lived and worked in New Braunfels for over 15 years, which means his neighborhood knowledge goes well beyond what any database can provide. He specializes exclusively in the New Braunfels corridor — he is not spreading attention across Central Texas — and brings hyperlocal insight on school zones, flood zones, utility districts, and community dynamics that a generalist agent typically cannot match. His approach is built on honest communication over sales pressure.",
+      },
+      {
+        question: "Does Todd work with buyers relocating from outside Texas?",
+        answer: "Yes, relocation buyers are a significant part of Todd's practice. He regularly works with buyers from California, Colorado, and the northeast who are moving to New Braunfels for the lifestyle, affordability, and no-state-income-tax environment. For out-of-state buyers, Todd provides virtual tours, detailed neighborhood guides, and one-on-one consultations that cover everything from school enrollment to utility setup — reducing the uncertainty of buying a home you may only see once before closing.",
+      },
+      {
+        question: "Can Todd help me sell my New Braunfels home and find my next one at the same time?",
+        answer: "Yes. Coordinating a simultaneous sale and purchase is one of the more complex real estate scenarios, and it is something Todd navigates regularly. The key is sequencing — understanding your equity position, getting pre-approved for the next purchase, and structuring contingencies appropriately so you are not caught owning two homes or none. Todd walks sellers through this process from the initial conversation so the timeline is understood before listing.",
+      },
+      {
+        question: "How does Todd price homes for sale in New Braunfels?",
+        answer: "Pricing starts with a detailed comparative market analysis using recent closed sales, active competition, and pending contracts in the specific neighborhood. Todd layers in qualitative factors — lot size, condition, upgrades, view, and proximity to amenities — that raw data cannot fully capture. The goal is a price that attracts genuine buyers quickly, not a number designed to flatter the seller and then require reductions. Homes that price correctly from day one consistently net more than homes that start high.",
       },
     ],
   },
@@ -3831,6 +4119,24 @@ export const journalPosts: JournalPost[] = [
         body: "For personalized assistance navigating the New Braunfels market, consulting a local real estate expert saves time and reduces uncertainty. Todd Spencer specializes in guiding relocating buyers and sellers through the complexities of this market. Contact Todd at (512) 665-3747 or todd@todd-spencer.com, or visit todd-spencer.com for more information.",
       },
     ],
+    faqs: [
+      {
+        question: "What are the best neighborhoods in New Braunfels for families?",
+        answer: "Families consistently gravitate toward neighborhoods in the Comal ISD attendance zone — one of the highest-rated school districts in the Texas Hill Country region. Within that zone, Veramendi offers newer construction with community amenities at accessible price points, Vintage Oaks provides larger lots and top-tier custom homes, and Gruene offers walkability and historic character with strong school access. The right neighborhood depends heavily on commute, budget, and lifestyle priorities — a brief conversation with a local agent narrows the field quickly.",
+      },
+      {
+        question: "How long does it typically take to relocate to New Braunfels from out of state?",
+        answer: "For buyers who are pre-approved and know their target neighborhoods, the active home search phase in New Braunfels typically runs two to six weeks. From accepted offer to closing, the standard timeline is 30 to 45 days. Out-of-state buyers who cannot visit frequently should plan for at least one in-person trip for neighborhood tours and final walkthroughs. Many relocating buyers complete their purchase with a combination of virtual tours for early-stage filtering and a single visit for the finalists.",
+      },
+      {
+        question: "Is New Braunfels safe?",
+        answer: "New Braunfels consistently ranks as one of the safer mid-sized cities in Texas. Crime rates in Comal County are below state averages, and the community has a strong sense of neighborhood identity and local civic engagement. As with any city, safety varies by area — the historic Gruene district, established master-planned communities, and Comal County's rural corridors all have very low incident rates. Reviewing neighborhood-level crime data through the New Braunfels Police Department's public reports provides the most specific picture for any area you are considering.",
+      },
+      {
+        question: "What should I do first when relocating to New Braunfels?",
+        answer: "The most effective first step is a consultation with a local real estate agent before you start browsing listings. Understanding which neighborhoods match your commute tolerance, school preferences, lot size needs, and budget narrows the search dramatically and prevents wasted time on homes that look good online but do not fit your actual situation. From there, getting pre-approved with a lender who works in the Texas market puts you in position to move when you find the right home — which in competitive neighborhoods can go under contract within days.",
+      },
+    ],
   },
   {
     slug: "river-chase-neighborhood-guide",
@@ -3898,6 +4204,24 @@ export const journalPosts: JournalPost[] = [
         heading: "Schools and Educational Resources",
         eyebrow: "Education",
         body: "The River Chase area is served by well-regarded local schools within the New Braunfels Independent School District. Beyond primary and secondary schooling, residents have access to tutoring services, recreational programs, and extracurricular activities. These resources enhance the educational experience while promoting community involvement.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is the average home price in River Chase New Braunfels?",
+        answer: "Home prices in River Chase typically range from the mid-$400,000s to over $800,000 depending on lot size, custom finish level, and proximity to the Guadalupe River. The community skews toward larger, custom-built homes on one-acre-plus lots, which places it above the New Braunfels median. Riverfront and river-access properties command a meaningful premium. The market moves steadily — well-priced homes in River Chase rarely sit long, and inventory is limited enough that buyers should be prepared to act when the right property appears.",
+      },
+      {
+        question: "Is River Chase a gated community?",
+        answer: "River Chase has both gated and non-gated sections. The community is not uniformly gated at every entrance, so whether a specific property is within a gated section depends on its location within River Chase. Buyers who prioritize controlled-access entry should confirm the specific section's gate configuration before making an offer. Your agent can verify this for any property address you are considering.",
+      },
+      {
+        question: "Does River Chase have Guadalupe River access?",
+        answer: "Yes — Guadalupe River access is one of River Chase's defining features and a primary reason buyers choose the neighborhood. The community has dedicated river access points for residents, making tubing, kayaking, fishing, and riverside recreation a genuine part of everyday life here rather than a drive-to amenity. Some individual properties also back directly to the river, which commands a significant price premium over non-riverfront lots in the same community.",
+      },
+      {
+        question: "What school district serves River Chase?",
+        answer: "River Chase is served by the New Braunfels Independent School District (NBISD). The district has a strong reputation for academic performance and extracurricular programming, which is a meaningful draw for families relocating to the area. Buyers with school-age children should verify the specific school assignments for any address they are considering, as attendance boundaries within NBISD can vary by street and parcel location.",
       },
     ],
   },
@@ -3997,6 +4321,24 @@ export const journalPosts: JournalPost[] = [
           "Farmers markets showcasing local produce and artisan crafts",
           "Grocery stores, diverse dining options, and essential services all within reach",
         ],
+      },
+    ],
+    faqs: [
+      {
+        question: "What makes River Chase different from other New Braunfels neighborhoods?",
+        answer: "River Chase combines three things that are rare to find together in one community: custom-built homes on large lots, Guadalupe River access, and a Hill Country setting within 15 minutes of downtown New Braunfels. Most master-planned communities in the area offer amenities and new construction but smaller lots and no river access. River Chase offers the land, the water, and the mature tree canopy that newer developments simply cannot replicate — and a community that has had two decades to develop genuine character.",
+      },
+      {
+        question: "Is River Chase a good investment?",
+        answer: "River Chase has demonstrated consistent appreciation through multiple market cycles. The combination of limited supply — custom homes on large lots do not get built in large volumes — and sustained demand from buyers seeking land, privacy, and river access creates favorable long-term conditions. Homes in River Chase tend to hold value well during softer markets and appreciate meaningfully during strong ones. As with any specific property, condition, lot quality, and pricing at purchase are the primary determinants of investment performance.",
+      },
+      {
+        question: "How far is River Chase from downtown New Braunfels?",
+        answer: "River Chase is approximately 10 to 15 minutes from downtown New Braunfels via FM 306 and connecting roads. The drive to Gruene is slightly shorter. This proximity means residents have quick access to downtown dining, shopping, and the Comal River tubing corridor while still enjoying the privacy and space of a low-density Hill Country community. The commute to San Antonio runs approximately 35 to 45 minutes via IH-35, and Austin is typically 50 to 65 minutes under normal traffic conditions.",
+      },
+      {
+        question: "Are there HOA fees in River Chase?",
+        answer: "Yes, River Chase has a homeowners association with annual fees that cover common area maintenance, road infrastructure upkeep, and access to community amenities including the river access points, trails, and shared green spaces. HOA fees in River Chase are generally modest relative to the amenity package provided — well below what comparable communities with resort-style pools and clubhouses charge. Buyers should request the current HOA fee schedule and review the CC&Rs as part of due diligence on any specific property.",
       },
     ],
   },
