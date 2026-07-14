@@ -906,9 +906,33 @@ export type JournalSection = {
   }[];
 };
 
+export type FaqBodySection = {
+  heading?: string;
+  subheading?: string;
+  body?: string;
+  bullets?: string[];
+  callout?: { label: string; body: string };
+  quote?: string;
+};
+
+export type FaqTableData = {
+  headers: [string, string];
+  rows: Array<[string, string]>;
+};
+
+export type FaqSource = {
+  label: string;
+  href: string;
+};
+
 export type JournalFaq = {
   question: string;
   answer: string;
+  takeaways?: string[];
+  sections?: FaqBodySection[];
+  tableData?: FaqTableData;
+  sources?: FaqSource[];
+  lastUpdated?: string;
 };
 
 export type JournalPost = {
@@ -1031,7 +1055,75 @@ export const journalPosts: JournalPost[] = [
     faqs: [
       {
         question: "Can I buy land in New Braunfels and put a manufactured or modular home on it?",
-        answer: "It depends entirely on where the land is. Inside New Braunfels city limits, manufactured homes are generally not permitted in standard residential zones and are restricted to designated manufactured housing parks. In unincorporated Comal County, it depends on the subdivision's deed restrictions — many explicitly prohibit manufactured homes while allowing site-built or modular construction. Modular homes, which are built to the same IRC building code as site-built homes, are generally treated the same as stick-built construction and are more broadly permitted. Always check both the zoning and deed restrictions before assuming either type is allowed.",
+        answer: "It depends entirely on where the land is. Inside New Braunfels city limits, manufactured homes are generally not permitted in standard residential zones. In unincorporated Comal County, manufactured homes may be restricted by deed restrictions even where zoning allows them. Modular homes — built to the same IRC code as site-built homes — are more broadly accepted. Always verify both zoning and deed restrictions before assuming either type is allowed.",
+        lastUpdated: "July 2026",
+        takeaways: [
+          "Manufactured homes are generally restricted inside New Braunfels city limits to designated parks.",
+          "Modular homes are typically treated the same as site-built homes and are more broadly permitted.",
+          "County deed restrictions can prohibit manufactured homes even where zoning allows them.",
+          "The ETJ (Extra-Territorial Jurisdiction) has its own rules — separate from both city and county.",
+          "Always verify zoning AND deed restrictions before purchasing land for a manufactured or modular home.",
+        ],
+        sections: [
+          {
+            heading: "What Is the Difference Between Manufactured and Modular?",
+            body: "The distinction matters because the law treats them differently. A manufactured home is built to the HUD Manufactured Home Construction and Safety Standards — a federal code. It is built entirely in a factory and transported to the site. A modular home is built to the International Residential Code (IRC), the same standard as a site-built home. It is also factory-built in sections, but it is set on a permanent foundation and treated legally the same as stick-built construction in most Texas jurisdictions.",
+          },
+          {
+            subheading: "Why the Code Difference Matters",
+            body: "Because zoning ordinances and deed restrictions often reference these distinctions explicitly. A deed restriction that reads 'no HUD-code homes' is prohibiting manufactured homes. A restriction that says 'site-built construction only' may or may not apply to modular, depending on how the deed restriction is interpreted under Texas law. When in doubt, have a real estate attorney review the deed restriction language before you buy.",
+          },
+          {
+            heading: "Inside New Braunfels City Limits",
+            body: "The City of New Braunfels permits manufactured homes in designated Manufactured Housing Park zones only. Standard residential zones — R-1, R-2, and similar — do not permit manufactured homes. Modular homes are permitted in residential zones where they meet the same setback, design, and construction standards as site-built homes. If you are looking at land inside city limits for a manufactured home, the answer is almost certainly no unless the parcel is already zoned for a mobile home park.",
+            callout: {
+              label: "Pro tip",
+              body: "Call the City of New Braunfels Development Services at (830) 221-4000 to confirm current zoning before making an offer. Zoning maps online are not always current.",
+            },
+          },
+          {
+            heading: "In Unincorporated Comal County",
+            body: "Texas counties have limited zoning authority outside city limits and ETJ areas. In unincorporated Comal County, there is generally no county-level zoning that prohibits manufactured homes. However, most subdivisions have deed restrictions recorded with the county clerk that do restrict home type. Many Hill Country-area subdivisions explicitly prohibit HUD-code manufactured homes while allowing site-built and modular construction.",
+            bullets: [
+              "Pull the deed restrictions from the Comal County Clerk's records before making an offer.",
+              "Look for language about minimum square footage, construction type, and foundation requirements.",
+              "If no deed restrictions exist, county rules generally do not prohibit manufactured homes on private land.",
+              "Some county roads have weight restrictions that complicate transporting manufactured home sections.",
+            ],
+          },
+          {
+            heading: "In the ETJ",
+            body: "New Braunfels' Extra-Territorial Jurisdiction extends roughly 3.5 miles beyond the city limits. Land in the ETJ is subject to city subdivision regulations but not city zoning — a nuanced distinction. In practice, ETJ development must comply with city utility and subdivision standards, but the land is not subject to city zoning ordinances. This makes the ETJ a gray zone for manufactured housing: city zoning does not apply, but subdivision requirements and deed restrictions still may.",
+          },
+        ],
+        tableData: {
+          headers: ["Manufactured Home", "Modular Home"],
+          rows: [
+            ["Built to HUD code", "Built to IRC code (same as site-built)"],
+            ["More zoning restrictions", "Treated similarly to site-built construction"],
+            ["Often prohibited by deed restrictions", "More broadly permitted in subdivisions"],
+            ["Transported in one or two sections", "Transported in modules, set on permanent foundation"],
+            ["Restricted inside NB city limits", "Permitted in standard residential zones"],
+          ],
+        },
+        sources: [
+          {
+            label: "City of New Braunfels Development Services",
+            href: "https://www.nbtexas.org/181/Development-Services",
+          },
+          {
+            label: "Comal County Clerk — Deed Restrictions Search",
+            href: "https://www.co.comal.tx.us/county_clerk.html",
+          },
+          {
+            label: "Texas DHCA — Manufactured Housing Division",
+            href: "https://www.tdhca.state.tx.us/mh/",
+          },
+          {
+            label: "HUD Manufactured Housing Program",
+            href: "https://www.hud.gov/program_offices/housing/rmra/mhs/mhshome",
+          },
+        ],
       },
       {
         question: "How long does it take to build on raw land in New Braunfels once I own it?",

@@ -1,6 +1,8 @@
 import type { JournalPost, JournalFaq } from "./home-content";
 import { journalPosts } from "./home-content";
 
+export type RelatedFaqItem = { faq: JournalFaq; faqSlug: string; postSlug: string };
+
 export type TocItem = {
   id: string;
   label: string;
@@ -69,6 +71,37 @@ export function getFaqBySlug(
     }
   }
   return null;
+}
+
+export function getRelatedFaqs(
+  currentFaqSlug: string,
+  post: JournalPost,
+  max = 4
+): RelatedFaqItem[] {
+  const results: RelatedFaqItem[] = [];
+
+  // Same post FAQs first
+  for (const faq of post.faqs ?? []) {
+    const s = slugifyHeading(faq.question);
+    if (s !== currentFaqSlug) {
+      results.push({ faq, faqSlug: s, postSlug: post.slug });
+    }
+    if (results.length >= max) return results;
+  }
+
+  // Cross-post FAQs from same category
+  for (const p of journalPosts) {
+    if (p.slug === post.slug || p.category !== post.category || !p.faqs) continue;
+    for (const faq of p.faqs) {
+      const s = slugifyHeading(faq.question);
+      if (s !== currentFaqSlug) {
+        results.push({ faq, faqSlug: s, postSlug: p.slug });
+      }
+      if (results.length >= max) return results;
+    }
+  }
+
+  return results;
 }
 
 export function getAllFaqSlugs(): string[] {
