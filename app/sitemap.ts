@@ -4,6 +4,7 @@ import {
   getAllNeighborhoodSlugs,
   getAllBlogSlugs,
 } from "@/lib/home-content";
+import { getAllFaqSlugs } from "@/lib/blog-utils";
 
 const BASE = site.websiteUrl;
 
@@ -107,5 +108,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...neighborhoodPages, ...blogPages];
+  const faqPages: MetadataRoute.Sitemap = getAllFaqSlugs().map((slug) => ({
+    url: `${BASE}/faq/${slug}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.6,
+  }));
+
+  return [...staticPages, ...neighborhoodPages, ...blogPages, ...faqPages];
 }
