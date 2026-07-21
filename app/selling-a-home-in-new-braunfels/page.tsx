@@ -123,7 +123,7 @@ export default function SellingAHomeInNewBraunfelsPage() {
         schema={
           servicePageSchema({
             name: "Selling a Home in New Braunfels",
-            description: "Real estate services provided by Todd Spencer, LPT Realty, in New Braunfels and Comal County, TX.",
+            description: "Real estate services provided by Todd Spencer, eXp Realty, in New Braunfels and Comal County, TX.",
             urlPath: "/selling-a-home-in-new-braunfels",
             serviceType: "Home Seller Representation",
           }) as Record<string, unknown>
@@ -191,7 +191,7 @@ export default function SellingAHomeInNewBraunfelsPage() {
                 be presented and priced.
               </p>
               <p className="text-[1.0625rem] leading-[1.78] text-ink/75">
-                Todd Spencer is a New Braunfels-based listing agent with LPT Realty who has guided
+                Todd Spencer is a New Braunfels-based listing agent with eXp Realty who has guided
                 sellers through every kind of transaction in this market: established neighborhoods
                 like Gruene and River Chase, master-planned communities like Vintage Oaks and
                 Veramendi, lakefront properties on Canyon Lake, and everything in between.

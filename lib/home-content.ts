@@ -3417,7 +3417,7 @@ export const journalPosts: JournalPost[] = [
           },
           {
             heading: "Working With a Local Agent Who Knows the Subdivisions",
-            body: "New Braunfels has dozens of active subdivisions at any given time, each with its own pricing dynamics, HOA structures, and community character. Todd Spencer, based in River Chase and serving Comal County with LPT Realty, works with buyers across the full $400K–$600K spectrum and beyond. His value is in helping buyers understand which neighborhoods actually deliver the lifestyle they want at the budget they have — before they fall in love with a home that does not fit their long-term goals.",
+            body: "New Braunfels has dozens of active subdivisions at any given time, each with its own pricing dynamics, HOA structures, and community character. Todd Spencer, based in River Chase and serving Comal County with eXp Realty, works with buyers across the full $400K–$600K spectrum and beyond. His value is in helping buyers understand which neighborhoods actually deliver the lifestyle they want at the budget they have — before they fall in love with a home that does not fit their long-term goals.",
           },
         ],
       },

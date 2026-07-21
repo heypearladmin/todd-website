@@ -14,14 +14,14 @@ export const site = {
 
   // Brokerage
   brokerage: {
-    name: "LPT Realty, LLC",
+    name: "eXp Realty, LLC",
     licenseLine: "Licensed in Texas",
     address: "New Braunfels, Texas",
   },
 
   // Brand mark
-  logoSrc: "/images/todd-logo.png",
-  logoAlt: "Todd Spencer logo",
+  logoSrc: "/images/exp-realty-logo.svg",
+  logoAlt: "eXp Realty logo",
 
   // Open Graph — must be an absolute URL so social previews work in production
   ogImage: "https://todd-spencer.com/images/og-todd-spencer-new-braunfels.jpg",
@@ -51,7 +51,7 @@ export const site = {
   policiesPath: "/policies",
 
   // A2P 10DLC / Twilio compliance — company name shown in SMS & AI consent copy.
-  complianceCompanyName: "LPT Realty",
+  complianceCompanyName: "eXp Realty",
 } as const;
 
 export type SiteConfig = typeof site;

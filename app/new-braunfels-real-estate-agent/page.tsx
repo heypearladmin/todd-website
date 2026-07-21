@@ -7,7 +7,7 @@ import { breadcrumbSchema, faqSchema, realEstateAgentSchema, servicePageSchema }
 export const metadata: Metadata = {
   title: "New Braunfels Real Estate Agent — Todd Spencer",
   description:
-    "Todd Spencer is a full-service New Braunfels real estate agent with LPT Realty. 120+ five-star reviews. Buyers, sellers, and relocators welcome.",
+    "Todd Spencer is a full-service New Braunfels real estate agent with eXp Realty. 120+ five-star reviews. Buyers, sellers, and relocators welcome.",
   alternates: {
     canonical: `${site.websiteUrl}/new-braunfels-real-estate-agent`,
   },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "New Braunfels Real Estate Agent — Todd Spencer",
-    description: "New Braunfels real estate agent Todd Spencer — LPT Realty. 120+ five-star reviews. Buyers and sellers welcome.",
+    description: "New Braunfels real estate agent Todd Spencer — eXp Realty. 120+ five-star reviews. Buyers and sellers welcome.",
     images: ["https://todd-spencer.com/images/og-todd-spencer-new-braunfels.jpg"],
   },
 };
@@ -153,10 +153,10 @@ export default function NewBraunfelsRealEstateAgentPage() {
               <p className="eyebrow">New Braunfels Real Estate</p>
             </div>
             <h1 className="display-xl mt-6 max-w-4xl text-ink">
-              New Braunfels Real Estate Agent — Todd Spencer, LPT Realty
+              New Braunfels Real Estate Agent — Todd Spencer, eXp Realty
             </h1>
             <p className="dek mt-6 max-w-2xl">
-              Todd Spencer is a full-service New Braunfels real estate agent with LPT Realty, LLC,
+              Todd Spencer is a full-service New Braunfels real estate agent with eXp Realty,
               helping buyers and sellers navigate Comal and Guadalupe County's fast-moving market.
               With 120+ five-star Google reviews and deep roots in the area, Todd brings local
               knowledge and a straightforward, no-pressure approach to every transaction.

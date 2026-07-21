@@ -123,7 +123,7 @@ export default function BuyingAHomeInNewBraunfelsPage() {
         schema={
           servicePageSchema({
             name: "Buying a Home in New Braunfels",
-            description: "Real estate services provided by Todd Spencer, LPT Realty, in New Braunfels and Comal County, TX.",
+            description: "Real estate services provided by Todd Spencer, eXp Realty, in New Braunfels and Comal County, TX.",
             urlPath: "/buying-a-home-in-new-braunfels",
             serviceType: "Home Buyer Representation",
           }) as Record<string, unknown>
