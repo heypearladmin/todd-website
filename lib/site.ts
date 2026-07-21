@@ -20,7 +20,7 @@ export const site = {
   },
 
   // Brand mark
-  logoSrc: "/images/exp-realty-logo.svg",
+  logoSrc: "/images/exp-realty-logo.png",
   logoAlt: "eXp Realty logo",
 
   // Open Graph — must be an absolute URL so social previews work in production
