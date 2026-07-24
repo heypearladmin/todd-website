@@ -952,6 +952,253 @@ export type JournalPost = {
 
 export const journalPosts: JournalPost[] = [
   {
+    slug: "home-insurance-new-braunfels-texas",
+    isNew: true,
+    eyebrow: "BUYER GUIDE",
+    title: "Home Insurance in Texas: What New Braunfels Buyers Need to Know",
+    dek: "Texas home insurance costs more, covers less by default, and requires more decisions than most buyers expect. Here is what to understand before you close on a New Braunfels home.",
+    imageSrc: "/images/website-blog-home-insurance-new-braunfels.png",
+    imageAlt: "Exterior of a well-maintained New Braunfels home at golden hour with lush lawn and Hill Country landscaping under a clear Texas sky",
+    category: "Buyer Guide",
+    publishDate: "July 23, 2026",
+    intro: "Home insurance in Texas is not like home insurance in most other states. The market here is expensive, increasingly restricted, and full of decisions that materially affect what you pay and what you are actually protected against. For buyers purchasing in New Braunfels and Comal County, understanding the insurance landscape before closing is not optional — it is one of the most important steps in the purchase process. A policy that looks affordable at closing can become a financial problem the first time hail comes through or a creek overflows.",
+    sections: [
+      {
+        eyebrow: "THE TEXAS REALITY",
+        heading: "Why Home Insurance Costs More in Texas",
+        body: "Texas consistently ranks among the most expensive states in the nation for homeowner's insurance, and the reasons are specific and structural. The state sits in the path of severe weather systems from multiple directions — Gulf hurricanes and tropical remnants from the south, severe hail corridors through the central corridor where New Braunfels sits, and periodic tornado activity in the spring. Insurance carriers price these risks into every policy, and after years of catastrophic losses across the state, many have also tightened underwriting standards or exited the market entirely.",
+        subsections: [
+          {
+            heading: "Hail Is the Biggest Driver in the New Braunfels Area",
+            body: "Comal County sits within what insurers call the Texas hail belt — a region that experiences some of the highest frequency of large-hail events in the country. A single severe hail storm can produce total losses on hundreds of roofs in a single afternoon, and carriers have responded by raising rates, imposing separate hail deductibles, and requiring newer roofs as a condition of coverage. For buyers, this means the age and condition of a roof is not just a negotiating point — it directly affects your insurability and your annual premium.",
+          },
+          {
+            heading: "Market Conditions in 2026",
+            body: "The Texas home insurance market in 2026 remains tight by historical standards. Several major carriers have pulled back from new business in certain zip codes, and others have imposed significant rate increases across renewal portfolios. State Farm, Allstate, and Farmers have all reduced their Texas footprints, meaning buyers increasingly need to shop through independent agents who have access to surplus lines carriers and regional companies not available through a single-carrier agent. Average annual premiums for a mid-range home in the New Braunfels area currently run between $2,800 and $5,200 depending on coverage limits, deductible structure, and home characteristics.",
+          },
+        ],
+      },
+      {
+        eyebrow: "WHAT YOUR POLICY COVERS",
+        heading: "Standard Homeowner's Insurance: What It Does and Does Not Include",
+        body: "A standard HO-3 homeowner's policy — the most common type — covers the structure of your home and personal property against named perils, provides liability protection, and covers additional living expenses if your home becomes temporarily uninhabitable. What it does not cover is equally important: flood damage is excluded from every standard homeowner's policy in the country, and some carriers now issue separate wind or hail deductibles that function differently from your standard deductible.",
+        subsections: [
+          {
+            heading: "The Hail Deductible Distinction",
+            body: "Most Texas homeowner's policies now carry a wind and hail deductible that is expressed as a percentage of your dwelling coverage — typically 1% to 2% — rather than a flat dollar amount. On a home insured for $450,000, a 2% wind and hail deductible means you pay the first $9,000 of any hail claim out of pocket before insurance kicks in. This is a significant departure from the flat $1,000 or $2,500 deductible buyers often expect, and it is a number worth knowing before you file a claim or before you select your coverage limits.",
+          },
+          {
+            heading: "What a Basic Policy Actually Pays for Roof Replacement",
+            body: "An increasingly important distinction in Texas policies is whether your roof coverage is written as replacement cost value (RCV) or actual cash value (ACV). An RCV policy pays the full cost to replace a damaged roof with materials of similar kind and quality at today's prices. An ACV policy deducts depreciation — meaning a 12-year-old roof on a home may only receive a fraction of the replacement cost, leaving the homeowner to cover the rest. Many carriers have shifted older roofs to ACV coverage as a condition of insuring them at all. When reviewing policy quotes, confirm explicitly which method applies to your roof.",
+          },
+        ],
+      },
+      {
+        eyebrow: "FLOOD IS SEPARATE",
+        heading: "Flood Insurance in New Braunfels: A Separate Policy You May Need",
+        body: "Flooding is not covered by standard homeowner's insurance — not from rivers overflowing, not from storm surge, not from sheet flow during heavy rain events. In New Braunfels, where the Comal and Guadalupe Rivers run through the heart of the community and flash flooding is a documented and recurring risk, understanding your flood exposure is one of the most important due diligence steps a buyer can take. Even properties not in a designated FEMA Special Flood Hazard Area can flood — and often do.",
+        subsections: [
+          {
+            heading: "FEMA Flood Maps and What They Mean",
+            body: "FEMA's National Flood Insurance Program (NFIP) designates flood zones based on modeled risk. Properties in Zone AE or Zone VE are in high-risk flood areas and lenders typically require flood insurance as a condition of the mortgage. Properties in Zone X (shaded) carry moderate risk, and Zone X (unshaded) is considered minimal risk — but neither designation means flood-proof. Comal County has experienced flood events in areas designated as lower-risk zones because Texas Hill Country topography generates fast-moving, high-volume runoff that can overwhelm drainage systems faster than FEMA models predict.",
+          },
+          {
+            heading: "Flood Insurance Options in 2026",
+            body: "Flood insurance in 2026 is available through the NFIP or through private flood insurance carriers. The NFIP redesigned its pricing structure under Risk Rating 2.0, meaning premiums now reflect individual property risk rather than zone-based averages — which has raised costs for some properties and reduced them for others. Private flood insurance has become a more competitive option for many buyers, offering higher coverage limits and sometimes lower premiums than the NFIP for lower-risk addresses. Todd routinely recommends buyers obtain both an NFIP quote and at least one private flood quote before deciding. The annual cost difference can be significant.",
+          },
+        ],
+      },
+      {
+        eyebrow: "HOW TO SHOP",
+        heading: "Getting the Right Coverage at the Right Price",
+        body: "Shopping home insurance in Texas requires more effort than many buyers anticipate, and the stakes of getting it wrong are real. A policy that is underpriced often means underinsured — inadequate dwelling coverage, high deductibles, or exclusions that become apparent only at claim time. Working with an independent insurance agent who represents multiple carriers is almost always more effective than going directly to a single-carrier company.",
+        subsections: [
+          {
+            heading: "Key Questions to Ask Every Insurer",
+            body: "Before binding a policy, get clear answers to these questions: Is the dwelling covered at replacement cost or actual cash value? What is the wind and hail deductible expressed in dollars? Does the policy cover code upgrades during reconstruction (an important and often excluded coverage in older homes)? Is water backup and sewer coverage included or excluded? What is the liability limit, and does it include umbrella compatibility? What is the carrier's AM Best rating — anything below A- should prompt scrutiny of their financial strength.",
+          },
+          {
+            heading: "When to Start Shopping and What Lenders Require",
+            body: "Start shopping for homeowner's insurance as soon as your offer is accepted — not the week before closing. Lenders require proof of a binder (insurance commitment) before funding the loan, and some buyers are surprised to find that certain properties — homes with older roofs, prior claims history, or specific construction types — are harder to insure than expected. If you discover an insurability issue during the option period, it is a legitimate factor in deciding whether to proceed with the purchase. Todd always encourages buyers to obtain an insurance quote as part of the due diligence process, not as an afterthought.",
+          },
+        ],
+      },
+      {
+        eyebrow: "SMART DECISIONS",
+        heading: "Coverage Decisions That Make the Most Difference in Comal County",
+        body: "In a market with New Braunfels's specific risk profile — hail, flash flooding, and aging housing stock alongside new construction — a few coverage decisions matter more than others. These are the areas where spending slightly more on the policy pays off disproportionately when you actually need it.",
+        bulletPoints: [
+          "Choose replacement cost on your dwelling, not actual cash value — the difference matters most in a total loss or major damage event.",
+          "If your home has a roof more than 10 years old, ask specifically how the carrier treats roof age and whether they will write RCV coverage or only ACV.",
+          "Add extended replacement cost coverage — this covers the gap when construction costs exceed your policy's dwelling limit, which happens frequently after major storms when contractor demand spikes.",
+          "Carry at least $300,000 in personal liability coverage, and consider an umbrella policy if you have assets to protect.",
+          "Do not skip water backup and sewer coverage — it is typically inexpensive to add and covers a category of damage that is excluded from standard policies.",
+          "If you are buying in or near a flood-prone area, get a flood insurance quote regardless of your FEMA zone designation. Many claims come from Zone X properties.",
+        ],
+      },
+      {
+        eyebrow: "NEW CONSTRUCTION NOTE",
+        heading: "Insurance Considerations Specific to New Braunfels New Construction",
+        body: "Buyers purchasing new construction in master-planned communities around New Braunfels face some insurance considerations that differ from resale purchases. New homes often qualify for lower premiums due to their construction quality and newer roof, but they may also be located in MUD districts or near drainage features that affect flood zone classification. Additionally, some builders use specific construction methods — including manufactured stone veneers, spray foam roofing systems, or unconventional framing — that certain carriers will not insure or will rate differently. Ask your insurance agent to review the specific home's construction details and address before assuming the premium estimate from a general zip code quote will hold.",
+      },
+    ],
+    faqs: [
+      {
+        question: "How much does home insurance cost in New Braunfels, Texas?",
+        answer: "Annual homeowner's insurance premiums in the New Braunfels area currently run between $2,800 and $5,200 for a mid-range home, depending on coverage limits, deductible structure, roof age and material, claims history, and the specific carrier. Homes with newer roofs, higher deductibles, and comprehensive coverage typically land in the middle of that range. Older roofs, wind-and-hail exclusions, or homes in higher-risk locations push premiums toward the upper end. These figures do not include a separate flood insurance policy, which — if needed — typically runs an additional $800 to $2,500 per year depending on flood zone and coverage amount.",
+      },
+      {
+        question: "Is flood insurance required for a home in New Braunfels?",
+        answer: "Flood insurance is required by lenders for homes in FEMA-designated Special Flood Hazard Areas (zones AE, VE, and similar high-risk designations). For homes in lower-risk zones — Zone X shaded or unshaded — lenders generally do not require it, but that does not mean flood risk is absent. New Braunfels has experienced flooding in areas not designated as high-risk on FEMA maps, particularly during intense Hill Country rain events. Todd recommends buyers obtain a flood insurance quote on any property near creeks, drainage features, or low-lying areas regardless of zone designation.",
+      },
+      {
+        question: "What is a wind and hail deductible and how does it work?",
+        answer: "A wind and hail deductible is a separate deductible that applies specifically to damage caused by wind or hail events — the most common cause of major home insurance claims in Texas. Unlike a standard flat deductible (for example, $1,000 or $2,500), a wind and hail deductible is typically expressed as a percentage of your total dwelling coverage — commonly 1% or 2%. On a home insured for $400,000, a 2% wind and hail deductible means you pay the first $8,000 out of pocket before your insurance coverage applies. This is a critical number to confirm when comparing policies, and it has a major effect on your net recovery after a hail event.",
+      },
+      {
+        question: "When should I start shopping for home insurance during the buying process?",
+        answer: "Start shopping for homeowner's insurance immediately after your offer is accepted — ideally during the option period. Your lender will require proof of insurance (a binder) before closing, and some properties take longer to insure than expected due to roof age, prior claims history, or construction type. Finding a coverage issue during the option period gives you leverage to negotiate repairs, request a price reduction, or decide not to proceed — options that disappear after the option period ends. Getting an insurance quote early also gives you an accurate picture of your total monthly housing cost before you are committed to the purchase.",
+      },
+      {
+        question: "Does my homeowner's insurance cover damage from the Comal or Guadalupe River flooding?",
+        answer: "No. Standard homeowner's insurance policies in Texas — and in every other state — explicitly exclude flood damage regardless of the flood source, including river overflow, storm surge, and sheet flow from heavy rain. Coverage for this type of damage requires a separate flood insurance policy, either through the federal government's National Flood Insurance Program or through a private flood insurer. If your home is near the Comal or Guadalupe Rivers, in a low-lying area, or adjacent to any drainage feature, a flood policy is worth serious consideration regardless of what your FEMA flood zone designation says.",
+      },
+    ],
+  },
+  {
+    slug: "closing-costs-new-braunfels-texas",
+    isNew: true,
+    eyebrow: "BUYER GUIDE",
+    title: "Closing Costs in Texas: What New Braunfels Home Buyers Pay at Closing",
+    dek: "Closing costs catch most buyers off guard. Here is exactly what to expect — lender fees, title costs, prepaid items, and Texas-specific charges — so you can plan your budget accurately.",
+    imageSrc: "/images/website-blog-closing-costs-new-braunfels.png",
+    imageAlt: "Professional real estate closing table with documents, pen, and keys in a modern Texas office with warm natural light",
+    category: "Buyer Guide",
+    publishDate: "July 16, 2026",
+    intro: "Closing costs are the fees, prepaid expenses, and third-party charges that you pay on the day you take ownership of a home — in addition to your down payment. In New Braunfels and across Texas, these costs routinely run between 2% and 4% of the purchase price for buyers, meaning a $400,000 home can easily require $8,000 to $16,000 in closing costs on top of your down payment. Knowing what is coming — and why each line item exists — removes one of the biggest sources of last-minute stress in the home buying process.",
+    sections: [
+      {
+        eyebrow: "THE OVERVIEW",
+        heading: "What Closing Costs Cover and Why They Exist",
+        body: "Closing costs are not a single fee — they are a collection of charges from multiple parties involved in the transaction: your lender, the title company, the county clerk's office, and various third-party service providers. Some costs are fixed regardless of the purchase price. Others scale with the loan amount or sale price. Understanding this distinction helps you know which fees are negotiable and which are fixed by law or market convention.",
+        subsections: [
+          {
+            heading: "The Two Main Categories",
+            body: "Closing costs fall into two broad categories: non-recurring costs and prepaid items. Non-recurring costs are one-time charges paid at closing — origination fees, title insurance premiums, appraisal fees, and recording fees. You pay them once and they are done. Prepaid items are advance payments on ongoing housing expenses — homeowner's insurance, property taxes, and mortgage interest for the remaining days of the month in which you close. These funds go into an escrow account managed by your lender and are drawn on as your ongoing payments come due. Both categories appear on your Closing Disclosure, but they work very differently.",
+          },
+          {
+            heading: "When You Will Know the Exact Number",
+            body: "Your lender is required to provide a Loan Estimate within three business days of your loan application, which gives you an itemized estimate of all closing costs. Within three business days of closing, you receive a Closing Disclosure — the final, binding version of those numbers. By law, certain fees cannot increase by more than 10% between the Loan Estimate and the Closing Disclosure, and some fees (like origination charges you locked in) cannot change at all. Comparing these two documents carefully is one of the most important steps in the final days before closing.",
+          },
+        ],
+      },
+      {
+        eyebrow: "LENDER FEES",
+        heading: "What Your Lender Charges and What Is Negotiable",
+        body: "Lender fees are charges associated with originating, processing, and underwriting your mortgage. These vary significantly from lender to lender, which is one of the primary reasons shopping multiple lenders — not just for interest rate, but for total closing cost — can save a buyer thousands of dollars.",
+        subsections: [
+          {
+            heading: "Origination and Underwriting",
+            body: "The origination fee covers the lender's cost to create the loan. It may be expressed as a flat fee (typically $500 to $1,500) or as a percentage of the loan amount (commonly 0.5% to 1%). Underwriting is the fee for the lender's review and approval of your loan file — typically $400 to $900. Some lenders bundle these into a single origination charge; others list them separately. Neither is negotiable in the sense of being waived entirely, but they are fully competitive — meaning a different lender may charge significantly less for the same loan product.",
+          },
+          {
+            heading: "Points, Rate Locks, and Credit Fees",
+            body: "Discount points are an optional upfront fee paid to buy down your interest rate — one point equals 1% of the loan amount and typically reduces your rate by 0.25%. Whether buying points makes sense depends on how long you plan to keep the loan and your current rate environment. Rate lock fees may appear on some loans, particularly for extended locks beyond 30 days. A credit report fee (typically $25 to $75) and a flood zone determination fee ($10 to $50) usually appear as well. These are standard and not generally negotiable.",
+          },
+        ],
+      },
+      {
+        eyebrow: "TEXAS TITLE COSTS",
+        heading: "Title Insurance and Escrow: The Largest Non-Lender Closing Cost",
+        body: "In Texas, title insurance is one of the most significant closing costs, and the state regulates the rates — meaning all title companies charge the same premium for the same coverage amount. What varies is the service quality, speed, and any ancillary fees the title company charges. Texas has two types of title policies: the Owner's Policy (protecting the buyer) and the Lender's Policy (protecting the lender's interest). In Texas, by longstanding custom, the seller typically pays for the Owner's Policy — though this is a negotiable item in the contract.",
+        subsections: [
+          {
+            heading: "How Texas Title Insurance Is Priced",
+            body: "Texas title insurance rates are set by the Department of Insurance on a tiered schedule based on the purchase price. For a $400,000 home, the Owner's Policy premium runs approximately $2,116. For a $500,000 home it rises to approximately $2,441. The Lender's Policy is a simultaneous issue at a reduced rate — typically an additional $100 to $200 when issued at the same time as the Owner's Policy. Because the seller typically pays the Owner's Policy in Texas, these costs often do not land on the buyer's settlement statement — but when sellers negotiate otherwise, or in cases where seller concessions are involved, they can shift.",
+          },
+          {
+            heading: "Escrow and Settlement Fees",
+            body: "The title company also charges escrow or settlement fees for managing the closing itself — holding funds, coordinating document execution, disbursing proceeds, and recording the deed. In Comal County, these fees typically run $400 to $800 depending on the complexity of the transaction. Attorney fees apply in cases where an attorney is involved in the closing, which is not standard in Texas real estate transactions. Texas uses title companies rather than attorneys for most residential closings.",
+          },
+        ],
+      },
+      {
+        eyebrow: "TEXAS SPECIFIC",
+        heading: "Survey Costs and Other Texas-Specific Charges",
+        body: "Texas is one of relatively few states where a new survey is commonly required as part of a residential real estate transaction. Texas law does not mandate surveys, but lenders and title companies frequently require a current survey to issue title insurance without exception. In practice, most buyers in the New Braunfels market commission a new survey or use an existing survey acceptable to the title company.",
+        subsections: [
+          {
+            heading: "Survey Costs in Comal County",
+            body: "A new boundary survey from a licensed Texas land surveyor in Comal County typically costs between $500 and $1,200 for a standard residential lot, depending on parcel size and terrain complexity. Land parcels — larger, irregular, or rural tracts — can run considerably higher. The TREC contract allows the parties to negotiate who pays for the survey; buyers can negotiate to have the seller provide an existing acceptable survey or cover the cost of a new one. On a resale purchase, always ask if the seller has a recent survey on file — a survey less than five years old is often acceptable to the title company and can save the buyer the cost of a new one.",
+          },
+          {
+            heading: "Recording Fees and Government Charges",
+            body: "Recording fees are paid to Comal County to record the deed and deed of trust (mortgage document) in the public record. These fees run $25 to $75 in total depending on the number of pages being recorded. While small, they are fixed government fees and appear on every closing statement. Some lenders also charge a tax service fee ($50 to $100) to establish a monitoring service that ensures property taxes are paid from escrow. This is a standard lender charge and not negotiable.",
+          },
+        ],
+      },
+      {
+        eyebrow: "PREPAIDS",
+        heading: "Prepaid Items: The Closing Costs That Are Not Really Fees",
+        body: "Prepaid items look like additional closing costs but are actually advance payments on your ongoing housing expenses. They are required by lenders to fund your initial escrow account and to ensure that your first mortgage payment starts with the appropriate cushion. Because they are prepayments rather than fees, you are not losing this money — it goes into your escrow account and gets applied to real expenses as they come due.",
+        subsections: [
+          {
+            heading: "Homeowner's Insurance Prepaid",
+            body: "Lenders typically require the first full year of homeowner's insurance to be paid at closing. On a New Braunfels home, this can run $2,800 to $5,200 depending on coverage, which is often the single largest prepaid item on the settlement statement. After the first year, your monthly escrow payment includes the ongoing insurance premium.",
+          },
+          {
+            heading: "Property Tax Escrow Setup",
+            body: "Texas property taxes are paid in arrears — meaning you pay at the end of the year for the taxes that accrued throughout that year. When a lender establishes an escrow account, they typically collect two to three months of estimated property taxes at closing to build the required cushion before your first payment. For a $450,000 home in New Braunfels with an effective rate of approximately $1.75 per $100, that initial escrow deposit can run $1,700 to $2,600. On top of that, your monthly mortgage payment includes an ongoing escrow allocation for future tax bills.",
+          },
+          {
+            heading: "Prepaid Mortgage Interest",
+            body: "Interest accrues daily on your mortgage. If you close on July 16, you owe interest for the remaining days of July before your first mortgage payment covers a full month. This prepaid interest is calculated as (daily interest rate) x (remaining days in the month) x (loan amount). Closing near the end of the month minimizes this charge; closing on the first of the month maximizes it. On a $350,000 loan at 6.75%, the daily interest runs approximately $64 — closing on the 16th means roughly $960 in prepaid interest. Closing on the 28th means roughly $192. This is one small timing optimization buyers sometimes use to minimize cash needed at closing.",
+          },
+        ],
+      },
+      {
+        eyebrow: "STRATEGIES",
+        heading: "How to Reduce What You Pay at Closing",
+        body: "Closing costs are not as fixed as they appear. While certain fees — title insurance rates, government recording fees, appraisal costs — are largely set by the market, others are negotiable or avoidable with the right strategy going into the transaction.",
+        bulletPoints: [
+          "Negotiate seller concessions in your offer — in the current New Braunfels market, sellers may agree to contribute toward your closing costs, particularly in exchange for other favorable terms like a flexible closing date.",
+          "Shop at least three lenders and compare the full Loan Estimate, not just the interest rate — lender fees can vary by $1,500 or more on the same loan.",
+          "Ask about lender credits — paying a slightly higher interest rate in exchange for a credit toward closing costs can make sense if you plan to sell or refinance within five to seven years.",
+          "Close near the end of the month to minimize prepaid interest owed at the table.",
+          "Request an existing acceptable survey from the seller before commissioning a new one — this can save $500 to $1,200.",
+          "Compare title companies — while premiums are regulated in Texas, ancillary fees and escrow charges vary between companies.",
+          "For VA-eligible buyers, VA loans cap certain fees and eliminate the requirement for private mortgage insurance — total closing cost savings can be substantial compared to conventional loans.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "How much are closing costs for a buyer in New Braunfels, Texas?",
+        answer: "Buyer closing costs in New Braunfels typically run between 2% and 4% of the purchase price, not counting the down payment. On a $400,000 home, that means roughly $8,000 to $16,000 in additional cash needed at closing. The wide range reflects variability in lender fees, whether you pay discount points to buy down your rate, how large your initial escrow deposit is (driven by your insurance and tax estimates), and what you negotiate with the seller regarding contribution toward your costs. A detailed Loan Estimate from your lender, provided within three days of application, gives you the most accurate projection for your specific loan.",
+      },
+      {
+        question: "Who pays title insurance in Texas — the buyer or the seller?",
+        answer: "In Texas, by longstanding custom, the seller typically pays for the Owner's Title Insurance Policy that protects the buyer. The buyer typically pays for the Lender's Title Policy, which is required by the mortgage lender and is a much smaller cost — usually $100 to $200 when issued simultaneously with the Owner's Policy. However, title insurance responsibility is a negotiable item in the Texas real estate contract, and in some transactions — particularly competitive situations or seller's market deals — buyers may agree to pay for one or both policies. Always confirm how title insurance is allocated in your specific contract.",
+      },
+      {
+        question: "Can the seller pay my closing costs in New Braunfels?",
+        answer: "Yes — seller concessions toward buyer closing costs are a negotiable item in the Texas real estate contract. The seller can agree to contribute a fixed dollar amount or a percentage of the purchase price toward the buyer's closing costs and prepaids. Lenders cap how much sellers can contribute based on loan type: conventional loans allow 3% to 9% depending on down payment, FHA loans allow up to 6%, and VA loans allow up to 4% in concessions. In a balanced or buyer-friendly market, requesting seller concessions is a reasonable negotiating strategy — particularly if the seller is motivated or the property has been on the market for a while. In a highly competitive multiple-offer situation, asking for concessions may weaken your offer.",
+      },
+      {
+        question: "Is a survey required when buying a home in Texas?",
+        answer: "Texas law does not mandate a survey in every real estate transaction, but as a practical matter, most lenders and title companies require one to issue title insurance without exception. Buyers in New Braunfels almost always need to either use an existing survey acceptable to the title company or commission a new one. The TREC contract includes a provision addressing who provides or pays for the survey — this is negotiable. A new boundary survey in Comal County typically costs $500 to $1,200 for a standard residential lot. Always ask the seller if a recent survey exists before automatically assuming you need a new one.",
+      },
+      {
+        question: "What is an escrow account and why does my lender require one?",
+        answer: "An escrow account is a holding account managed by your mortgage servicer that collects a portion of your homeowner's insurance premium and property taxes with each monthly payment. The servicer then pays those bills directly when they come due, ensuring that two critical homeownership obligations — insurance and taxes — are never missed. Most conventional loans with less than 20% down require an escrow account; some lenders require them regardless of down payment. At closing, you fund the initial escrow balance — typically two to three months of tax and insurance reserves — which is why prepaid items are often the largest unexpected cost for first-time buyers.",
+      },
+      {
+        question: "When do I need to have my closing costs ready?",
+        answer: "You will know the exact closing cost amount when you receive your Closing Disclosure, which lenders are required to deliver at least three business days before closing. This gives you a short window to arrange the wire transfer or certified funds. Most title companies require closing costs to be paid via wire transfer for amounts over a certain threshold — typically $1,500 or more — rather than by personal check. Coordinate with your bank early to avoid any wire transfer delays. If you are using gift funds for any portion of closing costs, your lender will need documentation well before the Closing Disclosure stage.",
+      },
+    ],
+  },
+  {
     slug: "buying-land-new-braunfels-questions",
     isNew: true,
     eyebrow: "LAND BUYER GUIDE",
