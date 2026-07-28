@@ -1483,7 +1483,6 @@ export const journalPosts: JournalPost[] = [
   },
   {
     slug: "buying-land-new-braunfels-questions",
-    isNew: true,
     eyebrow: "LAND BUYER GUIDE",
     title: "What Questions Should You Ask Before Buying Land in New Braunfels?",
     dek: "Before you make an offer on a raw lot in Comal County, there are four questions every buyer needs answered: utilities, zoning, buildability, and access. Here is how to get those answers.",
@@ -1671,7 +1670,6 @@ export const journalPosts: JournalPost[] = [
   },
   {
     slug: "are-utilities-available-new-braunfels-land",
-    isNew: true,
     eyebrow: "LAND BUYER GUIDE",
     title: "Are Utilities Available? What New Braunfels Land Buyers Need to Know",
     dek: "Utility availability is the single most overlooked factor in Comal County land purchases. Here is how to verify water, sewer, electric, and gas access — and what to do when they are not already there.",
@@ -1785,7 +1783,6 @@ export const journalPosts: JournalPost[] = [
   },
   {
     slug: "new-braunfels-property-tax-guide",
-    isNew: true,
     eyebrow: "BUYER GUIDE",
     title: "New Braunfels Property Tax Guide for Homebuyers",
     dek: "Understand Comal County property tax rates, homestead exemptions, MUD districts, and how to calculate your real tax bill before buying in New Braunfels.",
