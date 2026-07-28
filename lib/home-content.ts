@@ -952,6 +952,289 @@ export type JournalPost = {
 
 export const journalPosts: JournalPost[] = [
   {
+    slug: "winning-offer-new-braunfels-texas",
+    isNew: true,
+    eyebrow: "BUYER GUIDE",
+    title: "How to Make a Winning Offer on a Home in New Braunfels",
+    dek: "Offer price alone doesn't win homes in New Braunfels. Here's how earnest money, option fees, terms, and timing come together to create an offer sellers actually accept.",
+    imageSrc: "/images/website-blog-winning-offer-new-braunfels.png",
+    imageAlt: "Close-up of a hand signing a real estate contract on a wooden desk with a pen, house keys, and natural window light in a Texas home",
+    category: "Buyer Guide",
+    publishDate: "July 31, 2026",
+    intro: "Most buyers in New Braunfels spend weeks finding the right home and then treat the offer like an afterthought. That's a mistake. In a market where well-priced homes in desirable areas still attract serious interest, the way you structure your offer — the price, the earnest money, the option fee, the timeline, and the contingencies — determines whether you get the home or watch someone else move in. This guide breaks down exactly how the Texas offer process works and what separates offers that get accepted from those that don't.",
+    sections: [
+      {
+        eyebrow: "THE TEXAS CONTRACT",
+        heading: "What You Are Actually Signing When You Make an Offer in Texas",
+        body: "Texas uses a standardized purchase contract called the One to Four Family Residential Contract (Resale), published by the Texas Real Estate Commission (TREC). Unlike some states where offers begin as a simple letter of intent, a Texas real estate offer is a legally binding contract from the moment it's signed by both parties. Understanding the structure of that contract before you submit your first offer is not optional — it's the foundation of every decision you'll make during the transaction.",
+        subsections: [
+          {
+            heading: "The Contract Is the Offer",
+            body: "In Texas, there is no separate offer letter or letter of intent stage for residential transactions. When your agent prepares your offer, they are completing the full TREC contract with your proposed terms. The seller either accepts it, counters it, or rejects it — but from execution forward, both parties are bound by its terms. This means every blank in the contract matters: the price, the earnest money amount, the option fee, the option period length, the closing date, the financing terms, and any special provisions.",
+          },
+          {
+            heading: "Who Fills Out the Contract and How",
+            body: "Your buyer's agent prepares the contract on your behalf. Agents in Texas are licensed to complete the TREC-approved forms; attorneys may also be involved for complex transactions. Standard addenda — the Third Party Financing Addendum for financed purchases, the Addendum for Property Subject to Mandatory Membership in a Property Owners' Association for HOA properties, and others — attach to the base contract and address specific circumstances of the transaction. Todd walks every buyer through the full contract before signing so there are no surprises when it lands on the seller's desk.",
+          },
+        ],
+      },
+      {
+        eyebrow: "EARNEST MONEY",
+        heading: "Earnest Money: How Much Is Right in New Braunfels in 2026",
+        body: "Earnest money is a good-faith deposit you make when your offer is accepted, held in escrow by the title company until closing. It signals to the seller that you are a serious buyer — and it is at risk if you back out of the contract without a valid contractual reason after the option period ends. Getting the earnest money amount right is one of the most consequential decisions in your offer.",
+        subsections: [
+          {
+            heading: "The Norm and Why Going Higher Can Help",
+            body: "In New Braunfels in 2026, a standard earnest money deposit typically runs 1% of the purchase price. On a $450,000 home, that means $4,500. In competitive situations — multiple offers, strong seller's market in a specific neighborhood, or a highly desirable property — going to 1.5% or 2% sends a meaningful signal without changing your actual risk profile much, since you recover the deposit at closing either way. Sellers and listing agents pay attention to earnest money because it reflects the buyer's financial commitment and confidence.",
+          },
+          {
+            heading: "What Happens to Earnest Money If the Deal Falls Through",
+            body: "If you terminate during the option period, your earnest money is returned regardless of reason. If the transaction falls through after the option period for a reason covered by a contract contingency — the home doesn't appraise, financing falls through — the contract specifies what happens to the earnest money based on the specific circumstances. If you back out without a valid contractual reason after the option period ends, the seller is generally entitled to keep the earnest money as liquidated damages. In practice, disputed earnest money situations are uncommon when both parties have competent agents — the contracts are designed to handle most scenarios.",
+          },
+          {
+            heading: "When Earnest Money Is Due and Who Holds It",
+            body: "In Texas, earnest money is typically due within 3 business days of contract execution. It is wired or delivered to the title company named in the contract — not to the seller's agent or the seller directly. The title company holds it in a trust account until closing, at which point it is applied toward your closing costs or purchase price. Always confirm the wiring instructions with the title company directly and be alert to wire fraud — this is a real risk in real estate transactions.",
+          },
+        ],
+      },
+      {
+        eyebrow: "THE OPTION PERIOD",
+        heading: "The Option Period: Texas's Most Buyer-Friendly Contract Feature",
+        body: "The option period is a Texas-specific feature that makes buying here more buyer-friendly than most other states. During the option period, you have the unrestricted right to terminate the contract for any reason and receive your earnest money back in full. You pay the seller a small, non-refundable option fee for this right. Understanding how to use the option period strategically — including how long to make it and what to accomplish during it — is one of the most important skills a Texas buyer can develop.",
+        subsections: [
+          {
+            heading: "Option Fee vs. Option Period Length",
+            body: "The option fee is typically $100 to $500 on a standard residential transaction, though it can be higher on luxury or complex properties. It is paid directly to the seller — not held in escrow — and is non-refundable regardless of whether you close. In exchange, the seller cannot accept another offer or market the property during the option period. A typical option period in New Braunfels runs 5 to 10 days. In competitive situations, offering a higher option fee or a shorter period can make your offer more attractive. In a softer market or on a property with known concerns, negotiating a longer period gives you more time for thorough due diligence.",
+          },
+          {
+            heading: "What to Accomplish During the Option Period",
+            body: "The option period is your due diligence window. In those 5 to 10 days, you should complete your general home inspection (and any specialty inspections), review the seller's disclosure notice carefully, obtain a homeowner's insurance quote, and — if applicable — confirm utility availability, flood zone status, and HOA document review. If something surfaces that changes your view of the property, you can terminate before the deadline with your earnest money intact. After the option period ends, your exit options narrow considerably, so treat every day of it as valuable.",
+          },
+          {
+            heading: "Negotiating After the Option Period — The Amendment to Contract",
+            body: "If your inspection reveals issues, the option period is the time to negotiate. Your agent prepares an Amendment to Contract requesting specific repairs or a price reduction in lieu of repairs. The seller can accept, counter, or decline. If you reach an agreement, the amendment is signed and the transaction continues. If you can't agree and you're still within the option period, you can terminate and recover your earnest money. Once the option period expires, you have given up your unrestricted right to walk away — which is why getting inspection results back quickly is essential.",
+          },
+        ],
+      },
+      {
+        eyebrow: "OFFER PRICE STRATEGY",
+        heading: "How to Think About Offer Price in New Braunfels in 2026",
+        body: "The New Braunfels market in 2026 is not the frenzy of 2021 and 2022, but it is not a buyer's market uniformly across all price ranges and neighborhoods either. Getting price strategy right means reading the specific conditions of the property you're making an offer on — not applying a blanket approach to every listing.",
+        subsections: [
+          {
+            heading: "Analyzing Days on Market and Price History",
+            body: "A home that listed 3 days ago and already has multiple showings booked is a different situation than one that's been sitting for 45 days with a price reduction. Days on market (DOM) and any price history are public data that your agent can pull. A property with a long DOM or a previous price cut has a motivated seller and room to negotiate. A fresh listing in a desirable area may warrant coming in at or above list. These are not rules — they're data points that inform a strategy.",
+          },
+          {
+            heading: "Escalation Clauses: When They Help and When They Don't",
+            body: "An escalation clause instructs the seller to automatically increase your offer price above any competing offer by a set increment, up to a stated maximum. For example: 'Buyer will pay $5,000 above any bona fide competing offer, up to a maximum of $490,000.' Escalation clauses can be effective in true multiple-offer situations but have downsides — they reveal your ceiling to the seller and can complicate negotiations if the listing agent isn't familiar with how they work. Todd uses them selectively and only when market conditions genuinely warrant the approach.",
+          },
+          {
+            heading: "Appraisal Gap Coverage",
+            body: "In a competitive offer situation, some buyers include language agreeing to cover a gap between the appraised value and the purchase price up to a certain dollar amount. This is called appraisal gap coverage or an appraisal waiver. It reduces the seller's risk that the deal will fall apart if the home appraises below the contract price. It requires cash on hand to cover the potential difference and should only be used when you have genuinely run the numbers and are comfortable with the downside.",
+          },
+        ],
+      },
+      {
+        eyebrow: "TERMS THAT MATTER",
+        heading: "Offer Terms That Influence Sellers as Much as Price",
+        body: "Price is what most buyers focus on. Sellers and listing agents look at the full picture — and terms can make a lower-priced offer more attractive than a higher one when the circumstances are right.",
+        subsections: [
+          {
+            heading: "Closing Date",
+            body: "Sellers have their own timelines. A seller who has already purchased their next home wants to close quickly. A seller who has not yet found their next home may need a longer closing or a leaseback arrangement. Asking your agent to find out the seller's preferred timeline before submitting your offer — and then aligning your closing date accordingly — costs you nothing and can differentiate your offer meaningfully.",
+          },
+          {
+            heading: "Leaseback Agreements",
+            body: "A seller leaseback (also called a seller-in-possession agreement) allows the seller to remain in the home for a specified period after closing, paying the buyer rent. This is common in Texas when sellers are in transition between homes. Offering a 30 or 60-day leaseback can make your offer significantly more attractive to a seller who isn't ready to move immediately, with no change to the purchase price.",
+          },
+          {
+            heading: "Financing Strength and Pre-Approval Quality",
+            body: "A pre-approval letter from a well-known local lender carries more weight than one from an online lender the listing agent has never worked with. Conventional financing with 20% down presents less risk to the seller than FHA or VA financing in the seller's mind — even though VA and FHA deals close successfully every day. Cash offers eliminate financing risk entirely. Understanding how your financing type is perceived and compensating for it in other terms is part of a thoughtful offer strategy.",
+          },
+        ],
+      },
+      {
+        eyebrow: "AFTER YOU SUBMIT",
+        heading: "What Happens After Your Offer Is Submitted",
+        body: "Once your agent submits your offer, the clock starts. Sellers typically respond within 24 to 48 hours for residential transactions, though this varies. Understanding the possible responses — and how to handle each — keeps you from making emotional decisions when a counter comes back.",
+        bulletPoints: [
+          "Acceptance: both parties sign the contract and the transaction is official. Earnest money is due within 3 business days.",
+          "Counter-offer: the seller modifies your terms — price, dates, or other provisions — and returns it for your signature. You can accept, counter again, or walk away.",
+          "Multiple counter-offers: in competitive situations, the seller may counter multiple buyers simultaneously and ask for highest-and-best offers by a deadline.",
+          "Rejection: the seller declines without a counter. This is less common but happens. Your agent may be able to find out why, which informs your next steps.",
+          "Backup offer position: if the seller is already under contract, they may ask if you want to be in backup position. A backup offer executes automatically if the primary contract falls through — sometimes a smart play on a property you really want.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "How much earnest money should I offer on a home in New Braunfels?",
+        answer: "The standard in New Braunfels in 2026 is approximately 1% of the purchase price. On a $450,000 home, that means $4,500. In a competitive multiple-offer situation, going to 1.5% or 2% signals seriousness without materially increasing your risk, since earnest money is returned to you at closing or if you terminate during the option period. Your agent should advise you on what is competitive given the specific property and market conditions.",
+      },
+      {
+        question: "What is the option period in Texas and how long should I ask for?",
+        answer: "The option period is a Texas-specific contractual window — typically 5 to 10 days — during which you have the unrestricted right to terminate the contract and recover your earnest money. You pay the seller a small, non-refundable option fee (usually $100 to $500) for this right. In competitive offers, a shorter option period can make your offer more attractive. In a slower market or on a property with known complexities, a longer period gives you more time to complete due diligence. Never waive the option period on a first home purchase.",
+      },
+      {
+        question: "Should I offer over asking price in New Braunfels right now?",
+        answer: "It depends entirely on the specific property and its market conditions — there is no blanket answer. A fresh listing in Gruene or near the Comal River with significant showing activity may warrant an at-or-above-list offer. A home that has sat for 45 days with a price reduction has room to negotiate below list. Your agent should pull recent comparable sales and current market data for that specific neighborhood before advising on price. Making an offer based on what feels right rather than what the data supports is one of the most common buyer mistakes.",
+      },
+      {
+        question: "Can I make an offer without a pre-approval letter?",
+        answer: "Technically yes, but practically no — most listing agents will not present an offer without one, and sellers will not accept it seriously. A pre-approval letter from a reputable lender, confirming that a lender has reviewed your credit, income, and assets and is prepared to lend up to a specified amount, is the minimum for a credible offer. A full underwriting approval (sometimes called a TBD approval) is even stronger. Get pre-approved before you start touring homes, not after you fall in love with one.",
+      },
+      {
+        question: "What is a leaseback and when does it make sense to offer one?",
+        answer: "A seller leaseback allows the seller to remain in the home for a set period after closing, paying the buyer a daily rent (often calculated as your PITI — principal, interest, taxes, and insurance — divided by 30). It is most useful when the seller has not yet found their next home or is in transition. Offering a leaseback can make your offer meaningfully more attractive at no cost to you in terms of purchase price. The arrangement is documented in a Temporary Lease Agreement addendum to the TREC contract.",
+      },
+      {
+        question: "What does 'highest and best' mean and how should I respond?",
+        answer: "When a seller receives multiple offers, they may ask all buyers to submit their highest-and-best offer by a specific deadline. This is your one shot — assume you will not get another chance to improve. Consider raising your price if there is room, increasing your earnest money, improving your terms (closing date, option period length, leaseback), and removing contingencies you can live without. Come back with the offer you would be comfortable losing on, not one you will regret if you win.",
+      },
+    ],
+  },
+  {
+    slug: "home-inspection-new-braunfels-texas",
+    isNew: true,
+    eyebrow: "BUYER GUIDE",
+    title: "Home Inspection in Texas: What New Braunfels Buyers Need to Know",
+    dek: "A home inspection is your best tool for understanding what you're actually buying. Here's what inspectors check, what they miss, and how to turn findings into negotiating leverage in Comal County.",
+    imageSrc: "/images/website-blog-home-inspection-new-braunfels.png",
+    imageAlt: "A home inspector in a gray shirt examining the exterior of a single-story Texas limestone home with a clipboard, natural daylight, no people visible in frame",
+    category: "Buyer Guide",
+    publishDate: "July 28, 2026",
+    intro: "The home inspection is one of the most important steps in buying a home in New Braunfels — and one of the most misunderstood. Buyers sometimes treat it as a box to check rather than a tool to use. Done right, the inspection period is your window into the real condition of the property, your opportunity to renegotiate if needed, and your last clear chance to walk away before you're fully committed. This guide explains what a Texas home inspection covers, what it doesn't, and how to turn your inspection report into actionable decisions.",
+    sections: [
+      {
+        eyebrow: "WHAT AN INSPECTION COVERS",
+        heading: "What a Texas Licensed Home Inspector Actually Checks",
+        body: "Home inspectors in Texas are licensed by the Texas Real Estate Commission and must follow a defined Standards of Practice that specifies exactly what must be inspected and reported. Understanding the scope of a standard inspection helps buyers know what questions to ask and where the inspector's findings are most likely to surface.",
+        subsections: [
+          {
+            heading: "Structural and Foundation",
+            body: "The inspector evaluates the foundation type and visible condition — slab foundations are most common in New Braunfels, with pier-and-beam appearing in older and historic homes. In Central Texas, expansive clay soils cause foundation movement that is extremely common, and the inspector will note any visible signs of stress: cracks in brick veneer, doors or windows that stick or don't close properly, sloping floors, or gaps between walls and ceilings. A note in the inspection report about foundation movement does not mean the home is unsound — it means further evaluation by a structural engineer may be warranted, which is a separate and often valuable step.",
+          },
+          {
+            heading: "Roof, Attic, and Insulation",
+            body: "The inspector evaluates roof covering condition and remaining life expectancy, flashing at penetrations and transitions, gutters and drainage, and visible attic conditions including insulation depth and distribution, ventilation, and any signs of moisture intrusion or pest damage. In New Braunfels, where hail events are common and roofs bear the brunt of Texas summers, roof condition is one of the most consequential findings in any inspection report. A roof that needs replacement in the next one to three years is a material cost to factor into your offer or renegotiation.",
+          },
+          {
+            heading: "Electrical, Plumbing, and HVAC",
+            body: "The electrical inspection covers the main panel, visible wiring, grounding, GFCI protection in wet areas, and the condition of outlets and switches. In older homes, aluminum wiring, Federal Pacific or Zinsco panels, and knob-and-tube wiring are specific items that warrant specialist evaluation. For plumbing, the inspector checks visible supply and drain lines, water heater age and condition, water pressure, and any signs of leaks or active moisture. HVAC systems are operated and evaluated for age, condition, and basic function — in New Braunfels, where systems run hard for eight months of the year, an aging HVAC is one of the most common inspection findings and one of the most commonly negotiated items.",
+          },
+        ],
+      },
+      {
+        eyebrow: "WHAT IT DOESN'T COVER",
+        heading: "The Limits of a Standard Home Inspection",
+        body: "A standard home inspection is a visual evaluation by a generalist. It is not a code compliance inspection, a structural engineering assessment, a sewer scope, a pool inspection, a survey, or a guarantee of future performance. Understanding these limits helps buyers make informed decisions about when to bring in specialist inspectors.",
+        subsections: [
+          {
+            heading: "What Inspectors Cannot See",
+            body: "Inspectors are limited to visible and accessible areas. They do not open walls, move furniture, or disturb insulation. Plumbing inside walls, wiring in conduit, and the interior of HVAC equipment beyond basic access panels are not fully evaluated. If the seller has staged furniture over a stained floor or left attic access blocked, the inspector works around it and notes the limitation. The inspection report is a point-in-time snapshot — it reflects visible conditions on the day of the inspection and cannot predict future performance or latent defects.",
+          },
+          {
+            heading: "What Requires a Separate Specialist",
+            body: "Several common and important inspection categories fall outside the general home inspection: foundation engineering assessment (by a licensed structural engineer), sewer line scoping (by a plumber using a camera), pool and spa inspection, chimney inspection, mold testing, radon testing, well flow rate and water quality testing (for rural properties), and septic system inspection. Determining which specialty inspections your property warrants is a judgment call — your agent and general inspector can advise based on what the property is and what the general inspection reveals.",
+          },
+        ],
+      },
+      {
+        eyebrow: "NEW BRAUNFELS SPECIFICS",
+        heading: "Inspection Concerns Specific to New Braunfels and Comal County",
+        body: "Every market has its own common inspection issues shaped by local soil, climate, construction era, and building practices. New Braunfels and Comal County have several patterns that experienced local buyers and inspectors know to look for.",
+        subsections: [
+          {
+            heading: "Foundation Movement from Expansive Soils",
+            body: "The clay-heavy soils of Central Texas expand when wet and contract when dry — a seasonal cycle that puts stress on slab foundations year after year. Visible signs of differential movement are present in a significant percentage of homes in the area. Most movement is cosmetic or manageable; some indicates more serious structural issues. The key is distinguishing between the two, which a standard inspector may not be positioned to do definitively. When the inspection report mentions foundation concerns, investing $300 to $600 in a licensed structural engineer's evaluation is almost always worth it — especially before spending hundreds of thousands of dollars on the home.",
+          },
+          {
+            heading: "Termites and Wood-Destroying Insects",
+            body: "Central Texas has active termite pressure, and a Wood-Destroying Insect (WDI) report — sometimes called a termite inspection — is a separate inspection from the general home inspection. It is typically conducted by a licensed pest control company and costs $75 to $150. Lenders on VA and FHA loans require a WDI report; conventional loan buyers have the option to obtain one. Given the prevalence of subterranean termites in Comal County and the damage a long-term undetected infestation can cause, getting a WDI report on every purchase is a reasonable precaution regardless of loan type.",
+          },
+          {
+            heading: "HVAC Systems in a Texas Climate",
+            body: "Air conditioning systems in New Braunfels run continuously from April through October and intermittently through the winter. A system that runs 2,000-plus hours per year ages faster than the same system in a moderate climate. An HVAC unit approaching 15 years old in New Braunfels is likely near end of life — replacement costs for a properly sized system run $5,000 to $12,000 depending on the home size and system type. Your inspector will operate the system and report on its apparent condition and age, but an HVAC-specific evaluation by a licensed contractor can provide more precise life expectancy and condition assessment.",
+          },
+          {
+            heading: "Well and Septic for Rural and Canyon Lake Properties",
+            body: "Properties in the Canyon Lake area, River Chase, and rural Comal County often operate on private wells and aerobic or conventional septic systems rather than municipal utilities. These require specific inspections beyond the general home inspection. A well inspection should include a flow rate test and a certified lab water quality analysis. A septic inspection should assess the system type, current condition, last service date, and capacity relative to the home's bedroom count. Never skip these inspections on a property with private utilities — replacement costs for a failed well pump or septic system can run $15,000 to $40,000 or more.",
+          },
+        ],
+      },
+      {
+        eyebrow: "CHOOSING YOUR INSPECTOR",
+        heading: "How to Find and Evaluate a Home Inspector in New Braunfels",
+        body: "In Texas, home inspectors must be licensed by TREC. Beyond the license, experience and communication style vary significantly between inspectors. Choosing the right one makes a real difference in the quality of information you walk away with.",
+        subsections: [
+          {
+            heading: "What to Ask Before Hiring an Inspector",
+            body: "Ask how long they have been inspecting in the New Braunfels area specifically — local experience matters for foundation issues, local construction practices, and builder quality. Ask how long the inspection will take — a thorough inspection of a 2,000 square foot home should take 2.5 to 3.5 hours. Ask what format the report comes in and when you will receive it — most modern inspectors deliver digital reports with photos within 24 hours. Finally, ask if they allow buyers to be present. Attending your inspection is one of the best things you can do as a buyer.",
+          },
+          {
+            heading: "The Value of Attending Your Inspection",
+            body: "Many buyers receive the report without ever being on-site. That is a missed opportunity. When you walk through with the inspector, you can ask real-time questions, understand the context for findings, and see the actual condition of systems and components — not just read about them in a report. An inspector pointing at a junction box and explaining why it matters is more useful than two paragraphs of text in a PDF. Make the time if at all possible. For out-of-town buyers, ask the inspector to do a video call walkthrough while on-site — many are happy to accommodate this.",
+          },
+        ],
+      },
+      {
+        eyebrow: "READING THE REPORT",
+        heading: "How to Read an Inspection Report Without Panicking",
+        body: "Inspection reports are written to document deficiencies. They are not written to contextualize those deficiencies or tell you whether the home is worth buying. A report on a well-maintained 10-year-old home can run 40 pages and list 50 items. A report on a poorly maintained home can list 20 items with three major structural concerns. The number of findings is not the measure of a home's condition — the nature and severity of the findings is.",
+        subsections: [
+          {
+            heading: "Safety Items vs. Maintenance Items vs. Material Defects",
+            body: "Most inspectors organize findings by severity. Safety items — missing GFCI protection, inoperative smoke detectors, double-tapped breakers, improper gas appliance venting — should be addressed regardless of whether you negotiate them. Maintenance items — caulking at tubs, dirty HVAC filters, minor door hardware issues — are the normal cost of homeownership and not typically negotiated. Material defects — foundation concerns, roofing at or near end of life, HVAC systems requiring replacement, significant moisture intrusion — are the items worth discussing with your agent and potentially bringing back to the seller.",
+          },
+          {
+            heading: "What Is Reasonable to Negotiate After an Inspection",
+            body: "The inspection negotiation is not an opportunity to get a discount on every item in the report. Sellers — especially those with experienced listing agents — will push back on requests that feel like cherry-picking minor maintenance. The most productive approach is to focus on material defects: items that represent significant cost, pose a safety concern, or reflect conditions the seller's disclosure did not accurately represent. Your agent will help you calibrate what's reasonable given the specific market conditions and the seller's posture.",
+          },
+        ],
+      },
+      {
+        eyebrow: "THE OPTION PERIOD",
+        heading: "Using the Option Period to Your Advantage",
+        body: "The Texas option period is designed exactly for this purpose — to give buyers the time and flexibility to conduct due diligence and make an informed decision about whether to proceed. Using it well is a skill.",
+        bulletPoints: [
+          "Schedule your inspector immediately after contract execution — the best inspectors in the area book quickly, and you need the report with enough time to act.",
+          "Order specialty inspections during the same window — foundation engineer, WDI, pool, sewer scope — so all findings are in hand before the option period expires.",
+          "Review the seller's disclosure notice carefully against the inspection report — any inconsistency between what the seller disclosed and what the inspector found is significant.",
+          "Get your homeowner's insurance quote during the option period — if the roof age or prior claims history creates an insurability issue, you need to know before you're committed.",
+          "Obtain repair cost estimates for any major items you plan to negotiate — coming to the seller with a contractor's bid is more credible than a round-number request.",
+          "Give yourself at least 2 days before the option period ends to execute any amendment negotiations — last-minute negotiations under deadline pressure lead to poor decisions.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "How much does a home inspection cost in New Braunfels?",
+        answer: "A standard general home inspection in New Braunfels typically runs $350 to $600 for a home in the 1,500 to 3,000 square foot range. Larger homes, homes with pools, or homes with additional structures cost more. A WDI (termite) inspection runs an additional $75 to $150 and is typically ordered separately from a licensed pest control company. Specialty inspections — structural engineering assessment, sewer scope, pool inspection, or well and septic evaluation — each carry their own fees, generally $150 to $450 depending on the service.",
+      },
+      {
+        question: "Should I attend my home inspection in person?",
+        answer: "Yes, if at all possible. Walking through the home with the inspector in real time gives you context for findings that a written report can't fully convey. You can ask questions on the spot, understand which items are serious versus routine, and leave the inspection with a much clearer picture of what you're buying. For out-of-town buyers, ask the inspector to do a live video walkthrough — many inspectors in the area will accommodate this. Receiving the report without ever being on-site means you're making critical decisions based on words and photos alone.",
+      },
+      {
+        question: "What are the most common inspection issues in New Braunfels homes?",
+        answer: "Foundation movement from expansive clay soils is the most common finding in the area and the one that warrants the most careful follow-up. Roof condition — particularly hail damage and aging shingles — is consistently among the top findings. HVAC systems running near end of life after years of heavy Texas use appear frequently. Electrical issues in older homes (double-tapped breakers, outdated panels, missing GFCI protection) and plumbing concerns in properties built before the 1990s round out the most common categories. None of these findings automatically means you shouldn't buy the home — it means you need to understand the scope and cost of the issue.",
+      },
+      {
+        question: "Can I negotiate repairs after the inspection in Texas?",
+        answer: "Yes. After receiving your inspection report during the option period, your agent prepares an Amendment to Contract listing the repairs or credits you're requesting. The seller can accept your requests, counter with a partial response, or decline. If you can't reach agreement and you're still within the option period, you can terminate and recover your earnest money. Focus your requests on material defects and safety items rather than normal maintenance — a narrow, well-supported repair request is more likely to result in a productive negotiation than a list of 30 items.",
+      },
+      {
+        question: "Is a foundation issue a dealbreaker in New Braunfels?",
+        answer: "Not necessarily — it depends on what the foundation issue actually is. Cosmetic cracking and minor differential movement are extremely common in Central Texas and are often manageable. Significant structural movement that has compromised the integrity of the home is a different matter. The right response to a foundation flag in your inspection report is to hire a licensed structural engineer to evaluate and opine on the severity, the cause, and the recommended remedy. That $300 to $600 evaluation gives you real information to make a decision — not a blanket either/or.",
+      },
+      {
+        question: "What is a WDI inspection and do I need one?",
+        answer: "A WDI (Wood-Destroying Insect) report, commonly called a termite inspection, is a separate inspection conducted by a licensed pest control company that evaluates the property for evidence of termites, carpenter ants, wood-boring beetles, and other wood-destroying organisms. VA and FHA lenders require one; conventional buyers are not required to obtain one but are well-advised to do so given the active termite pressure in Central Texas. The cost is typically $75 to $150, and the report identifies any active infestation, evidence of prior treatment, or conditions conducive to wood-destroying insects.",
+      },
+    ],
+  },
+  {
     slug: "home-insurance-new-braunfels-texas",
     isNew: true,
     eyebrow: "BUYER GUIDE",
