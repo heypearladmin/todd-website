@@ -73,6 +73,452 @@ export type JournalPost = {
 
 export const journalPosts: JournalPost[] = [
   {
+    slug: "breweries",
+    eyebrow: "LOCAL GUIDE",
+    title: "New Braunfels Breweries and Taprooms: The Local Drinking Guide",
+    dek: "New Braunfels punches above its weight for a city this size — craft breweries, a historic hotel bar, river patios, and a German biergarten tradition that never really left. Where locals actually drink.",
+    imageSrc: "/images/explore-breweries-faust-taproom.webp",
+    imageAlt: "New Braunfels craft brewery taproom interior with reclaimed wood, copper kettles, and warm hanging bulbs.",
+    category: "Explore",
+    publishDate: "July 2026",
+    intro: "New Braunfels was founded by German immigrants in 1845, and they brought with them a culture of communal drinking, beer gardens, and the idea that a well-made lager was a civic institution. That tradition persisted through Prohibition, resurfaced in the craft beer era, and now expresses itself in a collection of breweries, taprooms, and biergartens that are genuinely worth seeking out. This is not a city that caught the craft beer wave; it is a city that understood the concept for a hundred and fifty years before it got a name.",
+    sections: [
+      {
+        eyebrow: "THE BREWERIES",
+        heading: "New Braunfels's Craft Breweries: Where to Start",
+        body: "The local brewing scene is small by Austin standards but strong by any other measure. Each of the main breweries has a distinct character — worth visiting each for different reasons.",
+        subsections: [
+          {
+            heading: "Faust Hotel Biergarten and Bar",
+            body: "The Faust Hotel opened in 1929 and is, by some measures, the oldest continually operating hotel in Texas. The bar and biergarten are the social center of downtown New Braunfels on weekend evenings — limestone courtyard, string lights, rotating taps, and live music on Fridays and Saturdays. The Faust does not brew its own beer but curates an excellent rotating tap list that skews toward Texas craft. It is less a brewery destination and more the place you end up after exploring the others, or the place you go when you want the full New Braunfels ambiance without driving to Gruene.",
+          },
+          {
+            heading: "New Braunfels Brewing Company",
+            body: "The flagship local brewery with a taproom and outdoor patio near the heart of the city. NBBC brews a consistent core lineup — their Hefeweizen is a nod to the German heritage and one of the better Texas examples of the style — alongside rotating seasonals and small-batch experiments. The taproom has the feel of a neighborhood gathering place rather than a tourist attraction: locals on weekday evenings, families on weekend afternoons, regular live music. Their New Braunfels Pils has become a local standard.",
+          },
+          {
+            heading: "Freiheit Country Store and Brewery",
+            body: "Located in the Gruene area, Freiheit combines a country store, food, and a brewery taproom in a way that feels specific to this part of Texas. It draws a crowd that overlaps with Gruene Hall visitors but has its own identity. The space is large, the patio is substantial, and the beer program leans toward accessible lagers and ales that suit the Texas outdoor drinking context. It is one of the more family-friendly brewing destinations in the area — kids are genuinely welcome and the food is good enough to make it a meal.",
+          },
+          {
+            heading: "Krause's Café and Biergarten",
+            body: "A downtown New Braunfels institution with deep roots in the German tradition. Krause's operates a full restaurant and biergarten with an emphasis on German-style fare and draft beer. It is less a craft brewery in the modern sense and more the living expression of what New Braunfels's founding culture actually drank: lagers, bocks, and wheat beers served in a beer garden setting. Weekend afternoons here, with pretzels and sausage and a cold Shiner or local draft, is a version of New Braunfels that has existed in some form for over a century.",
+          },
+          {
+            heading: "McAdoo's and the Downtown Bar Circuit",
+            body: "The downtown New Braunfels square and its surrounding blocks have a rotating set of bars and restaurants with good draft programs. McAdoo's Seafood Company, the Huisache Grill, and several newer additions all carry strong local and Texas craft taps. The downtown circuit is more walkable than the Gruene area and better suited to bar-hopping; a Friday night that starts at Krause's and ends somewhere on the square with live music is a reasonable local evening.",
+          },
+        ],
+      },
+      {
+        eyebrow: "THE GERMAN HERITAGE",
+        heading: "The Biergarten Tradition: Why New Braunfels Drinks the Way It Does",
+        body: "Understanding New Braunfels's drinking culture requires understanding that the German settlers who founded the city arrived with a fully formed set of opinions about how beer should be made, served, and consumed. The biergarten — a communal outdoor space where families gathered, beer was sold by the glass, and the social boundary between strangers was lower than indoors — was not imported as a novelty. It was infrastructure.",
+        subsections: [
+          {
+            heading: "The Lager Preference",
+            body: "New Braunfels's German heritage explains why the city's most popular beers skew toward lagers, hefeweizens, and bocks rather than the IPAs and stouts that dominate Austin's craft scene. The local palate was shaped by generations of German-style brewing, and the breweries that have done best here — both the old German-tradition establishments and the newer craft breweries — are the ones that understood that preference and respected it. A well-made Texas hefeweizen on a 95-degree day in a limestone courtyard is not a compromise; it is the point.",
+          },
+          {
+            heading: "Community Drinking vs. Bar Culture",
+            body: "The biergarten model is fundamentally different from American bar culture in that it assumes families are present, the daylight hours are as valid a time to drink as night, and the social expectation is conversation rather than performance. New Braunfels's best drinking spots preserve this ethos — long communal tables, outdoor settings, kids running around the edges of the patio, the same group staying for three hours without anyone feeling the need to move on. If you try to experience New Braunfels breweries like a bar crawl, you'll miss the point.",
+          },
+        ],
+      },
+      {
+        eyebrow: "PRACTICAL GUIDE",
+        heading: "Tips for Visiting New Braunfels Breweries",
+        body: "",
+        bulletPoints: [
+          "Weekend afternoons are peak time at Gruene-area taprooms — if you want a seat at Freiheit on a Saturday, arrive before 2 p.m. or after 5 p.m.",
+          "The Faust Hotel biergarten fills quickly on Friday and Saturday evenings when live music is scheduled. Arrive by 6:30 p.m. for a comfortable spot.",
+          "New Braunfels Brewing Company's weekday taproom hours are local-friendly — Tuesday through Friday afternoons are when you'll find the most regulars.",
+          "Krause's serves food that pairs with their beer program — the sausage and pretzel combination is not an afterthought.",
+          "Designated driver or rideshare planning is practical: the Gruene area and downtown are about two miles apart, and doing both in one evening is better with a plan for getting back.",
+          "Ask what's local and seasonal at any tap — the rotating small-batch releases at NBBC and Freiheit are often better than the flagships.",
+        ],
+      },
+      {
+        eyebrow: "BREWERIES AND LIVING HERE",
+        heading: "What the Brewery Scene Means for New Braunfels Residents",
+        body: "For buyers evaluating New Braunfels as a place to live, the brewery and taproom scene is a proxy for something larger: the city has a genuine, year-round social fabric that does not depend on summer tourism. The biergartens that fill on Tuesday evenings in October, the Friday happy hour crowds at downtown taprooms, the Sunday afternoon regulars at NBBC — these are the signs of a community with social infrastructure, not just a city that becomes lively in July and goes quiet in January. For buyers who care about finding a place where they can build a social life, that distinction matters.",
+        subsections: [],
+      },
+    ],
+    faqs: [
+      {
+        question: "What is the best brewery in New Braunfels?",
+        answer: "It depends on what you're looking for. New Braunfels Brewing Company is the most established local craft brewery with the most consistent tap program. Freiheit Country Store is better for a full afternoon with food and outdoor space. The Faust Hotel biergarten is the best atmosphere for a downtown evening with live music. Krause's Café and Biergarten is the most authentic expression of the German tradition. Most locals have a regular among these depending on the occasion rather than a single favorite.",
+      },
+      {
+        question: "Is New Braunfels a good city for craft beer?",
+        answer: "Yes, particularly if your taste runs toward lagers, hefeweizens, and traditional German styles. The German founding heritage shaped the local brewing culture in a way that distinguishes New Braunfels from Austin's IPA-heavy craft scene. The city has fewer breweries than Austin but the ones it has tend to be well-run, community-oriented, and embedded in the social fabric in a way that makes them more enjoyable as local hangouts than as tourist destinations.",
+      },
+      {
+        question: "Are New Braunfels breweries family-friendly?",
+        answer: "Most of them, yes. The biergarten tradition is inherently family-inclusive — outdoor settings, long communal tables, food programs. Freiheit, Krause's, and the Faust Hotel biergarten all actively welcome families with children. New Braunfels Brewing Company's taproom is family-friendly during afternoon hours. The downtown bar circuit is more adult-oriented in the evening hours.",
+      },
+      {
+        question: "What is the German beer tradition in New Braunfels?",
+        answer: "New Braunfels was founded in 1845 by German immigrants who brought a fully formed beer culture with them — communal biergartens, lager brewing, and the social norm of outdoor daytime drinking as a family activity rather than an adult-only bar behavior. That tradition persisted through Prohibition and the craft beer era and now expresses itself in the biergartens at Krause's and the Faust Hotel, the hefeweizen programs at local breweries, and the communal outdoor drinking culture that distinguishes New Braunfels from most American cities.",
+      },
+    ],
+  },
+  {
+    slug: "hidden-gems",
+    eyebrow: "LOCAL GUIDE",
+    title: "New Braunfels Hidden Gems: What Locals Know That Visitors Miss",
+    dek: "The swimming hole that doesn't show up on maps. The bakery with a line of regulars and zero signage. The park at 7 a.m. The spots locals protect by not telling everyone — until now.",
+    imageSrc: "/images/explore-hidden-gems-secret-cove.webp",
+    imageAlt: "Secluded swimming cove on the Guadalupe with limestone outcropping and quiet, glassy water.",
+    category: "Explore",
+    publishDate: "July 2026",
+    intro: "Every city has a tourist layer and a local layer. In New Braunfels, the tourist layer is easy to find: Gruene Hall, Schlitterbahn, the Comal River tube run, Landa Park. These are genuinely good, which is why they're on every list. The local layer is harder to find but more interesting — the limestone swimming cove that doesn't have a parking lot, the bakery with no website, the neighborhood park that fills with regulars at sunrise before the summer heat makes it impossible, the German deli that looks closed but isn't. This is that list.",
+    sections: [
+      {
+        eyebrow: "WATER",
+        heading: "Swimming Holes and River Spots That Locals Don't Publicize",
+        body: "The Comal and Guadalupe get most of the attention, but New Braunfels and the surrounding Hill Country have quieter water spots worth knowing about.",
+        subsections: [
+          {
+            heading: "Landa Park — Before 8 a.m.",
+            body: "Locals know Landa Park differently than visitors do. By 10 a.m. on a summer weekend it is busy. Before 8 a.m., it is one of the most beautiful places in the Texas Hill Country — mist rising off the spring-fed pool, almost no one else there, ducks moving across the still water, the cypress trees at their most atmospheric. The park has a spring-fed pool that maintains a constant cool temperature year-round. Swimmers who come at sunrise have it essentially to themselves and experience a version of the park that the afternoon crowd never sees.",
+          },
+          {
+            heading: "Hinman Island Park",
+            body: "A small city park on the Comal River that most visitors walk past without stopping. The park sits on an island in the middle of the river with access from both banks. It is a quiet place to sit on the limestone banks, put your feet in the 72-degree water, and watch the tubers float past without being one of them. Locals with small children use it as a wading spot — the water is shallow, clear, and calm here. No fee, no rental, no crowd management.",
+          },
+          {
+            heading: "The Guadalupe Below the Dam",
+            body: "The section of the Guadalupe below Canyon Lake dam runs cold year-round from dam releases — sometimes cold enough to require a wetsuit in winter, which creates a year-round fly fishing culture that most visitors don't know exists. The riverbanks in this section have multiple public access points with limestone ledges, deep green pools, and an atmosphere of a genuinely wild river. On weekday mornings the trout fishers have it mostly to themselves. It is among the most scenic stretches of Hill Country river within easy driving distance of San Antonio and Austin, and most people from those cities have never heard of it.",
+          },
+          {
+            heading: "Spring Lake at Aquarena Center (San Marcos)",
+            body: "Just 30 minutes north of New Braunfels, San Marcos's Spring Lake is one of the clearest bodies of water in the United States — fed by the San Marcos Springs, with visibility measured in feet rather than inches. The Aquarena Center at Texas State University runs glass-bottom boat tours over the spring. It is technically a university facility and not a swimming hole, but the experience of looking down through crystal-clear spring water at the archaeological sites and native fish is unlike anything in the region. New Braunfels locals treat it as a half-day trip worth doing once a year.",
+          },
+        ],
+      },
+      {
+        eyebrow: "FOOD AND DRINK",
+        heading: "Local Spots That Don't Show Up First on Yelp",
+        body: "New Braunfels has the full range of tourist-facing restaurants, and they are fine. These are the other ones.",
+        subsections: [
+          {
+            heading: "Naegelin's Bakery",
+            body: "Naegelin's has been operating in downtown New Braunfels since 1868, making it the oldest continuously operating bakery in Texas. It does not have a significant social media presence. It does not need one. The line of regulars on Saturday mornings is entirely local — people who have been buying the same strudel, kolaches, and decorated cookies for their entire lives. The pastry case is simple, the prices are low, and the building itself is worth seeing. Visitors who stumble in sometimes don't understand what they've found.",
+          },
+          {
+            heading: "Krause's Café — On a Tuesday",
+            body: "Krause's is on the tourist list and is genuinely good, which means weekend afternoons can feel crowded. On a Tuesday evening, it is a different experience: mostly locals, the biergarten tables have space, the same sausage and cold beer exist, and the pace slows to something closer to what a German biergarten is supposed to feel like. The Thursday night regulars who have been coming for twenty years are good conversation if you ask the right questions.",
+          },
+          {
+            heading: "New Braunfels Smokehouse",
+            body: "The Smokehouse opened in 1943 as a meat processing operation and is now both a restaurant and a mail-order operation that ships Texas smoked meats nationally. Locals use it primarily as a deli — the smoked turkey, brisket, and sausage are all excellent and available by the pound at the market counter. It is less a sit-down experience than a stop-and-grab, and the quality is significantly above what the old-school storefront appearance suggests.",
+          },
+          {
+            heading: "Schlotzsky's Original Concept — Canyon Lake",
+            body: "The original Schlotzsky's concept store — before the chain franchise — still operates near Canyon Lake. It is a local oddity worth knowing about: the original sandwich recipe in the original format, served at a location that predates the chain's expansion. Not a hidden gem in the Instagram sense, but a genuine piece of Texas food history that residents point out to visitors who care about that kind of thing.",
+          },
+        ],
+      },
+      {
+        eyebrow: "PLACES",
+        heading: "Spots Worth Knowing That Don't Have a Marketing Budget",
+        body: "",
+        subsections: [
+          {
+            heading: "The Historic Downtown Square — On a Weekday Morning",
+            body: "The New Braunfels historic square is a genuinely beautiful piece of preserved Texas architecture — the Comal County courthouse, limestone storefronts, mature oak trees — that is easy to miss because summer weekends bring enough foot traffic to obscure it. On a weekday morning before 9 a.m., the square is quiet, the light is good, and the buildings are visible as architecture rather than as backdrop. Several of the shops and the farmers market operate during the week; the experience of walking the square before the heat arrives is one of the most pleasant things in the city that most visitors never do.",
+          },
+          {
+            heading: "Natural Dam on the Comal",
+            body: "A short walk from Landa Park, a natural limestone dam formation creates a small waterfall and pool that locals have used as a swimming and wading spot for generations. It does not appear prominently on visitor guides. The water is clear, the setting is shaded, and on a weekday morning it is often entirely empty. It is the kind of place that exists in every Texas river town and that residents guard fiercely by not mentioning it.",
+          },
+          {
+            heading: "Pioneer Museum",
+            body: "New Braunfels's Pioneer Museum on Church Hill preserves a collection of original mid-1800s structures — a farmhouse, a smokehouse, a Sunday house — from the German settlement period. It is one of the better small history museums in Central Texas and is rarely crowded. The Sunday house concept — a small structure German settlers from outlying farms built in town so they could stay overnight for church services — is specific to this region and not well known outside of it. The museum provides context for why New Braunfels looks and feels the way it does that no amount of Gruene Hall visits can substitute for.",
+          },
+          {
+            heading: "Cypress Bend Park",
+            body: "A Comal County park on the Guadalupe River that has significantly more shade, fewer people, and better picnic facilities than most of the commercial river areas. Locals use it for family gatherings, birthday parties, and the kind of long afternoon on the river that is harder to achieve at the busier access points. It requires knowing it exists, which most visitors don't.",
+          },
+        ],
+      },
+      {
+        eyebrow: "TIMING",
+        heading: "The Hidden Gem That Applies Everywhere: Go Early",
+        body: "The single most consistent piece of local knowledge about New Braunfels is timing. The city draws three to four million visitors a year, the majority concentrated in summer weekends, and the best version of almost every place in New Braunfels exists before 9 a.m. or after Labor Day. Landa Park at sunrise. The downtown square on a Tuesday. The Gruene district on a Wednesday afternoon. The Guadalupe below the dam on an October morning. The geography and natural beauty that draw people here are the same in October as in July — without the crowds.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What are the best kept secrets in New Braunfels?",
+        answer: "By local consensus: Naegelin's Bakery (open since 1868, often missed by visitors), Landa Park before 8 a.m. on summer mornings, Hinman Island Park for a quiet Comal River spot, the Guadalupe below Canyon Lake dam for fishing and solitude, and the historic downtown square on weekday mornings. The consistent theme is timing — the best version of nearly every place in New Braunfels exists before the summer weekend crowds arrive.",
+      },
+      {
+        question: "Are there free things to do in New Braunfels?",
+        answer: "Yes. Landa Park is free and has river access, the spring-fed pool (small fee), paddleboats, and walking trails. Hinman Island Park is free. The historic downtown square, the Pioneer Museum (modest admission), and the natural dam swimming spot on the Comal are all low or no cost. The Guadalupe River has multiple free public access points for swimming and fishing. New Braunfels is considerably more accessible as a budget destination than its reputation as a tubing town suggests.",
+      },
+      {
+        question: "What is the oldest bakery in Texas?",
+        answer: "Naegelin's Bakery in downtown New Braunfels, open since 1868. It is the oldest continuously operating bakery in Texas and serves traditional German-style pastries, kolaches, and decorated cookies from a storefront that has changed little over the decades. It has a loyal local following and no meaningful social media presence — which is part of what makes it a genuine local institution rather than a tourist attraction.",
+      },
+      {
+        question: "What is the best time to visit New Braunfels to avoid crowds?",
+        answer: "September through early November is the locals' favorite window: water temperatures remain comfortable, fall color appears along the river banks, and the summer tourism crowds are gone. Weekday mornings any time of year are dramatically quieter than weekend afternoons. May and early June offer warm weather and manageable crowds before school lets out. January through March is the quietest period; commercial tubing operations reduce hours but Landa Park and the rivers are open year-round.",
+      },
+    ],
+  },
+  {
+    slug: "weekends",
+    eyebrow: "LOCAL GUIDE",
+    title: "New Braunfels Weekend Guide: What Locals Actually Do Saturday and Sunday",
+    dek: "Farmers markets, antique strolls, river floats, live music, and the Sunday supper that ends it right. A local's blueprint for the perfect New Braunfels weekend — no tourist itinerary required.",
+    imageSrc: "/images/explore-weekend-activities-farmers-market.webp",
+    imageAlt: "Saturday farmers market in New Braunfels with woven baskets of peaches and tomatoes in golden morning light.",
+    category: "Explore",
+    publishDate: "July 2026",
+    intro: "The best New Braunfels weekends are not planned around attractions. They are built around rhythms: where to start Saturday morning before the heat arrives, which hour the farmers market is worth going to, when the Gruene district feels like itself versus when it feels like a parking lot. Locals who have lived here for years have found the version of each weekend activity that is actually good — and it is usually not the version the tourism board promotes. This is how locals spend Saturday and Sunday.",
+    sections: [
+      {
+        eyebrow: "SATURDAY MORNING",
+        heading: "How to Start Saturday Right",
+        body: "Saturday morning in New Braunfels is one of the better versions of the day in any Texas city. The trick is being out before 9 a.m.",
+        subsections: [
+          {
+            heading: "The New Braunfels Farmers Market",
+            body: "The New Braunfels Farmers Market runs Saturday mornings at the Civic/Convention Center, with local produce, Hill Country honey, baked goods, plants, and artisan vendors. The quality of the produce reflects the region's growing conditions — tomatoes, peaches, squash, and peppers in season are genuinely excellent. The best selection is at opening time; by 10 a.m. the most popular vendors are selling out. Going early also means cooler temperatures and a more relaxed crowd. It is a genuine community event — the same vendors and the same regulars see each other weekly — rather than a tourist market.",
+          },
+          {
+            heading: "Naegelin's Bakery",
+            body: "A Saturday morning stop at Naegelin's (open since 1868) is a ritual for longtime residents. The kolaches, strudel, and decorated cookies are straightforward and excellent. The line moves quickly. Arriving by 8 a.m. for the best selection; the signature items sell out before 10 on busy weekends. It is one block from the downtown square and pairs naturally with a morning walk through the historic district.",
+          },
+          {
+            heading: "Landa Park Before the Crowds",
+            body: "If Saturday morning has no fixed obligations, Landa Park before 9 a.m. is one of the best options in the city. The spring-fed pool, the cypress trees, the Comal River access, the ducks, and the walking trails are all at their best in morning light with no one else there. The park becomes a different experience by 11 a.m. Bring coffee, wear shoes you can get wet, and plan to stay an hour.",
+          },
+        ],
+      },
+      {
+        eyebrow: "SATURDAY AFTERNOON",
+        heading: "The Middle of the Day: How to Spend It Well",
+        body: "",
+        subsections: [
+          {
+            heading: "The Gruene Historic District",
+            body: "Saturday afternoon in Gruene is best approached as a full afternoon rather than a quick stop. The sequence that works: lunch at one of the river-view restaurants, a walk through the antique shops and galleries, a set at Gruene Hall if the afternoon show is worth seeing, and a cold drink on a patio before dinner. The Gruene district is compact enough to cover on foot; driving between the three blocks of the commercial core is unnecessary and makes parking harder. Arriving before noon gets you lunch without a wait; arriving at 1:30 p.m. means a 45-minute queue at the popular spots.",
+          },
+          {
+            heading: "River Float",
+            body: "A Comal River tube float takes 2 to 3 hours and works well as a Saturday afternoon activity — put in around 1 p.m. and you're out by 4 p.m., before the late afternoon sun is at its hottest. The commercial outfitters (Rockin' R, Comal Tubing) run shuttle service so you can leave a car at the take-out. For a less crowded Saturday afternoon float, the Guadalupe near Gruene is a better choice than the Comal — more space, comparable scenery, and kayaks or canoes give you more control over the pace.",
+          },
+          {
+            heading: "Antiquing on San Antonio Street",
+            body: "The antique district along San Antonio Street in downtown New Braunfels is one of the better concentrated antique shopping areas in Central Texas. Several multi-dealer shops and individual galleries fill old storefronts with genuine Hill Country and Texas antiques — furniture, ceramics, farm tools, vintage textiles, and period ephemera from the German settlement period. It is unhurried on Saturday afternoons and well worth two hours for anyone with an interest in the material culture of the region.",
+          },
+        ],
+      },
+      {
+        eyebrow: "SATURDAY EVENING",
+        heading: "Saturday Night: Music, Dinner, and the Right Order",
+        body: "",
+        subsections: [
+          {
+            heading: "Early Dinner Before the Show",
+            body: "The sequence that works on a Saturday evening in New Braunfels: dinner at 6 p.m. before the restaurant rush hits, then a Gruene Hall show at 8 p.m. Waiting until 7:30 p.m. to eat means competing with the pre-show crowd at every restaurant in the Gruene district. The river-view spots near Gruene fill fastest; the downtown New Braunfels restaurants have more availability on Saturday evenings. Gristmill Restaurant and Bar — in a converted 1878 cotton gin overlooking the Guadalupe — is the classic Gruene dinner option; arrive before 6 p.m. for a reasonable wait.",
+          },
+          {
+            heading: "Gruene Hall",
+            body: "A Saturday night show at Gruene Hall is one of the defining New Braunfels experiences. Buy tickets in advance for acts you want to see — popular shows sell out. Arrive at the venue before the show starts to get a table; the good spots go within 20 minutes of doors opening. The two-step floor fills on Texas country and Americana nights; watching from the perimeter for the first song before joining is the natural entry for first-timers.",
+          },
+          {
+            heading: "Whitewater Amphitheater for Bigger Acts",
+            body: "When a touring act is playing Whitewater, it changes the evening's shape entirely. The river-side amphitheater, the lawn seating, and the sound of the Guadalupe in the background make for a different but equally worthwhile night than Gruene Hall. Check whitewateramphitheater.com for the schedule; shows run May through October.",
+          },
+        ],
+      },
+      {
+        eyebrow: "SUNDAY",
+        heading: "The Sunday Rhythm: Slower, Better",
+        body: "Sundays in New Braunfels have a different pace than Saturdays. The tourist traffic is lighter, the tone is quieter, and the best Sunday activities reflect that.",
+        subsections: [
+          {
+            heading: "Sunday Morning Brunch",
+            body: "Huisache Grill on the New Braunfels square is a local Sunday morning institution — the kind of place where regulars have the same table and the server already knows the order. The menu is Texas comfort food done well: migas, breakfast tacos, biscuits. It is not flashy and does not pretend to be. The patio fills by 10 a.m. on good weather Sundays; arriving at 9 a.m. or accepting a short wait is the practical approach.",
+          },
+          {
+            heading: "Canyon Lake",
+            body: "A Sunday drive to Canyon Lake — about 12 miles northwest of New Braunfels — is a reliable change of scenery. The lake has multiple park areas for swimming, boating, and picnicking maintained by the Army Corps of Engineers. Guadalupe River State Park nearby offers Hill Country hiking with river access. For residents who have already done the Comal tube run twelve times, Canyon Lake on a Sunday afternoon is the version of the outdoors that doesn't require a tube rental.",
+          },
+          {
+            heading: "Sunday Afternoon at a Brewery",
+            body: "New Braunfels Brewing Company runs a comfortable Sunday afternoon taproom hour that locals use as a social anchor — the same group of regulars, a rotation of good draft beer, and enough space to sit outside without the weekend crowd pressure. It is the kind of low-key Sunday afternoon that is easy to find in cities with a strong local bar culture and harder to find in places without one.",
+          },
+          {
+            heading: "The Sunday Supper",
+            body: "Ending a New Braunfels weekend with dinner at a family table or at one of the quieter downtown restaurants is the local rhythm. Sunday evenings in town are significantly calmer than Saturday — the tourist crowd is largely gone, restaurants have availability, and the pace slows to something that makes Monday morning feel manageable. It is the version of the city that residents live in year-round and that weekenders occasionally glimpse if they stay late enough.",
+          },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "What is the best thing to do on a Saturday in New Braunfels?",
+        answer: "The local sequence that works: Naegelin's Bakery or the farmers market early, Landa Park or the Comal River in the late morning, the Gruene Historic District in the afternoon with lunch and a walk through the antique shops, and a show at Gruene Hall in the evening with early dinner beforehand. This covers the best of what New Braunfels offers without the timing mistakes that turn a good day into a crowded one.",
+      },
+      {
+        question: "When is the New Braunfels Farmers Market?",
+        answer: "The New Braunfels Farmers Market runs Saturday mornings at the Civic/Convention Center area. Arriving at opening time gives you the best produce selection and cooler temperatures. The market features local Hill Country produce, honey, baked goods, plants, and artisan vendors.",
+      },
+      {
+        question: "What do locals do in New Braunfels on the weekend?",
+        answer: "The consistent local weekend pattern involves early mornings at Landa Park or the farmers market, afternoon time on the river or in the Gruene district, and evening music at Gruene Hall or one of the downtown bars. In the cooler months, the same rhythm applies with fewer crowds — fall weekends are when locals reclaim the city from summer tourism and many residents consider it the best time of year.",
+      },
+      {
+        question: "Is New Braunfels worth visiting outside of summer?",
+        answer: "Yes, and many locals prefer it. The rivers flow year-round, the music venues operate year-round, the restaurants and biergartens are open, and the crowds are gone. Fall weekends with foliage along the Guadalupe, cool mornings at Landa Park, and a Gruene Hall show to a half-full room — that is the version of New Braunfels that makes people want to live here.",
+      },
+    ],
+  },
+  {
+    slug: "family",
+    eyebrow: "LOCAL GUIDE",
+    title: "New Braunfels with Kids: The Family Activity Guide Locals Use",
+    dek: "Schlitterbahn, Landa Park, the Comal River, natural playgrounds, and the spots where kids actually unplug. A real guide for families — not just a list of things that exist, but what's worth your Saturday.",
+    imageSrc: "/images/explore-family-activities-river-sunset.webp",
+    imageAlt: "Family wading in the Comal River at sunset with bare feet on smooth limestone and warm light.",
+    category: "Explore",
+    publishDate: "July 2026",
+    intro: "New Braunfels is one of the better family cities in Texas, and not only because of Schlitterbahn. The rivers are genuinely safe for children in the right spots, the parks are large and well-maintained, the scale of the city means you can get anywhere in fifteen minutes, and the summer heat is offset by spring-fed water that stays 72 degrees year-round. Families who move here often cite the outdoor access as the reason their kids have a better childhood than they would in a larger city — less screen time not because of rules but because the river is more interesting. This guide covers what actually works for families with kids.",
+    sections: [
+      {
+        eyebrow: "WATER PARKS",
+        heading: "Schlitterbahn: What to Know Before You Go",
+        body: "Schlitterbahn New Braunfels is one of the most famous water parks in the United States and the anchor of the city's tourism economy. It opened in 1979, was built around the natural flow of the Comal River, and remains distinct from most water parks in that the river itself is part of the infrastructure — tubes float on actual spring-fed water rather than recirculated pool water.",
+        subsections: [
+          {
+            heading: "The Two Parks",
+            body: "Schlitterbahn operates two connected sections in New Braunfels: Schlitterbahn West and Schlitterbahn East, separated by a short transport area. West is the original park and tends toward more relaxed attractions — the Comal River tube chutes, the Raging River, and the original attractions built around the natural flow. East has the newer, larger slides and the more intense attractions. Families with younger children often find West more manageable; families with older kids who want the bigger rides spend more time in East.",
+          },
+          {
+            heading: "Timing Is Everything",
+            body: "Schlitterbahn on a July Saturday afternoon is a different experience from Schlitterbahn on a Wednesday morning in early June. Locals who want to go do so on weekdays, arrive at opening time, and leave before 2 p.m. The park fills significantly by mid-morning on peak days. Season passes are available and are worthwhile for local families who plan to go more than twice; the per-visit cost drops significantly. Parking is large but fills; arriving 30 minutes before opening time solves the parking question.",
+          },
+          {
+            heading: "Age and Height Considerations",
+            body: "Schlitterbahn works well for children ages 5 and up who are comfortable in water. Many of the signature attractions have minimum height requirements of 42–48 inches. For younger children, the kiddie areas and shallow tube sections are genuinely good and well-staffed with lifeguards. Families with kids under 5 sometimes find Landa Park's spring-fed pool a more manageable and less overwhelming alternative.",
+          },
+          {
+            heading: "What to Bring",
+            body: "Water shoes are necessary — the Comal River sections have natural rock bottoms. Reef-safe sunscreen is required (the park enforces this to protect the natural waterways). A dry bag for phones and wallets is worth the investment. Locker rentals are available. Outside food is restricted but the park has a reasonable range of food options including the Torchlight on the River area for a sit-down break.",
+          },
+        ],
+      },
+      {
+        eyebrow: "THE PARKS",
+        heading: "Landa Park: New Braunfels's Best Family Park",
+        body: "Landa Park is the family park that New Braunfels residents use year-round, not just when tourists are in town. At 51 acres in the center of the city, it has more genuine amenity per acre than most Texas parks.",
+        subsections: [
+          {
+            heading: "What's in the Park",
+            body: "Landa Park has a spring-fed swimming pool (open in summer, admission required, reliably uncrowded on weekday mornings), direct access to the Comal River, paddleboat rentals on the spring-fed lake, a miniature train that runs around the park perimeter on weekends, multiple playgrounds, picnic shelters, a disc golf course, and walking trails along the river. It is the kind of park that families can spend a full day in without running out of things to do and without spending much money.",
+          },
+          {
+            heading: "The Spring-Fed Pool",
+            body: "Landa Park's swimming pool is fed directly by Comal Springs, maintaining a constant 71 to 72 degrees year-round. It is a genuinely excellent pool — clean, clear, spring water with lifeguards on duty during operating hours. On summer weekday mornings it is rarely crowded. The depth varies from wading areas suitable for toddlers to a deeper section for older swimmers. For families who want a controlled swimming environment with clear spring water rather than the open river, the pool is the best option in the city.",
+          },
+          {
+            heading: "The Miniature Train",
+            body: "The Landa Park miniature train is a specific New Braunfels childhood memory for residents who grew up here. It runs a loop around part of the park on weekends and summer weekdays. Small children are reliably delighted by it. At a few dollars per ride, it is one of the better value family activities in the park.",
+          },
+        ],
+      },
+      {
+        eyebrow: "THE RIVER",
+        heading: "River Activities with Kids: What Works by Age",
+        body: "The Comal and Guadalupe are both family-accessible but require different approaches depending on your children's ages and swimming ability.",
+        subsections: [
+          {
+            heading: "Toddlers and Non-Swimmers: Hinman Island and Landa Park",
+            body: "For children who are not strong swimmers or who are under 5, the shallow wading sections at Hinman Island Park and the edges of the Comal at Landa Park are the right choice. The water is clear, the bottom is visible limestone, and parents can stand in knee-deep water while kids splash. These spots have no current to worry about and the cool spring water is safe and inviting. Avoid the main tube run sections with children who are not comfortable swimmers.",
+          },
+          {
+            heading: "Ages 5 to 10: The Comal Tube Float",
+            body: "Children who are comfortable in water and at least 42 to 48 inches tall can do the Comal tube run with the commercial outfitters. The river is gentle, the current is manageable, and the tube rentals include life jackets. Plan for a 2 to 3 hour float and bring water shoes — the limestone bottom is rough on bare feet at the entry and exit points. The midweek morning float is the best version for families; Saturday afternoons are busy enough that managing a group of kids in tubes requires more attention.",
+          },
+          {
+            heading: "Ages 10 and Up: Kayaking the Guadalupe",
+            body: "The Gruene section of the Guadalupe is appropriate for older children comfortable in water with adult supervision. The flatwater sections are manageable in a tandem kayak with a parent paddling. Several outfitters rent tandem kayaks with shuttle service. It is a longer, more physical activity than the Comal tube float and works best as a half-day family adventure rather than a casual hour on the water.",
+          },
+        ],
+      },
+      {
+        eyebrow: "BEYOND THE WATER",
+        heading: "Family Activities That Don't Involve the River",
+        body: "New Braunfels has more to offer families than water. These are the options that hold up on rainy days, for kids who have had enough sun, or as alternatives for families who have done the river multiple times.",
+        subsections: [
+          {
+            heading: "Natural Bridge Caverns",
+            body: "Natural Bridge Caverns, located about 20 minutes from New Braunfels toward San Antonio, is one of the premier show caves in the United States. The caverns were discovered in 1960 by students from St. Mary's University and are now a significant tourist and educational destination. The guided cavern tours take about 75 minutes and involve significant walking through formations that include some of the most dramatic stalactite and stalagmite structures in the Southwest. The complex also has a mining sluice, zip lines, and a maze for families who want more than the cave tour. For children who have not been in a cave, the first experience of walking into a formation this scale is genuinely memorable.",
+          },
+          {
+            heading: "Dry Comal Creek Trail",
+            body: "For families with kids who do well on short hikes, the Dry Comal Creek Trail and the creek walks around the Landa Park perimeter offer a manageable nature walk with shade, wildlife, and enough terrain variation to keep children interested. The creek bed is accessible enough for young children and the limestone formations create natural slides and climbing features that turn a walk into an adventure.",
+          },
+          {
+            heading: "New Braunfels Museum of Art and Music",
+            body: "Located in the historic downtown, the museum offers rotating exhibits focused on Texas art and musical heritage. It is a manageable size for families with children — not so large as to be overwhelming, with exhibits that connect to the Texas history and culture that surrounds the city. Good for a rainy morning or an indoor break on a hot afternoon.",
+          },
+          {
+            heading: "The Children's Museum of New Braunfels",
+            body: "The Children's Museum on Common Street is a hands-on activity space designed for children under 10 with rotating exhibits and play installations. It is a reliable option for families with young children on days when outdoor activity is not practical. Local families use it as a regular weekday option during summer.",
+          },
+        ],
+      },
+      {
+        eyebrow: "FAMILY REAL ESTATE",
+        heading: "Why Families Choose New Braunfels: What the Numbers Show",
+        body: "New Braunfels consistently ranks among the fastest-growing cities in Texas, and families with children are a significant portion of that growth. The reasons are consistent across the buyers Todd works with: outdoor access, school quality, safety, and the scale of the city.",
+        subsections: [
+          {
+            heading: "Schools",
+            body: "New Braunfels ISD and Comal ISD both serve the city and have strong reputations. Comal ISD in particular — which serves many of the newer development areas on the north and west sides of the city — has received consistent recognition for academic performance. Families relocating from larger metro areas often find that the school quality in New Braunfels meets or exceeds what they had access to, at a lower cost of living. School district boundaries matter for home searches: Todd maps school assignments as part of every buyer consultation for families with school-age children.",
+          },
+          {
+            heading: "The Outdoor Childhood Factor",
+            body: "Families who move to New Braunfels from larger Texas cities often describe the same shift: their children spend more time outside. The combination of safe, accessible natural spaces — the river, the parks, the trails — with a city scale that allows kids to ride bikes to the park independently creates a childhood experience that is genuinely different from what is available in suburban Dallas or Houston. For buyers who moved here specifically for that reason, the outdoor access is not an amenity but the point.",
+          },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Is New Braunfels good for families with young children?",
+        answer: "Yes, it is one of the better family cities in Texas. Landa Park, the spring-fed pool, the shallow Comal River access, and Schlitterbahn give families with young children more outdoor activity options than most Texas cities this size. The city is safe, the scale is manageable, and both New Braunfels ISD and Comal ISD are well-regarded school districts. Families consistently cite the outdoor access and school quality as the primary reasons they chose New Braunfels over nearby alternatives.",
+      },
+      {
+        question: "What age is best for Schlitterbahn New Braunfels?",
+        answer: "Schlitterbahn works well for children ages 5 and up who are comfortable in water. Many signature attractions require 42 to 48 inches of height. For children under 5, the kiddie areas and shallow sections are good but the park overall can be overwhelming — Landa Park's spring-fed pool is often a better choice for very young children. Older children (10 and up) who want bigger rides will find the East park section most satisfying.",
+      },
+      {
+        question: "What is there to do in New Braunfels with toddlers?",
+        answer: "Landa Park is the best option — spring-fed pool with lifeguards, wading areas, the miniature train, and paddleboats at a low cost. Hinman Island Park offers shallow Comal River access that is safe for non-swimmers. Natural Bridge Caverns is appropriate for toddlers on the guided tour. The Children's Museum of New Braunfels is a reliable indoor option on hot or rainy days.",
+      },
+      {
+        question: "Are there free family activities in New Braunfels?",
+        answer: "Yes. Landa Park is free to enter (pool has a small admission fee). Hinman Island Park is free. The Dry Comal Creek Trail and river walking areas are free. The historic downtown square and the Gruene Historic District cost nothing to walk. The farmers market on Saturday mornings is free. New Braunfels is significantly more budget-friendly for family activities than its reputation as a water park destination suggests.",
+      },
+      {
+        question: "How far is Natural Bridge Caverns from New Braunfels?",
+        answer: "Natural Bridge Caverns is approximately 20 minutes from downtown New Braunfels, located between New Braunfels and San Antonio on I-35. It is a common half-day trip for New Braunfels families. The guided cavern tour runs about 75 minutes, and the full complex including outdoor activities can fill a full day for families with children.",
+      },
+      {
+        question: "What neighborhoods in New Braunfels are best for families?",
+        answer: "River Chase (where Todd Spencer lives) is consistently popular with families for its tight-knit community feel, neighborhood pool, and access to outdoor recreation. Vintage Oaks appeals to families who want more space and Hill Country views. The Kinder Ranch area and Veramendi offer newer construction with strong Comal ISD school assignments. For families who want walkability to Landa Park and the downtown, neighborhoods near the historic core offer character and proximity at a range of price points. Todd maps school district boundaries and playground proximity for every buyer with school-age children.",
+      },
+    ],
+  },
+  {
     slug: "live-music",
     eyebrow: "LOCAL GUIDE",
     title: "Live Music in New Braunfels: Gruene Hall, Dance Halls, and Where Locals Actually Go",

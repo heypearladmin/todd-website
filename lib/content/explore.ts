@@ -47,8 +47,8 @@ export const exploreTiles: ExploreTile[] = [
   },
   {
     category: "breweries",
-    title: "Breweries and taprooms",
-    dek: "Local hops, river patios, and Tuesday night trivia. A short list, honestly ranked, fully drinkable.",
+    title: "New Braunfels Breweries and Taprooms: The Local Drinking Guide",
+    dek: "New Braunfels punches above its weight for a city this size — craft breweries, a historic hotel bar, river patios, and a German biergarten tradition that never really left. Where locals actually drink.",
     href: "/blog/breweries",
     imageSrc: "/images/explore-breweries-faust-taproom.webp",
     imageAlt:
@@ -56,8 +56,8 @@ export const exploreTiles: ExploreTile[] = [
   },
   {
     category: "hidden-gems",
-    title: "Hidden gems",
-    dek: "The swimming hole behind the limestone bend. The bakery with a line of regulars and zero signage.",
+    title: "New Braunfels Hidden Gems: What Locals Know That Visitors Miss",
+    dek: "The swimming hole that doesn't show up on maps. The bakery with a line of regulars and zero signage. The park at 7 a.m. The spots locals protect by not telling everyone — until now.",
     href: "/blog/hidden-gems",
     imageSrc: "/images/explore-hidden-gems-secret-cove.webp",
     imageAlt:
@@ -65,8 +65,8 @@ export const exploreTiles: ExploreTile[] = [
   },
   {
     category: "weekend-activities",
-    title: "Weekend rhythm",
-    dek: "Farmers markets, vintage strolls, river floats, and the early supper that keeps Sunday calm.",
+    title: "New Braunfels Weekend Guide: What Locals Actually Do Saturday and Sunday",
+    dek: "Farmers markets, antique strolls, river floats, live music, and the Sunday supper that ends it right. A local's blueprint for the perfect New Braunfels weekend — no tourist itinerary required.",
     href: "/blog/weekends",
     imageSrc: "/images/explore-weekend-activities-farmers-market.webp",
     imageAlt:
@@ -83,8 +83,8 @@ export const exploreTiles: ExploreTile[] = [
   },
   {
     category: "family-activities",
-    title: "Family days",
-    dek: "Schlitterbahn after the crowds, Landa Park hideouts, and the parks where kids hand back their phones.",
+    title: "New Braunfels with Kids: The Family Activity Guide Locals Use",
+    dek: "Schlitterbahn, Landa Park, the Comal River, natural playgrounds, and the spots where kids actually unplug. A real guide for families — not just a list of things that exist, but what's worth your Saturday.",
     href: "/blog/family",
     imageSrc: "/images/explore-family-activities-river-sunset.webp",
     imageAlt:
