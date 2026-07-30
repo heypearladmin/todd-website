@@ -38,8 +38,8 @@ export const exploreTiles: ExploreTile[] = [
   },
   {
     category: "live-music",
-    title: "Live music",
-    dek: "Gruene Hall, dance floors that still creak, and the small rooms where Texas songwriters work things out.",
+    title: "Live Music in New Braunfels: Gruene Hall, Dance Halls, and Where Locals Actually Go",
+    dek: "Gruene Hall is the oldest dance hall in Texas — and the beginning, not the end, of the live music story here. The smaller rooms, the outdoor stages, the Friday night songwriter sets that nobody posts about. A local's guide to the music scene.",
     href: "/blog/live-music",
     imageSrc: "/images/explore-live-music-gruene-hall.webp",
     imageAlt:

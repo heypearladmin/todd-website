@@ -73,6 +73,139 @@ export type JournalPost = {
 
 export const journalPosts: JournalPost[] = [
   {
+    slug: "live-music",
+    eyebrow: "LOCAL GUIDE",
+    title: "Live Music in New Braunfels: Gruene Hall, Dance Halls, and Where Locals Actually Go",
+    dek: "Gruene Hall is the oldest dance hall in Texas — and the beginning, not the end, of the live music story here. The smaller rooms, the outdoor stages, the Friday night songwriter sets that nobody posts about. A local's guide to the music scene.",
+    imageSrc: "/images/explore-live-music-gruene-hall.webp",
+    imageAlt: "Interior of Gruene Hall at dusk with warm stage light spilling onto a worn wooden dance floor.",
+    category: "Explore",
+    publishDate: "July 2026",
+    intro: "New Braunfels has been a music town since before it was a tubing town. The German settlers who founded the city in 1845 brought with them a tradition of community halls, brass bands, and public dances that never entirely left. Gruene Hall — opened in 1878 and never closed — is the most visible expression of that lineage, but it is not the whole story. The live music scene in New Braunfels runs from legendary venues to Thursday night songwriter circles at neighborhood bars, from national touring acts to local regulars who have been playing the same stage for fifteen years. If you only go to Gruene Hall, you've seen the famous part. This guide covers the rest.",
+    sections: [
+      {
+        eyebrow: "THE ANCHOR",
+        heading: "Gruene Hall: The Oldest Dance Hall in Texas",
+        body: "There are famous venues and there are genuinely historic places. Gruene Hall is both. Opened in 1878 by Henry D. Gruene, it has operated continuously ever since — surviving the Great Depression, the collapse of the cotton economy, a period of near-complete abandonment, and eventual designation on the National Register of Historic Places. The building itself has not been significantly altered. The wood plank floors, the screened walls that let in the Texas breeze, the stage that Willie Nelson and Lyle Lovett and Garth Brooks have all stood on — it is the same room it has always been.",
+        subsections: [
+          {
+            heading: "What to Expect",
+            body: "Gruene Hall holds about 750 people when it is full, though it rarely feels that cramped because the open-air sides breathe. Shows run Friday through Sunday and on select weeknights, with afternoon sets on weekend days that often attract families and a relaxed early crowd before the evening show fills in. Ticket prices are modest by Texas venue standards — most shows run $15 to $40 depending on the act. The sound system has been upgraded over the years while preserving the room's character. The bar is simple: cold beer, a few spirits, no cocktail menu. That's intentional.",
+          },
+          {
+            heading: "The Booking Philosophy",
+            body: "Gruene Hall books a genuine mix of emerging Texas artists and established names. Acts like Robert Earl Keen, Pat Green, and Turnpike Troubadours have played here regularly over the years. The venue leans toward Texas country, Americana, and roots music — it is not a pop or EDM room. The weekday shows are often where you find the most interesting bookings: touring singer-songwriters with devoted cult followings, collaborative sets, and occasional surprise appearances from artists who happen to be passing through. Check the calendar at gruenehall.com; they post months in advance and popular acts sell out.",
+          },
+          {
+            heading: "The Gruene District Around It",
+            body: "Gruene Hall sits in the middle of the historic Gruene district, which has the feel of a village that survived into the present mostly intact. Restaurants line the streets nearby, the Guadalupe River is a short walk away, and the shops and galleries make for a full afternoon before an evening show. Locals who live in the Gruene area often walk to shows — it is one of the genuinely walkable entertainment districts in the region. Parking fills fast on weekend evenings; arriving early or parking on the neighborhood streets outside the commercial core saves aggravation.",
+          },
+        ],
+      },
+      {
+        eyebrow: "BEYOND GRUENE HALL",
+        heading: "The Rest of the Scene: Where Locals Actually Listen",
+        body: "Gruene Hall gets the headlines. These are the places locals fill their calendars with the other five nights of the week.",
+        subsections: [
+          {
+            heading: "Whitewater Amphitheater",
+            body: "Located on the banks of the Guadalupe River, Whitewater Amphitheater is an outdoor venue with a capacity around 4,000 — large enough to book national touring acts that Gruene Hall cannot accommodate. The setting is legitimately spectacular: a sloped lawn facing a covered stage with the river running behind it. Acts that have played Whitewater include major country and Americana names that use it as a mid-sized Texas tour stop. Sound quality is good for an outdoor venue, and the river-side atmosphere on a summer night is hard to beat. Bring a blanket or lawn chairs; the hillside lawn is general admission for most shows. It books primarily May through October.",
+          },
+          {
+            heading: "The Tavern in the Gruene",
+            body: "Steps from Gruene Hall, The Tavern runs its own live music programming on a smaller stage. The vibe is more bar than venue — louder, more casual, better suited to late-night sets after a Gruene Hall show or for catching an act you want to stand close to. Local and regional acts play here regularly. It fills quickly on weekends, and the proximity to Gruene Hall means the crowd is ready for music when they arrive.",
+          },
+          {
+            heading: "Faust Hotel Biergarten",
+            body: "The Faust Hotel — built in 1929 and operating as the oldest continually operating hotel in Texas — has a biergarten that runs live music on weekend evenings. The setting is distinct from the Gruene venues: downtown New Braunfels, limestone architecture, a courtyard feel that suits acoustic and Americana sets particularly well. Admission is typically free or low-cost for the biergarten shows, making it a reliable option for a casual evening without committing to a ticketed show.",
+          },
+          {
+            heading: "McAdoo's Seafood Company",
+            body: "Somewhat incongruously named for a Hill Country town, McAdoo's is a downtown New Braunfels institution with a patio stage that hosts live music on weekends. The Texas coastal seafood menu and the live country and rock sets make it a favorite combination for locals who want a full evening — dinner, drinks, and music — without driving to Gruene. Parking is easier than the Gruene district on busy weekends.",
+          },
+          {
+            heading: "Neighborhood Bars and Rotating Venues",
+            body: "New Braunfels has a consistent circuit of bars and restaurants that run live music informally — a duo on a Thursday night, an acoustic set on Sunday afternoons, occasional weekend residencies by local artists. Stomp's Burger Joint, Huisache Grill, and several of the craft breweries rotate live acoustic acts in this way. These are not ticketed shows and rarely get press coverage, but they are where locals catch music without planning ahead. Following local musicians on social media is the most reliable way to find these sets — artists post their own gig calendars and often play multiple venues in a given week.",
+          },
+        ],
+      },
+      {
+        eyebrow: "THE MUSIC",
+        heading: "What Kind of Music Plays in New Braunfels",
+        body: "New Braunfels is not a genre-neutral city. The history, the venues, and the audience all point in a particular direction.",
+        subsections: [
+          {
+            heading: "Texas Country and Americana",
+            body: "This is the dominant current. Texas country — the genre associated with artists like Robert Earl Keen, Wade Bowen, Cody Jinks, and Turnpike Troubadours — was built for rooms like Gruene Hall. It is storytelling music, two-step music, music that requires a wooden floor and a cold beer. New Braunfels is the geographic and spiritual center of this tradition in a way few other Texas cities can claim. If you want to understand what Texas country sounds like in its natural habitat, there is no better place to experience it.",
+          },
+          {
+            heading: "Singer-Songwriter Nights",
+            body: "The weeknight circuit runs heavily toward singer-songwriters — solo artists with a guitar working out material in front of a small, attentive crowd. These sets tend to be quieter, more intimate, and more likely to involve original material than covers. Gruene Hall's weekday bookings often fall into this category, as do many of the biergarten and patio shows around town. For people who care about original songwriting, New Braunfels offers a disproportionate number of opportunities to hear it.",
+          },
+          {
+            heading: "The Two-Step Culture",
+            body: "New Braunfels is one of the few places in Texas where two-stepping is still a practical skill rather than a novelty. At Gruene Hall on any given Saturday night, the dance floor fills with couples who actually know what they are doing — and beginners who are trying to learn by watching. The dance floor culture is inclusive and not territorial; locals will offer a pointer if you look lost and won't mock you if you step wrong. For newcomers who want to learn, showing up early for a less crowded floor and watching for twenty minutes before joining is the standard approach.",
+          },
+        ],
+      },
+      {
+        eyebrow: "PRACTICAL GUIDE",
+        heading: "Planning Your Night: What Locals Know",
+        body: "A few practical details that separate a great night from a frustrating one.",
+        bulletPoints: [
+          "Gruene Hall sells out its biggest shows. Check the calendar and buy tickets in advance for any Friday or Saturday act you care about seeing.",
+          "Arrive early to get a table near the stage at Gruene Hall — seating is first-come, first-served and the good spots go fast. An hour before showtime is not too early on a peak weekend.",
+          "The Gruene district parking situation is solvable: arrive before 6 p.m. or park on the residential streets north of the commercial core and walk five minutes.",
+          "Whitewater Amphitheater shows often sell out for touring acts. The venue posts its calendar well in advance at whitewateramphitheater.com — set a calendar reminder for acts you want to see.",
+          "Weeknight shows at any venue in town are dramatically less crowded and often feature artists who are genuinely excellent. Monday through Thursday is the locals' window.",
+          "New Braunfels observes its music scene year-round, not just summer. Fall and winter shows at Gruene Hall are some of the most atmospheric — cooler air through the screens, smaller crowds, and artists who often play longer sets when the pressure is off.",
+          "The Gruene district does not have a large late-night bar scene — most venues wind down by midnight. If you want a later night, downtown New Braunfels near the square has more options that run until 2 a.m.",
+        ],
+      },
+      {
+        eyebrow: "MUSIC AND REAL ESTATE",
+        heading: "The Music Scene and Why It Matters for Buyers",
+        body: "Live music is not typically on a homebuyer's checklist, but for the buyers who are drawn to New Braunfels specifically — people relocating from Austin, Nashville, or other cities with strong music cultures — the presence of a genuine, year-round live music scene is a meaningful quality-of-life factor.",
+        subsections: [
+          {
+            heading: "Proximity to Gruene",
+            body: "Properties in the Gruene Historic District and within walking distance of Gruene Hall command a consistent premium. Part of that is the aesthetic — limestone streets, live oaks, the Guadalupe River — and part of it is the lifestyle access. Being able to walk to a show on a Friday night and walk home is a real feature for buyers who value that kind of evening. The trade-off is that the Gruene district gets traffic and noise on peak weekend nights. Buyers who want the proximity but less of the noise typically look one or two streets back from the commercial core.",
+          },
+          {
+            heading: "The Broader Cultural Signal",
+            body: "A city that sustains a venue like Gruene Hall — and grows additional venues around it — is a city with a particular kind of cultural identity. New Braunfels attracts buyers who want Texas character without the scale and pace of Austin or San Antonio. The music scene is part of what maintains that identity. For buyers who care about a community that will feel like home rather than just a subdivision, the question of what there is to do on a Thursday night actually matters. The answer in New Braunfels is better than most cities its size.",
+          },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Is Gruene Hall the best live music venue in New Braunfels?",
+        answer: "It is the most famous and historically significant, but best depends on what you're looking for. Gruene Hall is unmatched for atmosphere and the Texas country and Americana tradition. Whitewater Amphitheater books bigger national touring acts in a river-side outdoor setting. The Faust Hotel biergarten and McAdoo's offer free or low-cost shows in a more casual setting. Locals typically use all of them depending on who is playing and what kind of night they want.",
+      },
+      {
+        question: "How do I get tickets to Gruene Hall shows?",
+        answer: "Tickets are sold through Gruene Hall's website at gruenehall.com. Popular Friday and Saturday shows sell out in advance, sometimes weeks ahead. Weeknight shows are almost always walk-up available. The venue posts its full calendar months in advance, so checking it regularly and buying early for acts you care about is the reliable approach.",
+      },
+      {
+        question: "What kind of music plays at Gruene Hall?",
+        answer: "Gruene Hall books primarily Texas country, Americana, and roots music. Think Robert Earl Keen, Pat Green, Wade Bowen, Turnpike Troubadours — the Texas singer-songwriter tradition. Occasional crossover country and folk acts round out the calendar. It is not a pop, rock, or EDM venue. If those genres are what you want, Whitewater Amphitheater and the downtown bars offer more variety.",
+      },
+      {
+        question: "Can beginners two-step at Gruene Hall?",
+        answer: "Absolutely. Gruene Hall is one of the best places to learn because the dance floor culture is welcoming and patient. Locals are not territorial about the floor. Arriving early for a less crowded floor, watching for a few songs, and then trying it is the standard path. Many people who now dance regularly at Gruene Hall learned by showing up, watching, and eventually getting pulled onto the floor by someone patient enough to teach them.",
+      },
+      {
+        question: "Is the live music scene in New Braunfels active year-round?",
+        answer: "Yes. Gruene Hall operates year-round, Whitewater Amphitheater runs May through October, and the downtown bars and biergartens run weekend music all year. Winter shows at Gruene Hall are a local favorite — smaller crowds, cooler air, and a more intimate atmosphere than the busy summer weekends. The shoulder seasons (fall and spring) often offer the best combination of good bookings and manageable crowds.",
+      },
+      {
+        question: "Does the live music scene affect property values near Gruene Hall?",
+        answer: "Properties in the Gruene Historic District and within walking distance of Gruene Hall hold a consistent lifestyle premium. The area's combination of river access, historic character, and walkable entertainment makes it one of the most sought-after pockets in the New Braunfels market. The trade-off for the closest properties is weekend traffic and some noise on peak nights — buyers who want proximity without the noise typically look one to two streets removed from the commercial core.",
+      },
+    ],
+  },
+  {
     slug: "river-life",
     eyebrow: "LOCAL GUIDE",
     title: "River Life in New Braunfels: The Local Guide to the Comal and Guadalupe",
