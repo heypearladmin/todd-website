@@ -14,6 +14,9 @@ export function ArticleCTA() {
           Send a note
           <span aria-hidden className="text-base">→</span>
         </Link>
+        <Link href="/new-braunfels-real-estate-agent" className="editorial-link text-sm font-medium">
+          Work with Todd
+        </Link>
         <Link href={site.blogPath} className="editorial-link text-sm font-medium">
           More field notes
         </Link>

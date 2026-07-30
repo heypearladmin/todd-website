@@ -27,12 +27,12 @@ export async function generateMetadata({
   if (!n) return {};
   const url = `${site.websiteUrl}/neighborhoods/${slug}`;
   return {
-    title: `${n.title} · Neighborhood guide`,
-    description: n.details?.shortAnswer ?? n.dek,
+    title: n.seoTitle ?? `${n.title} · Neighborhood guide`,
+    description: n.seoDescription ?? n.details?.shortAnswer ?? n.dek,
     alternates: { canonical: url },
     openGraph: {
-      title: `${n.title} · ${site.brand}`,
-      description: n.details?.shortAnswer ?? n.dek,
+      title: n.seoTitle ?? `${n.title} · ${site.brand}`,
+      description: n.seoDescription ?? n.details?.shortAnswer ?? n.dek,
       url,
       type: "article",
       images: [{ url: n.imageSrc, alt: n.imageAlt }],

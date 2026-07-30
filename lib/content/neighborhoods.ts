@@ -27,6 +27,8 @@ export type Neighborhood = {
   href: string;
   imageSrc: string;
   imageAlt: string;
+  seoTitle?: string;
+  seoDescription?: string;
   details?: NeighborhoodDetails;
 };
 
@@ -367,6 +369,8 @@ export const neighborhoods: Neighborhood[] = [
     dek: "A master planned community shaped by the land it sits on. Trails, water, and a fresh take on neighborhood life.",
     vibe: "New and considered",
     href: "/neighborhoods/veramendi",
+    seoTitle: "Veramendi New Braunfels — Homes from the $300Ks, Comal ISD, Resort Pool",
+    seoDescription: "Veramendi is New Braunfels's fastest-growing master-planned community — homes from the low $300Ks, resort pool, 20+ miles of trails, and Comal ISD schools. See what locals know about buying here.",
     imageSrc: "/images/neighborhood-veramendi-aerial.webp",
     imageAlt:
       "Aerial photograph of Veramendi development in New Braunfels with rolling Hill Country terrain and trail network.",

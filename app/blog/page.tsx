@@ -7,24 +7,24 @@ import { breadcrumbSchema } from "@/lib/seo/schemas";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Journal",
+  title: "New Braunfels Real Estate Journal — Local Guides by Todd Spencer",
   description:
-    "Field notes from New Braunfels. Moving guides, cost of living, lifestyle rituals, and real estate trends.",
+    "Flood zones, school districts, commute times, river life, and what homes actually cost — honest field notes for buyers and newcomers to New Braunfels, TX.",
   alternates: {
     canonical: `${site.websiteUrl}/blog`,
   },
   openGraph: {
-    title: "Journal · Todd Spencer",
+    title: "New Braunfels Real Estate Journal — Todd Spencer",
     description:
-      "Field notes from New Braunfels. Moving guides, cost of living, lifestyle rituals, and real estate trends.",
+      "Flood zones, school districts, commute times, river life, and what homes actually cost — honest field notes for buyers and newcomers to New Braunfels, TX.",
     url: `${site.websiteUrl}/blog`,
     type: "website",
     images: [{ url: "https://todd-spencer.com/images/og-todd-spencer-new-braunfels.jpg", width: 1200, height: 630, alt: "Todd Spencer — New Braunfels Real Estate Agent" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "New Braunfels Real Estate Journal",
-    description: "Local guides and market insights for New Braunfels buyers, sellers, and newcomers.",
+    title: "New Braunfels Real Estate Journal — Todd Spencer",
+    description: "Honest local guides for New Braunfels buyers — flood zones, schools, commute times, river life, and what homes actually cost.",
     images: ["https://todd-spencer.com/images/og-todd-spencer-new-braunfels.jpg"],
   },
 };
