@@ -73,6 +73,149 @@ export type JournalPost = {
 
 export const journalPosts: JournalPost[] = [
   {
+    slug: "restaurants",
+    eyebrow: "LOCAL GUIDE",
+    title: "New Braunfels Dining Guide: Todd Spencer's Local Picks",
+    dek: "The restaurants locals actually go back to — from Gruene Hall's back porch to the Comal riverfront, craft beer joints, barbecue worth the line, and the hidden breakfast spots that don't show up first on Yelp.",
+    imageSrc: "/images/explore-restaurants-gruene-supper.webp",
+    imageAlt: "Warmly lit Gruene area restaurant patio at golden hour with limestone walls and string lights.",
+    category: "Explore",
+    publishDate: "July 2026",
+    intro: "New Braunfels has a food scene that punches well above the city's size. The German heritage is real — you can still get authentic schnitzel and strudel — but what makes eating here interesting is the range: Texas barbecue smoke drifting past a riverfront patio, craft brewpubs with scratch kitchens, Tex-Mex joints that have been feeding the same families for three generations, and a growing roster of chef-driven independents that would hold their own in Austin or San Antonio. This guide covers the places worth knowing, organized by what you're in the mood for.",
+    sections: [
+      {
+        eyebrow: "GRUENE & THE RIVER",
+        heading: "Gruene and the Guadalupe River Corridor",
+        body: "The Gruene Historic District is the emotional heart of New Braunfels dining. Every restaurant here earns some of its appeal from location — limestone walls, live oaks, river views — but the best ones justify the trip on food alone.",
+        subsections: [
+          {
+            heading: "The Gristmill River Restaurant & Bar",
+            body: "Built inside the ruins of a 19th-century cotton gin perched above the Guadalupe River, the Gristmill is one of the most distinctive dining rooms in Texas. The deck seating on a clear evening, with the river bending below and the hills beyond, is genuinely hard to beat. The menu is Texas comfort: chicken-fried steak, burgers, smoked meats, cold beer. Go for the experience as much as the food — the setting earns every bit of its reputation. Expect a wait on weekends from spring through fall; the bar is a good place to spend it.",
+          },
+          {
+            heading: "Mozie's Bar & Grill",
+            body: "A few steps from Gruene Hall, Mozie's is the lower-key sibling of the Gruene dining strip — reliably good bar food, a shaded patio, and the kind of laid-back energy that fits a Saturday afternoon float. Known for their green chile cheeseburger and well-priced daily specials. Locals lean on this one when they want Gruene atmosphere without the Gristmill wait.",
+          },
+          {
+            heading: "Gruene River Grill",
+            body: "Closer to the Hall than the river, Gruene River Grill offers a quieter dining room and a menu that goes a step beyond bar staples — fresh fish preparations, a solid wine list, and a back patio that feels tucked away even on a busy weekend. Good for a longer dinner when you want something more than a burger after the show.",
+          },
+        ],
+      },
+      {
+        eyebrow: "BARBECUE",
+        heading: "Barbecue Worth the Drive",
+        body: "Comal County sits in the heart of Central Texas barbecue country. The competition is real and the standards are high.",
+        subsections: [
+          {
+            heading: "Pika's Bar-B-Q",
+            body: "A New Braunfels institution that has been feeding the community for decades. Pika's is the kind of place with no frills and no need for them — the brisket is smoky, properly rested, and sliced to order. The sides are homemade and the prices are honest. This is weekday barbecue the way it's supposed to be: cafeteria-style, fast, and completely satisfying. Lines move quickly even when they stretch out the door.",
+          },
+          {
+            heading: "Granzin's Meat Market & BBQ",
+            body: "Part butcher shop, part lunch counter — Granzin's has been in the same family in New Braunfels since 1938. Come here for smoked meats to take home as much as for the ready-to-eat counter. Their smoked sausage links are exceptional and reflect the German butchery tradition the city was built on. If you're hosting a gathering, this is where locals shop.",
+          },
+          {
+            heading: "Smoke: The Restaurant",
+            body: "A step up in polish from the counter-service spots, Smoke offers a full-service dining room with Central Texas barbecue as the anchor and a thoughtful drinks program to match. Brisket, pulled pork, and house-smoked sausage are all well-executed; the sides — smoked mac and cheese, jalapeño slaw, black-eyed peas — are worth ordering. A good choice for a barbecue dinner rather than a barbecue lunch.",
+          },
+        ],
+      },
+      {
+        eyebrow: "TEX-MEX & MEXICAN",
+        heading: "Tex-Mex and Mexican: The Everyday Standards",
+        body: "For a city this close to San Antonio, the Tex-Mex bar is high. These are the places that hold up.",
+        subsections: [
+          {
+            heading: "Huisache Grill",
+            body: "A downtown New Braunfels anchor that has been consistently excellent for years. Huisache occupies a converted historic storefront with warm lighting and a menu that straddles the line between elevated Tex-Mex and American comfort food with Texas inflections. The shrimp tacos, the queso fundido, and the weekend brunch are all standouts. Service is attentive and the wine selection is thoughtful for the price point. This is the restaurant locals bring out-of-town guests to.",
+          },
+          {
+            heading: "McAdoo's Seafood Company",
+            body: "Technically more Gulf Coast seafood than Tex-Mex, but McAdoo's earns a place in this section for its consistently good shrimp, fish tacos, and coastal-Texas sensibility. The patio on the Comal River is one of the most pleasant lunch spots in the city, especially in spring and early fall before the heat peaks. The fried shrimp po'boy is a regular order for anyone who works nearby.",
+          },
+          {
+            heading: "La Cantina",
+            body: "A longtime local favorite for straightforward, unpretentious Tex-Mex — the kind of place where the margaritas are cold, the enchiladas are smothered properly, and the chips keep coming. Multiple New Braunfels residents will independently tell you this is their go-to. It doesn't photograph well. It doesn't need to.",
+          },
+        ],
+      },
+      {
+        eyebrow: "BREAKFAST & BRUNCH",
+        heading: "Breakfast and Brunch: The Morning Spots Worth Knowing",
+        body: "New Braunfels has a surprisingly strong morning food culture, anchored by German bakery tradition and energized by a younger wave of breakfast-focused independents.",
+        subsections: [
+          {
+            heading: "Naegelin's Bakery",
+            body: "Opened in 1868, Naegelin's is the oldest continuously operating bakery in Texas. The strudel, kolaches, and fruit-filled pastries are made from recipes that predate the Civil War. Don't come here for an Instagram moment — come here for context. Eating a pfeffernuss or a warm apple strudel at the counter is a direct line to the German immigrant community that built this city. A dozen kolaches for the family runs about what you'd pay for one fancy coffee drink in Austin.",
+          },
+          {
+            heading: "Cool River Café",
+            body: "A local brunch staple with a covered patio and a menu that covers the full range from eggs Benedict to migas to pancakes the size of a hubcap. Weekend waits are real; getting here before 10 a.m. solves the problem. The coffee is better than average and the biscuits are made from scratch.",
+          },
+          {
+            heading: "Würst Küche",
+            body: "Part of the broader Würst brewery family, the kitchen here does German-inflected breakfast and brunch with house-smoked meats, excellent soft pretzels, and a morning beer selection that is entirely appropriate for a city with this many rivers nearby. Bratwurst and eggs may not be on your usual rotation, but it should be.",
+          },
+        ],
+      },
+      {
+        eyebrow: "CRAFT BEER & BREWPUBS",
+        heading: "Craft Beer and Brewpubs with Food Worth Staying For",
+        body: "New Braunfels has embraced the Texas craft beer movement with genuine enthusiasm. Several of the best spots are as much restaurant as brewery.",
+        subsections: [
+          {
+            heading: "Würst Bier Hall",
+            body: "The flagship of the Würst family, this indoor-outdoor bier hall on Castell Avenue is the closest thing New Braunfels has to a Munich beer garden. Communal tables, house-brewed lagers and hefeweizens, giant soft pretzels, and a menu heavy on sausages and schnitzel. The outdoor beer garden under the lights on a Friday evening is one of the great free pleasures in Comal County. Families, couples, and large groups all coexist easily here.",
+          },
+          {
+            heading: "New Braunfels Brewing Company",
+            body: "A downtown brewpub with a scratch kitchen that takes both the beer and the food seriously. The Comal County Cream Ale is a reliable pint; the rotating taps are creative without being gimmicky. The kitchen does elevated bar food — smash burgers with house sauce, fish tacos with housemade slaw, grain bowls for the health-conscious table member. Live music most Friday and Saturday evenings on the patio.",
+          },
+          {
+            heading: "Brauntex Craft Beer & Kitchen",
+            body: "A newer addition to the New Braunfels craft beer scene with a thoughtfully curated tap list (including rotating locals) and a kitchen that skews toward elevated comfort food. The smoked chicken sandwich and the truffle fries are reliably well-executed. Good option for a lower-key weeknight dinner where everyone can find something they want.",
+          },
+        ],
+      },
+      {
+        eyebrow: "TODD'S HONEST TAKE",
+        heading: "A Few Things Worth Knowing Before You Go",
+        body: "After years of eating around this city with clients, friends, and family, a few practical notes:",
+        bulletPoints: [
+          "Weekend crowds in Gruene are real from March through October. If you're visiting the district on a Saturday, plan to eat early (before noon) or late (after 8 p.m.) or accept a wait.",
+          "The Gristmill doesn't take reservations for parties under 8. The bar is a good place to wait and the Guadalupe views from it are worth a beer.",
+          "Naegelin's closes when the baked goods sell out — not at a fixed time. Show up before 10 a.m. to guarantee selection.",
+          "Würst Bier Hall fills fast on Friday evenings starting around 6 p.m. Weekday evenings are significantly more relaxed.",
+          "New Braunfels has a healthy food truck and pop-up scene, especially around Landa Park and on Market Avenue on weekends. Worth exploring if you're here on a Saturday morning.",
+          "Locals generally avoid the tourist-facing Tex-Mex spots near the water park corridor — the quality-to-price ratio drops off sharply. The places listed here are where people who live here actually eat.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "What is the most popular restaurant in New Braunfels?",
+        answer: "The Gristmill River Restaurant in Gruene Historic District consistently draws the largest crowds and is the most widely recognized dining destination in the city. For locals, Huisache Grill downtown is the most consistently recommended for a proper sit-down dinner. For barbecue, Pika's Bar-B-Q is the local institution most often cited by longtime residents.",
+      },
+      {
+        question: "Where should I eat in New Braunfels if I only have one meal?",
+        answer: "If you've never been: lunch at the Gristmill on the Guadalupe River deck, followed by a walk through Gruene Historic District and a beer at Würst Bier Hall. That single afternoon covers the city's food identity — river setting, Texas comfort food, German brewing tradition — better than any other combination.",
+      },
+      {
+        question: "Are there good breakfast spots in New Braunfels?",
+        answer: "Yes. Naegelin's Bakery (opened 1868) is the most historically significant — the kolaches and strudel are legitimately excellent and inexpensive. Cool River Café is the most popular brunch spot for a full cooked breakfast. Würst Küche does a German-inflected morning menu with house-smoked meats that is genuinely unlike anywhere else in the region.",
+      },
+      {
+        question: "Is the Gruene Historic District worth visiting just for food?",
+        answer: "Yes, though the food and the setting are inseparable in Gruene. The Gristmill's deck above the Guadalupe River is one of the better outdoor dining experiences in Texas. Mozie's and Gruene River Grill are solid secondary options that let you linger in the district without the main crowd. If Gruene Hall has a show, build your evening around dinner first and the music after.",
+      },
+      {
+        question: "Where do locals eat in New Braunfels?",
+        answer: "Huisache Grill for a special occasion dinner. Pika's for barbecue. Naegelin's for pastries on a weekend morning. Würst Bier Hall for a Friday evening with a group. La Cantina for weeknight Tex-Mex. McAdoo's patio for a casual lunch. These are the places with regulars — the ones where the staff knows your order.",
+      },
+    ],
+  },
+  {
     slug: "winning-offer-new-braunfels-texas",
     isNew: true,
     eyebrow: "BUYER GUIDE",

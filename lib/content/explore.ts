@@ -20,8 +20,8 @@ export type ExploreTile = {
 export const exploreTiles: ExploreTile[] = [
   {
     category: "restaurants",
-    title: "Where to eat",
-    dek: "From limestone porches to converted feed stores. The places locals return to and the ones worth the drive.",
+    title: "New Braunfels Dining Guide: Todd Spencer's Local Picks",
+    dek: "The restaurants locals actually go back to — from Gruene Hall's back porch to the Comal riverfront, craft beer joints, barbecue worth the line, and the hidden breakfast spots that don't show up first on Yelp.",
     href: "/blog/restaurants",
     imageSrc: "/images/explore-restaurants-gruene-supper.webp",
     imageAlt:
