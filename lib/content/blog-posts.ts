@@ -77,7 +77,7 @@ export const journalPosts: JournalPost[] = [
     eyebrow: "LOCAL GUIDE",
     title: "New Braunfels Dining Guide: Todd Spencer's Local Picks",
     dek: "The restaurants locals actually go back to — from Gruene Hall's back porch to the Comal riverfront, craft beer joints, barbecue worth the line, and the hidden breakfast spots that don't show up first on Yelp.",
-    imageSrc: "/images/explore-restaurants-gruene-supper.webp",
+    imageSrc: "/images/website-blog-restaurants-new-braunfels.png",
     imageAlt: "Warmly lit Gruene area restaurant patio at golden hour with limestone walls and string lights.",
     category: "Explore",
     publishDate: "July 2026",
