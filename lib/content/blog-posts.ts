@@ -77,7 +77,7 @@ export const journalPosts: JournalPost[] = [
     eyebrow: "LOCAL GUIDE",
     title: "River Life in New Braunfels: The Local Guide to the Comal and Guadalupe",
     dek: "Two spring-fed rivers, year-round water, and a culture built around floating. Everything locals know about tubing the Comal, kayaking the Guadalupe, where to put in, when to go, and the unwritten rules that make it all work.",
-    imageSrc: "/images/explore-river-life-comal-float.webp",
+    imageSrc: "/images/website-blog-river-life-new-braunfels.png",
     imageAlt: "Crystal clear Comal River with tubers floating gently between cypress trees in soft morning light.",
     category: "Explore",
     publishDate: "July 2026",
