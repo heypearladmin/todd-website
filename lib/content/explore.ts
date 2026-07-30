@@ -29,8 +29,8 @@ export const exploreTiles: ExploreTile[] = [
   },
   {
     category: "river-life",
-    title: "River life",
-    dek: "Tubing the Comal, sunset wades on the Guadalupe, and the local etiquette nobody writes down.",
+    title: "River Life in New Braunfels: The Local Guide to the Comal and Guadalupe",
+    dek: "Two spring-fed rivers, year-round water, and a culture built around floating. Everything locals know about tubing the Comal, kayaking the Guadalupe, where to put in, when to go, and the unwritten rules that make it all work.",
     href: "/blog/river-life",
     imageSrc: "/images/explore-river-life-comal-float.webp",
     imageAlt:

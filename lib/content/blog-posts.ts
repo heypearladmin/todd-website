@@ -73,6 +73,162 @@ export type JournalPost = {
 
 export const journalPosts: JournalPost[] = [
   {
+    slug: "river-life",
+    eyebrow: "LOCAL GUIDE",
+    title: "River Life in New Braunfels: The Local Guide to the Comal and Guadalupe",
+    dek: "Two spring-fed rivers, year-round water, and a culture built around floating. Everything locals know about tubing the Comal, kayaking the Guadalupe, where to put in, when to go, and the unwritten rules that make it all work.",
+    imageSrc: "/images/explore-river-life-comal-float.webp",
+    imageAlt: "Crystal clear Comal River with tubers floating gently between cypress trees in soft morning light.",
+    category: "Explore",
+    publishDate: "July 2026",
+    intro: "New Braunfels is one of the few cities in America where the river is not a backdrop — it is the point. Two spring-fed rivers run through town: the Comal, which originates from one of the largest springs in the western United States and stays a constant 72 degrees year-round, and the Guadalupe, which cuts through limestone canyon terrain and offers everything from calm flatwater to genuine whitewater depending on where you put in. For people who live here, the rivers are not a summer vacation activity. They are the rhythm of the year.",
+    sections: [
+      {
+        eyebrow: "THE TWO RIVERS",
+        heading: "The Comal and the Guadalupe: Understanding the Difference",
+        body: "Most visitors know New Braunfels for tubing. Most locals know it for two distinct river experiences that suit very different moods and skill levels. Understanding which river is right for your day makes all the difference.",
+        subsections: [
+          {
+            heading: "The Comal River",
+            body: "The Comal is short — about 2.5 miles from Comal Springs to its confluence with the Guadalupe — and consistently gentle. Fed entirely by springs that maintain a constant 72-degree temperature regardless of air temperature or rainfall, the Comal is the tubing river. Current is steady but calm. The bottom is clear limestone and you can see every pebble. Depth ranges from knee-height shallows to swimming holes up to 12 feet deep. It runs through the center of New Braunfels, through Landa Park, and along the edge of the historic downtown. For families with kids, first-timers, or anyone who wants a predictable, beautiful, no-drama float, the Comal is the answer.",
+          },
+          {
+            heading: "The Guadalupe River",
+            body: "The Guadalupe is longer, wider, and more variable. Depending on where you put in, you get a completely different experience. The Gruene section — from the put-in near Gruene Hall downstream — is calm flatwater with stunning canyon walls and live oaks overhead. The upper sections toward Canyon Lake and Sattler involve genuine rapids (Class I–II depending on water levels) and require more attention. The Guadalupe runs colder and faster than the Comal after any significant rainfall, and water levels affect character dramatically. At normal flows it is a leisurely paddle with occasional riffles; at high flows it commands respect. The Guadalupe is where kayakers, canoeists, and experienced tubers graduate once the Comal feels too predictable.",
+          },
+          {
+            heading: "Temperature and Seasonality",
+            body: "The Comal's spring-fed 72 degrees is both its greatest asset and something newcomers underestimate. On a 105-degree August afternoon, 72 degrees feels perfect after five minutes. On a 60-degree April morning, it requires some deliberate commitment. The river is swimmable year-round by local standards — many residents take a regular dip through December. Peak season runs May through September. October through March the crowds are gone and the river is often more beautiful, with fall color and morning mist off the warm water into cool air.",
+          },
+        ],
+      },
+      {
+        eyebrow: "TUBING THE COMAL",
+        heading: "Tubing the Comal: How It Works and What to Know",
+        body: "Tubing the Comal is New Braunfels's most iconic outdoor activity and draws hundreds of thousands of visitors each year. Doing it well — meaning comfortably, without sunburn, and without losing half your group — takes a little local knowledge.",
+        subsections: [
+          {
+            heading: "The Tube Rental Operators",
+            body: "Several outfitters operate on the Comal, all offering roughly the same service: tube rental, shuttle back to the start, and the option to add a cooler tube. The main operators are Rockin' R River Rides, Comal Tubing, and Landa Falls Outdoor Outfitters. All are legitimate and reasonably priced. The shuttle system means you don't need to arrange a car shuttle — you float down, the shuttle bus brings you back to your vehicle. Plan for the full float to take 2 to 3 hours depending on water levels and how often you stop.",
+          },
+          {
+            heading: "Practical Tips Locals Don't Skip",
+            body: "Sunscreen is the most common regret. You are floating on water that reflects UV, face-up, for two to three hours. Apply before you get in the water and reapply at the midpoint. A rash guard is a genuine upgrade over a regular shirt — it stays put. Water shoes with a strap matter: flip flops come off at the first riffle and limestone is rough on bare feet. Bring a dry bag or a waterproof phone case; you will want it. Arrive before 10 a.m. on weekends to avoid the worst of the parking situation in summer.",
+          },
+          {
+            heading: "Alcohol on the Comal",
+            body: "New Braunfels has specific ordinances around alcohol on the Comal that change periodically. As of 2026, glass containers are prohibited on the river. Canned beverages are generally permitted within current ordinance boundaries but check the city's current regulations before your visit — the rules have evolved and can vary by section of river and time of year. The tube rental operators post current rules clearly and are a reliable source for what's allowed.",
+          },
+          {
+            heading: "Landa Park: The Non-Commercial Entry Point",
+            body: "Landa Park gives you public access to the Comal without going through a commercial outfitter. The park has a spring-fed pool, paddleboats for rent, a small train, and direct river access. For residents who keep their own tubes in the garage, this is the default entry. On weekdays it is quiet and genuinely beautiful — the springs, the ducks, the cypress trees, the clear water. It is one of the best free parks in Texas and perpetually underappreciated by people who came just to tube.",
+          },
+        ],
+      },
+      {
+        eyebrow: "THE GUADALUPE",
+        heading: "Kayaking and Floating the Guadalupe",
+        body: "If the Comal is New Braunfels's living room, the Guadalupe is the Hill Country backyard. Bigger, wilder, and more varied — the Guadalupe rewards the people who learn it.",
+        subsections: [
+          {
+            heading: "The Gruene Section: Best for First-Timers on the Guadalupe",
+            body: "The most popular entry point for casual floaters on the Guadalupe is near Gruene Hall, with a take-out several miles downstream. This section is calm flatwater for most of its length, with limestone bluffs, cypress-lined banks, and occasional shallow riffles. Canoes, kayaks, and tubes all work. Several outfitters serve this stretch — Rio Raft Company and Rockin' R both run shuttles here. The scenery is spectacular and the pace is leisurely; a typical float takes 3 to 4 hours.",
+          },
+          {
+            heading: "The Canyon Lake Corridor: Intermediate and Advanced",
+            body: "Above Canyon Lake, the Guadalupe changes character. The Sattler area and the river above the dam offer rapids that require actual paddling skill and attention to water levels. Releases from Canyon Lake dam can dramatically change river character downstream — high-release days create challenging conditions that are genuinely dangerous for inexperienced paddlers. Check release schedules at the Army Corps of Engineers Canyon Lake website before putting in on the upper Guadalupe. This section rewards experienced kayakers and canoeists with some of the most beautiful river terrain in Central Texas.",
+          },
+          {
+            heading: "Kayak and Canoe Rentals",
+            body: "If you don't own a kayak or canoe, rentals are available through multiple outfitters along both rivers. Rio Raft Company, Rockin' R, and New Braunfels Outdoor Adventures all offer kayaks and canoes with shuttle service. Reservations are recommended on summer weekends — walk-up availability disappears by 10 a.m. Sit-on-top kayaks are the most popular rental choice; easier to get in and out of in shallow water and more forgiving when you flip.",
+          },
+        ],
+      },
+      {
+        eyebrow: "THE LOCAL CALENDAR",
+        heading: "When to Go: The River Calendar Locals Actually Use",
+        body: "Every month on the river has a different character. Here is what locals know about timing.",
+        subsections: [
+          {
+            heading: "May and June: The Sweet Spot",
+            body: "Water levels are typically good from spring rains, air temperatures are hot but not punishing, and the summer crowds haven't peaked yet. Weekday mornings in May are among the best river experiences of the year — warm enough to enjoy, cool enough to stay comfortable, and often nearly empty. June begins filling up on weekends as school lets out.",
+          },
+          {
+            heading: "July and August: Peak Season, Peak Crowds",
+            body: "This is when New Braunfels receives the bulk of its river visitors. Weekends on the Comal in July resemble a very well-organized traffic system — thousands of people floating in the same direction, outfitters running continuous shuttles, music from tube speakers mixing with everyone else's. It is genuinely fun in its own way. If you prefer solitude, weekday mornings before 9 a.m. are your window. The 72-degree Comal is at its most appreciated during a 105-degree heat index.",
+          },
+          {
+            heading: "September and October: The Local's Favorite",
+            body: "Crowds drop sharply after Labor Day. Water temperatures remain comfortable through October. Fall color begins appearing along the river banks in late October. Weekend mornings in September and October are when longtime residents reclaim the river — you'll see more locals and fewer tourists than at any point in summer. The light is better for photography. The pace is slower. This is the version of river life that makes people want to live here.",
+          },
+          {
+            heading: "November Through March: The Off-Season Worth Knowing",
+            body: "The Comal flows year-round at 72 degrees. In the winter months, you'll find dedicated locals in the water — some for a morning swim, some for cold-water training. The commercial tubing operations close or reduce hours, but Landa Park remains open and the river doesn't change. Winter mornings with mist rising off the warm water into cold air, cypress trees reflecting in still pools, and the park essentially empty — it's one of the genuinely beautiful things about living here that visitors almost never see.",
+          },
+        ],
+      },
+      {
+        eyebrow: "UNWRITTEN RULES",
+        heading: "The Unwritten Rules of River Life in New Braunfels",
+        body: "Every river culture has its own etiquette. New Braunfels is welcoming to newcomers but the locals who've been floating this river for twenty years have a quiet code.",
+        bulletPoints: [
+          "Don't stand in the middle of the river on the Comal at Hinman Island or other natural bottlenecks — it creates a log jam of tubes behind you. Move to the bank if you need to regroup.",
+          "Glass containers are prohibited on the river. Not a suggestion — glass on limestone riverbed creates a hazard that affects everyone who floats after you, barefoot.",
+          "The river current is shared. If you're faster than the group behind you, pull aside. If you're slower, don't block the natural line.",
+          "Landa Park geese are genuinely aggressive during nesting season (March through May). Give them space. They will win.",
+          "Leave the river cleaner than you found it. Cigarette butts in the river are a community-level issue — residents notice and it reflects on everyone.",
+          "On the Guadalupe, check the Army Corps dam release schedule before you go. A scheduled high-release day turns a casual float into a technical paddle.",
+          "The 72 degrees feels cold the first 30 seconds and perfect for the rest of the day. Commit to getting in.",
+        ],
+      },
+      {
+        eyebrow: "RIVER REAL ESTATE",
+        heading: "Living on the River: What It Means for New Braunfels Homebuyers",
+        body: "For buyers relocating to New Braunfels, proximity to the river is one of the most consistent factors in purchase decisions. Here is what that actually means in practice.",
+        subsections: [
+          {
+            heading: "River Access vs. River Views vs. River Frontage",
+            body: "These are meaningfully different in the New Braunfels market. River frontage — owning property that touches the water — commands a significant premium and is finite. River access means being within walking distance of a public access point or community river park, which describes most of the central city. River views can mean anything from a second-floor window angle to a dedicated vista deck. Buyers should clarify which they actually want before falling in love with a listing description that uses these terms loosely.",
+          },
+          {
+            heading: "Flood Zone Awareness",
+            body: "Both the Comal and Guadalupe have flood zones that extend beyond the riverbank. Properties in FEMA Special Flood Hazard Areas (Zone AE) require flood insurance if financed with a conventional loan. The Guadalupe in particular is subject to flash flooding events driven by Hill Country rainfall upstream — events that happen faster than forecasts can track. This is not a reason to avoid river proximity, but it is a reason to check the flood map on every property you consider and to take flood insurance seriously regardless of zone designation. Todd pulls flood maps on every property near water as a standard part of the buyer process.",
+          },
+          {
+            heading: "The Lifestyle Premium Is Real",
+            body: "Homes within walking distance of the Comal or Guadalupe consistently hold value better and sell faster than comparable properties further from the water. The river is not just an amenity — for the buyers who are drawn to New Braunfels specifically because of river life, it is the reason for the move. That demand is durable and has proven resilient through multiple market cycles.",
+          },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "What is the best time of year to float the Comal River?",
+        answer: "The sweet spot for locals is May, early June, and September through October — warm enough to be comfortable, crowds are manageable, and the river is at its most beautiful. July and August are peak season with maximum crowds but also maximum energy. For the quietest experience, weekday mornings before 9 a.m. any time from May through October. The river is technically floatable year-round at 72 degrees but commercial operations slow or close from November through March.",
+      },
+      {
+        question: "How long does it take to float the Comal River?",
+        answer: "A typical tube float on the Comal from put-in to take-out runs 2 to 3 hours depending on water levels and how often you stop. The river is approximately 2.5 miles. The commercial outfitters run shuttle buses back to the start so you don't need to arrange your own vehicle shuttle.",
+      },
+      {
+        question: "What is the difference between the Comal and Guadalupe rivers for tubing?",
+        answer: "The Comal is shorter, gentler, and spring-fed at a constant 72 degrees — the classic family tubing river. The Guadalupe is longer, more variable, and offers more terrain ranging from flat canyon water near Gruene to genuine Class I-II rapids further upstream. First-timers and families with kids start on the Comal. More experienced floaters and kayakers graduate to the Guadalupe.",
+      },
+      {
+        question: "Do you need to know how to swim to tube the Comal?",
+        answer: "Basic comfort in water is strongly recommended, but the Comal is shallow enough in many sections that you can stand up if you need to. Life jackets are available from all tube rental operators and are required for children. Non-swimmers or weak swimmers should wear a life jacket regardless of age and stay on sections of the river with lifeguard coverage during commercial operating hours.",
+      },
+      {
+        question: "Can you float the Comal River for free without renting from an outfitter?",
+        answer: "Yes. Landa Park provides free public access to the Comal River. If you bring your own tube, you can put in at the park and float without using a commercial outfitter. You'll need to arrange your own transportation back to the park or arrange a shuttle with someone in your group. The commercial outfitters earn their fee primarily through the shuttle service.",
+      },
+      {
+        question: "Is river access important when buying a home in New Braunfels?",
+        answer: "For many buyers it is the primary reason they're moving to New Braunfels. Properties within walking distance of the Comal or Guadalupe command a consistent premium and have historically held value well. The distinction between river frontage (property touching the water), community river access, and river views matters considerably in price — and listings use these terms loosely. Always clarify what the access actually is before making an offer.",
+      },
+    ],
+  },
+  {
     slug: "restaurants",
     eyebrow: "LOCAL GUIDE",
     title: "New Braunfels Dining Guide: Todd Spencer's Local Picks",
