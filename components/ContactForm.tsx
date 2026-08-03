@@ -39,7 +39,6 @@ export function ContactForm() {
     firstName.trim().length > 0 &&
     lastName.trim().length > 0 &&
     email.trim().length > 0 &&
-    phone.trim().length > 0 &&
     status !== "submitting";
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
@@ -129,7 +128,7 @@ export function ContactForm() {
 
       <div className="grid gap-2">
         <label htmlFor="phone" className="eyebrow !text-ink/60">
-          Phone number
+          Phone number <span className="normal-case font-normal text-ink/40">(optional)</span>
         </label>
         <input
           id="phone"
@@ -137,7 +136,6 @@ export function ContactForm() {
           type="tel"
           inputMode="tel"
           autoComplete="tel"
-          required
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
           placeholder="(555) 555-5555"
@@ -148,43 +146,49 @@ export function ContactForm() {
       {/* ───────────── A2P 10DLC consent block ─────────────
           Both checkboxes are optional and NOT pre-checked.
           Submit is enabled once required fields are filled. */}
-      <div className="mt-2 space-y-4 rounded-2xl border border-ink/[0.08] bg-paper-deep/40 p-5 shadow-inset-frame">
-        <label htmlFor="consent-transactional" className="flex items-start gap-3 cursor-pointer">
-          <input
-            id="consent-transactional"
-            name="consent_transactional"
-            type="checkbox"
-            checked={consentTransactional}
-            onChange={(e) => setConsentTransactional(e.target.checked)}
-            className="mt-1 h-5 w-5 shrink-0 cursor-pointer rounded border-ink/30 text-primary accent-primary focus:ring-2 focus:ring-primary/40 focus:ring-offset-2 focus:ring-offset-paper"
-          />
-          <span className="text-[0.875rem] leading-[1.7] text-ink/75">
-            I consent to receive non-marketing text messages from{" "}
-            <strong className="font-semibold text-ink">{company}</strong> regarding
-            real estate inquiries, property updates, and appointment reminders.
-            Message frequency varies, message &amp; data rates may apply. Reply HELP
-            for assistance, reply STOP to opt out.
-          </span>
-        </label>
+      <details className="mt-1 rounded-xl border border-ink/[0.07] bg-paper-deep/30">
+        <summary className="cursor-pointer select-none px-4 py-3 text-[0.8125rem] text-ink/45 hover:text-ink/60 transition-colors list-none flex items-center gap-2">
+          <span aria-hidden className="text-[0.65rem]">▸</span>
+          SMS consent options (optional)
+        </summary>
+        <div className="space-y-4 border-t border-ink/[0.06] px-4 pb-4 pt-3">
+          <label htmlFor="consent-transactional" className="flex items-start gap-3 cursor-pointer">
+            <input
+              id="consent-transactional"
+              name="consent_transactional"
+              type="checkbox"
+              checked={consentTransactional}
+              onChange={(e) => setConsentTransactional(e.target.checked)}
+              className="mt-1 h-4 w-4 shrink-0 cursor-pointer rounded border-ink/30 text-primary accent-primary focus:ring-2 focus:ring-primary/40 focus:ring-offset-2 focus:ring-offset-paper"
+            />
+            <span className="text-[0.8125rem] leading-[1.65] text-ink/60">
+              I consent to receive non-marketing text messages from{" "}
+              <strong className="font-medium text-ink/75">{company}</strong> regarding
+              real estate inquiries, property updates, and appointment reminders.
+              Message frequency varies, message &amp; data rates may apply. Reply HELP
+              for assistance, reply STOP to opt out.
+            </span>
+          </label>
 
-        <label htmlFor="consent-marketing" className="flex items-start gap-3 cursor-pointer">
-          <input
-            id="consent-marketing"
-            name="consent_marketing"
-            type="checkbox"
-            checked={consentMarketing}
-            onChange={(e) => setConsentMarketing(e.target.checked)}
-            className="mt-1 h-5 w-5 shrink-0 cursor-pointer rounded border-ink/30 text-primary accent-primary focus:ring-2 focus:ring-primary/40 focus:ring-offset-2 focus:ring-offset-paper"
-          />
-          <span className="text-[0.875rem] leading-[1.7] text-ink/75">
-            I consent to receive marketing text messages from{" "}
-            <strong className="font-semibold text-ink">{company}</strong> regarding
-            new listings, market updates, and real estate promotions. Message
-            frequency varies, message &amp; data rates may apply. Reply HELP for
-            assistance, reply STOP to opt out.
-          </span>
-        </label>
-      </div>
+          <label htmlFor="consent-marketing" className="flex items-start gap-3 cursor-pointer">
+            <input
+              id="consent-marketing"
+              name="consent_marketing"
+              type="checkbox"
+              checked={consentMarketing}
+              onChange={(e) => setConsentMarketing(e.target.checked)}
+              className="mt-1 h-4 w-4 shrink-0 cursor-pointer rounded border-ink/30 text-primary accent-primary focus:ring-2 focus:ring-primary/40 focus:ring-offset-2 focus:ring-offset-paper"
+            />
+            <span className="text-[0.8125rem] leading-[1.65] text-ink/60">
+              I consent to receive marketing text messages from{" "}
+              <strong className="font-medium text-ink/75">{company}</strong> regarding
+              new listings, market updates, and real estate promotions. Message
+              frequency varies, message &amp; data rates may apply. Reply HELP for
+              assistance, reply STOP to opt out.
+            </span>
+          </label>
+        </div>
+      </details>
 
       <div className="flex flex-col items-start gap-3">
         <button

@@ -7,7 +7,7 @@ export const heroContent = {
   eyebrow: "New Braunfels, Texas",
   headlineBefore: "The local insider",
   headlineItalic: "for living in New Braunfels.",
-  dek: "Guides, neighborhood deep dives, and friendly market notes from someone who actually lives the river life. No pressure. No hype. Just honest help when you are ready.",
+  dek: "Guides, neighborhood deep dives, and market notes from a New Braunfels real estate agent who actually lives the river life. No pressure. No hype. Just honest help when you are ready.",
   primaryCta: { label: "Start a conversation", href: "/contact" },
   secondaryCta: { label: "Explore the city", href: "/neighborhoods" },
   landscapeSrc: "/images/hero-new-braunfels-river.webp",
@@ -20,8 +20,8 @@ export const heroContent = {
 
 export const localGuide = {
   eyebrow: "Your local guide",
-  title: "A trusted insider, not a high pressure salesperson.",
-  dek: "Fifteen years living, eating, floating, and working in New Braunfels. I help families relocate, retirees right size, first time buyers find their footing, and Austin and San Antonio commuters find a place that finally feels like home.",
+  title: "A trusted New Braunfels Realtor, not a high pressure salesperson.",
+  dek: "Fifteen years living, eating, floating, and working in New Braunfels. As a local real estate agent, I help families relocate, retirees right size, first time buyers find their footing, and Austin and San Antonio commuters find a place that finally feels like home.",
   pullQuote:
     "Hyperlocal is not a buzzword. It is where you float on Saturday and where you grab coffee on Tuesday.",
   aboutHref: "/about",
