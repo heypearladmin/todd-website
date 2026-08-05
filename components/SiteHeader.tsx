@@ -8,7 +8,7 @@ import { site } from "@/lib/site";
 const links = [
   { href: site.neighborhoodsPath, label: "Neighborhoods" },
   { href: "/explore", label: "Explore" },
-  { href: site.blogPath, label: "Journal" },
+  { href: site.blogPath, label: "Blog" },
   { href: site.aboutPath, label: "About" },
   { href: site.contactPath, label: "Contact" },
 ] as const;
