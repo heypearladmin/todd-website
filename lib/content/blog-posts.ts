@@ -80,7 +80,8 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/blog-offer-rejected-nb.webp",
     imageAlt: "Young couple reviewing real estate documents at a kitchen table in a warm Texas home, thoughtful and determined.",
     category: "Buyer Guide",
-    publishDate: "August 2026",
+    publishDate: "August 6, 2026",
+    isNew: true,
     intro: "Getting a rejection on a home offer is one of the more jarring experiences in a real estate transaction. You found the house, you ran the numbers, you made the decision — and then the answer came back no. In the New Braunfels market, where well-priced homes still move quickly and multiple-offer situations remain common in desirable neighborhoods, rejections happen regularly to prepared buyers. The question is not whether it hurts. It does. The question is what you do with the next 48 hours.",
     sections: [
       {
@@ -191,7 +192,8 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/blog-pet-friendly-nb.webp",
     imageAlt: "Happy dog wading in crystal-clear spring-fed river water with cypress trees lining the bank in New Braunfels.",
     category: "Relocation Guide",
-    publishDate: "August 2026",
+    publishDate: "August 2, 2026",
+    isNew: true,
     intro: "One of the first questions families with dogs ask when considering a move to New Braunfels is whether the city will work for their animals. The honest answer is that it works exceptionally well — better than most Texas cities of comparable size. The spring-fed rivers are dog-friendly in the right spots, the parks are genuinely large, the trail system is growing, and the culture around dogs in public spaces is relaxed and welcoming. This guide covers what pet owners actually need to know before and after the move.",
     sections: [
       {
@@ -318,7 +320,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/explore-breweries-faust-taproom.webp",
     imageAlt: "New Braunfels craft brewery taproom interior with reclaimed wood, copper kettles, and warm hanging bulbs.",
     category: "Explore",
-    publishDate: "July 2026",
+    publishDate: "July 29, 2026",
     intro: "New Braunfels was founded by German immigrants in 1845, and they brought with them a culture of communal drinking, beer gardens, and the idea that a well-made lager was a civic institution. That tradition persisted through Prohibition, resurfaced in the craft beer era, and now expresses itself in a collection of breweries, taprooms, and biergartens that are genuinely worth seeking out. This is not a city that caught the craft beer wave; it is a city that understood the concept for a hundred and fifty years before it got a name.",
     sections: [
       {
@@ -410,7 +412,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/explore-hidden-gems-secret-cove.webp",
     imageAlt: "Secluded swimming cove on the Guadalupe with limestone outcropping and quiet, glassy water.",
     category: "Explore",
-    publishDate: "July 2026",
+    publishDate: "July 25, 2026",
     intro: "Every city has a tourist layer and a local layer. In New Braunfels, the tourist layer is easy to find: Gruene Hall, Schlitterbahn, the Comal River tube run, Landa Park. These are genuinely good, which is why they're on every list. The local layer is harder to find but more interesting — the limestone swimming cove that doesn't have a parking lot, the bakery with no website, the neighborhood park that fills with regulars at sunrise before the summer heat makes it impossible, the German deli that looks closed but isn't. This is that list.",
     sections: [
       {
@@ -515,7 +517,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/explore-weekend-activities-farmers-market.webp",
     imageAlt: "Saturday farmers market in New Braunfels with woven baskets of peaches and tomatoes in golden morning light.",
     category: "Explore",
-    publishDate: "July 2026",
+    publishDate: "July 22, 2026",
     intro: "The best New Braunfels weekends are not planned around attractions. They are built around rhythms: where to start Saturday morning before the heat arrives, which hour the farmers market is worth going to, when the Gruene district feels like itself versus when it feels like a parking lot. Locals who have lived here for years have found the version of each weekend activity that is actually good — and it is usually not the version the tourism board promotes. This is how locals spend Saturday and Sunday.",
     sections: [
       {
@@ -626,7 +628,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/explore-family-activities-river-sunset.webp",
     imageAlt: "Family wading in the Comal River at sunset with bare feet on smooth limestone and warm light.",
     category: "Explore",
-    publishDate: "July 2026",
+    publishDate: "July 18, 2026",
     intro: "New Braunfels is one of the better family cities in Texas, and not only because of Schlitterbahn. The rivers are genuinely safe for children in the right spots, the parks are large and well-maintained, the scale of the city means you can get anywhere in fifteen minutes, and the summer heat is offset by spring-fed water that stays 72 degrees year-round. Families who move here often cite the outdoor access as the reason their kids have a better childhood than they would in a larger city — less screen time not because of rules but because the river is more interesting. This guide covers what actually works for families with kids.",
     sections: [
       {
@@ -764,7 +766,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/explore-live-music-gruene-hall.webp",
     imageAlt: "Interior of Gruene Hall at dusk with warm stage light spilling onto a worn wooden dance floor.",
     category: "Explore",
-    publishDate: "July 2026",
+    publishDate: "July 15, 2026",
     intro: "New Braunfels has been a music town since before it was a tubing town. The German settlers who founded the city in 1845 brought with them a tradition of community halls, brass bands, and public dances that never entirely left. Gruene Hall — opened in 1878 and never closed — is the most visible expression of that lineage, but it is not the whole story. The live music scene in New Braunfels runs from legendary venues to Thursday night songwriter circles at neighborhood bars, from national touring acts to local regulars who have been playing the same stage for fifteen years. If you only go to Gruene Hall, you've seen the famous part. This guide covers the rest.",
     sections: [
       {
@@ -897,7 +899,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/website-blog-river-life-new-braunfels.png",
     imageAlt: "Crystal clear Comal River with tubers floating gently between cypress trees in soft morning light.",
     category: "Explore",
-    publishDate: "July 2026",
+    publishDate: "July 11, 2026",
     intro: "New Braunfels is one of the few cities in America where the river is not a backdrop — it is the point. Two spring-fed rivers run through town: the Comal, which originates from one of the largest springs in the western United States and stays a constant 72 degrees year-round, and the Guadalupe, which cuts through limestone canyon terrain and offers everything from calm flatwater to genuine whitewater depending on where you put in. For people who live here, the rivers are not a summer vacation activity. They are the rhythm of the year.",
     sections: [
       {
@@ -1053,7 +1055,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/website-blog-restaurants-new-braunfels.png",
     imageAlt: "Warmly lit Gruene area restaurant patio at golden hour with limestone walls and string lights.",
     category: "Explore",
-    publishDate: "July 2026",
+    publishDate: "July 8, 2026",
     intro: "New Braunfels has a food scene that punches well above the city's size. The German heritage is real — you can still get authentic schnitzel and strudel — but what makes eating here interesting is the range: Texas barbecue smoke drifting past a riverfront patio, craft brewpubs with scratch kitchens, Tex-Mex joints that have been feeding the same families for three generations, and a growing roster of chef-driven independents that would hold their own in Austin or San Antonio. This guide covers the places worth knowing, organized by what you're in the mood for.",
     sections: [
       {
@@ -1190,14 +1192,13 @@ export const journalPosts: JournalPost[] = [
   },
   {
     slug: "winning-offer-new-braunfels-texas",
-    isNew: true,
     eyebrow: "BUYER GUIDE",
     title: "How to Make a Winning Offer on a Home in New Braunfels",
     dek: "Offer price alone doesn't win homes in New Braunfels. Here's how earnest money, option fees, terms, and timing come together to create an offer sellers actually accept.",
     imageSrc: "/images/website-blog-winning-offer-new-braunfels.png",
     imageAlt: "Close-up of a hand signing a real estate contract on a wooden desk with a pen, house keys, and natural window light in a Texas home",
     category: "Buyer Guide",
-    publishDate: "July 31, 2026",
+    publishDate: "July 4, 2026",
     intro: "Most buyers in New Braunfels spend weeks finding the right home and then treat the offer like an afterthought. That's a mistake. In a market where well-priced homes in desirable areas still attract serious interest, the way you structure your offer — the price, the earnest money, the option fee, the timeline, and the contingencies — determines whether you get the home or watch someone else move in. This guide breaks down exactly how the Texas offer process works and what separates offers that get accepted from those that don't.",
     sections: [
       {
@@ -1333,14 +1334,13 @@ export const journalPosts: JournalPost[] = [
   },
   {
     slug: "home-inspection-new-braunfels-texas",
-    isNew: true,
     eyebrow: "BUYER GUIDE",
     title: "Home Inspection in Texas: What New Braunfels Buyers Need to Know",
     dek: "A home inspection is your best tool for understanding what you're actually buying. Here's what inspectors check, what they miss, and how to turn findings into negotiating leverage in Comal County.",
     imageSrc: "/images/website-blog-home-inspection-new-braunfels.png",
     imageAlt: "A home inspector in a gray shirt examining the exterior of a single-story Texas limestone home with a clipboard, natural daylight, no people visible in frame",
     category: "Buyer Guide",
-    publishDate: "July 28, 2026",
+    publishDate: "July 1, 2026",
     intro: "The home inspection is one of the most important steps in buying a home in New Braunfels — and one of the most misunderstood. Buyers sometimes treat it as a box to check rather than a tool to use. Done right, the inspection period is your window into the real condition of the property, your opportunity to renegotiate if needed, and your last clear chance to walk away before you're fully committed. This guide explains what a Texas home inspection covers, what it doesn't, and how to turn your inspection report into actionable decisions.",
     sections: [
       {
@@ -1473,14 +1473,13 @@ export const journalPosts: JournalPost[] = [
   },
   {
     slug: "home-insurance-new-braunfels-texas",
-    isNew: true,
     eyebrow: "BUYER GUIDE",
     title: "Home Insurance in Texas: What New Braunfels Buyers Need to Know",
     dek: "Texas home insurance costs more, covers less by default, and requires more decisions than most buyers expect. Here is what to understand before you close on a New Braunfels home.",
     imageSrc: "/images/website-blog-home-insurance-new-braunfels.png",
     imageAlt: "Exterior of a well-maintained New Braunfels home at golden hour with lush lawn and Hill Country landscaping under a clear Texas sky",
     category: "Buyer Guide",
-    publishDate: "July 23, 2026",
+    publishDate: "June 27, 2026",
     intro: "Home insurance in Texas is not like home insurance in most other states. The market here is expensive, increasingly restricted, and full of decisions that materially affect what you pay and what you are actually protected against. For buyers purchasing in New Braunfels and Comal County, understanding the insurance landscape before closing is not optional — it is one of the most important steps in the purchase process. A policy that looks affordable at closing can become a financial problem the first time hail comes through or a creek overflows.",
     sections: [
       {
@@ -1587,14 +1586,13 @@ export const journalPosts: JournalPost[] = [
   },
   {
     slug: "closing-costs-new-braunfels-texas",
-    isNew: true,
     eyebrow: "BUYER GUIDE",
     title: "Closing Costs in Texas: What New Braunfels Home Buyers Pay at Closing",
     dek: "Closing costs catch most buyers off guard. Here is exactly what to expect — lender fees, title costs, prepaid items, and Texas-specific charges — so you can plan your budget accurately.",
     imageSrc: "/images/website-blog-closing-costs-new-braunfels.png",
     imageAlt: "Professional real estate closing table with documents, pen, and keys in a modern Texas office with warm natural light",
     category: "Buyer Guide",
-    publishDate: "July 16, 2026",
+    publishDate: "June 24, 2026",
     intro: "Closing costs are the fees, prepaid expenses, and third-party charges that you pay on the day you take ownership of a home — in addition to your down payment. In New Braunfels and across Texas, these costs routinely run between 2% and 4% of the purchase price for buyers, meaning a $400,000 home can easily require $8,000 to $16,000 in closing costs on top of your down payment. Knowing what is coming — and why each line item exists — removes one of the biggest sources of last-minute stress in the home buying process.",
     sections: [
       {
@@ -1726,7 +1724,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/website-blog-buying-land-new-braunfels-questions.png",
     imageAlt: "Wide view of undeveloped Texas Hill Country land near New Braunfels with rolling terrain, live oak trees, and a clear blue sky",
     category: "Buyer Guide",
-    publishDate: "July 9, 2026",
+    publishDate: "June 20, 2026",
     intro: "Buying land in New Braunfels sounds simple — find a piece of property, make an offer, build your dream home. In practice, land purchases are more complex than buying an existing home because you are not just evaluating what is there. You are evaluating what you can do with it. Four questions should drive every land purchase conversation: Are utilities already available? What can you actually build? Is the land physically easy to build on? And how do you legally reach it? Get these answers before you fall in love with the view.",
     sections: [
       {
@@ -1913,7 +1911,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/website-blog-utilities-available-new-braunfels-land.png",
     imageAlt: "Texas Hill Country rural road near New Braunfels with utility poles running alongside an unpaved lane through live oak trees and open ranchland",
     category: "Buyer Guide",
-    publishDate: "July 6, 2026",
+    publishDate: "June 17, 2026",
     intro: "Of all the questions a land buyer in New Braunfels can ask, utility availability is the one that most directly determines what a piece of ground is actually worth. A lot with city water, sewer, and electric at the curb is a fundamentally different asset than a lot requiring well drilling, septic installation, and a half-mile electric line extension — even if the two parcels sit a few miles apart and carry similar asking prices. Getting clear on utilities before you make an offer is not due diligence for the cautious buyer. It is due diligence for every buyer.",
     sections: [
       {
@@ -2026,7 +2024,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/website-blog-new-braunfels-property-tax-guide.png",
     imageAlt: "Aerial view of a New Braunfels residential neighborhood with well-kept homes and tree-lined streets under bright Texas summer sky",
     category: "Buyer Guide",
-    publishDate: "July 1, 2026",
+    publishDate: "June 13, 2026",
     intro: "Property taxes are one of the biggest surprises for homebuyers moving to New Braunfels — especially those coming from states without them or from areas where they run much lower. Getting a real handle on what you will owe, and what you can do to reduce that number, is one of the most practical things you can do before you close on a home in Comal County.",
     sections: [
       {
@@ -2157,7 +2155,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/website-blog-gruene-historic-district.png",
     imageAlt: "Gruene Hall's weathered wooden exterior surrounded by mature oak trees on a sunny afternoon in New Braunfels, Texas",
     category: "Neighborhood Guide",
-    publishDate: "June 24, 2026",
+    publishDate: "June 10, 2026",
     intro: "Most people hear \"Gruene\" and picture a weekend trip — cold beer on the porch, two-stepping to a live band, a float down the Guadalupe. But for a growing number of buyers, Gruene is where they want to actually live. Understanding what that means — the history, the real estate market, and the day-to-day lifestyle — takes a guide who knows the district from the inside out.",
     sections: [
       {
@@ -2265,7 +2263,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/website-blog-canyon-lake-real-estate.png",
     imageAlt: "Aerial view of Canyon Lake shoreline with Hill Country homes nestled among cedar trees reflecting on clear blue water at golden hour",
     category: "Neighborhood Guide",
-    publishDate: "June 17, 2026",
+    publishDate: "June 6, 2026",
     intro: "Canyon Lake sits about 15 miles west of New Braunfels, but in terms of lifestyle, it feels like a world apart — clear water, Hill Country acreage, and a pace that rewards people who came here on purpose. For buyers considering Comal County real estate, Canyon Lake deserves a serious look, especially as inventory tightens in town and the appeal of waterfront or rural living only grows.",
     sections: [
       {
@@ -2394,7 +2392,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/website-blog-veramendi-neighborhood.png",
     imageAlt: "Aerial view of Veramendi master-planned community in New Braunfels, Texas, showing tree-lined streets, resort-style pool, and Hill Country landscape at golden hour",
     category: "Neighborhood Guide",
-    publishDate: "June 10, 2026",
+    publishDate: "June 3, 2026",
     intro: "Veramendi is one of New Braunfels's most ambitious master-planned communities — a 2,800-acre development designed from the ground up with trails, resort amenities, and a walkable village center. If you're relocating from Austin or San Antonio and wondering where families are landing in 2026, Veramendi keeps coming up for good reason.",
     sections: [
       {
@@ -2527,7 +2525,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/website-blog-vintage-oaks-neighborhood.png",
     imageAlt: "Rolling Hill Country landscape with mature oak trees and a custom limestone home on a large acreage lot near New Braunfels, Texas at golden hour",
     category: "Neighborhood Guide",
-    publishDate: "June 3, 2026",
+    publishDate: "May 30, 2026",
     intro: "If you've been searching for elbow room without sacrificing convenience, Vintage Oaks at the Vineyard tends to stop the scroll. This master-planned Hill Country community straddles the Comal and Bexar county line near Bulverde — close enough to New Braunfels and San Antonio to matter, far enough out to feel like a genuine escape. Todd Spencer works with buyers across this corridor and considers Vintage Oaks one of the more distinctive communities in the region for anyone prioritizing space, scenery, and a strong sense of neighborhood.",
     sections: [
       {
@@ -2783,7 +2781,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/website-blog-first-time-homebuyer.png",
     imageAlt: "Young couple standing in front of a new home in New Braunfels, Texas, holding keys and smiling on a sunny afternoon",
     category: "Buyer Guide",
-    publishDate: "May 20, 2026",
+    publishDate: "May 23, 2026",
     intro: "Buying your first home in New Braunfels is exciting — and a little overwhelming if you have never done it before. The Texas homebuying process has its own set of rules, timelines, and terminology that catch a lot of first-timers off guard. This guide walks you through every major step, with specific details about what buying in New Braunfels actually looks like on the ground.",
     sections: [
       {
@@ -2925,7 +2923,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/website-blog-new-braunfels-vs-san-marcos.png",
     imageAlt: "Aerial view of the Texas Hill Country showing the Guadalupe River winding through green cedar hills near New Braunfels, with neighborhood rooftops visible through the tree canopy on a clear summer morning",
     category: "Buyer Guide",
-    publishDate: "May 13, 2026",
+    publishDate: "May 20, 2026",
     intro: "New Braunfels and San Marcos sit just 16 miles apart on Interstate 35, but they attract very different buyers for very different reasons. If you are trying to decide which of these two fast-growing Texas cities makes more sense for your next chapter, the details in this comparison will give you a clear picture of what life actually looks like on the ground in each place.",
     sections: [
       {
@@ -3044,7 +3042,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/website-blog-hoa-communities.png",
     imageAlt: "Tree-lined street in a master-planned New Braunfels neighborhood with well-maintained homes, a walking trail, and a community amenity center in the background",
     category: "Buyer Guide",
-    publishDate: "May 6, 2026",
+    publishDate: "May 16, 2026",
     intro: "If you're shopping for a home in New Braunfels, there's a good chance your search will lead you straight into HOA territory. The city's explosive growth has been shaped largely by master-planned communities, and understanding how those homeowners associations actually work — before you're sitting at the closing table — can save you from some very expensive surprises. Todd Spencer breaks down what every buyer needs to know about HOAs in New Braunfels.",
     sections: [
       {
@@ -3186,7 +3184,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/website-blog-flood-zone-guide.png",
     imageAlt: "Aerial view of the Comal River winding through New Braunfels, Texas, with residential neighborhoods and green riverbanks visible on a clear summer day",
     category: "Buyer Guide",
-    publishDate: "April 29, 2026",
+    publishDate: "May 13, 2026",
     intro: "New Braunfels is defined by its rivers — the Comal and the Guadalupe are two of the biggest reasons people move here. But before you fall in love with a property near the water, there's a critical layer of due diligence that too many buyers skip: understanding FEMA flood zones and what they mean for your insurance costs, your mortgage, and your long-term investment. This guide breaks it all down so you can buy near the water with your eyes wide open.",
     sections: [
       {
@@ -3327,7 +3325,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/website-blog-remote-workers-new-braunfels.png",
     imageAlt: "A remote worker with a laptop sitting at an outdoor café table near the Comal River in New Braunfels, Texas, surrounded by cypress trees and natural light",
     category: "Relocation",
-    publishDate: "April 22, 2026",
+    publishDate: "May 9, 2026",
     intro: "If you can work from anywhere, the question is no longer whether you can leave a high-cost city — it is where you should go. For a growing number of remote professionals, New Braunfels, Texas is answering that question convincingly. With real fiber internet infrastructure, a thriving local culture, outdoor recreation steps from your door, and housing costs that make Austin feel like a distant memory, New Braunfels is quietly becoming one of the most livable remote work destinations in the American South.",
     sections: [
       {
@@ -3446,7 +3444,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/website-blog-retiring-new-braunfels.png",
     imageAlt: "A retired couple walks along the Comal River in New Braunfels, Texas on a sunny morning, with cypress trees lining the clear water and a Hill Country backdrop",
     category: "Relocation",
-    publishDate: "April 15, 2026",
+    publishDate: "May 6, 2026",
     intro: "New Braunfels has quietly become one of Texas's most sought-after retirement destinations — and it's not hard to understand why once you spend a weekend here. The Hill Country scenery, the Comal and Guadalupe rivers, a true small-town feel, and surprisingly easy access to San Antonio's world-class medical corridor make it a genuinely compelling place to land. If you're thinking about retiring here, this guide covers everything that matters: healthcare, taxes, home prices, lifestyle, and the things most articles won't tell you.",
     sections: [
       {
@@ -3565,7 +3563,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/website-blog-waterfront-homes.png",
     imageAlt: "A cypress-lined river with a limestone home nestled along the bank in the Texas Hill Country, afternoon light filtering through the trees",
     category: "Buyer Guide",
-    publishDate: "April 8, 2026",
+    publishDate: "May 2, 2026",
     intro: "Waterfront property in the New Braunfels area means something different depending on which body of water you're talking about. The Comal River and Canyon Lake each deliver a distinct version of the water lifestyle — and understanding that distinction before you buy could save you a lot of money and a lot of surprises.",
     sections: [
       {
@@ -3688,7 +3686,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/website-blog-new-construction-vs-resale.png",
     imageAlt: "Side-by-side view of a freshly finished new construction home and a mature tree-lined resale home on a quiet New Braunfels street",
     category: "Buyer Guide",
-    publishDate: "April 1, 2026",
+    publishDate: "April 29, 2026",
     intro: "One of the most common questions Todd Spencer hears from buyers relocating to New Braunfels is a simple one: should I build new or buy resale? It sounds like a preference question, but the answer has real financial and lifestyle consequences — and the right choice depends heavily on your timeline, budget, and risk tolerance. Here is an honest look at both sides of the decision, written for the New Braunfels market specifically.",
     sections: [
       {
@@ -3810,7 +3808,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/website-blog-selling-home-guide.png",
     imageAlt: "A well-staged New Braunfels home exterior with manicured lawn, warm afternoon light, and a wooden privacy fence typical of Texas Hill Country neighborhoods",
     category: "Seller Guide",
-    publishDate: "March 25, 2026",
+    publishDate: "April 25, 2026",
     intro: "Selling a home in New Braunfels is not the same as selling in Austin or San Antonio — this market has its own rhythms, its own buyer pool, and its own set of expectations. Done right, a sale here can be smooth and profitable; done wrong, it can drag on for months and cost you thousands in unnecessary concessions. This guide walks through every stage of the process so sellers know exactly what they're getting into before they sign a listing agreement.",
     sections: [
       {
@@ -3951,7 +3949,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/website-blog-commute-guide.png",
     imageAlt: "Aerial view of IH-35 corridor near New Braunfels, Texas at dawn with light traffic and rolling Hill Country landscape in the background",
     category: "Relocation",
-    publishDate: "March 18, 2026",
+    publishDate: "April 22, 2026",
     intro: "New Braunfels sits almost exactly halfway between Austin and San Antonio — a geographic quirk that makes it one of the most strategically located cities in Central Texas for working professionals. Whether your office is on the Austin tech corridor or in the San Antonio medical district, understanding how commute times actually play out — not just on a map, but in real traffic — is one of the most important decisions you will make when buying a home here.",
     sections: [
       {
@@ -4086,7 +4084,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/website-blog-what-budget-buys.png",
     imageAlt: "Aerial view of a New Braunfels neighborhood with Hill Country terrain, mature trees, and residential homes with pools visible from above on a clear Texas afternoon",
     category: "Buyer Guide",
-    publishDate: "March 11, 2026",
+    publishDate: "April 18, 2026",
     intro: "One of the first questions buyers ask when they start looking at New Braunfels is simple: what does my money actually get me here? It is a fair question, and the answer depends heavily on which price band you are shopping in and what trade-offs you are willing to make. Here is an honest, neighborhood-by-neighborhood breakdown of what $400K, $500K, and $600K realistically buys in New Braunfels in 2026.",
     sections: [
       {
@@ -4234,7 +4232,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/website-blog-short-term-rental.png",
     imageAlt: "Charming vacation rental cottage near the Comal River in New Braunfels, Texas, with a wraparound porch and lush green yard on a sunny afternoon",
     category: "Investment",
-    publishDate: "March 4, 2026",
+    publishDate: "April 15, 2026",
     intro: "New Braunfels has quietly become one of Texas's most compelling short-term rental markets, drawing millions of tubers, wine trail visitors, and weekend escapes from Austin and San Antonio every year. But the difference between a cash-flowing vacation rental and an expensive mistake often comes down to where you buy, what the city allows, and whether the HOA has other ideas. Here is what every investor should understand before putting a property under contract.",
     sections: [
       {
@@ -4367,7 +4365,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/cost-of-living-new-braunfels.png",
     imageAlt: "Quiet residential street in New Braunfels, Texas at golden hour with limestone homes and mature oak trees.",
     category: "Market Insights",
-    publishDate: "February 25, 2026",
+    publishDate: "April 11, 2026",
     intro: "New Braunfels has become one of the fastest-growing cities in Texas, and for good reason. Positioned between Austin and San Antonio, it offers Hill Country scenery, a strong sense of community, and a cost of living that tends to surprise people who have been priced out of the larger metros. This guide breaks down what it actually costs to live in New Braunfels compared to Austin and San Antonio — across housing, taxes, utilities, groceries, and everyday life.",
     sections: [
       {
@@ -4468,7 +4466,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/best-time-to-buy-sell-new-braunfels.png",
     imageAlt: "Aerial view of a Texas Hill Country neighborhood in spring with rolling green hills and winding roads.",
     category: "Market Insights",
-    publishDate: "February 18, 2026",
+    publishDate: "April 8, 2026",
     intro: "One of the most common questions buyers and sellers ask is some version of: should I wait, or should I move now? The honest answer is that timing the market perfectly is rarely possible — but understanding how the New Braunfels market moves through the year can help you make a more informed decision. National real estate headlines rarely reflect what is happening in a specific Hill Country city. This guide covers what actually drives timing in the New Braunfels market.",
     sections: [
       {
@@ -4559,7 +4557,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/2026 New Braunfels Real Estate Market Report 06_11.png",
     imageAlt: "Aerial view of New Braunfels Hill Country residential corridor at soft afternoon light.",
     category: "Market Insights",
-    publishDate: "February 11, 2026",
+    publishDate: "April 4, 2026",
     intro: "As we move deeper into 2026, the New Braunfels real estate market is experiencing dynamic changes that reflect broader trends in Texas residential real estate. Buyers and sellers alike seek clarity on current home prices and the factors driving these shifts. This report covers property values, emerging housing trends, neighborhood insights, and predictions for the remainder of the year.",
     sections: [
       {
@@ -4669,7 +4667,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/How Todd Differentiates His Services From Other New Braunfels Real Estate Agents 06_11.png",
     imageAlt: "Cinematic editorial photograph of a New Braunfels neighborhood street at golden hour.",
     category: "About Todd",
-    publishDate: "February 4, 2026",
+    publishDate: "April 1, 2026",
     intro: "In the competitive landscape of New Braunfels real estate, standing out requires more than a license and a lockbox. Todd Spencer employs a unique approach focused on hyperlocal insight and personalized service, catering to both buyers and sellers. This article explores how that specialized knowledge creates a tailored experience addressing the specific needs of relocating buyers and local sellers alike.",
     sections: [
       {
@@ -4776,7 +4774,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/Moving to New Braunfels_ A Complete Relocation Guide 06_11.png",
     imageAlt: "Wide editorial photograph of New Braunfels Hill Country at golden hour with river bend in foreground.",
     category: "Relocation",
-    publishDate: "January 28, 2026",
+    publishDate: "March 28, 2026",
     intro: "Relocating to New Braunfels is an exciting venture filled with vibrant community life, scenic natural beauty, and a rich cultural heritage. This guide covers the essential aspects of moving here, providing in-depth insights into neighborhoods, real estate trends, living costs, and community engagement. Whether you are drawn to the Hill Country vistas or the lively local festivals, this guide equips you with the information you need for a successful move.",
     sections: [
       {
@@ -4900,7 +4898,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/New Braunfels Relocation Welcome Packet 06_11.png",
     imageAlt: "Warm editorial flat lay of a New Braunfels welcome packet with local map and coffee on paper.",
     category: "Relocation",
-    publishDate: "January 21, 2026",
+    publishDate: "March 25, 2026",
     intro: "Relocating to a new city can be both exciting and daunting, especially when it involves finding the right neighborhood, understanding the housing market, and ensuring your new home meets your family's needs. This welcome packet serves as your comprehensive guide for exploring New Braunfels, covering neighborhoods, schools, lifestyle, and cost of living.",
     sections: [
       {
@@ -5002,7 +5000,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/River Chase Neighborhood Guide 06_11.png",
     imageAlt: "Aerial editorial photograph of River Chase neighborhood in New Braunfels with Hill Country terrain and oak canopy.",
     category: "Neighborhoods",
-    publishDate: "January 14, 2026",
+    publishDate: "March 21, 2026",
     intro: "River Chase, a vibrant community in New Braunfels, offers a unique blend of scenic beauty, residential harmony, and thriving real estate opportunities. This guide covers everything from current market conditions to the lifestyle River Chase fosters, with insights from someone who knows the neighborhood well.",
     sections: [
       {
@@ -5089,7 +5087,7 @@ export const journalPosts: JournalPost[] = [
     imageSrc: "/images/What Makes River Chase Unique in New Braunfels_ 06_11.png",
     imageAlt: "Scenic view of River Chase green space and natural landscape in New Braunfels Hill Country.",
     category: "Neighborhoods",
-    publishDate: "January 7, 2026",
+    publishDate: "March 18, 2026",
     intro: "Nestled in the landscape of New Braunfels, River Chase stands out as a community that combines natural beauty with modern living. Whether you are a relocating buyer, a retiree seeking tranquility, or a family looking for a vibrant lifestyle, River Chase caters to diverse needs and offers a rich tapestry of experiences. Here is a close look at what makes this neighborhood more than just a place to live.",
     sections: [
       {
