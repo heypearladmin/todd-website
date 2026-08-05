@@ -100,7 +100,7 @@ export default function BlogIndexPage() {
           <p className="eyebrow text-ink/50">Evergreen guides</p>
           <div className="mt-8 grid grid-cols-1 gap-7 md:grid-cols-2 lg:gap-8">
             {insightCards.map((card) => (
-              <article key={card.kind} className="group">
+              <article key={card.href} className="group">
                 <Link href={card.href} className="block">
                   <div className="relative aspect-[16/10] w-full overflow-hidden rounded-[24px] bg-ink/[0.04] shadow-surface ring-1 ring-ink/[0.06] transition-shadow duration-cinema ease-cinema group-hover:shadow-surface-hover">
                     <Image
