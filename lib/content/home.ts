@@ -217,6 +217,26 @@ export const insightCards: InsightCard[] = [
     imageAlt:
       "Aerial editorial photograph of Hill Country residential corridor in soft afternoon light.",
   },
+  {
+    kind: "moving",
+    eyebrow: "Buyer guide",
+    title: "When your offer gets rejected",
+    dek: "What it means, what to do next, and how to come back stronger in the New Braunfels market.",
+    href: "/blog/offer-rejected-new-braunfels",
+    imageSrc: "/images/insight-moving-to-new-braunfels.webp",
+    imageAlt:
+      "Comal County neighborhood street in afternoon light with for-sale sign and mature oak canopy.",
+  },
+  {
+    kind: "lifestyle",
+    eyebrow: "Relocation guide",
+    title: "Pet-friendly New Braunfels",
+    dek: "Dog parks, river trails, and the spots where your dog gets as good a Saturday as you do.",
+    href: "/blog/pet-friendly-new-braunfels",
+    imageSrc: "/images/insight-lifestyle-river-rituals.webp",
+    imageAlt:
+      "Dog wading happily in the clear Comal River on a sunny Texas morning.",
+  },
 ];
 
 /* ─────────────────────────── Final CTA ─────────────────────────── */

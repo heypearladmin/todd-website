@@ -73,6 +73,244 @@ export type JournalPost = {
 
 export const journalPosts: JournalPost[] = [
   {
+    slug: "offer-rejected-new-braunfels",
+    eyebrow: "BUYER GUIDE",
+    title: "Your Offer Got Rejected in New Braunfels. Here's What to Do Next.",
+    dek: "What it means, what to do next, and how to come back stronger in the New Braunfels market. A rejected offer is not the end — it is information.",
+    imageSrc: "/images/insight-moving-to-new-braunfels.webp",
+    imageAlt: "Comal County neighborhood street in afternoon light with mature oak canopy.",
+    category: "Buyer Guide",
+    publishDate: "August 2026",
+    intro: "Getting a rejection on a home offer is one of the more jarring experiences in a real estate transaction. You found the house, you ran the numbers, you made the decision — and then the answer came back no. In the New Braunfels market, where well-priced homes still move quickly and multiple-offer situations remain common in desirable neighborhoods, rejections happen regularly to prepared buyers. The question is not whether it hurts. It does. The question is what you do with the next 48 hours.",
+    sections: [
+      {
+        eyebrow: "FIRST THINGS FIRST",
+        heading: "Understanding Why Your Offer Was Rejected",
+        body: "Before deciding what to do next, it is worth understanding what actually happened. There are meaningfully different reasons an offer gets rejected, and the right response depends on which one applies.",
+        subsections: [
+          {
+            heading: "Price Was the Issue",
+            body: "The most common reason, and the most straightforward to address. If the seller received a higher offer — or if your offer came in below list price on a home that was correctly priced — the rejection is market feedback. It tells you something specific: either your price was below where the market is, or another buyer was more aggressive. Your agent should be able to find out whether there were competing offers and roughly where the accepted offer landed. That information directly shapes your next move.",
+          },
+          {
+            heading: "Terms Were the Issue",
+            body: "Price is not the only thing sellers evaluate. In New Braunfels, sellers often care significantly about closing timeline, contingencies, and certainty of close. A buyer with a 21-day close and no inspection contingency waiver will often beat a buyer offering $5,000 more with a 45-day close and multiple contingencies. If your offer was competitive on price but lost on terms, that is a different problem with a different solution.",
+          },
+          {
+            heading: "The Seller Chose to Counter or Re-list",
+            body: "Not all rejections mean the home is gone. Sometimes a seller rejects an offer because they believe they can do better — a counter at a higher price, or a decision to re-list at a higher ask. If your offer was the only one and the seller rejected rather than countered, that can mean the seller is unrealistic about value, or that something about your terms triggered hesitation. Ask your agent what feedback the listing agent provided. Most will share something.",
+          },
+          {
+            heading: "The Home Went to Another Buyer",
+            body: "If the seller accepted another offer, the situation depends on whether that sale actually closes. A meaningful percentage of accepted offers fall through — financing issues, inspection problems, cold feet. If you genuinely want the home, your agent can ask to be notified if the accepted offer falls out of contract. Being positioned as backup is underused and often effective.",
+          },
+        ],
+      },
+      {
+        eyebrow: "WHAT TO DO",
+        heading: "The Right Moves in the 48 Hours After a Rejection",
+        body: "How you respond in the short window after a rejection shapes what happens next — both with that specific home and with your overall buying process.",
+        subsections: [
+          {
+            heading: "Get the Debrief",
+            body: "Your agent should contact the listing agent immediately and ask for specific feedback: Was there a competing offer? Was it price, terms, or both? Is the seller open to backup offers? Most listing agents will share something, and even a partial answer gives you actionable information. Vague rejections — 'the seller went in a different direction' — often mean another offer came in higher. Specific rejections — 'the seller needed a 30-day close and yours was 60' — tell you exactly what to adjust.",
+          },
+          {
+            heading: "Decide Whether to Pursue Backup Position",
+            body: "If the home went under contract with another buyer, ask your agent to formally submit a backup offer. This costs you nothing and positions you to move immediately if the primary deal falls apart. In the New Braunfels market, especially on properties that had deferred maintenance flagged in inspections, backup offers convert to actual purchases more often than buyers expect. A backup offer also signals genuine interest to the seller, which occasionally prompts a conversation if their primary buyer gets cold feet before inspection.",
+          },
+          {
+            heading: "Reassess Your Offer Strategy",
+            body: "A rejection is a calibration opportunity. If you have lost more than one offer, the pattern is the information. Common adjustments in the New Braunfels market: tightening your inspection timeline (10 days instead of 15), offering to cover the gap between appraisal and purchase price up to a defined amount, shortening your close timeline, increasing earnest money to signal commitment, or writing a personal letter when the seller has obvious emotional attachment to the property. Not all of these are appropriate in every situation — your agent should advise which levers actually matter for each specific listing.",
+          },
+          {
+            heading: "Do Not Overreact",
+            body: "The mistake most rejected buyers make is either giving up entirely or overcorrecting so hard that they overpay on the next offer out of frustration. Neither outcome serves you. One rejection in a healthy market is noise. Two or three rejections on the same type of property is signal — and the signal usually means your offer strategy needs adjustment, not that homeownership is out of reach. Take a day. Look at the data. Adjust one variable at a time.",
+          },
+        ],
+      },
+      {
+        eyebrow: "THE NEW BRAUNFELS MARKET",
+        heading: "What Rejections Look Like in This Specific Market",
+        body: "New Braunfels is not a pure seller's market in the way it was in 2021 and 2022, but well-priced properties in desirable areas — River Chase, the Gruene district, Comal ISD neighborhoods under $500K — still generate multiple offers quickly. Understanding the current market character helps calibrate expectations.",
+        subsections: [
+          {
+            heading: "Where Competition Is Still High",
+            body: "Entry-level homes under $400K in Comal ISD zones move fastest and generate the most competing offers. The Gruene area at any price point attracts buyers with strong conviction and willingness to pay premium. River Chase homes in the $400K to $550K range move reliably with limited days on market. If you are targeting any of these segments, expect to submit offers that are priced at or above list, clean on terms, and fast on close. Hesitation is expensive here.",
+          },
+          {
+            heading: "Where Buyers Have More Leverage",
+            body: "New construction inventory in the $500K to $700K range, properties with significant deferred maintenance, and homes that have been sitting for 30 or more days all give buyers real negotiating room. If you have been rejected on competitive properties, it may be worth looking at this tier — not as a consolation prize, but as a strategic shift to a segment where your offer has a higher probability of success and where you may be able to negotiate price and terms rather than just compete on them.",
+          },
+          {
+            heading: "The Role of the Pre-Approval",
+            body: "In the New Braunfels market, a pre-approval letter from a local or well-regarded lender carries more weight than one from an unfamiliar online lender. Sellers and their agents have been burned by financing failures, and a strong pre-approval from a lender who can speak to the loan quality if called gives your offer a credibility edge. If you have been rejected and you are using an online lender, it is worth a conversation with a local mortgage professional about whether a stronger pre-approval letter changes how your offers are received.",
+          },
+        ],
+      },
+      {
+        eyebrow: "THE BIGGER PICTURE",
+        heading: "Keeping Perspective: What a Rejection Actually Means",
+        body: "Most buyers who purchase a home in New Braunfels had at least one offer rejected before they found the home they actually bought. The rejection is not a referendum on your financial credibility or your right to be in this market. It is a data point in a process that rarely runs in a straight line. The buyers who end up in the right home are the ones who stayed in the game, adjusted their approach based on feedback, and did not let one outcome define their strategy for the next ten.",
+        subsections: [
+          {
+            heading: "What Todd Does After a Rejection",
+            body: "When a buyer I am working with gets a rejection, the first thing I do is call the listing agent and ask for the real story. Most agents will tell me enough to understand what actually happened. Then we sit down — sometimes just over text — and talk through what the rejection tells us and what, if anything, we change. Sometimes the answer is nothing: we were fairly priced and simply lost to a higher offer. Sometimes there is a real adjustment to make. The worst thing to do is submit the next offer emotionally rather than strategically. I have helped buyers win the second or third offer on a property after losing the first one, because we understood the seller's priorities well enough to come back with exactly what they needed.",
+          },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "What should I do immediately after my offer is rejected?",
+        answer: "Ask your agent to contact the listing agent for specific feedback — was it price, terms, or a competing offer? That information directly shapes your next move. If another buyer's offer was accepted, ask to submit a backup offer. If the seller rejected without accepting another offer, find out whether a counter is possible and what the seller's actual priorities are.",
+      },
+      {
+        question: "Can I submit a backup offer after my offer is rejected?",
+        answer: "Yes, and it is underused. If another buyer's offer was accepted, your agent can formally submit a backup offer. This costs nothing and positions you to move immediately if the primary buyer's deal falls through — which happens more often than most buyers expect, especially after inspections. The backup offer also signals genuine interest and occasionally prompts a conversation if the primary deal gets rocky.",
+      },
+      {
+        question: "How many offers do buyers typically lose before buying in New Braunfels?",
+        answer: "It varies widely by price range and neighborhood. In competitive segments — entry-level Comal ISD homes, Gruene area properties, River Chase — losing one or two offers before succeeding is common. Buyers who adjust their strategy based on feedback tend to succeed faster than those who repeat the same offer approach and hope for a different result.",
+      },
+      {
+        question: "Should I increase my offer price after a rejection?",
+        answer: "Only if price was actually the issue. Before increasing price, understand whether terms — closing timeline, contingencies, earnest money amount — were the real factor. Overpaying on price to compensate for a terms problem you have not addressed is not an efficient use of money. Get specific feedback first, then adjust the variable that actually caused the rejection.",
+      },
+      {
+        question: "Is the New Braunfels market still competitive in 2026?",
+        answer: "It depends on the segment. Well-priced homes under $400K in Comal ISD zones, Gruene area properties, and River Chase homes in the $400K to $550K range still generate quick offers and occasional competition. Higher price points and properties with deferred maintenance give buyers more leverage and negotiating room. Understanding which segment you are in shapes the offer strategy significantly.",
+      },
+    ],
+  },
+  {
+    slug: "pet-friendly-new-braunfels",
+    eyebrow: "RELOCATION GUIDE",
+    title: "Pet-Friendly New Braunfels: Parks, Trails, and River Life with Dogs",
+    dek: "Dog parks, river trails, and the spots where your dog gets as good a Saturday as you do. A relocating pet owner's guide to New Braunfels.",
+    imageSrc: "/images/insight-lifestyle-river-rituals.webp",
+    imageAlt: "Dog wading happily in the clear Comal River on a sunny Texas morning.",
+    category: "Relocation Guide",
+    publishDate: "August 2026",
+    intro: "One of the first questions families with dogs ask when considering a move to New Braunfels is whether the city will work for their animals. The honest answer is that it works exceptionally well — better than most Texas cities of comparable size. The spring-fed rivers are dog-friendly in the right spots, the parks are genuinely large, the trail system is growing, and the culture around dogs in public spaces is relaxed and welcoming. This guide covers what pet owners actually need to know before and after the move.",
+    sections: [
+      {
+        eyebrow: "THE RIVERS",
+        heading: "Dogs and the Comal and Guadalupe Rivers",
+        body: "The rivers are the most distinctive feature of pet life in New Braunfels, and dogs take to them immediately. Both the Comal and the Guadalupe offer dog access — but the rules and best practices differ.",
+        subsections: [
+          {
+            heading: "Landa Park and the Comal River",
+            body: "Landa Park permits leashed dogs throughout the park, including along the Comal River banks. The river access at Landa Park is some of the best in the city for dogs — clear, shallow wading areas where dogs can cool off, swim, and retrieve in 72-degree spring water year-round. The park trails along the river are paved and easy to walk with a dog on leash. The city asks that dogs stay out of the spring-fed swimming pool area, which is designated for human swimmers, but the river banks immediately outside the pool area are openly dog-friendly. Mornings before 9 a.m. are the quietest window — the park fills with families and children by late morning on summer weekends.",
+          },
+          {
+            heading: "The Guadalupe River",
+            body: "Dogs are generally welcome at the public access points along the Guadalupe. The Cypress Bend Park and several of the Army Corps access areas along Canyon Lake permit leashed dogs on the banks. The Guadalupe's deeper, faster-moving sections require attention for smaller dogs; the calmer flatwater near Gruene is ideal for dogs who love to swim. Several of the tubing outfitters have policies about dogs on tubes — check with the specific operator if you want to float with your dog.",
+          },
+          {
+            heading: "River Etiquette with Dogs",
+            body: "New Braunfels takes its river culture seriously, and dog owners who want to be welcome need to follow a few basic rules: always have your dog on leash in posted leash areas, clean up immediately — the limestone riverbed makes waste visible and the community notices — and keep dogs away from other swimmers in congested tubing sections. Dogs who are not good with crowds or who bark and lunge should stick to the quieter weekday morning windows. The culture is welcoming, not hostile, but visible respect for the shared space keeps it that way.",
+          },
+        ],
+      },
+      {
+        eyebrow: "PARKS AND TRAILS",
+        heading: "Dog-Friendly Parks and Trails in New Braunfels",
+        subsections: [
+          {
+            heading: "Landa Park (51 Acres)",
+            body: "Already covered as a river destination, Landa Park is also the best all-around dog walk in the city. The park has multiple trail loops, mature tree canopy for shade, and a variety of terrain — paved paths, grass areas, and river-side dirt trails. At 51 acres it is large enough to give dogs a real workout without repeating the same loop. The miniature train that runs on weekends is an unexpected test for dogs who are reactive to unusual sounds and movement — bring treats.",
+          },
+          {
+            heading: "River Road Dog Park",
+            body: "New Braunfels has a dedicated off-leash dog park with separate large-dog and small-dog areas, water stations, and shade. It is the primary off-leash resource in the city and is well-maintained. Weekday mornings attract the regular crowd — the same dogs and owners who have been coming for years and who are generally good about supervising their animals. Weekend afternoons are busier and less predictable in terms of dog temperament.",
+          },
+          {
+            heading: "Dry Comal Creek Greenway",
+            body: "The Dry Comal Creek trail system is one of the more underutilized walking resources in New Braunfels for dog owners. The trails follow the creek corridor through several neighborhoods, offering natural surface walking with shade, wildlife sightings, and enough terrain variation to keep dogs engaged. It connects to Landa Park and extends through several residential areas. The creek itself has accessible water in the wetter months. Leash required throughout.",
+          },
+          {
+            heading: "Canyon Lake and the Surrounding Parks",
+            body: "About 15 minutes from downtown New Braunfels, Canyon Lake has Army Corps of Engineers parks that permit leashed dogs on the lake shores and in the picnic areas. The Cranes Mill and Potters Creek park areas are the most dog-friendly. For owners who want a bigger outdoor day — several miles of walking, lake access, and open terrain — Canyon Lake is the New Braunfels area's best option.",
+          },
+        ],
+        body: "",
+      },
+      {
+        eyebrow: "PRACTICAL LIFE",
+        heading: "Daily Pet Life in New Braunfels: What Residents Report",
+        body: "Beyond the parks and trails, the day-to-day quality of life for a dog in New Braunfels is shaped by more practical factors.",
+        subsections: [
+          {
+            heading: "Veterinary Care",
+            body: "New Braunfels has a solid concentration of veterinary practices for a city its size — general practitioners, an emergency veterinary clinic, and several specialty referral options reachable within 30 minutes. The growth of the city has brought veterinary infrastructure roughly in step with population. Wait times at popular practices can run several weeks for non-urgent appointments; establishing care and getting on a waiting list shortly after arrival is the practical advice. Emergency veterinary services are available around the clock in the city.",
+          },
+          {
+            heading: "The Heat Factor",
+            body: "Texas summers are genuinely hard on dogs, and New Braunfels is no exception. July and August afternoon temperatures regularly reach 100 to 105 degrees, and the pavement and sidewalk surface temperatures can exceed 140 degrees — hot enough to burn paw pads in minutes. Local dog owners develop a summer routine: early morning walks before 8 a.m., river access for midday cooling, and late evening walks after 8 p.m. when the pavement has released some heat. The spring-fed Comal River at 72 degrees is a genuine lifesaver in August; dogs who get regular river access in summer are noticeably more comfortable than those limited to midday neighborhood walks.",
+          },
+          {
+            heading: "Pet-Friendly Patios and Businesses",
+            body: "New Braunfels has a notably relaxed culture around dogs in outdoor commercial spaces. Gruene Hall's outdoor areas welcome leashed dogs. Several downtown restaurants and cafes with outdoor patios permit dogs. The farmers market on Saturday mornings is generally dog-friendly and well-attended by residents with dogs on leash. The biergartens — Krause's, the Faust Hotel courtyard — are outdoor spaces where dogs are tolerated if well-behaved. Texas law does not require outdoor commercial spaces to be pet-free, and the local norm leans toward welcoming rather than prohibiting.",
+          },
+          {
+            heading: "HOA Rules and Breed Restrictions",
+            body: "This is the practical real estate consideration that pet owners need to address before going under contract on any home in a managed community. Several of the larger HOA communities in New Braunfels have pet policies that include breed restrictions, weight limits, or limits on the number of animals per household. River Chase, Vintage Oaks, Veramendi, and Canyon Lake-area communities all have HOA documents that address pets. These policies vary by community and can be amended. Any buyer with dogs should request the HOA CC&Rs and review the pet section specifically before proceeding — this is a standard part of the due diligence review and takes fifteen minutes. Todd flags pet policies in every community he shows to buyers with animals.",
+          },
+        ],
+      },
+      {
+        eyebrow: "NEIGHBORHOODS",
+        heading: "The Best Neighborhoods for Pet Owners in New Braunfels",
+        body: "Not all neighborhoods are equally suited for life with dogs. Here is how the main options compare.",
+        subsections: [
+          {
+            heading: "River Chase",
+            body: "River Chase is consistently the neighborhood residents with dogs mention first. The community has wide streets and sidewalks, mature tree canopy for shade, green space throughout, and easy access to the Guadalupe River trail corridor. HOA pet policies are standard and not restrictive. The neighborhood's density — houses with real yards, not cramped lots — gives dogs actual outdoor space. Todd Spencer lives in River Chase and has two dogs; it is one of the reasons he points buyers with animals toward the community.",
+          },
+          {
+            heading: "Gruene Area",
+            body: "The Gruene district and surrounding residential streets are among the most walkable in the city for dogs — mature oaks overhead, low traffic on residential streets, and river access within a short walk. The trade-off is lot size; Gruene area properties tend toward smaller yards. Dogs who do their exercise on walks rather than yard time thrive here.",
+          },
+          {
+            heading: "Veramendi",
+            body: "Veramendi's planned trail system — 20-plus miles of trails through the community and surrounding green space — makes it one of the best neighborhoods in New Braunfels for active dog owners. The trails are maintained, the terrain is varied, and the community is genuinely pet-friendly in culture. Review the HOA pet policy before buying; it is standard but worth confirming for specific breeds or multiple animals.",
+          },
+          {
+            heading: "Rural and Acreage Properties",
+            body: "For buyers with multiple large dogs, working dogs, or animals that need significant outdoor space, the acreage properties outside the city limits offer the most freedom. Properties on one to five acres in the New Braunfels corridor are available in the $400K to $700K range depending on improvements and location. No HOA means no breed restrictions and no limits on number of animals. The trade-offs are well infrastructure (versus city water), distance from amenities, and the responsibility of maintaining property that animals can roam. For the right buyer, it is the clear answer.",
+          },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Is New Braunfels dog-friendly?",
+        answer: "Yes, unusually so for a Texas city its size. The spring-fed rivers offer year-round swimming access for dogs, the park system is large and well-maintained, there is a dedicated off-leash dog park with separate large and small dog areas, and the local culture around dogs in outdoor public spaces is relaxed and welcoming. The main practical consideration is the summer heat — July and August require an adjusted routine of early morning and late evening activity with midday river access for cooling.",
+      },
+      {
+        question: "Can dogs swim in the Comal River?",
+        answer: "Yes, at designated access points. Landa Park is the best option — leashed dogs are welcome along the river banks, and the shallow 72-degree spring water is ideal for dogs year-round. Dogs should stay out of the designated swimming pool area but have access to river banks immediately adjacent. Morning visits before peak hours give dogs more space to move freely on leash.",
+      },
+      {
+        question: "Does New Braunfels have a dog park?",
+        answer: "Yes. River Road Dog Park has separate large-dog and small-dog off-leash areas with water stations and shade. Weekday mornings attract the regular local crowd; weekend afternoons are busier. It is the primary off-leash resource in the city.",
+      },
+      {
+        question: "Do New Braunfels HOA communities allow dogs?",
+        answer: "Most do, but with varying restrictions on breed, weight, and number of animals. River Chase, Veramendi, Vintage Oaks, and Canyon Lake-area HOA communities all have pet policies in their CC&Rs. Buyers with dogs should request and review the HOA documents specifically for the pet section before going under contract. This is standard due diligence and takes fifteen minutes — Todd flags this automatically for every buyer with animals.",
+      },
+      {
+        question: "What is the best neighborhood in New Braunfels for dog owners?",
+        answer: "River Chase is the most commonly cited neighborhood by residents with dogs — wide streets, tree canopy, green space, river trail access, and standard HOA pet policies. Veramendi's extensive trail system makes it the best option for active dog owners who prioritize trail mileage. The Gruene area is ideal for walkable neighborhoods with river proximity, though lots tend to be smaller. Acreage properties outside city limits are the best option for buyers with multiple dogs or breeds that need significant outdoor space.",
+      },
+      {
+        question: "How do dogs handle the New Braunfels summer heat?",
+        answer: "With the right routine, well. Local dog owners shift to early morning walks before 8 a.m. and late evening walks after 8 p.m. in July and August, and use the Comal River for midday cooling. The 72-degree spring water is genuinely effective at keeping dogs comfortable during extreme heat. Pavement temperatures in the afternoon can burn paw pads — limiting on-pavement time between 10 a.m. and 7 p.m. is the practical approach in peak summer.",
+      },
+    ],
+  },
+  {
     slug: "breweries",
     eyebrow: "LOCAL GUIDE",
     title: "New Braunfels Breweries and Taprooms: The Local Drinking Guide",
