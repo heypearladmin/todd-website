@@ -223,9 +223,9 @@ export const insightCards: InsightCard[] = [
     title: "When your offer gets rejected",
     dek: "What it means, what to do next, and how to come back stronger in the New Braunfels market.",
     href: "/blog/offer-rejected-new-braunfels",
-    imageSrc: "/images/insight-moving-to-new-braunfels.webp",
+    imageSrc: "/images/website-blog-offer-rejected-new-braunfels.png",
     imageAlt:
-      "Comal County neighborhood street in afternoon light with for-sale sign and mature oak canopy.",
+      "Young couple reviewing real estate documents at a kitchen table in a warm Texas home, thoughtful and determined.",
   },
   {
     kind: "lifestyle",
@@ -233,9 +233,9 @@ export const insightCards: InsightCard[] = [
     title: "Pet-friendly New Braunfels",
     dek: "Dog parks, river trails, and the spots where your dog gets as good a Saturday as you do.",
     href: "/blog/pet-friendly-new-braunfels",
-    imageSrc: "/images/insight-lifestyle-river-rituals.webp",
+    imageSrc: "/images/website-blog-pet-friendly-new-braunfels.png",
     imageAlt:
-      "Dog wading happily in the clear Comal River on a sunny Texas morning.",
+      "Happy dog wading in crystal-clear spring-fed river water with cypress trees lining the bank in New Braunfels.",
   },
 ];
 
