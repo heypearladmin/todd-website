@@ -223,7 +223,7 @@ export const insightCards: InsightCard[] = [
     title: "When your offer gets rejected",
     dek: "What it means, what to do next, and how to come back stronger in the New Braunfels market.",
     href: "/blog/offer-rejected-new-braunfels",
-    imageSrc: "/images/blog-offer-rejected-nb.jpg",
+    imageSrc: "/images/blog-offer-rejected-nb.webp",
     imageAlt:
       "Young couple reviewing real estate documents at a kitchen table in a warm Texas home, thoughtful and determined.",
   },
@@ -233,7 +233,7 @@ export const insightCards: InsightCard[] = [
     title: "Pet-friendly New Braunfels",
     dek: "Dog parks, river trails, and the spots where your dog gets as good a Saturday as you do.",
     href: "/blog/pet-friendly-new-braunfels",
-    imageSrc: "/images/blog-pet-friendly-nb.jpg",
+    imageSrc: "/images/blog-pet-friendly-nb.webp",
     imageAlt:
       "Happy dog wading in crystal-clear spring-fed river water with cypress trees lining the bank in New Braunfels.",
   },
