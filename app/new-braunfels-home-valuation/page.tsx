@@ -5,9 +5,9 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { breadcrumbSchema, faqSchema, servicePageSchema } from "@/lib/seo/schemas";
 
 export const metadata: Metadata = {
-  title: "New Braunfels Home Valuation — Free CMA by Todd Spencer",
+  title: "What's My New Braunfels Home Worth? Free CMA by Todd Spencer",
   description:
-    "Get a free, no-obligation home valuation from Todd Spencer — grounded in real Comal County data, not algorithms. Call (512) 665-3747.",
+    "Find out what your New Braunfels home is worth right now — free CMA grounded in Comal County data, not Zillow estimates. No pressure. Call (512) 665-3747.",
   alternates: {
     canonical: `${site.websiteUrl}/new-braunfels-home-valuation`,
   },

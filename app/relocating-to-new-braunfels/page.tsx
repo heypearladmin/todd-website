@@ -5,9 +5,9 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { breadcrumbSchema, faqSchema, servicePageSchema } from "@/lib/seo/schemas";
 
 export const metadata: Metadata = {
-  title: "Relocating to New Braunfels, TX — Todd Spencer",
+  title: "Relocating to New Braunfels, TX | 2026 Neighborhood Guide",
   description:
-    "Relocating to New Braunfels? Todd Spencer guides families through neighborhoods, pricing, and the move — with local knowledge and no pressure.",
+    "Moving to New Braunfels? Best neighborhoods by lifestyle, real home prices, school zones, and what nobody tells you until after you've moved. Local expert, no pressure.",
   alternates: {
     canonical: `${site.websiteUrl}/relocating-to-new-braunfels`,
   },

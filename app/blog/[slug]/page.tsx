@@ -120,7 +120,7 @@ export default async function BlogArticlePage({
         schema={
           breadcrumbSchema([
             { name: "Home", href: "/" },
-            { name: "Journal", href: "/blog" },
+            { name: "Blog", href: "/blog" },
             { name: article.title, href: `/blog/${article.slug}` },
           ]) as Record<string, unknown>
         }
