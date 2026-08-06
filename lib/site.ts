@@ -20,7 +20,7 @@ export const site = {
   },
 
   // Brand mark
-  logoSrc: "/images/exp-realty-logo.png",
+  logoSrc: "/images/exp-realty-logo.webp",
   logoAlt: "eXp Realty logo",
 
   // Open Graph — must be an absolute URL so social previews work in production
@@ -28,7 +28,7 @@ export const site = {
 
   // Agent portrait
   agentName: "Todd Spencer",
-  agentPortraitSrc: "/images/todd-spencer-editorial-portrait.jpg",
+  agentPortraitSrc: "/images/todd-spencer-editorial-portrait.webp",
   agentPortraitAlt:
     "Editorial portrait of Todd Spencer along the Comal riverwalk in New Braunfels at golden hour.",
 

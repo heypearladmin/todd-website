@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Client Service Agreement · GEO by HeyPearl",
   description:
     "The governing framework for GEO by HeyPearl's AI Authority & Discoverability Infrastructure. Review the complete Client Service Agreement.",
-  robots: { index: true, follow: true },
+  robots: { index: false, follow: false },
 };
 
 export default function ClientServiceAgreementPage() {
