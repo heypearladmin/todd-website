@@ -73,6 +73,303 @@ export type JournalPost = {
 
 export const journalPosts: JournalPost[] = [
   {
+    slug: "texas-option-period-earnest-money-guide",
+    eyebrow: "BUYER GUIDE",
+    title: "Texas Option Period and Earnest Money: What Every New Braunfels Buyer Needs to Know",
+    dek: "Texas real estate uses a system most other states don't have. Understanding the option fee, the earnest money, and what \'unrestricted right to terminate\' actually means can save you money — and prevent costly mistakes.",
+    imageSrc: "/images/website-blog-texas-option-period.webp",
+    imageAlt: "Texas real estate documents, a house key, and a pen laid on a warm wooden desk in soft natural window light.",
+    category: "Buyer Guide",
+    publishDate: "August 13, 2026",
+    isNew: true,
+    intro: "Buyers coming to New Braunfels from California, Colorado, or the Northeast often assume Texas real estate works the way it worked at home — you go under contract, order an inspection, negotiate repairs, and close. That is roughly accurate, but Texas has one structural difference that most other states do not use: the option period. It is a defined window during which you have an unrestricted, contractual right to back out of the deal for any reason, for the cost of a fee that is entirely separate from your earnest money deposit. The distinction between the option fee and the earnest money is one of the most misunderstood parts of a Texas purchase contract, and getting it wrong has real financial consequences.",
+    sections: [
+      {
+        eyebrow: "FIRST, THE BASICS",
+        heading: "What Is the Option Period in Texas?",
+        body: "The option period is a negotiated block of time — typically between five and ten days in a standard New Braunfels transaction — during which a buyer holds what the Texas Real Estate Commission (TREC) contract calls an \'unrestricted right to terminate.\' That phrase is doing important work. Unrestricted means no reason is required. A bad inspection report is not necessary. The appraisal does not need to come in low. Written notice simply has to be delivered to the seller before the option period deadline, and the buyer is out of the contract with earnest money returned in full.",
+        subsections: [
+          {
+            heading: "How It Differs From Contingencies in Other States",
+            body: "In most states, a buyer\'s ability to exit a contract is tied to specific contingencies: financing must fail, the inspection must reveal a material defect, or the appraisal must come in low. Each exit door has a condition attached to it. Texas does something simpler and more flexible. For the duration of the option period, the buyer effectively holds an option on the property. The buyer is not locked in. The seller is. During that window, the seller cannot accept another offer or sell the property to someone else, but the buyer can walk away for any reason — or no reason at all — as long as written notice is delivered before the deadline. This protection is one of the things that makes Texas buyer contracts more straightforward than those in many other markets.",
+          },
+          {
+            heading: "What \'Unrestricted Right to Terminate\' Actually Means",
+            body: "Buyers sometimes wonder whether \'any reason\' truly means any reason. It does. You can cancel during the option period because the inspection revealed serious foundation issues. You can cancel because you changed your mind about the neighborhood. You can cancel because another home came available that you prefer. You can cancel because your employer shifted your start date and your timeline changed. None of these need to be justified to the seller. What matters procedurally is that written notice is delivered to the seller — through your agent to the listing agent — before the option period clock runs out. The exact deadline time matters. If the option period is set to expire at 5:00 PM on a specific date, notice delivered at 5:01 PM is too late.",
+          },
+        ],
+      },
+      {
+        eyebrow: "TWO DIFFERENT THINGS",
+        heading: "Option Fee vs. Earnest Money: Understanding Both",
+        body: "This is where most out-of-state buyers get confused, and the confusion has real financial consequences. The option fee and the earnest money are two separate payments, held by two different parties, with two entirely different rules about what happens to them. Treating them interchangeably is a mistake that typically only needs to happen once.",
+        subsections: [
+          {
+            heading: "The Option Fee: The Price of the Exit Door",
+            body: "The option fee is the payment that activates the option period. In New Braunfels transactions in 2026, expect somewhere between $200 and $500 for most standard residential purchases, though it can be negotiated higher or lower depending on market conditions and the seller\'s position. The option fee is paid directly to the seller — not to a title company or an escrow account — and the seller is typically entitled to deposit and keep it within three business days of contract execution. If you cancel during the option period, the seller keeps the option fee regardless of your reason. If you close on the property, the option fee is typically credited back to you at closing, applied against your purchase price. Think of the option fee not as a deposit but as the cost of purchasing flexibility — you are paying for the right to exit the deal cleanly.",
+          },
+          {
+            heading: "Earnest Money: Your Proof of Good Faith",
+            body: "Earnest money is a separate and typically much larger sum — usually around 1 percent of the purchase price in New Braunfels, though some sellers request more. On a $475,000 home, that is approximately $4,750. Unlike the option fee, earnest money is held in escrow by the title company, not the seller. And unlike the option fee, earnest money is fully refundable if you cancel during the option period. If you deliver written notice of termination before the deadline, the earnest money comes back to you. After the option period ends, earnest money becomes meaningful collateral: it protects the seller if the buyer backs out without a valid contractual justification. The core rule to remember — cancel within the option period and you lose the option fee but keep the earnest money. Cancel after the option period without a valid contingency and you can lose both.",
+          },
+          {
+            heading: "Why This Distinction Matters More Than It Sounds",
+            body: "Buyers who understand this system make better decisions during the transaction. Knowing the option fee is non-refundable creates urgency around scheduling the inspection promptly and making a clear go or no-go decision before the deadline — rather than letting the option period expire while still weighing options. Knowing earnest money is held at the title company and is at risk after the option period ends sharpens the commitment to close once that window closes. Understanding both sides of this equation changes how a buyer approaches the inspection findings, the repair negotiation, and ultimately the decision to move forward.",
+          },
+        ],
+      },
+      {
+        eyebrow: "IN PRACTICE",
+        heading: "How the Option Period Works in New Braunfels",
+        body: "Knowing the mechanics is one thing. Knowing how the option period plays out in actual New Braunfels transactions is different. Market conditions, the seller\'s position, and the nature of the property all influence how the option period gets negotiated and used.",
+        subsections: [
+          {
+            heading: "Duration: What Is Typical in This Market",
+            body: "In the New Braunfels market in 2026, most option periods run between five and eight days. Seven days is the most common in standard residential purchases. For properties with known complexity — older construction, acreage, septic systems, private wells — buyers often negotiate for ten days to allow for specialist inspections beyond the standard home inspection. In competitive multiple-offer situations, buyers sometimes shorten the option period to five days or fewer to make their offer more attractive to the seller. Shortening the window is a meaningful concession. Five days is tight when you factor in scheduling an inspector, receiving and reviewing the report, identifying issues worth pursuing, and making a final decision — especially if you are still in another state.",
+          },
+          {
+            heading: "Negotiating the Fee and the Window",
+            body: "Both the duration and the option fee are negotiable at the time of offer. In a competitive market, sellers may push for a shorter window and a higher fee. A higher option fee signals commitment — it means more non-refundable money on the table. A shorter window limits how long the seller\'s property is under contract with full buyer exit rights intact. When writing an offer in a competitive situation, your agent should advise on how to structure both in the context of the specific home and seller. In slower conditions or on a property with visible deferred maintenance, buyers typically have more room to negotiate a longer option period and a lower fee.",
+          },
+          {
+            heading: "What Should Happen During Those Days",
+            body: "The option period is not time to wait and see. It is time to act. Schedule the home inspection within the first day or two of going under contract — inspectors in the New Braunfels area are busy, and a seven-day window can evaporate quickly if you wait three days to make the call. Depending on the property, additional specialists may be warranted: a plumber to scope the sewer lines, an HVAC technician to evaluate equipment age and condition, a structural engineer for foundation concerns, or a licensed well inspector for properties on private water. Each specialist requires scheduling time you may not have if you start late. Your agent should be helping coordinate this from the hour the contract is executed.",
+          },
+        ],
+      },
+      {
+        eyebrow: "AFTER THE WINDOW CLOSES",
+        heading: "What Happens When the Option Period Ends",
+        body: "The close of the option period is a significant moment in any Texas transaction. It marks the point at which the buyer\'s easy exit disappears and earnest money becomes meaningful collateral against the commitment to close.",
+        subsections: [
+          {
+            heading: "Repair Requests and Closing Credits",
+            body: "Most buyers use inspection findings as the basis for a negotiation with the seller before the option period ends. This can take several forms. You can ask the seller to make specific repairs before closing. You can request a price reduction. You can ask for a credit at closing — money applied against closing costs or purchase price — in lieu of the seller doing the work themselves. Sellers generally prefer credits because credits keep the transaction clean and avoid contractor coordination during the contract period. In New Braunfels transactions, requesting $3,000 to $8,000 in credits for items identified in inspection is common on older homes or those with significant mileage. Whatever is agreed to should be documented in writing before the option period deadline.",
+          },
+          {
+            heading: "Backing Out After the Option Period",
+            body: "Once the option period ends, the buyer\'s ability to exit without losing earnest money depends on other contractual contingencies — most commonly the financing contingency and the appraisal contingency. If a loan is denied for documented reasons covered by the contract, the buyer can generally exit and recover earnest money. If the home appraises below the purchase price and the parties cannot reach agreement, the appraisal contingency may provide an exit. What does not protect earnest money after the option period ends is a change of mind, a better property appearing elsewhere, or general uncertainty. Those exits cost the buyer the earnest money.",
+          },
+          {
+            heading: "When Earnest Money Disputes Arise",
+            body: "If a buyer and seller disagree about whether a contract was properly terminated — or who is entitled to the earnest money — the title company holding the funds cannot release them without written authorization from both parties or a court order. Earnest money disputes can hold funds for months. Most resolve through negotiation between agents and attorneys rather than litigation. This potential for dispute is exactly why the option period matters: it provides a clean, well-defined exit window with no ambiguity about who is entitled to what, provided the termination is executed before the deadline.",
+          },
+        ],
+      },
+      {
+        eyebrow: "COMMON MISTAKES",
+        heading: "What Out-of-State Buyers Get Wrong — and How to Avoid It",
+        body: "Years of working with buyers who are new to Texas produce a recognizable pattern of misunderstandings around the option period. Most are avoidable with upfront knowledge.",
+        subsections: [
+          {
+            heading: "Treating the Option Fee Like a Refundable Deposit",
+            body: "The most common mistake is assuming that canceling during the option period means getting everything back. The earnest money comes back. The option fee does not. For most New Braunfels transactions, this means $200 to $500 stays with the seller regardless of reason. This is not a penalty — it is the agreed-upon cost of the option. Understanding this from the start prevents the surprise of receiving a slightly smaller refund than expected when the earnest money is released.",
+          },
+          {
+            heading: "Missing the Exact Deadline",
+            body: "Option periods expire at a specific time, not just a specific date. Buyers sometimes assume they have until the end of business on the last day and discover the deadline was noon, or 5:00 PM, or another specific hour written into the contract. If written notice of termination is not delivered before that exact moment, the option period is over and standard contract terms apply. Missing the deadline by an hour does not entitle the buyer to an extension. If the decision is not made before the clock runs out, the free exit disappears.",
+          },
+          {
+            heading: "Skipping the Inspection to Save Money or Compete",
+            body: "A home inspection in New Braunfels typically costs $350 to $600 for a standard house, more for larger properties or those with additional systems. Some buyers in competitive situations consider skipping it to strengthen an offer or reduce upfront costs. This is almost always a mistake. The option period exists specifically to support due diligence. Even on a newer home or one with a clean disclosure, the inspection documents the property\'s condition at time of purchase, surfaces issues that affect the decision, and provides the information needed to make a fully informed commitment. The option fee paid for that window is a fraction of what an undiscovered issue can cost after closing.",
+          },
+          {
+            heading: "Not Confirming the Exact Deadline in Writing",
+            body: "Knowing the option period is seven days is not the same as knowing that it expires at 5:00 PM on a specific calendar date. Ask your agent to confirm the exact option period expiration — both date and time — in writing when the contract is executed. Put it in your calendar. If you are traveling or otherwise unavailable near the deadline, make sure your agent can reach you or is authorized to act on your behalf if termination becomes necessary. Missed deadlines are rare but expensive.",
+          },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "What is the option period in Texas real estate?",
+        answer: "The option period is a negotiated window of time — usually five to ten days — during which a Texas buyer has an unrestricted right to terminate the purchase contract for any reason. The buyer pays a fee directly to the seller to activate this right. No specific justification is required to cancel; written notice delivered before the deadline is sufficient to exit the contract and receive the earnest money back in full.",
+      },
+      {
+        question: "How much is the option fee in New Braunfels?",
+        answer: "In most standard residential transactions in New Braunfels in 2026, the option fee runs between $200 and $500. It is negotiable — sellers may request more in competitive situations, and buyers may negotiate lower when they have more leverage. The option fee is paid directly to the seller, is non-refundable if the buyer cancels, and is typically credited back to the buyer at closing if the transaction closes.",
+      },
+      {
+        question: "Can I cancel during the option period for any reason?",
+        answer: "Yes. The Texas option period gives the buyer an unrestricted right to terminate — meaning no reason needs to be given and no specific contractual condition needs to be triggered. The only requirement is that written notice of termination is delivered to the seller before the option period deadline. Once that deadline passes, the free exit disappears and standard contract contingencies govern whether the buyer can exit without losing earnest money.",
+      },
+      {
+        question: "What happens to my earnest money if I cancel during the option period?",
+        answer: "If you cancel during the option period, your earnest money is refunded in full by the title company. What you do not recover is the option fee — that stays with the seller regardless of when or why you cancel. If you back out after the option period ends without a valid contractual contingency, the earnest money can be forfeited to the seller.",
+      },
+      {
+        question: "How long is a typical option period in New Braunfels?",
+        answer: "Seven days is most common in standard New Braunfels residential transactions in 2026. Buyers sometimes negotiate five days to make a competitive offer more attractive, or ten days when the property has complexity — older construction, acreage, well or septic systems — requiring additional specialist inspections. Duration is fully negotiable at the time of offer.",
+      },
+      {
+        question: "Is the option fee applied to the purchase price at closing?",
+        answer: "Yes. In standard Texas contracts, the option fee is credited back to the buyer at closing, applied against the purchase price or closing costs. If the buyer terminates during the option period and the transaction does not close, the seller keeps the option fee outright. If the transaction closes, the credit offsets what was paid upfront.",
+      },
+    ],
+  },
+  {
+    slug: "downtown-new-braunfels-neighborhood-guide",
+    eyebrow: "NEIGHBORHOOD GUIDE",
+    title: "Downtown New Braunfels: A Guide to Historic Streets, Landa Park Living, and What Homes Actually Cost",
+    dek: "While most of New Braunfels gets written about through its master-planned communities, the historic downtown core offers something different — walkable streets, 19th-century architecture, and a buyer who has no use for an HOA.",
+    imageSrc: "/images/website-blog-downtown-new-braunfels.webp",
+    imageAlt: "Historic Main Plaza area of downtown New Braunfels with mature oak trees, a limestone church, and traditional Hill Country architecture on a clear Texas afternoon.",
+    category: "Neighborhood Guide",
+    publishDate: "August 9, 2026",
+    isNew: true,
+    intro: "Most neighborhood coverage for New Braunfels focuses on the master-planned communities — Veramendi, Vintage Oaks, River Chase — because that is where the majority of new inventory lives and where most incoming buyers find themselves looking. But there is another part of New Braunfels that draws a specific and often more deeply local buyer: the historic downtown core. Centered around the Main Plaza and stretching toward Landa Park, bounded on one side by the Comal River, these are neighborhoods where streets were platted in the 1840s, where homes carry an architectural character that no new development can replicate, and where the appeal is fundamentally different from anything built in the last twenty years. If you are drawn to character over amenity centers, to walkability over gated entries, to a house with a story rather than one with a builder warranty — this is the part of New Braunfels worth understanding.",
+    sections: [
+      {
+        eyebrow: "GEOGRAPHY FIRST",
+        heading: "What \'Downtown New Braunfels\' Actually Refers To",
+        body: "New Braunfels does not have a single universally agreed-upon downtown boundary, but buyers and locals generally use the term to describe the area around the historic Main Plaza, extending roughly toward Landa Park to the northwest and the Comal River to the northeast. It is the oldest inhabited part of the city — the part that looks nothing like the master-planned developments that define much of New Braunfels\'s recent growth.",
+        subsections: [
+          {
+            heading: "The Main Plaza Core and Historic District",
+            body: "The geographic and cultural center of downtown New Braunfels is the Main Plaza — a traditional German-style town square framed by the Comal County Courthouse, historic storefronts, and live oak trees that predate the Civil War. The streets radiating out from the plaza — West San Antonio Street, Seguin Avenue, Academy Avenue, Bridge Street — contain a mix of historic commercial buildings and residential properties within walking distance of the square. Some blocks in this immediate area are part of a designated historic district, which brings both character and regulatory constraints on exterior modifications.",
+          },
+          {
+            heading: "The Landa Park Neighborhood",
+            body: "Stretching northwest of the plaza toward Landa Park — one of the most beloved green spaces in the region — is a residential neighborhood that most locals simply call the Landa Park area. Homes here sit on mature-treed lots, many within a short walk or a five-minute bike ride of the park\'s swimming pool, spring-fed lake, miniature train, and miles of trails. This sub-area is particularly prized for its combination of walkability, established vegetation, and proximity to the Comal River headwaters, which emerge at the park itself. Homes on the park\'s perimeter command a meaningful price premium.",
+          },
+          {
+            heading: "Near the Comal River and Hinman Island",
+            body: "The Comal River originates at springs in Landa Park and flows through downtown New Braunfels before joining the Guadalupe River south of the city. Properties near the river — including the Hinman Island area — carry a distinct appeal for buyers who want the river experience without purchasing dedicated waterfront. The sound of moving water, easy walk-to-tube access, and the visual character of the river corridor give this sub-area a feel that no subdivision can manufacture. It also comes with flood zone considerations that require careful attention during due diligence.",
+          },
+        ],
+      },
+      {
+        eyebrow: "CHARACTER AND ARCHITECTURE",
+        heading: "What the Streets and Homes Actually Look Like",
+        body: "Downtown New Braunfels does not have a single architectural style because its housing stock spans over a century and a half of construction. That variety is part of the appeal — and part of what makes buying here require a different kind of inspection process than buying in a newer neighborhood.",
+        subsections: [
+          {
+            heading: "Historic Homes: Late 1800s Through Mid-Century",
+            body: "The oldest homes in downtown New Braunfels reflect the German Hill Country vernacular that defines the city\'s architectural identity — thick limestone walls, steep pitched roofs, deep porches, and the kind of craftsmanship that existed before construction became a volume exercise. Many of these homes were built between the 1870s and 1930s. They have been updated to varying degrees: some have been fully renovated with modern kitchens, updated electrical panels, and restored original floors, while others retain most of their original character — and original challenges. A well-done renovation of an 1890s limestone cottage downtown is among the most distinctive properties in the New Braunfels market.",
+          },
+          {
+            heading: "Mid-Century Bungalows and Craftsman Homes",
+            body: "The 1940s through 1960s produced a different wave of downtown housing — more modest in size, typically wood-frame construction, bungalow or craftsman in style. These homes are generally easier to maintain than the oldest historic properties and easier to update, while still offering more character and lot presence than anything built recently. Many sit on quarter-acre to half-acre lots with mature shade trees that would take decades to replicate in a newer subdivision. This is the most common housing type in the Landa Park neighborhood.",
+          },
+          {
+            heading: "Infill New Construction",
+            body: "Not everything in the downtown area is old. The last decade has seen selective infill development on vacant lots and teardown sites, producing modern homes — often with contemporary or transitional architecture — interspersed with the historic stock. Quality varies considerably. Some infill projects have been designed with care and built to complement the existing neighborhood character; others look out of place. Buyers interested in a new home in a downtown location should evaluate infill properties carefully and consider how the neighborhood character surrounding them affects long-term value.",
+          },
+        ],
+      },
+      {
+        eyebrow: "WHAT IT COSTS",
+        heading: "Home Prices in Downtown New Braunfels in 2026",
+        body: "The downtown New Braunfels market does not fit neatly into price-per-square-foot metrics that apply elsewhere in the city. Location, condition, renovation quality, lot characteristics, and river or park proximity create wide price variation between properties that might otherwise look similar on paper.",
+        subsections: [
+          {
+            heading: "Entry-Level and Unrenovated Properties",
+            body: "Unrenovated or lightly updated homes in the downtown area — older bungalows needing work, properties with deferred maintenance, or homes that have not been substantially updated since the 1980s — can be found starting around $300,000 to $375,000 depending on size and location. These properties offer the best opportunity for buyers willing to invest in updates, but they also carry the most risk. An older downtown home that needs significant work may come with unknown surprises in the electrical, plumbing, or structural systems. The inspection investment becomes especially critical here.",
+          },
+          {
+            heading: "Move-In Ready and Partially Updated",
+            body: "A well-maintained bungalow or mid-century home in the Landa Park area — updated kitchen and bathrooms, functional systems, habitable condition but not fully renovated — typically trades in the $380,000 to $525,000 range depending on size, lot, and specific location. This is the core of the downtown market by transaction volume. Buyers in this range are getting genuine character and established neighborhood benefits without taking on a full renovation project.",
+          },
+          {
+            heading: "Fully Renovated Historic and Premium Properties",
+            body: "Fully renovated historic homes — particularly limestone or German vernacular properties with high-quality restoration work, modern systems, and premium finishes — command $550,000 to $800,000 or more, especially on larger lots or with Landa Park proximity or river frontage. These properties are rare and move slowly relative to the rest of the downtown market because the buyer pool for a fully renovated 1890s limestone home at $700,000 is specific. When the right buyer appears, the sale is often decisive.",
+          },
+          {
+            heading: "How Downtown Compares to Other New Braunfels Neighborhoods",
+            body: "At comparable price points, downtown buyers get more established character, better walkability, and deeper lot vegetation than any master-planned community. What they give up is access to neighborhood amenity centers, HOA-maintained common areas, and the predictability of newer construction. Compared to Gruene — which shares some of the same historic appeal — downtown New Braunfels tends to be more residential and less commercial in character, with lower foot traffic and a quieter day-to-day feel outside of festival weekends.",
+          },
+        ],
+      },
+      {
+        eyebrow: "DAILY LIFE",
+        heading: "What It Actually Feels Like to Live Downtown",
+        body: "The buyers who end up in downtown New Braunfels are rarely making a purely investment-driven decision. They are choosing a way of living — one that puts walkability, character, and community proximity above amenity-center access or gated entry.",
+        subsections: [
+          {
+            heading: "Walkability: What You Can Reach on Foot",
+            body: "Downtown New Braunfels has genuine walkability by small-city Texas standards. From most Landa Park-area streets, residents can walk to the Main Plaza square, a coffee shop, the Saturday morning farmers market, multiple restaurants, and Landa Park itself within fifteen to twenty minutes. During festival season — Wurstfest in the fall, Comal County Fair in summer — the energy of a functioning downtown is visible from nearby streets in a way that no master-planned development can replicate. This is not Austin-level walkability, but for a Texas city of 100,000 people, it is unusually functional.",
+          },
+          {
+            heading: "Landa Park and River Access",
+            body: "Landa Park is arguably the greatest asset of the downtown New Braunfels location. The park contains the Comal River headwaters — crystal-clear, 72-degree spring water that flows year-round regardless of drought conditions — as well as a swimming pool, paddleboat rentals, a miniature train, disc golf, extensive walking and biking trails, and significant tree canopy. For residents of the surrounding neighborhoods, the park functions as a backyard extension. Access to the Comal River for tubing and swimming is a short walk or drive from nearly any downtown address.",
+          },
+          {
+            heading: "The Community Feel",
+            body: "Downtown New Braunfels has the character of a neighborhood that knows itself. Residents recognize each other at the farmers market, at the coffee shops on the plaza, and at the river. The absence of an HOA is a feature for most buyers in this area — there is no mandatory architectural review committee and no common-area fee, but there is also a shared sense of investment in the neighborhood\'s character that does not require formal enforcement. This appeals to buyers who want community without the structure of a master-planned association.",
+          },
+        ],
+      },
+      {
+        eyebrow: "WHAT TO WATCH FOR",
+        heading: "Considerations Specific to Older Downtown Homes",
+        body: "Buying a home downtown requires a different kind of due diligence than buying in a neighborhood built after 2000. The benefits of age and character come with a parallel set of considerations that should shape both the inspection process and the negotiation.",
+        subsections: [
+          {
+            heading: "Electrical, Plumbing, and Systems",
+            body: "Homes built before the 1970s often have electrical panels and wiring that predate modern standards — knob-and-tube wiring, older breaker panels, undersized service. Plumbing in the oldest properties may include galvanized steel pipe that corrodes from the inside, cast iron drain lines, or original fixtures. These are not automatic deal-killers, but they need to be assessed accurately during the inspection and factored into the negotiation. A full home inspection plus a plumber\'s sewer scope and potentially an electrician\'s report is the right approach for any downtown property built before 1960.",
+          },
+          {
+            heading: "Foundation and Structural Considerations",
+            body: "Downtown New Braunfels sits on Cretaceous limestone and clay soils that behave differently from the fill soils common in newer subdivisions. Pier-and-beam foundations — common in pre-1960s construction in this area — can be inspected and often repaired more easily than slab foundations, but they require attention. Slab-on-grade homes from the mid-century period may show the effects of soil movement over decades. Any sign of sticking doors, visible cracks in exterior masonry, or uneven floors warrants a structural engineer\'s assessment, not just a general inspector\'s notation.",
+          },
+          {
+            heading: "Flood Zone Mapping Near the Comal",
+            body: "Properties in close proximity to the Comal River may fall within FEMA-designated Special Flood Hazard Areas, which affects both mortgage requirements and insurance costs. The Comal is a spring-fed river that maintains consistent flow even during drought, but it is also subject to flooding during heavy rain events — as New Braunfels residents have experienced periodically. Any property within several blocks of the river should be mapped against current FEMA flood zone data before making a commitment, and flood insurance costs should be factored into the ownership cost analysis. Your agent can help identify which specific addresses require flood insurance and which fall outside the designated zones.",
+          },
+          {
+            heading: "Historic District Restrictions",
+            body: "Some streets in the immediate downtown area fall within a designated historic district that restricts exterior modifications. This is not universal — most of the Landa Park residential area is not subject to these restrictions — but properties within the historic overlay require architectural review before significant exterior changes can be made. For buyers who want to add a modern addition, change window profiles, or significantly alter the exterior character of a historic structure, this is worth confirming before closing. For buyers who intend to preserve the home\'s character anyway, the restriction is rarely an issue in practice.",
+          },
+        ],
+      },
+      {
+        eyebrow: "IS THIS THE RIGHT FIT?",
+        heading: "Who Downtown New Braunfels Is Right For",
+        body: "The downtown New Braunfels buyer is not a generic profile. The combination of older homes, walkability, river proximity, and the absence of master-planned structure appeals to a specific kind of buyer — and is not the right fit for everyone.",
+        subsections: [
+          {
+            heading: "Who It Tends to Be Right For",
+            body: "Buyers who thrive in downtown New Braunfels typically prioritize character and walkability over predictability and amenity infrastructure. They want a home with visual and architectural distinctiveness that no builder can mass-produce. They value proximity to the square, the park, and the river over proximity to a neighborhood pool and a gated entry. They are generally comfortable with the idea that older homes require more ongoing attention than newer construction, and they see the renovation potential — and the inspection process — as part of making a property their own. This buyer profile tends to include people who have owned homes before, people who specifically seek out older neighborhoods in other cities, and people relocating from urban areas with a culture of historic neighborhood investment.",
+          },
+          {
+            heading: "Who It Is Probably Not Right For",
+            body: "Buyers who want the predictability of new construction — a warranty, modern electrical and plumbing, a community pool, an HOA to manage common areas — will likely be happier in Veramendi, Vintage Oaks, or a newer River Chase home. Buyers who are stretching their budget and cannot absorb unexpected repair costs should be cautious about taking on a fully unrenovated older property without significant financial reserves. And buyers who are primarily motivated by short-term appreciation potential will find the downtown market harder to predict than the master-planned communities, where comps are more abundant and appraisals are more straightforward.",
+          },
+          {
+            heading: "A Note on Inventory",
+            body: "Downtown New Braunfels has limited inventory relative to the master-planned communities. In any given month, only a handful of properties in this area come to market, and the best ones — particularly fully renovated historic homes and Landa Park-adjacent properties — rarely linger. Buyers serious about downtown should work with an agent who knows when properties are coming available, who has relationships with homeowners in the area, and who can move quickly when the right property appears. The downtown New Braunfels market rewards preparedness more than almost any other segment in Comal County.",
+          },
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "What neighborhoods are considered \'downtown\' New Braunfels?",
+        answer: "Downtown New Braunfels generally refers to the historic area surrounding the Main Plaza, extending toward Landa Park to the northwest and the Comal River to the northeast. Sub-areas include the historic district immediately around the plaza, the Landa Park neighborhood, and the riverside streets near Hinman Island. These areas share an older housing stock and walkable character distinct from the master-planned communities that define most of New Braunfels\'s recent growth.",
+      },
+      {
+        question: "What do homes cost near Landa Park in New Braunfels?",
+        answer: "In 2026, Landa Park-area homes range widely based on condition and renovation level. Unrenovated or lightly updated bungalows start around $300,000 to $375,000. Move-in ready, partially updated properties typically run $380,000 to $525,000. Fully renovated historic homes — particularly larger properties with high-quality restoration work or park proximity — can reach $550,000 to $800,000 or more. Inventory is limited in all price ranges.",
+      },
+      {
+        question: "Are there flood zone concerns near downtown New Braunfels?",
+        answer: "Yes, for properties near the Comal River. The river and its proximity create FEMA-designated Special Flood Hazard Areas that affect some streets within the downtown area. Before making an offer on any downtown property within several blocks of the river, verify its specific flood zone designation. Properties in high-risk zones will require flood insurance, which adds to ownership costs. Many streets in the Landa Park area and further from the river are outside the flood zone.",
+      },
+      {
+        question: "Can I get new construction in downtown New Braunfels?",
+        answer: "Infill new construction exists in scattered locations throughout the downtown area — built on vacant lots or teardown sites. However, it is limited and inconsistent in quality. Most of the downtown market is existing historic and mid-century homes. Buyers seeking new construction in a walkable downtown setting should be prepared to search carefully and evaluate infill projects on a case-by-case basis rather than expecting the volume and predictability of inventory available in master-planned communities.",
+      },
+      {
+        question: "What is the commute like from downtown New Braunfels to San Antonio or Austin?",
+        answer: "From downtown New Braunfels, San Antonio\'s north side is approximately 25 to 35 minutes on a normal day, with downtown San Antonio adding another 10 to 15 minutes. Austin\'s south corridor is roughly 45 to 55 minutes, with downtown Austin during peak hours running longer. The commute dynamic is consistent with the rest of New Braunfels — manageable for hybrid schedules, more demanding for daily full-week commutes to central Austin.",
+      },
+      {
+        question: "Are there HOA fees in downtown New Braunfels?",
+        answer: "Generally, no. Most residential properties in the historic downtown and Landa Park areas are not part of HOAs. This is one of the features that distinguishes downtown from the master-planned communities that characterize much of New Braunfels. Some newer infill developments or condominium properties may have HOA structures, but single-family homes on traditional lots in this area typically have no HOA fees or association governance.",
+      },
+    ],
+  },
+  {
     slug: "offer-rejected-new-braunfels",
     eyebrow: "BUYER GUIDE",
     title: "Your Offer Got Rejected in New Braunfels. Here's What to Do Next.",
@@ -81,7 +378,6 @@ export const journalPosts: JournalPost[] = [
     imageAlt: "Young couple reviewing real estate documents at a kitchen table in a warm Texas home, thoughtful and determined.",
     category: "Buyer Guide",
     publishDate: "August 6, 2026",
-    isNew: true,
     intro: "Getting a rejection on a home offer is one of the more jarring experiences in a real estate transaction. You found the house, you ran the numbers, you made the decision — and then the answer came back no. In the New Braunfels market, where well-priced homes still move quickly and multiple-offer situations remain common in desirable neighborhoods, rejections happen regularly to prepared buyers. The question is not whether it hurts. It does. The question is what you do with the next 48 hours.",
     sections: [
       {
@@ -193,7 +489,6 @@ export const journalPosts: JournalPost[] = [
     imageAlt: "Happy dog wading in crystal-clear spring-fed river water with cypress trees lining the bank in New Braunfels.",
     category: "Relocation Guide",
     publishDate: "August 2, 2026",
-    isNew: true,
     intro: "One of the first questions families with dogs ask when considering a move to New Braunfels is whether the city will work for their animals. The honest answer is that it works exceptionally well — better than most Texas cities of comparable size. The spring-fed rivers are dog-friendly in the right spots, the parks are genuinely large, the trail system is growing, and the culture around dogs in public spaces is relaxed and welcoming. This guide covers what pet owners actually need to know before and after the move.",
     sections: [
       {
