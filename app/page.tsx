@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { HomeExplore } from "@/components/home/HomeExplore";
 import { HomeFinalCta } from "@/components/home/HomeFinalCta";
 import { HomeHero } from "@/components/home/HomeHero";
@@ -14,6 +15,15 @@ import {
   faqSchema,
 } from "@/lib/seo/schemas";
 import { site } from "@/lib/site";
+
+export const metadata: Metadata = {
+  title: { absolute: "New Braunfels Real Estate Agent — Todd Spencer" },
+  description:
+    "Todd Spencer is New Braunfels's trusted local real estate agent. Buyers, sellers, and relocators — 120+ five-star reviews, deep local knowledge, no pressure.",
+  alternates: {
+    canonical: site.websiteUrl,
+  },
+};
 
 const homepageFaqs = [
   {

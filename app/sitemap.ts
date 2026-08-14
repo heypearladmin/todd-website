@@ -3,13 +3,24 @@ import { site } from "@/lib/site";
 import {
   getAllNeighborhoodSlugs,
   getAllBlogSlugs,
+  findJournalPost,
 } from "@/lib/home-content";
 import { getAllFaqSlugs } from "@/lib/blog-utils";
 
 const BASE = site.websiteUrl;
 
+// Fixed build date for pages without a real "last changed" signal — avoids
+// resetting lastModified to the deploy date on every build, which Google
+// learns to ignore as a crawl-priority signal.
+const STATIC_LAST_MODIFIED = new Date("2026-08-01");
+
+function parseBlogDate(publishDate: string): Date {
+  const d = new Date(publishDate);
+  return isNaN(d.getTime()) ? STATIC_LAST_MODIFIED : d;
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
+  const now = STATIC_LAST_MODIFIED;
 
   const staticPages: MetadataRoute.Sitemap = [
     {
@@ -101,12 +112,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   );
 
-  const blogPages: MetadataRoute.Sitemap = getAllBlogSlugs().map((slug) => ({
-    url: `${BASE}/blog/${slug}`,
-    lastModified: now,
-    changeFrequency: "monthly",
-    priority: 0.7,
-  }));
+  const blogPages: MetadataRoute.Sitemap = getAllBlogSlugs().map((slug) => {
+    const post = findJournalPost(slug);
+    return {
+      url: `${BASE}/blog/${slug}`,
+      lastModified: post ? parseBlogDate(post.publishDate) : now,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    };
+  });
 
   const faqPages: MetadataRoute.Sitemap = getAllFaqSlugs().map((slug) => ({
     url: `${BASE}/faq/${slug}`,

@@ -7,7 +7,7 @@ import { breadcrumbSchema } from "@/lib/seo/schemas";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Neighborhoods",
+  title: { absolute: "New Braunfels Neighborhoods Guide — Todd Spencer" },
   description:
     "Featured New Braunfels neighborhoods. Gruene, Downtown New Braunfels, Canyon Lake, Vintage Oaks, and Veramendi.",
   alternates: {

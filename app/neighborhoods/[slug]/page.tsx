@@ -13,6 +13,24 @@ import { neighborhoodPlaceSchema, breadcrumbSchema, faqSchema } from "@/lib/seo/
 
 type Params = { slug: string };
 
+const NEIGHBORHOOD_GEO: Record<string, { lat: number; lng: number }> = {
+  gruene: { lat: 29.7469, lng: -98.1067 },
+  "downtown-new-braunfels": { lat: 29.703, lng: -98.1245 },
+  "canyon-lake": { lat: 29.8752, lng: -98.2625 },
+  "vintage-oaks": { lat: 29.728, lng: -98.155 },
+  veramendi: { lat: 29.71, lng: -98.145 },
+  riverchase: { lat: 29.68, lng: -98.085 },
+};
+
+const NEIGHBORHOOD_BLOG_SLUG: Record<string, string> = {
+  gruene: "gruene-historic-district-guide",
+  "downtown-new-braunfels": "downtown-new-braunfels-neighborhood-guide",
+  "canyon-lake": "canyon-lake-real-estate-guide",
+  "vintage-oaks": "vintage-oaks-neighborhood-guide",
+  veramendi: "veramendi-neighborhood-guide",
+  riverchase: "river-chase-neighborhood-guide",
+};
+
 export async function generateStaticParams() {
   return getAllNeighborhoodSlugs().map((slug) => ({ slug }));
 }
@@ -50,6 +68,8 @@ export default async function NeighborhoodPage({
   if (!n) notFound();
   const related = getRelatedNeighborhoods(n.slug, 2);
   const d = n.details;
+  const geo = NEIGHBORHOOD_GEO[n.slug];
+  const blogSlug = NEIGHBORHOOD_BLOG_SLUG[n.slug];
 
   return (
     <>
@@ -60,6 +80,8 @@ export default async function NeighborhoodPage({
             description: n.details?.shortAnswer ?? n.dek,
             imageUrl: n.imageSrc,
             urlPath: `/neighborhoods/${n.slug}`,
+            latitude: geo?.lat,
+            longitude: geo?.lng,
           }) as Record<string, unknown>
         }
       />
@@ -117,6 +139,15 @@ export default async function NeighborhoodPage({
             </span>
           </p>
           <p className="dek mt-8 max-w-2xl !text-paper/80">{n.dek}</p>
+          {blogSlug && (
+            <Link
+              href={`/blog/${blogSlug}`}
+              className="mt-8 inline-flex items-center gap-2.5 text-sm font-medium text-paper/85 transition-colors duration-300 ease-editorial hover:text-paper"
+            >
+              Read the full {n.title} neighborhood guide
+              <span aria-hidden>→</span>
+            </Link>
+          )}
         </div>
       </section>
 

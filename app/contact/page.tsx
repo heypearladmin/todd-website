@@ -6,7 +6,7 @@ import { EmailLink } from "@/components/EmailLink";
 import { PhoneLink } from "@/components/PhoneLink";
 import { ContactForm } from "@/components/ContactForm";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { breadcrumbSchema } from "@/lib/seo/schemas";
+import { breadcrumbSchema, localBusinessSchema } from "@/lib/seo/schemas";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -32,6 +32,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
+      <JsonLd schema={localBusinessSchema() as Record<string, unknown>} />
       <JsonLd
         schema={
           breadcrumbSchema([

@@ -5,7 +5,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { breadcrumbSchema, faqSchema, realEstateAgentSchema, servicePageSchema } from "@/lib/seo/schemas";
 
 export const metadata: Metadata = {
-  title: "New Braunfels Real Estate Agent — Todd Spencer",
+  title: { absolute: "New Braunfels Real Estate Agent — Todd Spencer" },
   description:
     "Todd Spencer is a full-service New Braunfels real estate agent with eXp Realty. 120+ five-star reviews. Buyers, sellers, and relocators welcome.",
   alternates: {

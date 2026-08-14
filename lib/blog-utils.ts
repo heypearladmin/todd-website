@@ -54,9 +54,15 @@ export function readingTime(post: JournalPost): number {
 }
 
 export function getRelatedPosts(current: JournalPost, max = 3): JournalPost[] {
-  return journalPosts
-    .filter((p) => p.slug !== current.slug && p.category === current.category)
-    .slice(0, max);
+  const sameCategory = journalPosts.filter(
+    (p) => p.slug !== current.slug && p.category === current.category
+  );
+  if (sameCategory.length >= max) return sameCategory.slice(0, max);
+
+  const crossCategory = journalPosts.filter(
+    (p) => p.slug !== current.slug && p.category !== current.category
+  );
+  return [...sameCategory, ...crossCategory].slice(0, max);
 }
 
 export function getFaqBySlug(

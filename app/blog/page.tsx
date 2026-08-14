@@ -7,7 +7,7 @@ import { breadcrumbSchema } from "@/lib/seo/schemas";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "New Braunfels Real Estate Journal — Local Guides by Todd Spencer",
+  title: { absolute: "New Braunfels Real Estate Journal — Local Guides by Todd Spencer" },
   description:
     "Flood zones, school districts, commute times, river life, and what homes actually cost — honest field notes for buyers and newcomers to New Braunfels, TX.",
   alternates: {

@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { breadcrumbSchema, faqSchema, servicePageSchema } from "@/lib/seo/schemas";
+import { breadcrumbSchema, faqSchema, howToSchema, servicePageSchema } from "@/lib/seo/schemas";
 
 export const metadata: Metadata = {
-  title: "What's My New Braunfels Home Worth? Free CMA by Todd Spencer",
+  title: { absolute: "What's My New Braunfels Home Worth? Free CMA by Todd Spencer" },
   description:
     "Find out what your New Braunfels home is worth right now — free CMA grounded in Comal County data, not Zillow estimates. No pressure. Call (512) 665-3747.",
   alternates: {
@@ -138,6 +138,15 @@ export default function NewBraunfelsHomeValuationPage() {
         }
       />
       <JsonLd schema={faqSchema(faqs) as Record<string, unknown>} />
+      <JsonLd
+        schema={
+          howToSchema({
+            name: "How to get a free home valuation in New Braunfels, TX",
+            description: "Todd Spencer's step-by-step process for preparing a comparative market analysis for New Braunfels homeowners.",
+            steps: process.map((p) => ({ name: p.step, text: p.description })),
+          }) as Record<string, unknown>
+        }
+      />
       <main id="main" className="bg-paper">
         {/* hero */}
         <section className="relative isolate overflow-hidden bg-paper-deep">

@@ -71,7 +71,21 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={`${display.variable} ${body.variable}`}>
+      <head>
+        <link rel="preconnect" href="https://connect.facebook.net" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+      </head>
       <body>
+        <noscript>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=2054076658845914&ev=PageView&noscript=1"
+            alt=""
+          />
+        </noscript>
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-primary focus:px-4 focus:py-2 focus:text-paper"

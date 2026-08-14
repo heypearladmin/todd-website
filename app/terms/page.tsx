@@ -6,6 +6,9 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Terms & Conditions",
   description: `Terms and conditions for ${site.brand} and ${site.complianceCompanyName}, including SMS and AI calling communication policies.`,
+  alternates: {
+    canonical: `${site.websiteUrl}/terms`,
+  },
 };
 
 export default function TermsPage() {

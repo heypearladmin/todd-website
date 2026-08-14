@@ -17,6 +17,7 @@ import { TableOfContents } from "@/components/blog/TableOfContents";
 import { FAQCards } from "@/components/blog/FAQCards";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
 import { ArticleCTA } from "@/components/blog/ArticleCTA";
+import { RichText } from "@/components/blog/RichText";
 
 function parsePublishDate(date?: string): string {
   if (!date) return "2026-01-07";
@@ -25,6 +26,16 @@ function parsePublishDate(date?: string): string {
 }
 
 type Params = { slug: string };
+
+const BLOG_NEIGHBORHOOD_SLUG: Record<string, string> = {
+  "gruene-historic-district-guide": "gruene",
+  "downtown-new-braunfels-neighborhood-guide": "downtown-new-braunfels",
+  "canyon-lake-real-estate-guide": "canyon-lake",
+  "vintage-oaks-neighborhood-guide": "vintage-oaks",
+  "veramendi-neighborhood-guide": "veramendi",
+  "river-chase-neighborhood-guide": "riverchase",
+  "what-makes-river-chase-unique": "riverchase",
+};
 
 export async function generateStaticParams() {
   return getAllBlogSlugs().map((slug) => ({ slug }));
@@ -99,6 +110,7 @@ export default async function BlogArticlePage({
   const mins = journalPost ? readingTime(journalPost) : null;
   const tocItems = journalPost ? tocItemsFromPost(journalPost) : [];
   const related = journalPost ? getRelatedPosts(journalPost) : [];
+  const neighborhoodSlug = BLOG_NEIGHBORHOOD_SLUG[slug];
 
   return (
     <>
@@ -204,7 +216,7 @@ export default async function BlogArticlePage({
               {journalPost ? (
                 <>
                   <p className="text-[1.125rem] leading-[1.8] text-ink/80 md:text-[1.1875rem]">
-                    {journalPost.intro}
+                    <RichText text={journalPost.intro} />
                   </p>
 
                   {journalPost.sections.map((section) => {
@@ -225,7 +237,7 @@ export default async function BlogArticlePage({
                         </h2>
                         {section.body && (
                           <p className="mt-5 text-[1.0625rem] leading-[1.78] text-ink/75">
-                            {section.body}
+                            <RichText text={section.body} />
                           </p>
                         )}
                         {section.bulletPoints && section.bulletPoints.length > 0 && (
@@ -236,7 +248,7 @@ export default async function BlogArticlePage({
                                   aria-hidden
                                   className="mt-[0.6em] h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary"
                                 />
-                                <span>{pt}</span>
+                                <span><RichText text={pt} /></span>
                               </li>
                             ))}
                           </ul>
@@ -255,7 +267,7 @@ export default async function BlogArticlePage({
                                   </h3>
                                   {sub.body && (
                                     <p className="mt-3 text-[1.0625rem] leading-[1.78] text-ink/75">
-                                      {sub.body}
+                                      <RichText text={sub.body} />
                                     </p>
                                   )}
                                   {sub.bulletPoints &&
@@ -267,7 +279,7 @@ export default async function BlogArticlePage({
                                               aria-hidden
                                               className="mt-[0.6em] h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary"
                                             />
-                                            <span>{pt}</span>
+                                            <span><RichText text={pt} /></span>
                                           </li>
                                         ))}
                                       </ul>
@@ -280,6 +292,19 @@ export default async function BlogArticlePage({
                       </section>
                     );
                   })}
+
+                  {/* Neighborhood cross-link */}
+                  {neighborhoodSlug && (
+                    <section className="border-t border-ink/[0.08] pt-10">
+                      <Link
+                        href={`/neighborhoods/${neighborhoodSlug}`}
+                        className="inline-flex items-center gap-2.5 text-sm font-medium text-primary transition-colors duration-300 ease-editorial hover:text-copper"
+                      >
+                        View the full neighborhood profile
+                        <span aria-hidden className="block h-px w-8 bg-current" />
+                      </Link>
+                    </section>
+                  )}
 
                   {/* FAQ Cards */}
                   {journalPost.faqs && journalPost.faqs.length > 0 && (
@@ -303,7 +328,7 @@ export default async function BlogArticlePage({
                   )}
 
                   {/* CTA */}
-                  <ArticleCTA />
+                  <ArticleCTA category={article.category} />
                 </>
               ) : (
                 <>

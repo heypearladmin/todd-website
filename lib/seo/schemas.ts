@@ -8,11 +8,12 @@ export function organizationSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": `${BASE}/#organization`,
     name: site.legalName,
     url: BASE,
     logo: {
       "@type": "ImageObject",
-      url: `${BASE}${site.logoSrc}`,
+      url: `${BASE}${site.agentPortraitSrc}`,
     },
     contactPoint: {
       "@type": "ContactPoint",
@@ -29,6 +30,7 @@ export function localBusinessSchema() {
   return {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "RealEstateAgent"],
+    "@id": `${BASE}/#local-business`,
     name: site.legalName,
     url: BASE,
     telephone: site.phone,
@@ -36,7 +38,7 @@ export function localBusinessSchema() {
     image: `${BASE}${site.ogImage}`,
     logo: {
       "@type": "ImageObject",
-      url: `${BASE}${site.logoSrc}`,
+      url: `${BASE}${site.agentPortraitSrc}`,
     },
     priceRange: "$$",
     address: {
@@ -57,6 +59,15 @@ export function localBusinessSchema() {
       { "@type": "City", name: "Canyon Lake" },
       { "@type": "City", name: "Comal County" },
     ],
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5.0",
+      reviewCount: "120",
+      bestRating: "5",
+      worstRating: "1",
+    },
+    parentOrganization: { "@id": `${BASE}/#organization` },
+    employee: { "@id": `${BASE}/#person` },
     sameAs: Object.values(site.social),
   } as const;
 }
@@ -65,6 +76,7 @@ export function realEstateAgentSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
+    "@id": `${BASE}/#agent`,
     name: site.agentName,
     url: BASE,
     telephone: site.phone,
@@ -92,6 +104,13 @@ export function realEstateAgentSchema() {
       "relocation to New Braunfels",
       "first-time home buyers",
     ],
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5.0",
+      reviewCount: "120",
+      bestRating: "5",
+      worstRating: "1",
+    },
     sameAs: Object.values(site.social),
   } as const;
 }
@@ -108,14 +127,6 @@ export function webSiteSchema() {
       name: site.agentName,
       url: `${BASE}/about`,
     },
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: `${BASE}/blog?q={search_term_string}`,
-      },
-      "query-input": "required name=search_term_string",
-    },
   } as const;
 }
 
@@ -123,6 +134,7 @@ export function personSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": `${BASE}/#person`,
     name: site.agentName,
     url: `${BASE}/about`,
     image: {
@@ -274,6 +286,8 @@ export function neighborhoodPlaceSchema(opts: {
   description: string;
   imageUrl: string;
   urlPath: string;
+  latitude?: number;
+  longitude?: number;
 }) {
   const absoluteImage = opts.imageUrl.startsWith("http")
     ? opts.imageUrl
@@ -288,15 +302,32 @@ export function neighborhoodPlaceSchema(opts: {
       url: absoluteImage,
     },
     url: `${BASE}${opts.urlPath}`,
+    ...(opts.latitude != null && opts.longitude != null
+      ? { geo: { "@type": "GeoCoordinates", latitude: opts.latitude, longitude: opts.longitude } }
+      : {}),
     containedInPlace: {
       "@type": "City",
       name: "New Braunfels",
       sameAs: "https://en.wikipedia.org/wiki/New_Braunfels,_Texas",
     },
-    containsPlace: {
-      "@type": "State",
-      name: "Texas",
-    },
+  } as const;
+}
+
+export function howToSchema(opts: {
+  name: string;
+  description: string;
+  steps: Array<{ name: string; text: string }>;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: opts.name,
+    description: opts.description,
+    step: opts.steps.map((step) => ({
+      "@type": "HowToStep",
+      name: step.name,
+      text: step.text,
+    })),
   } as const;
 }
 

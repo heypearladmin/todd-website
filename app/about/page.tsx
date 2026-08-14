@@ -5,7 +5,7 @@ import { personSchema, breadcrumbSchema } from "@/lib/seo/schemas";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: { absolute: "New Braunfels Real Estate Agent — About Todd Spencer" },
   description: `About ${site.brand}. ${site.description}`,
   alternates: {
     canonical: `${site.websiteUrl}/about`,
@@ -15,6 +15,13 @@ export const metadata: Metadata = {
     description: `About ${site.brand}. ${site.description}`,
     url: `${site.websiteUrl}/about`,
     type: "profile",
+    images: [{ url: site.ogImage, width: 1200, height: 630, alt: site.agentPortraitAlt }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `About ${site.brand}`,
+    description: `About ${site.brand}. ${site.description}`,
+    images: [site.ogImage],
   },
 };
 

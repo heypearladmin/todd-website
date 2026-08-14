@@ -1,7 +1,16 @@
 import Link from "next/link";
 import { site } from "@/lib/site";
 
-export function ArticleCTA() {
+const CATEGORY_SERVICE_PATH: Record<string, { href: string; label: string }> = {
+  "Buyer Guide": { href: "/buying-a-home-in-new-braunfels", label: "Start your home search" },
+  "Seller Guide": { href: "/selling-a-home-in-new-braunfels", label: "Get a home valuation" },
+  "Relocation Guide": { href: "/relocating-to-new-braunfels", label: "Plan your relocation" },
+  Relocation: { href: "/relocating-to-new-braunfels", label: "Plan your relocation" },
+};
+
+export function ArticleCTA({ category }: { category?: string }) {
+  const service = category ? CATEGORY_SERVICE_PATH[category] : undefined;
+
   return (
     <div className="rounded-2xl bg-sand px-7 py-8 mt-2">
       <p className="caption !text-ink/50 mb-3">Ask Todd</p>
@@ -14,8 +23,8 @@ export function ArticleCTA() {
           Send a note
           <span aria-hidden className="text-base">→</span>
         </Link>
-        <Link href="/new-braunfels-real-estate-agent" className="editorial-link text-sm font-medium">
-          Work with Todd
+        <Link href={service?.href ?? "/new-braunfels-real-estate-agent"} className="editorial-link text-sm font-medium">
+          {service?.label ?? "Work with Todd"}
         </Link>
         <Link href={site.blogPath} className="editorial-link text-sm font-medium">
           More field notes

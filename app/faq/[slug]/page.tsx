@@ -10,7 +10,7 @@ import {
 } from "@/lib/blog-utils";
 import { site } from "@/lib/site";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { breadcrumbSchema, faqSchema } from "@/lib/seo/schemas";
+import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/seo/schemas";
 import { QuickAnswer } from "@/components/blog/QuickAnswer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
 import { KeyTakeaways } from "@/components/faq/KeyTakeaways";
@@ -46,11 +46,13 @@ export async function generateMetadata({
       url,
       type: "article",
       authors: [site.agentName],
+      images: [{ url: site.ogImage, width: 1200, height: 630, alt: site.agentPortraitAlt }],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title: faq.question,
       description: desc,
+      images: [site.ogImage],
     },
   };
 }
@@ -75,6 +77,17 @@ export default async function FaqPage({
   return (
     <>
       <JsonLd schema={faqSchema([faq]) as Record<string, unknown>} />
+      <JsonLd
+        schema={
+          articleSchema({
+            title: faq.question,
+            description: faq.answer,
+            imageUrl: post.imageSrc,
+            imageAlt: post.imageAlt,
+            urlPath: `/faq/${slug}`,
+          }) as Record<string, unknown>
+        }
+      />
       <JsonLd
         schema={
           breadcrumbSchema([

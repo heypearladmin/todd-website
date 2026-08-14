@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { site } from "@/lib/site";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { breadcrumbSchema, faqSchema, servicePageSchema } from "@/lib/seo/schemas";
+import { breadcrumbSchema, faqSchema, howToSchema, servicePageSchema } from "@/lib/seo/schemas";
 
 export const metadata: Metadata = {
-  title: "Sell Your Home in New Braunfels — Todd Spencer",
+  title: { absolute: "Sell Your Home in New Braunfels — Todd Spencer" },
   description:
     "Selling in New Braunfels? Todd Spencer brings local pricing expertise, professional marketing, and 120+ five-star reviews to every listing.",
   alternates: {
@@ -138,6 +138,15 @@ export default function SellingAHomeInNewBraunfelsPage() {
         }
       />
       <JsonLd schema={faqSchema(faqs) as Record<string, unknown>} />
+      <JsonLd
+        schema={
+          howToSchema({
+            name: "How to sell a home in New Braunfels, TX",
+            description: "Todd Spencer's step-by-step process for guiding sellers from first conversation to closing in New Braunfels and Comal County.",
+            steps: process.map((p) => ({ name: p.step, text: p.description })),
+          }) as Record<string, unknown>
+        }
+      />
       <main id="main" className="bg-paper">
         {/* hero */}
         <section className="relative isolate overflow-hidden bg-paper-deep">
@@ -245,6 +254,32 @@ export default function SellingAHomeInNewBraunfelsPage() {
                   <p className="mt-3 text-[1.0rem] leading-[1.75] text-ink/70">{p.description}</p>
                 </div>
               </div>
+            ))}
+          </div>
+        </section>
+
+        {/* neighborhoods */}
+        <section className="section-wrap border-t border-ink/[0.07] py-20 md:py-28">
+          <div className="flex items-center gap-3">
+            <span className="tick" aria-hidden />
+            <p className="eyebrow">Local context</p>
+          </div>
+          <h2 className="display-lg mt-6 text-ink">See how each neighborhood sells.</h2>
+          <div className="mt-8 flex flex-wrap gap-4">
+            {[
+              { slug: "gruene", label: "Gruene" },
+              { slug: "riverchase", label: "River Chase" },
+              { slug: "vintage-oaks", label: "Vintage Oaks" },
+              { slug: "veramendi", label: "Veramendi" },
+              { slug: "canyon-lake", label: "Canyon Lake" },
+            ].map((n) => (
+              <Link
+                key={n.slug}
+                href={`/neighborhoods/${n.slug}`}
+                className="rounded-full border border-ink/[0.12] px-5 py-2.5 text-sm font-medium text-ink transition-colors duration-300 ease-editorial hover:border-primary hover:text-primary"
+              >
+                {n.label}
+              </Link>
             ))}
           </div>
         </section>

@@ -1,4 +1,5 @@
 import type { FaqBodySection } from "@/lib/home-content";
+import { RichText } from "@/components/blog/RichText";
 
 type Props = { sections: FaqBodySection[] };
 
@@ -15,7 +16,7 @@ export function FaqArticleBody({ sections }: Props) {
             <h3 className="display-sm text-ink mb-3 mt-6">{section.subheading}</h3>
           )}
           {section.body && (
-            <p className="text-[1.0625rem] leading-[1.78] text-ink/75">{section.body}</p>
+            <p className="text-[1.0625rem] leading-[1.78] text-ink/75"><RichText text={section.body} /></p>
           )}
           {section.bullets && section.bullets.length > 0 && (
             <ul className="mt-4 space-y-2">
@@ -25,7 +26,7 @@ export function FaqArticleBody({ sections }: Props) {
                     aria-hidden
                     className="mt-[0.6em] h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary"
                   />
-                  <span>{pt}</span>
+                  <span><RichText text={pt} /></span>
                 </li>
               ))}
             </ul>
