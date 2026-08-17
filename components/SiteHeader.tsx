@@ -6,6 +6,7 @@ import Link from "next/link";
 import { site } from "@/lib/site";
 
 const links = [
+  { href: "https://homesforeveryday.idxbroker.com/idx/search/advanced", label: "Search Homes" },
   { href: site.neighborhoodsPath, label: "Neighborhoods" },
   { href: "/explore", label: "Explore" },
   { href: site.blogPath, label: "Blog" },
