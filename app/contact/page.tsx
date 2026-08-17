@@ -110,6 +110,13 @@ export default function ContactPage() {
                   <p className="mt-0.5 text-[0.875rem] text-ink/40">
                     {site.brokerage.licenseLine}
                   </p>
+                  <p className="mt-3 text-[0.875rem] leading-relaxed text-ink/60">
+                    {site.brokerage.officeAddress}
+                    <br />
+                    <a href={site.brokerage.officePhoneHref} className="hover:text-primary">
+                      {site.brokerage.officePhone}
+                    </a>
+                  </p>
                 </div>
               </div>
 

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import { site } from "@/lib/site";
+import { EmailLink } from "@/components/EmailLink";
 import {
   editorialStagger,
   fade,
@@ -491,6 +492,7 @@ export function AboutEditorial() {
                 >
                   {site.phone}
                 </a>
+                <EmailLink className="editorial-link text-sm font-medium tracking-wide" />
               </div>
             </motion.div>
           </motion.div>
