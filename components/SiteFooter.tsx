@@ -91,9 +91,8 @@ export function SiteFooter() {
         {/* link rail */}
         <div className="mt-20 grid grid-cols-2 gap-8 border-t border-ink/[0.08] pt-14 sm:grid-cols-3 md:grid-cols-5 md:gap-10">
           <div>
-            <p className="caption !text-ink/50">Contact Todd Spencer</p>
+            <p className="caption !text-ink/50">Contact</p>
             <ul className="mt-4 space-y-2.5 text-[0.9375rem]">
-              <li className="font-medium text-ink">{site.agentName}</li>
               <li>
                 <a href={site.phoneHref} className="editorial-link">
                   {site.phone}
@@ -160,40 +159,11 @@ export function SiteFooter() {
             <p className="mt-1.5 text-[0.8125rem] leading-relaxed tracking-wide text-ink/55">
               {site.brokerage.licenseLine}
             </p>
-            <p className="mt-3 text-[0.8125rem] leading-relaxed text-ink/55">
-              {site.brokerage.officeAddress}
-              <br />
-              <a href={site.brokerage.officePhoneHref} className="editorial-link">
-                {site.brokerage.officePhone}
-              </a>
-            </p>
-          </div>
-        </div>
-
-        {/* IDX / MLS disclaimer */}
-        <div className="mt-16 border-t border-ink/[0.08] pt-8 md:mt-20">
-          <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
-            <span className="relative block h-14 w-20 shrink-0">
-              <Image
-                src={site.leraLogoSrc}
-                alt={site.leraLogoAlt}
-                fill
-                sizes="80px"
-                className="object-contain object-left"
-              />
-            </span>
-            <p className="max-w-[52rem] text-[0.75rem] leading-relaxed text-ink/50">
-              © {new Date().getFullYear()} Local Expertise Regional Access (LERA). All rights reserved.
-              Information Deemed Reliable but Not Guaranteed. Information on this site is provided
-              exclusively for consumers&apos; personal, non-commercial use and may not be used for any
-              purpose other than to identify prospective properties consumers may be interested in
-              purchasing.
-            </p>
           </div>
         </div>
 
         {/* colophon */}
-        <div className="mt-8 border-t border-ink/[0.08] pt-8 md:pt-10">
+        <div className="mt-16 border-t border-ink/[0.08] pt-8 md:mt-20 md:pt-10">
           <div className="flex flex-col items-start justify-between gap-4 text-[0.78rem] text-muted md:flex-row md:items-center">
             <p className="tracking-wide">
               © {new Date().getFullYear()} {site.legalName} · Equal Housing Opportunity

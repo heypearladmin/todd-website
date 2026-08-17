@@ -12,25 +12,16 @@ export const site = {
   emailHref: "mailto:todd@todd-spencer.com",
   websiteUrl: "https://todd-spencer.com",
 
-  // Brokerage — office of record confirmed against LERA MLS's file for
-  // final IDX compliance review. Do not use site.phone (Todd's personal
-  // number) as the office phone — LERA requires the two kept distinct.
+  // Brokerage
   brokerage: {
     name: "eXp Realty, LLC",
     licenseLine: "Licensed in Texas",
     address: "New Braunfels, Texas",
-    officeAddress: "17806 W IH 10, Suite 300, San Antonio, TX 78257",
-    officePhone: "(888) 519-7431",
-    officePhoneHref: "tel:+18885197431",
   },
 
   // Brand mark
   logoSrc: "/images/exp-realty-logo.webp",
   logoAlt: "eXp Realty logo",
-
-  // LERA MLS IDX compliance mark
-  leraLogoSrc: "/images/lera-logo.webp",
-  leraLogoAlt: "Local Expertise Regional Access (LERA) MLS logo",
 
   // Open Graph — must be an absolute URL so social previews work in production
   ogImage: "https://todd-spencer.com/images/og-todd-spencer-new-braunfels.jpg",
