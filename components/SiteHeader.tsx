@@ -5,10 +5,32 @@ import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/lib/site";
 
-const serviceLinks = [
-  { href: "/buying-a-home-in-new-braunfels", label: "Buying" },
-  { href: "/selling-a-home-in-new-braunfels", label: "Selling" },
+const buyingLinks = [
+  { href: "/buying-a-home-in-new-braunfels", label: "Buying a Home" },
+  { href: "/blog/first-time-homebuyer-new-braunfels", label: "First-Time Home Buyers" },
+  { href: "/blog/first-time-homebuyer-new-braunfels#get-pre-approved-before-you-do-anything-else", label: "Getting Pre-Approved" },
+  { href: "/blog/winning-offer-new-braunfels-texas", label: "Making an Offer" },
+  { href: "/blog/home-inspection-new-braunfels-texas", label: "Home Inspections" },
+  { href: "/blog/closing-costs-new-braunfels-texas", label: "Closing Costs" },
+  { href: "/blog/first-time-homebuyer-new-braunfels#closing-day-in-texas", label: "Closing Day" },
+  { href: "/blog/new-construction-vs-resale-new-braunfels", label: "New Construction" },
 ] as const;
+
+const sellingLinks = [
+  { href: "/selling-a-home-in-new-braunfels", label: "Selling a Home" },
+  { href: "/blog/selling-home-new-braunfels-guide", label: "Home Selling Guide" },
+  { href: "/new-braunfels-home-valuation", label: "What's My Home Worth?" },
+  { href: "/blog/selling-home-new-braunfels-guide#what-to-do-before-the-sign-goes-in-the-yard", label: "Preparing Your Home" },
+  { href: "/blog/selling-home-new-braunfels-guide#staging-for-the-new-braunfels-buyer", label: "Home Staging" },
+  { href: "/blog/selling-home-new-braunfels-guide#getting-the-price-right-from-day-one", label: "Pricing Your Home" },
+  { href: "/blog/selling-home-new-braunfels-guide#how-your-home-gets-in-front-of-the-right-buyers", label: "Marketing Your Home" },
+  { href: "/blog/selling-home-new-braunfels-guide#evaluating-offers-and-getting-to-the-closing-table", label: "Offers & Negotiation" },
+] as const;
+
+const viewAllLinks = {
+  buying: { href: "/buying-a-home-in-new-braunfels", label: "View All Buying Guides" },
+  selling: { href: "/selling-a-home-in-new-braunfels", label: "View All Selling Guides" },
+} as const;
 
 const links = [
   { href: "https://homesforeveryday.idxbroker.com/idx/search/advanced", label: "Search Homes" },
@@ -61,20 +83,56 @@ function ServicesDropdown() {
         </svg>
       </button>
       <div
-        className={`absolute left-0 top-full z-10 mt-3 min-w-[10rem] overflow-hidden rounded-2xl border border-ink/[0.08] bg-paper shadow-surface transition-[opacity,transform] duration-cinema ease-cinema ${
+        className={`absolute left-1/2 top-full z-10 mt-3 w-[34rem] -translate-x-1/2 overflow-hidden rounded-2xl border border-ink/[0.08] bg-paper shadow-surface transition-[opacity,transform] duration-cinema ease-cinema ${
           open ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-1 opacity-0"
         }`}
       >
-        {serviceLinks.map((l) => (
-          <Link
-            key={l.href}
-            href={l.href}
-            onClick={() => setOpen(false)}
-            className="block px-5 py-3 text-[0.8125rem] font-medium tracking-wide text-ink/75 transition-colors duration-cinema ease-cinema hover:bg-paper-deep hover:text-primary"
-          >
-            {l.label}
-          </Link>
-        ))}
+        <div className="grid grid-cols-2 divide-x divide-ink/[0.07]">
+          <div className="py-5">
+            <p className="px-6 pb-3 text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-ink/40">
+              Buying
+            </p>
+            {buyingLinks.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                onClick={() => setOpen(false)}
+                className="block px-6 py-2 text-[0.8125rem] font-medium tracking-wide text-ink/75 transition-colors duration-cinema ease-cinema hover:bg-paper-deep hover:text-primary"
+              >
+                {l.label}
+              </Link>
+            ))}
+            <Link
+              href={viewAllLinks.buying.href}
+              onClick={() => setOpen(false)}
+              className="mt-2 block px-6 py-2 text-[0.75rem] font-semibold tracking-wide text-primary transition-colors duration-cinema ease-cinema hover:text-copper"
+            >
+              {viewAllLinks.buying.label} →
+            </Link>
+          </div>
+          <div className="py-5">
+            <p className="px-6 pb-3 text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-ink/40">
+              Selling
+            </p>
+            {sellingLinks.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                onClick={() => setOpen(false)}
+                className="block px-6 py-2 text-[0.8125rem] font-medium tracking-wide text-ink/75 transition-colors duration-cinema ease-cinema hover:bg-paper-deep hover:text-primary"
+              >
+                {l.label}
+              </Link>
+            ))}
+            <Link
+              href={viewAllLinks.selling.href}
+              onClick={() => setOpen(false)}
+              className="mt-2 block px-6 py-2 text-[0.75rem] font-semibold tracking-wide text-primary transition-colors duration-cinema ease-cinema hover:text-copper"
+            >
+              {viewAllLinks.selling.label} →
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -175,8 +233,8 @@ export function SiteHeader() {
 
       <div
         id="mobile-nav"
-        className={`overflow-hidden border-t border-ink/[0.06] bg-paper/95 backdrop-blur-md transition-[max-height,opacity] duration-cinema ease-cinema lg:hidden ${
-          menuOpen ? "max-h-[36rem] opacity-100" : "max-h-0 opacity-0"
+        className={`border-t border-ink/[0.06] bg-paper/95 backdrop-blur-md transition-[max-height,opacity] duration-cinema ease-cinema lg:hidden ${
+          menuOpen ? "max-h-[calc(100vh-5rem)] overflow-y-auto opacity-100" : "max-h-0 overflow-hidden opacity-0"
         }`}
       >
         <nav className="section-wrap flex flex-col gap-1 py-4" aria-label="Mobile">
@@ -188,14 +246,28 @@ export function SiteHeader() {
             {links[0].label}
           </Link>
           <p className="mt-1 px-4 text-[0.7rem] font-medium uppercase tracking-[0.22em] text-ink/40">
-            Services
+            Buying
           </p>
-          {serviceLinks.map((l) => (
+          {buyingLinks.map((l) => (
             <Link
               key={l.href}
               href={l.href}
               onClick={() => setMenuOpen(false)}
-              className="block rounded-2xl px-4 py-3 text-[0.95rem] font-medium text-ink/85 transition-colors duration-cinema ease-cinema hover:bg-paper-deep hover:text-primary"
+              className="block rounded-2xl px-4 py-2.5 text-[0.9rem] font-medium text-ink/80 transition-colors duration-cinema ease-cinema hover:bg-paper-deep hover:text-primary"
+            >
+              {l.label}
+            </Link>
+          ))}
+
+          <p className="mt-3 px-4 text-[0.7rem] font-medium uppercase tracking-[0.22em] text-ink/40">
+            Selling
+          </p>
+          {sellingLinks.map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              onClick={() => setMenuOpen(false)}
+              className="block rounded-2xl px-4 py-2.5 text-[0.9rem] font-medium text-ink/80 transition-colors duration-cinema ease-cinema hover:bg-paper-deep hover:text-primary"
             >
               {l.label}
             </Link>

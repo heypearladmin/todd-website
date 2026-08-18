@@ -258,6 +258,36 @@ export default function SellingAHomeInNewBraunfelsPage() {
           </div>
         </section>
 
+        {/* guides */}
+        <section className="section-wrap border-t border-ink/[0.07] py-20 md:py-28">
+          <div className="flex items-center gap-3">
+            <span className="tick" aria-hidden />
+            <p className="eyebrow">Go deeper</p>
+          </div>
+          <h2 className="display-lg mt-6 text-ink">Seller guides worth reading before you list.</h2>
+          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {[
+              { href: "/blog/selling-home-new-braunfels-guide", label: "Complete Seller's Guide", dek: "Pricing, prep, marketing, and negotiating — start to close." },
+              { href: "/new-braunfels-home-valuation", label: "What's My Home Worth?", dek: "A free CMA grounded in real New Braunfels comps, not an algorithm." },
+              { href: "/blog/selling-home-new-braunfels-guide#what-to-do-before-the-sign-goes-in-the-yard", label: "Preparing Your Home", dek: "The high-ROI repairs and updates worth making before you list." },
+              { href: "/blog/selling-home-new-braunfels-guide#staging-for-the-new-braunfels-buyer", label: "Home Staging", dek: "How presentation shapes a buyer's first impression, before they even walk in." },
+              { href: "/blog/selling-home-new-braunfels-guide#getting-the-price-right-from-day-one", label: "Pricing Your Home", dek: "Strategic pricing vs. aspirational pricing, and how comps actually work." },
+              { href: "/blog/selling-home-new-braunfels-guide#evaluating-offers-and-getting-to-the-closing-table", label: "Offers, Negotiation & Closing", dek: "Evaluating offers beyond price, and the Texas closing timeline." },
+            ].map((g) => (
+              <Link key={g.href} href={g.href} className="group block rounded-[20px] border border-ink/[0.08] bg-paper p-6 transition-shadow duration-300 hover:shadow-lift">
+                <h3 className="text-[0.9375rem] font-semibold text-ink transition-colors duration-200 group-hover:text-primary">{g.label}</h3>
+                <p className="mt-2 text-[0.8125rem] leading-relaxed text-ink/60">{g.dek}</p>
+              </Link>
+            ))}
+          </div>
+          <p className="mt-8 text-[0.875rem] text-ink/55">
+            Buying instead?{" "}
+            <Link href="/buying-a-home-in-new-braunfels" className="font-medium text-primary hover:text-copper">
+              See the buyer's guide →
+            </Link>
+          </p>
+        </section>
+
         {/* neighborhoods */}
         <section className="section-wrap border-t border-ink/[0.07] py-20 md:py-28">
           <div className="flex items-center gap-3">

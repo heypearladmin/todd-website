@@ -263,6 +263,36 @@ export default function BuyingAHomeInNewBraunfelsPage() {
           </div>
         </section>
 
+        {/* guides */}
+        <section className="section-wrap border-t border-ink/[0.07] py-20 md:py-28">
+          <div className="flex items-center gap-3">
+            <span className="tick" aria-hidden />
+            <p className="eyebrow">Go deeper</p>
+          </div>
+          <h2 className="display-lg mt-6 text-ink">Buyer guides worth reading before you make an offer.</h2>
+          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {[
+              { href: "/blog/first-time-homebuyer-new-braunfels", label: "First-Time Homebuyer Guide", dek: "Pre-approval, down payment assistance, and the full offer-to-closing timeline." },
+              { href: "/blog/first-time-homebuyer-new-braunfels#get-pre-approved-before-you-do-anything-else", label: "Getting Pre-Approved", dek: "Why pre-approval — not pre-qualification — is the real first step." },
+              { href: "/blog/winning-offer-new-braunfels-texas", label: "Making a Winning Offer", dek: "Earnest money, option periods, and what actually influences sellers." },
+              { href: "/blog/home-inspection-new-braunfels-texas", label: "Home Inspections", dek: "What Texas inspectors check, and what's specific to Comal County." },
+              { href: "/blog/closing-costs-new-braunfels-texas", label: "Closing Costs", dek: "What buyers actually pay at the closing table in Texas." },
+              { href: "/blog/new-construction-vs-resale-new-braunfels", label: "New Construction vs. Resale", dek: "How to decide between a new build and an established home." },
+            ].map((g) => (
+              <Link key={g.href} href={g.href} className="group block rounded-[20px] border border-ink/[0.08] bg-paper p-6 transition-shadow duration-300 hover:shadow-lift">
+                <h3 className="text-[0.9375rem] font-semibold text-ink transition-colors duration-200 group-hover:text-primary">{g.label}</h3>
+                <p className="mt-2 text-[0.8125rem] leading-relaxed text-ink/60">{g.dek}</p>
+              </Link>
+            ))}
+          </div>
+          <p className="mt-8 text-[0.875rem] text-ink/55">
+            Selling instead?{" "}
+            <Link href="/selling-a-home-in-new-braunfels" className="font-medium text-primary hover:text-copper">
+              See the seller's guide →
+            </Link>
+          </p>
+        </section>
+
         {/* neighborhoods */}
         <section className="section-wrap border-t border-ink/[0.07] py-20 md:py-28">
           <div className="flex items-center gap-3">
