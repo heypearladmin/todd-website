@@ -33,7 +33,6 @@ const viewAllLinks = {
 } as const;
 
 const links = [
-  { href: "https://homesforeveryday.idxbroker.com/idx/search/advanced", label: "Search Homes" },
   { href: site.neighborhoodsPath, label: "Neighborhoods" },
   { href: "/explore", label: "Explore" },
   { href: site.blogPath, label: "Blog" },
@@ -171,14 +170,8 @@ export function SiteHeader() {
         </Link>
 
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Primary">
-          <Link
-            href={links[0].href}
-            className="text-[0.78rem] font-medium uppercase tracking-[0.22em] text-ink/70 transition-colors duration-cinema ease-cinema hover:text-primary"
-          >
-            {links[0].label}
-          </Link>
           <ServicesDropdown />
-          {links.slice(1).map((l) => (
+          {links.map((l) => (
             <Link
               key={l.href}
               href={l.href}
@@ -238,14 +231,7 @@ export function SiteHeader() {
         }`}
       >
         <nav className="section-wrap flex flex-col gap-1 py-4" aria-label="Mobile">
-          <Link
-            href={links[0].href}
-            onClick={() => setMenuOpen(false)}
-            className="block rounded-2xl px-4 py-3 text-[0.95rem] font-medium text-ink/85 transition-colors duration-cinema ease-cinema hover:bg-paper-deep hover:text-primary"
-          >
-            {links[0].label}
-          </Link>
-          <p className="mt-1 px-4 text-[0.7rem] font-medium uppercase tracking-[0.22em] text-ink/40">
+          <p className="px-4 text-[0.7rem] font-medium uppercase tracking-[0.22em] text-ink/40">
             Buying
           </p>
           {buyingLinks.map((l) => (
@@ -272,7 +258,7 @@ export function SiteHeader() {
               {l.label}
             </Link>
           ))}
-          {links.slice(1).map((l) => (
+          {links.map((l) => (
             <Link
               key={l.href}
               href={l.href}
