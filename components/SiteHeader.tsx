@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/lib/site";
+import { neighborhoods } from "@/lib/home-content";
 
 const buyingLinks = [
   { href: "/buying-a-home-in-new-braunfels", label: "Buying a Home" },
@@ -33,12 +34,13 @@ const viewAllLinks = {
 } as const;
 
 const links = [
-  { href: site.neighborhoodsPath, label: "Neighborhoods" },
   { href: "/explore", label: "Explore" },
   { href: site.blogPath, label: "Blog" },
   { href: site.aboutPath, label: "About" },
   { href: site.contactPath, label: "Contact" },
 ] as const;
+
+const viewAllNeighborhoods = { href: site.neighborhoodsPath, label: "View All Neighborhoods" };
 
 function ServicesDropdown() {
   const [open, setOpen] = useState(false);
@@ -137,6 +139,83 @@ function ServicesDropdown() {
   );
 }
 
+function NeighborhoodsDropdown() {
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    function handlePointer(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    }
+    function handleKey(e: KeyboardEvent) {
+      if (e.key === "Escape") setOpen(false);
+    }
+    document.addEventListener("mousedown", handlePointer);
+    document.addEventListener("keydown", handleKey);
+    return () => {
+      document.removeEventListener("mousedown", handlePointer);
+      document.removeEventListener("keydown", handleKey);
+    };
+  }, [open]);
+
+  return (
+    <div ref={ref} className="relative">
+      <button
+        type="button"
+        onClick={() => setOpen((s) => !s)}
+        aria-expanded={open}
+        aria-haspopup="true"
+        className="flex items-center gap-1.5 text-[0.78rem] font-medium uppercase tracking-[0.22em] text-ink/70 transition-colors duration-cinema ease-cinema hover:text-primary"
+      >
+        Neighborhoods
+        <svg
+          width="10"
+          height="10"
+          viewBox="0 0 20 20"
+          fill="none"
+          aria-hidden
+          className={`transition-transform duration-cinema ease-cinema ${open ? "rotate-180" : ""}`}
+        >
+          <path d="M5 7.5l5 5 5-5" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      </button>
+      <div
+        className={`absolute left-1/2 top-full z-10 mt-3 w-[24rem] -translate-x-1/2 overflow-hidden rounded-2xl border border-ink/[0.08] bg-paper shadow-surface transition-[opacity,transform] duration-cinema ease-cinema ${
+          open ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-1 opacity-0"
+        }`}
+      >
+        <div className="py-5">
+          <p className="px-6 pb-3 text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-ink/40">
+            Featured Neighborhoods
+          </p>
+          <div className="grid grid-cols-2 gap-x-2 px-3">
+            {neighborhoods.map((n) => (
+              <Link
+                key={n.href}
+                href={n.href}
+                onClick={() => setOpen(false)}
+                className="block rounded-lg px-3 py-2 text-[0.8125rem] font-medium tracking-wide text-ink/75 transition-colors duration-cinema ease-cinema hover:bg-paper-deep hover:text-primary"
+              >
+                {n.title}
+              </Link>
+            ))}
+          </div>
+          <div className="mt-2 border-t border-ink/[0.07] px-6 pt-3">
+            <Link
+              href={viewAllNeighborhoods.href}
+              onClick={() => setOpen(false)}
+              className="block text-[0.75rem] font-semibold tracking-wide text-primary transition-colors duration-cinema ease-cinema hover:text-copper"
+            >
+              {viewAllNeighborhoods.label} →
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -171,6 +250,7 @@ export function SiteHeader() {
 
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Primary">
           <ServicesDropdown />
+          <NeighborhoodsDropdown />
           {links.map((l) => (
             <Link
               key={l.href}
@@ -258,6 +338,28 @@ export function SiteHeader() {
               {l.label}
             </Link>
           ))}
+
+          <p className="mt-3 px-4 text-[0.7rem] font-medium uppercase tracking-[0.22em] text-ink/40">
+            Neighborhoods
+          </p>
+          {neighborhoods.map((n) => (
+            <Link
+              key={n.href}
+              href={n.href}
+              onClick={() => setMenuOpen(false)}
+              className="block rounded-2xl px-4 py-2.5 text-[0.9rem] font-medium text-ink/80 transition-colors duration-cinema ease-cinema hover:bg-paper-deep hover:text-primary"
+            >
+              {n.title}
+            </Link>
+          ))}
+          <Link
+            href={viewAllNeighborhoods.href}
+            onClick={() => setMenuOpen(false)}
+            className="block rounded-2xl px-4 py-2.5 text-[0.85rem] font-semibold text-primary transition-colors duration-cinema ease-cinema hover:text-copper"
+          >
+            {viewAllNeighborhoods.label} →
+          </Link>
+
           {links.map((l) => (
             <Link
               key={l.href}
