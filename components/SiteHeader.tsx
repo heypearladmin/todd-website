@@ -1,9 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/lib/site";
+
+const serviceLinks = [
+  { href: "/buying-a-home-in-new-braunfels", label: "Buying" },
+  { href: "/selling-a-home-in-new-braunfels", label: "Selling" },
+] as const;
 
 const links = [
   { href: "https://homesforeveryday.idxbroker.com/idx/search/advanced", label: "Search Homes" },
@@ -13,6 +18,67 @@ const links = [
   { href: site.aboutPath, label: "About" },
   { href: site.contactPath, label: "Contact" },
 ] as const;
+
+function ServicesDropdown() {
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    function handlePointer(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    }
+    function handleKey(e: KeyboardEvent) {
+      if (e.key === "Escape") setOpen(false);
+    }
+    document.addEventListener("mousedown", handlePointer);
+    document.addEventListener("keydown", handleKey);
+    return () => {
+      document.removeEventListener("mousedown", handlePointer);
+      document.removeEventListener("keydown", handleKey);
+    };
+  }, [open]);
+
+  return (
+    <div ref={ref} className="relative">
+      <button
+        type="button"
+        onClick={() => setOpen((s) => !s)}
+        aria-expanded={open}
+        aria-haspopup="true"
+        className="flex items-center gap-1.5 text-[0.78rem] font-medium uppercase tracking-[0.22em] text-ink/70 transition-colors duration-cinema ease-cinema hover:text-primary"
+      >
+        Services
+        <svg
+          width="10"
+          height="10"
+          viewBox="0 0 20 20"
+          fill="none"
+          aria-hidden
+          className={`transition-transform duration-cinema ease-cinema ${open ? "rotate-180" : ""}`}
+        >
+          <path d="M5 7.5l5 5 5-5" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      </button>
+      <div
+        className={`absolute left-0 top-full z-10 mt-3 min-w-[10rem] overflow-hidden rounded-2xl border border-ink/[0.08] bg-paper shadow-surface transition-[opacity,transform] duration-cinema ease-cinema ${
+          open ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-1 opacity-0"
+        }`}
+      >
+        {serviceLinks.map((l) => (
+          <Link
+            key={l.href}
+            href={l.href}
+            onClick={() => setOpen(false)}
+            className="block px-5 py-3 text-[0.8125rem] font-medium tracking-wide text-ink/75 transition-colors duration-cinema ease-cinema hover:bg-paper-deep hover:text-primary"
+          >
+            {l.label}
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -47,7 +113,14 @@ export function SiteHeader() {
         </Link>
 
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Primary">
-          {links.map((l) => (
+          <Link
+            href={links[0].href}
+            className="text-[0.78rem] font-medium uppercase tracking-[0.22em] text-ink/70 transition-colors duration-cinema ease-cinema hover:text-primary"
+          >
+            {links[0].label}
+          </Link>
+          <ServicesDropdown />
+          {links.slice(1).map((l) => (
             <Link
               key={l.href}
               href={l.href}
@@ -107,7 +180,27 @@ export function SiteHeader() {
         }`}
       >
         <nav className="section-wrap flex flex-col gap-1 py-4" aria-label="Mobile">
-          {links.map((l) => (
+          <Link
+            href={links[0].href}
+            onClick={() => setMenuOpen(false)}
+            className="block rounded-2xl px-4 py-3 text-[0.95rem] font-medium text-ink/85 transition-colors duration-cinema ease-cinema hover:bg-paper-deep hover:text-primary"
+          >
+            {links[0].label}
+          </Link>
+          <p className="mt-1 px-4 text-[0.7rem] font-medium uppercase tracking-[0.22em] text-ink/40">
+            Services
+          </p>
+          {serviceLinks.map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              onClick={() => setMenuOpen(false)}
+              className="block rounded-2xl px-4 py-3 text-[0.95rem] font-medium text-ink/85 transition-colors duration-cinema ease-cinema hover:bg-paper-deep hover:text-primary"
+            >
+              {l.label}
+            </Link>
+          ))}
+          {links.slice(1).map((l) => (
             <Link
               key={l.href}
               href={l.href}
