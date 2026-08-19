@@ -73,6 +73,242 @@ export type JournalPost = {
 
 export const journalPosts: JournalPost[] = [
   {
+    slug: "is-new-braunfels-a-good-place-to-live",
+    eyebrow: "RELOCATION",
+    title: "Is New Braunfels a Good Place to Live in 2026? A Local's Honest Answer",
+    dek: "Short answer: yes, for the right person. Here's an honest look at cost, commute, weather, schools, and who this city actually fits — no sales pitch, just what it's really like to live here.",
+    imageSrc: "/images/website-blog-is-new-braunfels-good-place-to-live.webp",
+    imageAlt: "Aerial view of the Comal River winding through downtown New Braunfels, Texas, with Hill Country oak trees and rooftops in warm late-afternoon light.",
+    category: "Relocation",
+    publishDate: "August 21, 2026",
+    isNew: true,
+    intro: "\"Is New Braunfels a good place to live?\" is one of the most common questions Todd hears from people considering the move — and it deserves a direct answer, not a marketing pitch. The short version: yes, for most people relocating from Austin, San Antonio, or out of state, New Braunfels is a genuinely good place to live in 2026. It is not, however, the right fit for everyone, and pretending otherwise does a disservice to anyone weighing a six-figure decision. Below is the honest version — what this city actually costs, what the commute really looks like, what the weather does to you in August, and who New Braunfels is, and is not, built for.",
+    sections: [
+      {
+        eyebrow: "THE SHORT ANSWER",
+        heading: "Is New Braunfels a Good Place to Live? Yes — With Three Conditions",
+        body: "New Braunfels works well for people who meet three conditions. First, you can tolerate real Texas summer heat and humidity for roughly four months a year in exchange for eight genuinely pleasant ones. Second, you want small-city character and walkability without giving up highway access to two major metros. Third, you are buying or renting at a price point that still makes practical sense here relative to Austin or San Antonio — because that gap has been narrowing. If those three things describe your situation, the city tends to deliver on its reputation. If they do not, it is worth reading further before assuming this is automatically the right move.",
+        bulletPoints: [
+          "You can handle a genuinely hot, humid summer in exchange for a mild fall, winter, and spring",
+          "You want a walkable small-city core plus reasonable access to Austin and San Antonio, not urban density",
+          "Your budget makes sense here relative to the metros you're leaving — not just cheaper on paper, but cheaper where it counts",
+        ],
+      },
+      {
+        eyebrow: "COST OF LIVING",
+        heading: "What New Braunfels Actually Costs to Live In",
+        body: "New Braunfels is less expensive than Austin and generally comparable to or slightly below San Antonio on housing, but the gap with Austin specifically has been closing as more people make exactly the move you're considering. A full breakdown of grocery, utility, and housing comparisons across all three cities is worth reading in [Cost of Living in New Braunfels vs Austin vs San Antonio](/blog/cost-of-living-new-braunfels-vs-austin-san-antonio) — but the short version is that New Braunfels still offers real savings on housing per square foot, at the cost of a longer drive to the biggest job markets.",
+        subsections: [
+          {
+            heading: "Housing Costs in 2026",
+            body: "Entry-level homes in New Braunfels proper start in the mid-$300s in most conditions, master-planned communities like Veramendi and Vintage Oaks range from the high-$300s into the $600s depending on lot and builder, and waterfront or acreage properties on Canyon Lake or the Comal run well beyond that. For a concrete sense of what specific budgets actually buy right now, see [What $400K, $500K, and $600K Buys in New Braunfels](/blog/what-400k-500k-600k-buys-new-braunfels).",
+          },
+          {
+            heading: "Property Taxes and the Real Monthly Number",
+            body: "Texas has no state income tax, which is the trade-off most transplants have heard about — but property taxes here run meaningfully higher than the national average, and that number belongs in your monthly budget from day one, not as a surprise at closing. The full mechanics, including how Comal County's homestead exemption works, are covered in the [New Braunfels Property Tax Guide](/blog/new-braunfels-property-tax-guide).",
+          },
+          {
+            heading: "Everyday Costs: Groceries, Utilities, Insurance",
+            body: "Day-to-day costs track close to the Texas state average — modestly below Austin, roughly in line with San Antonio. The one line item that surprises transplants from milder climates is summer electricity: air conditioning runs hard from May through September, and utility bills reflect it. Homeowner's insurance in Comal County has also risen in recent years, driven by regional hail and wind exposure, which is worth budgeting for rather than assuming it will match what you paid elsewhere.",
+          },
+        ],
+      },
+      {
+        eyebrow: "LOCATION",
+        heading: "The Commute Question: How Far Is New Braunfels From Austin and San Antonio, Really",
+        body: "New Braunfels sits almost exactly between Austin and San Antonio on I-35 — roughly 45 minutes to downtown Austin and 30 minutes to downtown San Antonio in light traffic. Neither number is accurate during rush hour, and that distinction matters more than the mileage does. A full breakdown of realistic drive times by time of day, plus alternatives for people commuting daily, is covered in the [New Braunfels Commute Guide](/blog/new-braunfels-commute-guide).",
+        subsections: [
+          {
+            heading: "The I-35 Reality",
+            body: "I-35 between New Braunfels and both metros carries heavy commuter and freight traffic, and congestion has grown along with both cities. A 45-minute drive to Austin can stretch toward 75 to 90 minutes during peak hours, particularly northbound in the morning. This is the single biggest factor separating people who are happy with the move from people who regret it.",
+          },
+          {
+            heading: "Who the Commute Works For — and Who It Doesn't",
+            body: "The math works well for remote and hybrid workers, for people commuting against the main traffic flow, and for anyone whose job is based in San Antonio rather than Austin, since that drive holds up better throughout the day. It works poorly for anyone needing a reliable daily 8 a.m. arrival in downtown Austin. Know which category you're in before you commit to a location relative to I-35.",
+          },
+        ],
+      },
+      {
+        eyebrow: "CLIMATE",
+        heading: "Weather and Seasons: What Nobody Mentions in the Brochure",
+        body: "New Braunfels has roughly eight months of genuinely pleasant weather and four months — June through September, with edges bleeding into May and October — of serious heat and humidity, regularly into the high 90s and low 100s. This is the part of the sales pitch that gets soft-pedaled, and it shouldn't be. What makes it livable is that the city was built around two rivers specifically for this reason. Float trips on the Comal and Guadalupe are not a novelty here; they are a functional coping mechanism the entire community relies on every summer weekend. Winters, by contrast, are mild and short, with only occasional hard freezes — a real upside if you're coming from anywhere with a real winter.",
+      },
+      {
+        eyebrow: "FAMILY & COMMUNITY",
+        heading: "Schools, Family Life, and Community",
+        body: "Families relocating to New Braunfels are almost always zoned into Comal ISD, which carries a solid regional reputation, though quality varies meaningfully by specific campus and neighborhood. The full district breakdown, including how attendance zones map to specific communities, is in the [New Braunfels School Districts Guide](/blog/new-braunfels-school-districts-guide).",
+        subsections: [
+          {
+            heading: "What There Actually Is to Do Here",
+            body: "Beyond the rivers, the city has a genuine downtown with a historic Main Plaza, Gruene Hall drawing live music year-round, a real farmers market, and an outdoor culture built around the Hill Country rather than imported from somewhere else. It is not Austin's music scene or San Antonio's Riverwalk, and it isn't trying to be — the appeal is a small-city pace with enough going on that you're not driving to another city every weekend for something to do.",
+          },
+        ],
+      },
+      {
+        eyebrow: "HONEST TRADE-OFFS",
+        heading: "Who New Braunfels Is Not a Good Fit For",
+        body: "A fair answer has to include this section. New Braunfels is not the right move for a specific set of people, and knowing that in advance saves everyone time.",
+        bulletPoints: [
+          "Anyone who needs a major international airport 20 minutes away — the closest is San Antonio, and it's a real drive",
+          "Anyone allergic to sustained heat and humidity, or who moved specifically to escape it",
+          "Anyone who wants a large, diverse local job market without a daily highway commute to get to it",
+          "Anyone prioritizing dense, walkable urban living over small-city character, even with a car",
+        ],
+      },
+      {
+        eyebrow: "FINAL ANSWER",
+        heading: "The Verdict: Who Thrives Here",
+        body: "The people who end up genuinely happy in New Braunfels tend to share a profile: remote or hybrid workers, retirees, growing families who want more house for the money without leaving the I-35 corridor entirely, and anyone drawn to river life and a slower pace who still wants Austin and San Antonio within striking distance. If that sounds like your situation, the honest answer to \"is New Braunfels a good place to live\" is yes — and the next useful step is to look at [specific neighborhoods](/neighborhoods) rather than the city in the abstract, since the right fit here is almost always about which part of New Braunfels, not whether New Braunfels itself works.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is New Braunfels expensive to live in?",
+        answer: "New Braunfels is generally less expensive than Austin and roughly comparable to San Antonio, with the biggest savings showing up in housing cost per square foot. Property taxes run higher than the national average, which is typical for Texas, and summer utility bills reflect heavy air conditioning use. Overall, it remains a relative value compared to Austin specifically, though that gap has narrowed as more people have made the same move.",
+      },
+      {
+        question: "How far is New Braunfels from Austin and San Antonio?",
+        answer: "New Braunfels sits almost exactly between the two cities on I-35 — about 45 minutes to downtown Austin and 30 minutes to downtown San Antonio in light traffic. Rush-hour congestion on I-35, particularly toward Austin, can push those drive times significantly higher, so the practical commute depends heavily on time of day and direction.",
+      },
+      {
+        question: "Is New Braunfels a good place to retire?",
+        answer: "Yes, for many retirees. The mix of mild winters, no state income tax, a slower pace than Austin or San Antonio, and strong healthcare access in both nearby metros makes it a common retirement destination. The main trade-off is the hot, humid summer stretch from roughly June through September, which some retirees plan around with seasonal travel.",
+      },
+      {
+        question: "What is New Braunfels known for?",
+        answer: "New Braunfels is best known for river tubing on the Comal and Guadalupe, its German heritage and Wurstfest celebration, Gruene Hall (one of the oldest continually operating dance halls in Texas), and a walkable historic downtown around the Main Plaza. It has also become known more recently as a fast-growing relocation destination for people leaving Austin and San Antonio.",
+      },
+      {
+        question: "Is New Braunfels safe?",
+        answer: "New Braunfels generally reports lower crime rates than the larger neighboring metros, which is part of its appeal for families and retirees. As with any city, safety varies by specific neighborhood, and it's worth reviewing current crime data for the specific area you're considering rather than relying on the city's overall reputation alone.",
+      },
+      {
+        question: "What is the best time of year to move to New Braunfels?",
+        answer: "Late fall through early spring — roughly October through April — is the most comfortable window for house hunting, moving, and getting oriented before summer heat sets in. It also tends to be a slightly less competitive window in the housing market than peak spring and early summer buying season.",
+      },
+    ],
+  },
+  {
+    slug: "how-much-house-can-you-afford-new-braunfels",
+    eyebrow: "BUYER GUIDE",
+    title: "How Much House Can You Afford in New Braunfels? A 2026 Affordability Guide",
+    dek: "Before you fall in love with a listing, know your real number. Here's how lenders actually calculate what you can borrow in New Braunfels — income, debt, down payment, and the costs most budgets miss.",
+    imageSrc: "/images/website-blog-affordability-guide.webp",
+    imageAlt: "A couple reviewing mortgage paperwork and a laptop showing a budget spreadsheet at a kitchen table with warm morning light.",
+    category: "Buyer Guide",
+    publishDate: "August 17, 2026",
+    isNew: true,
+    intro: "The question almost every New Braunfels buyer asks before they ask anything else is some version of \"how much house can I actually afford?\" It's the right question, and it deserves a clear answer before you tour a single home. Affordability isn't just your maximum loan approval — it's the number that still leaves room for property taxes, insurance, maintenance, and the rest of your life. Here's how lenders actually calculate it, what the 2026 rate environment does to your budget, and what your number realistically buys in this market.",
+    sections: [
+      {
+        eyebrow: "THE QUICK ANSWER",
+        heading: "A Simple Affordability Rule of Thumb",
+        body: "Most lenders still use some version of the 28/36 rule as a starting point: your housing payment — principal, interest, taxes, and insurance — should stay under about 28 percent of your gross monthly income, and your total debt payments, housing included, should stay under about 36 percent. It's a rule of thumb, not a hard cap, and actual approval depends on your full financial picture, but it's a fast way to sanity-check a price range before you get deep into the process.",
+        bulletPoints: [
+          "Housing payment (principal, interest, taxes, insurance) under ~28% of gross monthly income",
+          "Total monthly debt, including housing, under ~36% of gross monthly income",
+          "These are starting points — your credit, down payment, and loan type shift the exact numbers",
+        ],
+      },
+      {
+        eyebrow: "THE LENDER'S MATH",
+        heading: "How Lenders Actually Calculate What You Can Borrow",
+        body: "Loan approval comes down to a formal version of the rule of thumb above, applied against your documented income, debts, credit, and down payment — not a guess or a round number pulled from a home search app.",
+        subsections: [
+          {
+            heading: "Debt-to-Income Ratio, Explained",
+            body: "Your debt-to-income ratio, or DTI, is every recurring monthly debt payment — car loans, student loans, minimum credit card payments, and your future mortgage payment — divided by your gross monthly income. Most conventional loans want your back-end DTI at or below 43 to 45 percent, though some programs allow more with compensating factors like a strong credit score or larger down payment. A buyer with significant existing debt will qualify for meaningfully less home than a buyer with the same income and no debt.",
+          },
+          {
+            heading: "Why Your Credit Score Changes the Math",
+            body: "Credit score doesn't just affect whether you're approved — it directly affects the interest rate you're offered, which changes your maximum purchase price at a given monthly payment. A buyer with a 780 credit score and a buyer with a 660 credit score can have the same income and qualify for meaningfully different loan amounts, purely because of the rate difference. If your score has room to improve, even a few months of focused work before applying can translate into real purchasing power.",
+          },
+        ],
+      },
+      {
+        eyebrow: "THE RATE ENVIRONMENT",
+        heading: "The 2026 Rate Environment and What It Does to Your Budget",
+        body: "Mortgage rates move, and any specific number printed today will be outdated by the time you're reading this. What matters is understanding the relationship between rate and purchasing power, so you can react to whatever the current number actually is when you talk to a lender.",
+        subsections: [
+          {
+            heading: "Every Half-Point Matters More Than You'd Think",
+            body: "A half-percentage-point change in your interest rate shifts your monthly payment on a typical New Braunfels home price by roughly $100 to $150 — which, run in reverse, means your maximum purchase price at a fixed monthly budget can move by $20,000 to $30,000 for every half point of rate movement. This is why getting an accurate, current rate from a lender matters more than reading a national rate headline from a few months ago.",
+          },
+          {
+            heading: "Fixed vs. Adjustable in Today's Market",
+            body: "Most New Braunfels buyers use a 30-year fixed loan for the predictability, but adjustable-rate options can make sense for buyers who know they'll move or refinance within five to seven years, since the initial rate is often lower. This is a conversation for a lender who can model both scenarios against your specific plans, not a decision to make from a blog post.",
+          },
+        ],
+      },
+      {
+        eyebrow: "THE DOWN PAYMENT",
+        heading: "Down Payment Scenarios: 5%, 10%, and 20%",
+        body: "Your down payment size affects both your monthly payment and whether you're paying private mortgage insurance, or PMI, on top of it.",
+        subsections: [
+          {
+            heading: "Below 20% Down Means PMI",
+            body: "Putting down less than 20 percent on a conventional loan typically means paying PMI, an added monthly cost that protects the lender, not you, until you build enough equity to remove it. It's not a reason to avoid a low-down-payment purchase — it's a real cost that belongs in your monthly math from the start.",
+          },
+          {
+            heading: "Down Payment Assistance Is Real in Texas",
+            body: "First-time buyers in Texas have access to real down payment assistance programs that can meaningfully change what's possible with less cash up front. The specific programs — including TSAHC and TDHCA — are covered in detail in the [First-Time Homebuyer Guide](/blog/first-time-homebuyer-new-braunfels), and they're worth exploring before assuming 20 percent down is required.",
+          },
+        ],
+      },
+      {
+        eyebrow: "IN THIS MARKET",
+        heading: "What Your Budget Actually Buys in New Braunfels Right Now",
+        body: "Affordability math is only useful once it connects to real listings. For a concrete, current sense of what specific price points actually get you — square footage, neighborhoods, lot size, age of construction — see [What $400K, $500K, and $600K Buys in New Braunfels](/blog/what-400k-500k-600k-buys-new-braunfels). Running your calculated budget against that guide is the fastest way to know whether your number and your expectations are aligned before you start touring homes.",
+      },
+      {
+        eyebrow: "BEYOND THE MORTGAGE",
+        heading: "The Costs Beyond the Mortgage Payment",
+        body: "A common affordability mistake is calculating principal and interest only, then getting surprised by everything else layered on top.",
+        subsections: [
+          {
+            heading: "Property Taxes Are a Bigger Line Item in Texas",
+            body: "Texas trades no state income tax for property taxes that run above the national average, and that number needs to be in your monthly budget from the start, not treated as a rounding error. The full breakdown of how this works in Comal County, including homestead exemptions, is in the [New Braunfels Property Tax Guide](/blog/new-braunfels-property-tax-guide).",
+          },
+          {
+            heading: "Insurance, HOA Dues, and Closing Costs",
+            body: "Homeowner's insurance in this region has risen with hail and wind exposure, master-planned communities carry HOA dues that vary widely by neighborhood, and closing costs typically run several thousand dollars on top of your down payment. The full breakdown of what buyers actually pay at closing is covered in [Closing Costs in Texas](/blog/closing-costs-new-braunfels-texas).",
+          },
+        ],
+      },
+      {
+        eyebrow: "THE FIRST REAL STEP",
+        heading: "Get Pre-Approved Before You Fall in Love With a Listing",
+        body: "Everything above is planning math. The number that actually matters is the one a lender gives you in writing after reviewing your real income, debt, and credit — not an estimate from a mortgage calculator. Getting [pre-approved before you do anything else](/blog/first-time-homebuyer-new-braunfels#get-pre-approved-before-you-do-anything-else) turns this from theoretical math into a real, usable budget, and it's the step that lets you move confidently once the right home in [New Braunfels](/buying-a-home-in-new-braunfels) shows up.",
+      },
+    ],
+    faqs: [
+      {
+        question: "How much income do I need to buy a $400,000 home in Texas?",
+        answer: "Using the 28/36 rule as a general guide, a buyer would typically need gross household income in the range of $95,000 to $110,000 to comfortably afford a $400,000 home in New Braunfels, depending on the interest rate, down payment, property tax rate, insurance cost, and existing debt. This is a planning estimate, not a loan approval — a lender will calculate your exact number based on your full financial picture.",
+      },
+      {
+        question: "What is a good debt-to-income ratio for a mortgage?",
+        answer: "Most lenders prefer a back-end debt-to-income ratio — total monthly debt payments including the new mortgage, divided by gross monthly income — at or below 43 to 45 percent, with some programs allowing higher ratios for well-qualified borrowers. A lower DTI generally means more loan options and better terms, since it signals more room in your budget to absorb the payment.",
+      },
+      {
+        question: "Do I need 20% down to buy a home in New Braunfels?",
+        answer: "No. Conventional loans commonly allow down payments as low as 3 to 5 percent, and FHA loans allow as little as 3.5 percent, though anything below 20 percent typically requires private mortgage insurance. Texas also has real down payment assistance programs for first-time buyers that can reduce the cash needed up front.",
+      },
+      {
+        question: "How do Texas property taxes affect how much house I can afford?",
+        answer: "Texas property taxes run above the national average, and since they're included in most lenders' housing-payment calculations, a higher tax rate directly reduces the loan amount you'll qualify for at a given income. Comal County's specific rates and how homestead exemptions reduce the taxable value are covered in the New Braunfels Property Tax Guide.",
+      },
+      {
+        question: "What's the difference between pre-qualification and pre-approval?",
+        answer: "Pre-qualification is a quick, informal estimate based on information you self-report, with no verification. Pre-approval involves a lender actually verifying your income, assets, credit, and debt, and results in a conditional commitment in writing. Pre-approval carries real weight with sellers and gives you an accurate number; pre-qualification is a rough starting estimate at best.",
+      },
+      {
+        question: "Should I get pre-approved before I start house hunting?",
+        answer: "Yes. Pre-approval establishes your real, lender-verified budget before you start touring homes, which prevents wasted time looking above your range and strengthens any offer you eventually make, since sellers take pre-approved buyers more seriously than buyers with no financing in place.",
+      },
+    ],
+  },
+  {
     slug: "texas-option-period-earnest-money-guide",
     eyebrow: "BUYER GUIDE",
     title: "Texas Option Period and Earnest Money: What Every New Braunfels Buyer Needs to Know",
@@ -81,7 +317,6 @@ export const journalPosts: JournalPost[] = [
     imageAlt: "Texas real estate documents, a house key, and a pen laid on a warm wooden desk in soft natural window light.",
     category: "Buyer Guide",
     publishDate: "August 13, 2026",
-    isNew: true,
     intro: "Buyers coming to New Braunfels from California, Colorado, or the Northeast often assume Texas real estate works the way it worked at home — you go under contract, order an inspection, negotiate repairs, and close. That is roughly accurate, but Texas has one structural difference that most other states do not use: the option period. It is a defined window during which you have an unrestricted, contractual right to back out of the deal for any reason, for the cost of a fee that is entirely separate from your earnest money deposit. The distinction between the option fee and the earnest money is one of the most misunderstood parts of a Texas purchase contract, and getting it wrong has real financial consequences.",
     sections: [
       {
@@ -216,7 +451,6 @@ export const journalPosts: JournalPost[] = [
     imageAlt: "Historic Main Plaza area of downtown New Braunfels with mature oak trees, a limestone church, and traditional Hill Country architecture on a clear Texas afternoon.",
     category: "Neighborhood Guide",
     publishDate: "August 9, 2026",
-    isNew: true,
     intro: "Most neighborhood coverage for New Braunfels focuses on the master-planned communities — Veramendi, Vintage Oaks, River Chase — because that is where the majority of new inventory lives and where most incoming buyers find themselves looking. But there is another part of New Braunfels that draws a specific and often more deeply local buyer: the historic downtown core. Centered around the Main Plaza and stretching toward Landa Park, bounded on one side by the Comal River, these are neighborhoods where streets were platted in the 1840s, where homes carry an architectural character that no new development can replicate, and where the appeal is fundamentally different from anything built in the last twenty years. If you are drawn to character over amenity centers, to walkability over gated entries, to a house with a story rather than one with a builder warranty — this is the part of New Braunfels worth understanding.",
     sections: [
       {
