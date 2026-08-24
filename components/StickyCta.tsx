@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { site } from "@/lib/site";
 
@@ -54,7 +54,6 @@ const SHOW_AFTER_PX = 480;
 export function StickyCta({ variant }: { variant: Variant }) {
   const [visible, setVisible] = useState(false);
   const [dismissed, setDismissed] = useState(true);
-  const rafRef = useRef(0);
   const config = VARIANTS[variant];
 
   useEffect(() => {
@@ -65,18 +64,11 @@ export function StickyCta({ variant }: { variant: Variant }) {
     setDismissed(false);
 
     function onScroll() {
-      if (rafRef.current) return;
-      rafRef.current = requestAnimationFrame(() => {
-        setVisible(window.scrollY > SHOW_AFTER_PX);
-        rafRef.current = 0;
-      });
+      setVisible(window.scrollY > SHOW_AFTER_PX);
     }
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-      if (rafRef.current) cancelAnimationFrame(rafRef.current);
-    };
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   function dismiss() {
