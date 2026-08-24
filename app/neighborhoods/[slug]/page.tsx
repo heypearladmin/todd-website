@@ -10,6 +10,7 @@ import {
 import { site } from "@/lib/site";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { neighborhoodPlaceSchema, breadcrumbSchema, faqSchema } from "@/lib/seo/schemas";
+import { StickyCta } from "@/components/StickyCta";
 
 type Params = { slug: string };
 
@@ -472,6 +473,7 @@ export default async function NeighborhoodPage({
         </section>
       ) : null}
     </main>
+    <StickyCta variant="neighborhood" />
     </>
   );
 }
