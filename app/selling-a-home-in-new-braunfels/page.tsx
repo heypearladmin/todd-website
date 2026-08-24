@@ -3,6 +3,7 @@ import Link from "next/link";
 import { site } from "@/lib/site";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { breadcrumbSchema, faqSchema, howToSchema, servicePageSchema } from "@/lib/seo/schemas";
+import { StickyCta } from "@/components/StickyCta";
 
 export const metadata: Metadata = {
   title: { absolute: "Sell Your Home in New Braunfels — Todd Spencer" },
@@ -258,6 +259,29 @@ export default function SellingAHomeInNewBraunfelsPage() {
           </div>
         </section>
 
+        {/* valuation CTA */}
+        <section className="relative isolate overflow-hidden bg-paper-deep py-16 md:py-20">
+          <div aria-hidden className="paper-grain pointer-events-none absolute inset-0 opacity-60" />
+          <div className="section-wrap relative">
+            <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-center">
+              <div className="max-w-2xl">
+                <div className="flex items-center gap-3">
+                  <span className="tick" aria-hidden />
+                  <p className="eyebrow">Before you list</p>
+                </div>
+                <h2 className="display-md mt-5 text-ink">Find out what your home is worth.</h2>
+                <p className="mt-4 text-[1.0rem] leading-[1.75] text-ink/70">
+                  A free, no-obligation valuation grounded in real New Braunfels comps — not a Zillow guess.
+                </p>
+              </div>
+              <Link href="/new-braunfels-home-valuation#valuation-form" className="btn-primary flex-shrink-0">
+                Find out what your home is worth
+                <span aria-hidden className="text-base">→</span>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* guides */}
         <section className="section-wrap border-t border-ink/[0.07] py-20 md:py-28">
           <div className="flex items-center gap-3">
@@ -378,6 +402,7 @@ export default function SellingAHomeInNewBraunfelsPage() {
           </div>
         </section>
       </main>
+      <StickyCta variant="seller" />
     </>
   );
 }

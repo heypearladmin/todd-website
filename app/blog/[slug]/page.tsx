@@ -327,6 +327,31 @@ export default async function BlogArticlePage({
                     </section>
                   )}
 
+                  {/* PDF download */}
+                  {journalPost.pdfSrc && (
+                    <section className="border-t border-ink/[0.08] pt-10">
+                      <div className="flex flex-col items-start gap-5 rounded-[24px] border border-ink/[0.08] bg-ink/[0.02] p-8 shadow-surface sm:flex-row sm:items-center sm:justify-between">
+                        <div>
+                          <p className="caption !text-ink/50">Take it with you</p>
+                          <p className="mt-2 text-[1.0625rem] font-medium text-ink">
+                            Download this guide as a PDF.
+                          </p>
+                          <p className="mt-1 text-[0.9375rem] leading-[1.6] text-ink/65">
+                            Same guide, saved for later — no form, no email required.
+                          </p>
+                        </div>
+                        <a
+                          href={journalPost.pdfSrc}
+                          download
+                          className="btn-primary flex-shrink-0"
+                        >
+                          Download PDF
+                          <span aria-hidden className="text-base">↓</span>
+                        </a>
+                      </div>
+                    </section>
+                  )}
+
                   {/* CTA */}
                   <ArticleCTA category={article.category} />
                 </>

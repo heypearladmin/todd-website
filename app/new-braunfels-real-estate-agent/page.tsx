@@ -3,6 +3,7 @@ import Link from "next/link";
 import { site } from "@/lib/site";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { breadcrumbSchema, faqSchema, realEstateAgentSchema, servicePageSchema } from "@/lib/seo/schemas";
+import { StickyCta } from "@/components/StickyCta";
 
 export const metadata: Metadata = {
   title: { absolute: "New Braunfels Real Estate Agent — Buyer & Seller Representation | Todd Spencer" },
@@ -319,6 +320,7 @@ export default function NewBraunfelsRealEstateAgentPage() {
           </div>
         </section>
       </main>
+      <StickyCta variant="general" />
     </>
   );
 }

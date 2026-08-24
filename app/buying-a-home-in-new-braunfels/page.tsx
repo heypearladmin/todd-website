@@ -3,6 +3,7 @@ import Link from "next/link";
 import { site } from "@/lib/site";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { breadcrumbSchema, faqSchema, howToSchema, servicePageSchema } from "@/lib/seo/schemas";
+import { StickyCta } from "@/components/StickyCta";
 
 export const metadata: Metadata = {
   title: { absolute: "Buying a Home in New Braunfels, TX — Todd Spencer" },
@@ -384,6 +385,7 @@ export default function BuyingAHomeInNewBraunfelsPage() {
           </div>
         </section>
       </main>
+      <StickyCta variant="buyer" />
     </>
   );
 }

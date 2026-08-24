@@ -3,6 +3,8 @@ import Link from "next/link";
 import { site } from "@/lib/site";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { breadcrumbSchema, faqSchema, howToSchema, servicePageSchema } from "@/lib/seo/schemas";
+import { ValuationForm } from "@/components/ValuationForm";
+import { StickyCta } from "@/components/StickyCta";
 
 export const metadata: Metadata = {
   title: { absolute: "What's My New Braunfels Home Worth? Free CMA by Todd Spencer" },
@@ -170,7 +172,7 @@ export default function NewBraunfelsHomeValuationPage() {
               local data, recent sales, and firsthand knowledge of New Braunfels neighborhoods.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-5">
-              <Link href={site.contactPath} className="btn-primary">
+              <Link href="#valuation-form" className="btn-primary">
                 Request a valuation
                 <span aria-hidden className="text-base">→</span>
               </Link>
@@ -291,12 +293,12 @@ export default function NewBraunfelsHomeValuationPage() {
           </div>
         </section>
 
-        {/* cta */}
-        <section className="relative isolate overflow-hidden bg-paper-deep py-20 md:py-28">
+        {/* valuation form */}
+        <section id="valuation-form" className="relative isolate overflow-hidden bg-paper-deep py-20 md:py-28 scroll-mt-24">
           <div aria-hidden className="paper-grain pointer-events-none absolute inset-0 opacity-60" />
           <div className="section-wrap relative">
-            <div className="grid gap-y-8 lg:grid-cols-12 lg:items-end">
-              <div className="lg:col-span-8">
+            <div className="grid gap-x-16 gap-y-12 lg:grid-cols-12">
+              <div className="lg:col-span-5">
                 <div className="flex items-center gap-3">
                   <span className="tick" aria-hidden />
                   <p className="eyebrow">Free, no-obligation</p>
@@ -304,27 +306,27 @@ export default function NewBraunfelsHomeValuationPage() {
                 <h2 className="display-lg mt-6 text-ink">
                   Ready to find out what your New Braunfels home is worth?
                 </h2>
-                <p className="dek mt-6 max-w-[42rem]">
-                  Reach out to Todd Spencer for a free, no-obligation home valuation. Todd will get
-                  back to you personally — no automated follow-up, no pressure.
+                <p className="dek mt-6 max-w-[36rem]">
+                  Share a few details and Todd will follow up personally with a real, local
+                  valuation — no automated follow-up, no pressure. Prefer to talk first?
                 </p>
-              </div>
-              <div className="flex flex-wrap items-center gap-5 lg:col-span-4 lg:justify-end">
-                <Link href={site.contactPath} className="btn-primary">
-                  Request a valuation
-                  <span aria-hidden className="text-base">→</span>
-                </Link>
                 <a
                   href={site.phoneHref}
-                  className="editorial-link text-sm font-medium tracking-wide"
+                  className="mt-6 inline-flex items-center gap-2.5 text-sm font-medium text-primary transition-colors duration-300 ease-editorial hover:text-copper"
                 >
-                  {site.phone}
+                  Call {site.phone}
                 </a>
+              </div>
+              <div className="lg:col-span-7 lg:col-start-6">
+                <div className="rounded-[24px] border border-ink/[0.08] bg-paper p-7 shadow-surface md:p-9">
+                  <ValuationForm />
+                </div>
               </div>
             </div>
           </div>
         </section>
       </main>
+      <StickyCta variant="seller" />
     </>
   );
 }
