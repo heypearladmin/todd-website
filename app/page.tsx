@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 import { HomeExplore } from "@/components/home/HomeExplore";
 import { HomeFinalCta } from "@/components/home/HomeFinalCta";
 import { HomeHero } from "@/components/home/HomeHero";
@@ -15,6 +17,7 @@ import {
   faqSchema,
 } from "@/lib/seo/schemas";
 import { site } from "@/lib/site";
+import { journalPosts } from "@/lib/home-content";
 
 export const metadata: Metadata = {
   title: { absolute: "New Braunfels Real Estate Agent — Todd Spencer" },
@@ -22,6 +25,20 @@ export const metadata: Metadata = {
     "Todd Spencer is New Braunfels's trusted local real estate agent. Buyers, sellers, and relocators — 120+ five-star reviews, deep local knowledge, no pressure.",
   alternates: {
     canonical: site.websiteUrl,
+  },
+  openGraph: {
+    title: "New Braunfels Real Estate Agent — Todd Spencer",
+    description:
+      "Todd Spencer is New Braunfels's trusted local real estate agent. Buyers, sellers, and relocators — 120+ five-star reviews, deep local knowledge, no pressure.",
+    url: site.websiteUrl,
+    type: "website",
+    images: [{ url: site.ogImage, width: 1200, height: 630, alt: site.agentPortraitAlt }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "New Braunfels Real Estate Agent — Todd Spencer",
+    description: "Todd Spencer is New Braunfels's trusted local real estate agent. 120+ five-star reviews, deep local knowledge, no pressure.",
+    images: [site.ogImage],
   },
 };
 
@@ -58,6 +75,8 @@ const homepageFaqs = [
   },
 ];
 
+const latestPosts = journalPosts.filter((p) => p.isNew).slice(0, 2);
+
 export default function HomePage() {
   return (
     <>
@@ -73,6 +92,52 @@ export default function HomePage() {
         <HomeNeighborhoods />
         <HomeSocialProof />
         <HomeMarket />
+
+        {/* Latest field notes */}
+        {latestPosts.length > 0 && (
+          <section className="section-wrap py-20 md:py-28 lg:py-32">
+            <div className="flex items-center gap-3">
+              <span className="tick" aria-hidden />
+              <p className="eyebrow">Fresh this week</p>
+            </div>
+            <h2 className="display-lg mt-6 text-ink">Latest from the field notes.</h2>
+            <div className="mt-10 grid grid-cols-1 gap-7 md:grid-cols-2 lg:gap-8">
+              {latestPosts.map((post) => (
+                <article key={post.slug} className="group">
+                  <Link href={`/blog/${post.slug}`} className="block">
+                    <div className="relative aspect-[16/10] w-full overflow-hidden rounded-[24px] bg-ink/[0.04] shadow-surface ring-1 ring-ink/[0.06] transition-shadow duration-cinema ease-cinema group-hover:shadow-surface-hover">
+                      <Image
+                        src={post.imageSrc}
+                        alt={post.imageAlt}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        className="object-cover transition-transform duration-cinema ease-cinema group-hover:scale-[1.04]"
+                      />
+                      <div
+                        aria-hidden
+                        className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/45 via-ink/[0.08] to-transparent"
+                      />
+                      <div className="absolute left-6 top-6 flex items-center gap-2">
+                        <span className="caption rounded-full bg-ink/60 px-3 py-1 !text-paper backdrop-blur-sm">{post.eyebrow}</span>
+                        <span className="rounded-full bg-primary px-2.5 py-0.5 text-[0.6875rem] font-semibold uppercase tracking-[0.12em] text-paper">
+                          New
+                        </span>
+                      </div>
+                    </div>
+                    <div className="mt-6">
+                      <h3 className="display-sm text-ink">{post.title}</h3>
+                      <p className="mt-3 text-[0.9375rem] leading-[1.7] text-ink/65">{post.dek}</p>
+                      <span className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-primary transition-colors duration-cinema ease-cinema group-hover:text-copper">
+                        Continue reading
+                        <span aria-hidden className="block h-px w-8 bg-primary transition-all duration-cinema ease-cinema group-hover:w-12 group-hover:bg-copper" />
+                      </span>
+                    </div>
+                  </Link>
+                </article>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* FAQ section */}
         <section className="section-wrap py-20 md:py-28 lg:py-32">

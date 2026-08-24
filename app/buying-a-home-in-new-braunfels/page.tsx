@@ -272,6 +272,7 @@ export default function BuyingAHomeInNewBraunfelsPage() {
           <h2 className="display-lg mt-6 text-ink">Buyer guides worth reading before you make an offer.</h2>
           <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {[
+              { href: "/blog/how-much-house-can-you-afford-new-braunfels", label: "How Much House Can You Afford?", dek: "How lenders calculate what you can borrow — income, debt, and down payment." },
               { href: "/blog/first-time-homebuyer-new-braunfels", label: "First-Time Homebuyer Guide", dek: "Pre-approval, down payment assistance, and the full offer-to-closing timeline." },
               { href: "/blog/first-time-homebuyer-new-braunfels#get-pre-approved-before-you-do-anything-else", label: "Getting Pre-Approved", dek: "Why pre-approval — not pre-qualification — is the real first step." },
               { href: "/blog/winning-offer-new-braunfels-texas", label: "Making a Winning Offer", dek: "Earnest money, option periods, and what actually influences sellers." },

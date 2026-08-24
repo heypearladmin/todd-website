@@ -8,6 +8,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://todd-spencer.com/idx-search",
   },
+  // Not linked from nav and IDX Broker integration is not yet approved —
+  // keep this out of Google's index until it's live. This does not affect
+  // IDX Broker's own dynamic-wrapper fetch of this page (see comment below).
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 /*

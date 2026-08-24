@@ -158,7 +158,7 @@ export const journalPosts: JournalPost[] = [
       {
         eyebrow: "FINAL ANSWER",
         heading: "The Verdict: Who Thrives Here",
-        body: "The people who end up genuinely happy in New Braunfels tend to share a profile: remote or hybrid workers, retirees, growing families who want more house for the money without leaving the I-35 corridor entirely, and anyone drawn to river life and a slower pace who still wants Austin and San Antonio within striking distance. If that sounds like your situation, the honest answer to \"is New Braunfels a good place to live\" is yes — and the next useful step is to look at [specific neighborhoods](/neighborhoods) rather than the city in the abstract, since the right fit here is almost always about which part of New Braunfels, not whether New Braunfels itself works.",
+        body: "The people who end up genuinely happy in New Braunfels tend to share a profile: remote or hybrid workers, retirees, growing families who want more house for the money without leaving the I-35 corridor entirely, and anyone drawn to river life and a slower pace who still wants Austin and San Antonio within striking distance. If that sounds like your situation, the honest answer to \"is New Braunfels a good place to live\" is yes — and the next useful step is to look at [specific neighborhoods](/neighborhoods) rather than the city in the abstract, since the right fit here is almost always about which part of New Braunfels, not whether New Braunfels itself works. If you're actively planning the move, [Todd's relocation guide](/relocating-to-new-braunfels) walks through the practical next steps — remote tours, timing, and how to search from out of state.",
       },
     ],
     faqs: [
@@ -721,7 +721,7 @@ export const journalPosts: JournalPost[] = [
     dek: "Dog parks, river trails, and the spots where your dog gets as good a Saturday as you do. A relocating pet owner's guide to New Braunfels.",
     imageSrc: "/images/blog-pet-friendly-nb.webp",
     imageAlt: "Happy dog wading in crystal-clear spring-fed river water with cypress trees lining the bank in New Braunfels.",
-    category: "Relocation Guide",
+    category: "Relocation",
     publishDate: "August 2, 2026",
     intro: "One of the first questions families with dogs ask when considering a move to New Braunfels is whether the city will work for their animals. The honest answer is that it works exceptionally well — better than most Texas cities of comparable size. The spring-fed rivers are dog-friendly in the right spots, the parks are genuinely large, the trail system is growing, and the culture around dogs in public spaces is relaxed and welcoming. This guide covers what pet owners actually need to know before and after the move.",
     sections: [
@@ -5528,7 +5528,7 @@ export const journalPosts: JournalPost[] = [
     dek: "Guadalupe River access, gated entry, trails, and real price ranges — what daily life actually looks like in River Chase, one of New Braunfels' most sought-after communities.",
     imageSrc: "/images/website-blog-river-chase-neighborhood.webp",
     imageAlt: "Aerial editorial photograph of River Chase neighborhood in New Braunfels with Hill Country terrain and oak canopy.",
-    category: "Neighborhoods",
+    category: "Neighborhood Guide",
     publishDate: "March 21, 2026",
     intro: "River Chase, a vibrant community in New Braunfels, offers a unique blend of scenic beauty, residential harmony, and thriving real estate opportunities. This guide covers everything from current market conditions to the lifestyle River Chase fosters, with insights from someone who knows the neighborhood well.",
     sections: [
@@ -5615,7 +5615,7 @@ export const journalPosts: JournalPost[] = [
     dek: "Guadalupe River access, Hill Country trails, competitive real estate, and a community that genuinely knows its neighbors. A close look at what sets River Chase apart.",
     imageSrc: "/images/website-blog-what-makes-river-chase-unique.webp",
     imageAlt: "Scenic view of River Chase green space and natural landscape in New Braunfels Hill Country.",
-    category: "Neighborhoods",
+    category: "Neighborhood Guide",
     publishDate: "March 18, 2026",
     intro: "Nestled in the landscape of New Braunfels, River Chase stands out as a community that combines natural beauty with modern living. Whether you are a relocating buyer, a retiree seeking tranquility, or a family looking for a vibrant lifestyle, River Chase caters to diverse needs and offers a rich tapestry of experiences. Here is a close look at what makes this neighborhood more than just a place to live.",
     sections: [

@@ -290,6 +290,30 @@ export default function RelocatingToNewBraunfelsPage() {
           </div>
         </section>
 
+        {/* guides */}
+        <section className="section-wrap border-t border-ink/[0.07] py-20 md:py-28">
+          <div className="flex items-center gap-3">
+            <span className="tick" aria-hidden />
+            <p className="eyebrow">Go deeper</p>
+          </div>
+          <h2 className="display-lg mt-6 text-ink">Guides worth reading before you move.</h2>
+          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {[
+              { href: "/blog/is-new-braunfels-a-good-place-to-live", label: "Is New Braunfels a Good Place to Live?", dek: "An honest look at cost, commute, weather, and who the city actually fits." },
+              { href: "/blog/moving-to-new-braunfels-relocation-guide", label: "Complete Relocation Guide", dek: "Everything to plan around before your move — start to finish." },
+              { href: "/blog/remote-workers-guide-new-braunfels", label: "Remote Worker's Guide", dek: "Internet, coworking, and what working from home here actually looks like." },
+              { href: "/blog/retiring-to-new-braunfels", label: "Retiring to New Braunfels", dek: "Real numbers on healthcare, taxes, and pace of life for retirees." },
+              { href: "/blog/new-braunfels-commute-guide", label: "Commute Guide", dek: "Realistic drive times to Austin and San Antonio, by time of day." },
+              { href: "/blog/new-braunfels-relocation-welcome-packet", label: "Relocation Welcome Packet", dek: "The practical first-90-days checklist for newcomers." },
+            ].map((g) => (
+              <Link key={g.href} href={g.href} className="group block rounded-[20px] border border-ink/[0.08] bg-paper p-6 transition-shadow duration-300 hover:shadow-lift">
+                <h3 className="text-[0.9375rem] font-semibold text-ink transition-colors duration-200 group-hover:text-primary">{g.label}</h3>
+                <p className="mt-2 text-[0.8125rem] leading-relaxed text-ink/60">{g.dek}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         {/* faqs */}
         <section className="section-wrap border-t border-ink/[0.07] py-20 md:py-28">
           <div className="flex items-center gap-3">

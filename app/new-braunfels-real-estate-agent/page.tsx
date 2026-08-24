@@ -5,14 +5,14 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { breadcrumbSchema, faqSchema, realEstateAgentSchema, servicePageSchema } from "@/lib/seo/schemas";
 
 export const metadata: Metadata = {
-  title: { absolute: "New Braunfels Real Estate Agent — Todd Spencer" },
+  title: { absolute: "New Braunfels Real Estate Agent — Buyer & Seller Representation | Todd Spencer" },
   description:
     "Todd Spencer is a full-service New Braunfels real estate agent with eXp Realty. 120+ five-star reviews. Buyers, sellers, and relocators welcome.",
   alternates: {
     canonical: `${site.websiteUrl}/new-braunfels-real-estate-agent`,
   },
   openGraph: {
-    title: "New Braunfels Real Estate Agent — Todd Spencer",
+    title: "New Braunfels Real Estate Agent — Buyer & Seller Representation | Todd Spencer",
     description:
       "Full-service real estate agent in New Braunfels, TX. Todd Spencer helps buyers and sellers navigate Comal County with local expertise and 120+ reviews.",
     url: `${site.websiteUrl}/new-braunfels-real-estate-agent`,
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "New Braunfels Real Estate Agent — Todd Spencer",
+    title: "New Braunfels Real Estate Agent — Buyer & Seller Representation | Todd Spencer",
     description: "New Braunfels real estate agent Todd Spencer — eXp Realty. 120+ five-star reviews. Buyers and sellers welcome.",
     images: ["https://todd-spencer.com/images/og-todd-spencer-new-braunfels.jpg"],
   },

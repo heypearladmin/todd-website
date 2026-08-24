@@ -6,6 +6,8 @@ const CATEGORY_SERVICE_PATH: Record<string, { href: string; label: string }> = {
   "Seller Guide": { href: "/selling-a-home-in-new-braunfels", label: "Get a home valuation" },
   "Relocation Guide": { href: "/relocating-to-new-braunfels", label: "Plan your relocation" },
   Relocation: { href: "/relocating-to-new-braunfels", label: "Plan your relocation" },
+  "Neighborhood Guide": { href: "/neighborhoods", label: "Browse neighborhoods" },
+  Investment: { href: "/new-braunfels-home-valuation", label: "Get a property valuation" },
 };
 
 export function ArticleCTA({ category }: { category?: string }) {
