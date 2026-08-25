@@ -4,7 +4,6 @@ import { site } from "@/lib/site";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { breadcrumbSchema, faqSchema, howToSchema, servicePageSchema } from "@/lib/seo/schemas";
 import { ValuationForm } from "@/components/ValuationForm";
-import { StickyCta } from "@/components/StickyCta";
 
 export const metadata: Metadata = {
   title: { absolute: "What's My New Braunfels Home Worth? Free CMA by Todd Spencer" },
@@ -326,7 +325,6 @@ export default function NewBraunfelsHomeValuationPage() {
           </div>
         </section>
       </main>
-      <StickyCta variant="seller" />
     </>
   );
 }

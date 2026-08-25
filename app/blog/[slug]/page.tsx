@@ -18,16 +18,6 @@ import { FAQCards } from "@/components/blog/FAQCards";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
 import { ArticleCTA } from "@/components/blog/ArticleCTA";
 import { RichText } from "@/components/blog/RichText";
-import { StickyCta } from "@/components/StickyCta";
-
-const CATEGORY_STICKY_VARIANT: Record<string, "buyer" | "seller" | "relocation" | "neighborhood"> = {
-  "Buyer Guide": "buyer",
-  "Seller Guide": "seller",
-  "Relocation Guide": "relocation",
-  Relocation: "relocation",
-  "Neighborhood Guide": "neighborhood",
-  Investment: "seller",
-};
 
 function parsePublishDate(date?: string): string {
   if (!date) return "2026-01-07";
@@ -393,7 +383,6 @@ export default async function BlogArticlePage({
           </div>
         </section>
       </main>
-      <StickyCta variant={CATEGORY_STICKY_VARIANT[article.category] ?? "general"} />
     </>
   );
 }

@@ -1,8 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { site } from "@/lib/site";
+
+const LABEL_DISMISS_KEY = "quickContactLabelDismissed";
 
 function PhoneIcon({ className }: { className?: string }) {
   return (
@@ -78,6 +80,18 @@ const ACTIONS = [
 
 export function QuickContactFab() {
   const [open, setOpen] = useState(false);
+  const [labelDismissed, setLabelDismissed] = useState(true);
+
+  useEffect(() => {
+    if (sessionStorage.getItem(LABEL_DISMISS_KEY) !== "1") {
+      setLabelDismissed(false);
+    }
+  }, []);
+
+  function dismissLabel() {
+    setLabelDismissed(true);
+    sessionStorage.setItem(LABEL_DISMISS_KEY, "1");
+  }
 
   return (
     <div className="fixed bottom-[92px] right-4 z-40 flex flex-col items-end gap-3 md:bottom-24 md:right-6">
@@ -133,15 +147,37 @@ export function QuickContactFab() {
         </div>
       )}
 
-      <button
-        type="button"
-        onClick={() => setOpen((v) => !v)}
-        aria-label={open ? "Close contact options" : "Contact options"}
-        aria-expanded={open}
-        className="flex h-14 w-14 items-center justify-center rounded-full bg-primary text-paper shadow-surface-hover transition-transform duration-200 ease-editorial hover:scale-105 motion-reduce:transition-none"
-      >
-        {open ? <CloseIcon className="h-5 w-5" /> : <PhoneIcon className="h-6 w-6" />}
-      </button>
+      <div className="flex items-center gap-3">
+        {!open && !labelDismissed && (
+          <div className="flex items-center gap-1 rounded-full border border-ink/[0.08] bg-paper py-1.5 pl-4 pr-1.5 shadow-surface">
+            <button
+              type="button"
+              onClick={() => setOpen(true)}
+              className="whitespace-nowrap text-[0.875rem] font-medium text-ink"
+            >
+              Have Questions? Talk to Todd
+            </button>
+            <button
+              type="button"
+              onClick={dismissLabel}
+              aria-label="Dismiss"
+              className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full text-ink/40 transition-colors duration-200 hover:bg-ink/[0.06] hover:text-ink/70"
+            >
+              <CloseIcon className="h-3 w-3" />
+            </button>
+          </div>
+        )}
+
+        <button
+          type="button"
+          onClick={() => setOpen((v) => !v)}
+          aria-label={open ? "Close contact options" : "Contact options"}
+          aria-expanded={open}
+          className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full bg-primary text-paper shadow-surface-hover transition-transform duration-200 ease-editorial hover:scale-105 motion-reduce:transition-none"
+        >
+          {open ? <CloseIcon className="h-5 w-5" /> : <PhoneIcon className="h-6 w-6" />}
+        </button>
+      </div>
     </div>
   );
 }

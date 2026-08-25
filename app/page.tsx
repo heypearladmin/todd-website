@@ -18,7 +18,6 @@ import {
 } from "@/lib/seo/schemas";
 import { site } from "@/lib/site";
 import { journalPosts } from "@/lib/home-content";
-import { StickyCta } from "@/components/StickyCta";
 
 export const metadata: Metadata = {
   title: { absolute: "New Braunfels Real Estate Agent — Todd Spencer" },
@@ -189,7 +188,6 @@ export default function HomePage() {
 
         <HomeFinalCta />
       </main>
-      <StickyCta variant="general" />
     </>
   );
 }

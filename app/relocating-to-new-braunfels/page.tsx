@@ -3,7 +3,6 @@ import Link from "next/link";
 import { site } from "@/lib/site";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { breadcrumbSchema, faqSchema, howToSchema, servicePageSchema } from "@/lib/seo/schemas";
-import { StickyCta } from "@/components/StickyCta";
 
 export const metadata: Metadata = {
   title: "Relocating to New Braunfels, TX | Neighborhood Guide",
@@ -379,7 +378,6 @@ export default function RelocatingToNewBraunfelsPage() {
           </div>
         </section>
       </main>
-      <StickyCta variant="relocation" />
     </>
   );
 }
