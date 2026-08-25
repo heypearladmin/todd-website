@@ -34,7 +34,12 @@ const viewAllLinks = {
 } as const;
 
 const links = [
-  { href: "/idx-search", label: "Search Homes" },
+  // TEMPORARY: IDX Broker's Dynamic Wrapper JS 404s on the newly-approved
+  // domain (todd.homesforeveryday.com/idx/wrapper-js/includeWrapper.js), so
+  // /idx-search renders blank. Link straight to their hosted search page
+  // (confirmed working) until the wrapper is republished on IDX Broker's
+  // side, then switch this back to "/idx-search".
+  { href: "https://todd.homesforeveryday.com/idx/search/advanced", label: "Search Homes", external: true },
   { href: "/explore", label: "Explore" },
   { href: site.blogPath, label: "Blog" },
   { href: site.aboutPath, label: "About" },
@@ -252,15 +257,27 @@ export function SiteHeader() {
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Primary">
           <ServicesDropdown />
           <NeighborhoodsDropdown />
-          {links.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className="text-[0.78rem] font-medium uppercase tracking-[0.22em] text-ink/70 transition-colors duration-cinema ease-cinema hover:text-primary"
-            >
-              {l.label}
-            </Link>
-          ))}
+          {links.map((l) =>
+            "external" in l && l.external ? (
+              <a
+                key={l.href}
+                href={l.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[0.78rem] font-medium uppercase tracking-[0.22em] text-ink/70 transition-colors duration-cinema ease-cinema hover:text-primary"
+              >
+                {l.label}
+              </a>
+            ) : (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="text-[0.78rem] font-medium uppercase tracking-[0.22em] text-ink/70 transition-colors duration-cinema ease-cinema hover:text-primary"
+              >
+                {l.label}
+              </Link>
+            )
+          )}
         </nav>
 
         <div className="flex items-center gap-3">
@@ -361,16 +378,29 @@ export function SiteHeader() {
             {viewAllNeighborhoods.label} →
           </Link>
 
-          {links.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              onClick={() => setMenuOpen(false)}
-              className="block rounded-2xl px-4 py-3 text-[0.95rem] font-medium text-ink/85 transition-colors duration-cinema ease-cinema hover:bg-paper-deep hover:text-primary"
-            >
-              {l.label}
-            </Link>
-          ))}
+          {links.map((l) =>
+            "external" in l && l.external ? (
+              <a
+                key={l.href}
+                href={l.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMenuOpen(false)}
+                className="block rounded-2xl px-4 py-3 text-[0.95rem] font-medium text-ink/85 transition-colors duration-cinema ease-cinema hover:bg-paper-deep hover:text-primary"
+              >
+                {l.label}
+              </a>
+            ) : (
+              <Link
+                key={l.href}
+                href={l.href}
+                onClick={() => setMenuOpen(false)}
+                className="block rounded-2xl px-4 py-3 text-[0.95rem] font-medium text-ink/85 transition-colors duration-cinema ease-cinema hover:bg-paper-deep hover:text-primary"
+              >
+                {l.label}
+              </Link>
+            )
+          )}
           <div className="mt-2 flex flex-col gap-2 border-t border-ink/[0.06] px-4 pt-4 text-[0.875rem] text-ink/70">
             <a href={site.phoneHref} className="hover:text-primary">
               {site.phone}

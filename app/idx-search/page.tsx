@@ -8,6 +8,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://todd-spencer.com/idx-search",
   },
+  // TEMPORARY: IDX Broker's Dynamic Wrapper JS 404s on the newly-approved
+  // domain (todd.homesforeveryday.com/idx/wrapper-js/includeWrapper.js), so
+  // this page renders blank right now. Not linked from nav — remove this
+  // once the wrapper is republished on IDX Broker's side and this page
+  // actually renders search results.
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 /*

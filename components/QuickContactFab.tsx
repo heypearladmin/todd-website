@@ -72,9 +72,14 @@ const ACTIONS = [
     key: "search",
     label: "Search Homes",
     sublabel: "Browse current listings",
-    href: "/idx-search",
+    // TEMPORARY: IDX Broker's Dynamic Wrapper JS 404s on the newly-approved
+    // domain, so /idx-search renders blank. Link straight to their hosted
+    // search page (confirmed working) until the wrapper is republished on
+    // IDX Broker's side, then switch this back to "/idx-search".
+    href: "https://todd.homesforeveryday.com/idx/search/advanced",
     icon: SearchIcon,
-    external: false,
+    external: true,
+    newTab: true,
   },
 ];
 
@@ -119,7 +124,7 @@ export function QuickContactFab() {
           </div>
 
           <div className="flex flex-col divide-y divide-ink/[0.06]">
-            {ACTIONS.map(({ key, label, sublabel, href, icon: Icon, external }) => {
+            {ACTIONS.map(({ key, label, sublabel, href, icon: Icon, external, newTab }) => {
               const content = (
                 <>
                   <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
@@ -134,7 +139,12 @@ export function QuickContactFab() {
               const rowClass =
                 "flex items-center gap-3 px-5 py-3.5 transition-colors duration-200 hover:bg-ink/[0.03]";
               return external ? (
-                <a key={key} href={href} className={rowClass}>
+                <a
+                  key={key}
+                  href={href}
+                  className={rowClass}
+                  {...(newTab ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                >
                   {content}
                 </a>
               ) : (
