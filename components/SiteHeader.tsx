@@ -34,6 +34,7 @@ const viewAllLinks = {
 } as const;
 
 const links = [
+  { href: "/idx-search", label: "Search Homes" },
   { href: "/explore", label: "Explore" },
   { href: site.blogPath, label: "Blog" },
   { href: site.aboutPath, label: "About" },
