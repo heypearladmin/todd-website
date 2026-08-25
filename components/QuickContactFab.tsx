@@ -34,15 +34,6 @@ function MessageIcon({ className }: { className?: string }) {
   );
 }
 
-function SearchIcon({ className }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" aria-hidden className={className}>
-      <circle cx="10.5" cy="10.5" r="6.25" stroke="currentColor" strokeWidth="1.6" />
-      <path d="M19 19l-4-4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
-    </svg>
-  );
-}
-
 function CloseIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 20 20" fill="none" aria-hidden className={className}>
@@ -67,19 +58,6 @@ const ACTIONS = [
     href: site.contactPath,
     icon: MessageIcon,
     external: false,
-  },
-  {
-    key: "search",
-    label: "Search Homes",
-    sublabel: "Browse current listings",
-    // TEMPORARY: IDX Broker's Dynamic Wrapper JS 404s on the newly-approved
-    // domain, so /idx-search renders blank. Link straight to their hosted
-    // search page (confirmed working) until the wrapper is republished on
-    // IDX Broker's side, then switch this back to "/idx-search".
-    href: "https://todd.homesforeveryday.com/idx/search/advanced",
-    icon: SearchIcon,
-    external: true,
-    newTab: true,
   },
 ];
 
@@ -110,7 +88,7 @@ export function QuickContactFab() {
             <div>
               <p className="text-[0.9375rem] font-medium !text-paper">Need anything?</p>
               <p className="mt-1 text-[0.8125rem] leading-[1.5] !text-paper/70">
-                Call, message, or search homes — whatever&apos;s easiest.
+                Call or send a message — whatever&apos;s easiest.
               </p>
             </div>
             <button
@@ -124,7 +102,7 @@ export function QuickContactFab() {
           </div>
 
           <div className="flex flex-col divide-y divide-ink/[0.06]">
-            {ACTIONS.map(({ key, label, sublabel, href, icon: Icon, external, newTab }) => {
+            {ACTIONS.map(({ key, label, sublabel, href, icon: Icon, external }) => {
               const content = (
                 <>
                   <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
@@ -139,12 +117,7 @@ export function QuickContactFab() {
               const rowClass =
                 "flex items-center gap-3 px-5 py-3.5 transition-colors duration-200 hover:bg-ink/[0.03]";
               return external ? (
-                <a
-                  key={key}
-                  href={href}
-                  className={rowClass}
-                  {...(newTab ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                >
+                <a key={key} href={href} className={rowClass}>
                   {content}
                 </a>
               ) : (

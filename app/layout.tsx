@@ -76,8 +76,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel="preconnect" href="https://connect.facebook.net" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://reports.heypearl.io" />
-        <link rel="preconnect" href="https://homesforeveryday.idxbroker.com" />
-        <link rel="preconnect" href="https://todd.homesforeveryday.com" />
       </head>
       <body>
         <noscript>
