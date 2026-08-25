@@ -26,7 +26,7 @@ const securityHeaders = [
     value: [
       "default-src 'self'",
       // Scripts: self + inline (Next.js requires unsafe-inline for hydration) + trusted third parties
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://connect.facebook.net https://www.googletagmanager.com https://www.google-analytics.com https://reports.heypearl.io https://*.idxbroker.com",
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://connect.facebook.net https://www.googletagmanager.com https://www.google-analytics.com https://reports.heypearl.io https://*.idxbroker.com https://*.homesforeveryday.com",
       // Styles: self + inline (Tailwind/Next.js inlines critical CSS)
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
       // Fonts
@@ -34,9 +34,9 @@ const securityHeaders = [
       // Images: self + data URIs + trusted CDNs
       "img-src 'self' data: https:",
       // Connections: self + analytics + Meta Pixel
-      "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.facebook.com https://connect.facebook.net https://reports.heypearl.io https://*.idxbroker.com",
-      // Frames: IDX Broker hosted search pages
-      "frame-src https://*.idxbroker.com",
+      "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.facebook.com https://connect.facebook.net https://reports.heypearl.io https://*.idxbroker.com https://*.homesforeveryday.com",
+      // Frames: IDX Broker hosted search pages (default domain + approved vanity domain)
+      "frame-src https://*.idxbroker.com https://*.homesforeveryday.com",
       // Objects: none
       "object-src 'none'",
       // Base URI: self only
