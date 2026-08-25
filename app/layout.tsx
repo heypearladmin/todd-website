@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Inter, Open_Sans } from "next/font/google";
 import Script from "next/script";
+import { QuickContactFab } from "@/components/QuickContactFab";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { site } from "@/lib/site";
@@ -97,6 +98,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <SiteHeader />
         {children}
         <SiteFooter />
+        <QuickContactFab />
         <Script
           id="meta-pixel"
           strategy="afterInteractive"
