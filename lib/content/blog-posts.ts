@@ -68,7 +68,6 @@ export type JournalPost = {
   sections: JournalSection[];
   faqs?: JournalFaq[];
   isNew?: boolean;
-  pdfSrc?: string;
 };
 
 
@@ -311,7 +310,6 @@ export const journalPosts: JournalPost[] = [
   },
   {
     slug: "texas-option-period-earnest-money-guide",
-    pdfSrc: "/pdfs/texas-option-period-earnest-money-guide.pdf",
     eyebrow: "BUYER GUIDE",
     title: "Texas Option Period and Earnest Money: What Every New Braunfels Buyer Needs to Know",
     dek: "Texas real estate uses a system most other states don't have. Understanding the option fee, the earnest money, and what \'unrestricted right to terminate\' actually means can save you money — and prevent costly mistakes.",
@@ -446,7 +444,6 @@ export const journalPosts: JournalPost[] = [
   },
   {
     slug: "downtown-new-braunfels-neighborhood-guide",
-    pdfSrc: "/pdfs/downtown-new-braunfels-neighborhood-guide.pdf",
     eyebrow: "NEIGHBORHOOD GUIDE",
     title: "Downtown New Braunfels: A Guide to Historic Streets, Landa Park Living, and What Homes Actually Cost",
     dek: "While most of New Braunfels gets written about through its master-planned communities, the historic downtown core offers something different — walkable streets, 19th-century architecture, and a buyer who has no use for an HOA.",
@@ -1724,7 +1721,6 @@ export const journalPosts: JournalPost[] = [
   },
   {
     slug: "winning-offer-new-braunfels-texas",
-    pdfSrc: "/downloads/winning-offer-new-braunfels-texas.pdf",
     eyebrow: "BUYER GUIDE",
     title: "How to Make a Winning Offer on a Home in New Braunfels",
     dek: "Offer price alone doesn't win homes in New Braunfels. Here's how earnest money, option fees, terms, and timing come together to create an offer sellers actually accept.",
@@ -1867,7 +1863,6 @@ export const journalPosts: JournalPost[] = [
   },
   {
     slug: "home-inspection-new-braunfels-texas",
-    pdfSrc: "/downloads/home-inspection-new-braunfels-texas.pdf",
     eyebrow: "BUYER GUIDE",
     title: "Home Inspection in Texas: What New Braunfels Buyers Need to Know",
     dek: "A home inspection is your best tool for understanding what you're actually buying. Here's what inspectors check, what they miss, and how to turn findings into negotiating leverage in Comal County.",
@@ -2007,7 +2002,6 @@ export const journalPosts: JournalPost[] = [
   },
   {
     slug: "home-insurance-new-braunfels-texas",
-    pdfSrc: "/downloads/home-insurance-new-braunfels-texas.pdf",
     eyebrow: "BUYER GUIDE",
     title: "Home Insurance in Texas: What New Braunfels Buyers Need to Know",
     dek: "Texas home insurance costs more, covers less by default, and requires more decisions than most buyers expect. Here is what to understand before you close on a New Braunfels home.",
@@ -2121,7 +2115,6 @@ export const journalPosts: JournalPost[] = [
   },
   {
     slug: "closing-costs-new-braunfels-texas",
-    pdfSrc: "/downloads/closing-costs-new-braunfels-texas.pdf",
     eyebrow: "BUYER GUIDE",
     title: "Closing Costs in Texas: What New Braunfels Home Buyers Pay at Closing",
     dek: "Closing costs catch most buyers off guard. Here is exactly what to expect — lender fees, title costs, prepaid items, and Texas-specific charges — so you can plan your budget accurately.",

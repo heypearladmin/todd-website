@@ -18,6 +18,8 @@ import { FAQCards } from "@/components/blog/FAQCards";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
 import { ArticleCTA } from "@/components/blog/ArticleCTA";
 import { RichText } from "@/components/blog/RichText";
+import { PdfGuideForm } from "@/components/blog/PdfGuideForm";
+import { PDF_GUIDES } from "@/lib/content/pdf-guides";
 
 function parsePublishDate(date?: string): string {
   if (!date) return "2026-01-07";
@@ -327,27 +329,22 @@ export default async function BlogArticlePage({
                     </section>
                   )}
 
-                  {/* PDF download */}
-                  {journalPost.pdfSrc && (
+                  {/* PDF guide — gated behind lead capture */}
+                  {PDF_GUIDES[article.slug] && (
                     <section className="border-t border-ink/[0.08] pt-10">
-                      <div className="flex flex-col items-start gap-5 rounded-[24px] border border-ink/[0.08] bg-ink/[0.02] p-8 shadow-surface sm:flex-row sm:items-center sm:justify-between">
-                        <div>
-                          <p className="caption !text-ink/50">Take it with you</p>
-                          <p className="mt-2 text-[1.0625rem] font-medium text-ink">
-                            Download this guide as a PDF.
-                          </p>
-                          <p className="mt-1 text-[0.9375rem] leading-[1.6] text-ink/65">
-                            Same guide, saved for later — no form, no email required.
-                          </p>
-                        </div>
-                        <a
-                          href={journalPost.pdfSrc}
-                          download
-                          className="btn-primary flex-shrink-0"
-                        >
-                          Download PDF
-                          <span aria-hidden className="text-base">↓</span>
-                        </a>
+                      <div className="rounded-[24px] border border-ink/[0.08] bg-ink/[0.02] p-8 shadow-surface">
+                        <p className="caption !text-ink/50">Take it with you</p>
+                        <p className="mt-2 text-[1.0625rem] font-medium text-ink">
+                          Get this guide as a PDF.
+                        </p>
+                        <p className="mt-1 mb-6 text-[0.9375rem] leading-[1.6] text-ink/65">
+                          Drop your name and email — the guide is yours instantly, no
+                          pressure, no follow-up calls you didn&apos;t ask for.
+                        </p>
+                        <PdfGuideForm
+                          guideSlug={article.slug}
+                          shortName={PDF_GUIDES[article.slug].shortName}
+                        />
                       </div>
                     </section>
                   )}
