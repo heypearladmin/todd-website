@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { FeaturedListings } from "@/components/home/FeaturedListings";
 import { HomeExplore } from "@/components/home/HomeExplore";
 import { HomeFinalCta } from "@/components/home/HomeFinalCta";
 import { HomeHero } from "@/components/home/HomeHero";
@@ -92,6 +93,21 @@ export default function HomePage() {
         <HomeNeighborhoods />
         <HomeSocialProof />
         <HomeMarket />
+
+        {/* Featured Listings — IDX Broker Listings Showcase widget */}
+        <section className="section-wrap py-20 md:py-28 lg:py-32">
+          <div className="flex items-center gap-3">
+            <span className="tick" aria-hidden />
+            <p className="eyebrow">On the market now</p>
+          </div>
+          <h2 className="display-lg mt-6 text-ink">Featured listings.</h2>
+          <p className="dek mt-6 max-w-2xl">
+            A current look at active listings in New Braunfels and Comal County, pulled straight from the MLS.
+          </p>
+          <div className="mt-10">
+            <FeaturedListings />
+          </div>
+        </section>
 
         {/* Latest field notes */}
         {latestPosts.length > 0 && (
