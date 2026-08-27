@@ -100,9 +100,9 @@ export default function HomePage() {
             <span className="tick" aria-hidden />
             <p className="eyebrow">On the market now</p>
           </div>
-          <h2 className="display-lg mt-6 text-ink">Featured listings.</h2>
+          <h2 className="display-lg mt-6 text-ink">Browse My Active Listings.</h2>
           <p className="dek mt-6 max-w-2xl">
-            A current look at active listings in New Braunfels and Comal County, pulled straight from the MLS.
+            Explore Todd&apos;s current properties available for sale.
           </p>
           <div className="mt-10">
             <FeaturedListings />
