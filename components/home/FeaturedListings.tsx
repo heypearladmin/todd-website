@@ -8,13 +8,13 @@ declare global {
   }
 }
 
-const WIDGET_SCRIPT_ID = "idxwidgetsrc-169078";
-const WIDGET_ELEMENT_ID = "idx-listings-showcase-169078";
-const WIDGET_SRC = "https://todd.homesforeveryday.com/idx/widgets/169078";
+const WIDGET_SCRIPT_ID = "idxwidgetsrc-169131";
+const WIDGET_ELEMENT_ID = "idx-listings-showcase-169131";
+const WIDGET_SRC = "https://todd.homesforeveryday.com/idx/widgets/169131";
 const IDX_DOMAIN = "todd.homesforeveryday.com";
 
 /**
- * Renders Todd's official IDX Broker Listings Showcase widget (id 169078).
+ * Renders Todd's official IDX Broker Listings Showcase widget (id 169131).
  *
  * The widget script inserts its own <idx-listings-showcase> element via
  * `document.getElementById(WIDGET_SCRIPT_ID).before(...)`, i.e. relative to
