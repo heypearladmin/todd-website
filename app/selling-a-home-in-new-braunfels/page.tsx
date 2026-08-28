@@ -292,8 +292,8 @@ export default function SellingAHomeInNewBraunfelsPage() {
             {[
               { href: "/blog/selling-home-new-braunfels-guide", label: "Complete Seller's Guide", dek: "Pricing, prep, marketing, and negotiating — start to close." },
               { href: "/new-braunfels-home-valuation", label: "What's My Home Worth?", dek: "A free CMA grounded in real New Braunfels comps, not an algorithm." },
-              { href: "/blog/selling-home-new-braunfels-guide#what-to-do-before-the-sign-goes-in-the-yard", label: "Preparing Your Home", dek: "The high-ROI repairs and updates worth making before you list." },
-              { href: "/blog/selling-home-new-braunfels-guide#staging-for-the-new-braunfels-buyer", label: "Home Staging", dek: "How presentation shapes a buyer's first impression, before they even walk in." },
+              { href: "/blog/repair-or-sell-as-is-new-braunfels", label: "Repair or Sell As-Is?", dek: "When fixing it first pays off, and when an honest as-is price nets you more." },
+              { href: "/blog/home-staging-prep-checklist-new-braunfels", label: "Staging & Prep Checklist", dek: "A room-by-room checklist for presenting your home the way buyers respond to." },
               { href: "/blog/selling-home-new-braunfels-guide#getting-the-price-right-from-day-one", label: "Pricing Your Home", dek: "Strategic pricing vs. aspirational pricing, and how comps actually work." },
               { href: "/blog/selling-home-new-braunfels-guide#evaluating-offers-and-getting-to-the-closing-table", label: "Offers, Negotiation & Closing", dek: "Evaluating offers beyond price, and the Texas closing timeline." },
             ].map((g) => (

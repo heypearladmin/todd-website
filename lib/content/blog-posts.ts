@@ -73,6 +73,286 @@ export type JournalPost = {
 
 export const journalPosts: JournalPost[] = [
   {
+    slug: "home-staging-prep-checklist-new-braunfels",
+    eyebrow: "SELLER GUIDE",
+    title: "The New Braunfels Home Staging & Pre-Listing Prep Checklist That Actually Sells Homes",
+    dek: "A room-by-room staging and prep checklist for New Braunfels sellers — what to fix, what to skip, and what actually moves buyers to make an offer.",
+    imageSrc: "/images/website-blog-home-staging-checklist.webp",
+    imageAlt: "A beautifully staged New Braunfels living room with neutral furniture, warm natural light, and Hill Country views through large windows, styled for a real estate listing photo.",
+    category: "Seller Guide",
+    publishDate: "August 28, 2026",
+    isNew: true,
+    intro: "Staging gets talked about like it's optional — a nice-to-have if you have the time and budget before listing. It isn't. In a New Braunfels market where buyers are scrolling twenty listings on their phone before they ever schedule a showing, staging is the difference between a home that gets skipped and a home that gets a showing request within the hour. This isn't about redecorating for your own taste. It's a room-by-room, cost-aware checklist for presenting your home the way New Braunfels buyers actually respond to — so you walk into listing day with a clear plan instead of a vague sense that you should probably declutter. This checklist assumes your home is in reasonably good condition; if you're weighing bigger fixes first, see [Repair or Sell As-Is?](/blog/repair-or-sell-as-is-new-braunfels)",
+    sections: [
+      {
+        eyebrow: "WHY IT MATTERS",
+        heading: "Why Staging Is a Financial Decision, Not a Design One",
+        body: "It's tempting to think of staging as aesthetic polish — the kind of thing that's nice if you have time, skippable if you don't. That framing misses what staging actually does in a transaction: it changes buyer behavior in ways that show up directly in your net proceeds. A home that photographs well gets more online views, more views generate more showing requests, and more showings mean more competition for your home instead of your home competing for buyers. Every step in that chain compounds. Skipping staging doesn't just risk a less impressive listing — it risks fewer eyes on the listing altogether, which is the one thing no seller can afford in a market where buyers have real choices.",
+        subsections: [
+          {
+            heading: "The Eight-Second Rule",
+            body: "Buyers form an opinion about a home within the first eight seconds of walking through the door — and increasingly, that first impression happens online, in the first three photos of the listing, before a buyer ever schedules a showing. If those photos show cluttered counters, mismatched furniture, or rooms that read small and dark, a large share of buyers simply scroll past without a second thought. Staging exists to control that first eight seconds instead of leaving it to chance.",
+          },
+          {
+            heading: "Staging Pays for Itself More Reliably Than Almost Any Other Pre-Listing Spend",
+            body: "Compared to major renovations, staging is inexpensive and fast — often completed in a weekend rather than weeks — and it has one of the most consistent returns of any pre-listing investment because it doesn't just add value, it removes friction from the buyer's decision. A buyer who can immediately picture their own life in a space moves faster toward an offer than one who has to mentally edit out clutter, personal photos, or a room that doesn't read as anything in particular. That speed matters: homes that generate strong early interest are far less likely to sit long enough to need a price reduction.",
+          },
+        ],
+      },
+      {
+        eyebrow: "BEFORE YOU STAGE",
+        heading: "The Pre-Listing Punch List You Do Before Touching a Single Room",
+        body: "Staging works best on a clean foundation. Before you move a single piece of furniture, there's a short list of maintenance and cleaning items that matter more than any decorating decision — because a buyer who notices a burnt-out bulb or a sticky drawer starts wondering what else hasn't been maintained, and that doubt is expensive.",
+        subsections: [
+          {
+            heading: "Deep Clean Non-Negotiables",
+            body: "This goes well beyond a normal weekly clean. Every window — inside and out — should be washed until they're genuinely invisible in photos. Baseboards, ceiling fan blades, light fixtures, and vent covers should be wiped down; these are the surfaces buyers unconsciously scan even if they never mention them. Grout should be scrubbed or, if heavily stained, professionally cleaned. In Texas Hill Country homes, exterior surfaces matter as much as interior ones — pressure wash the driveway, walkways, and any patio or deck surface that's picked up dust or mildew from the heat and humidity.",
+            bulletPoints: [
+              "Wash all windows inside and out, including screens",
+              "Wipe down baseboards, vents, ceiling fans, and light fixtures",
+              "Deep-clean or professionally clean grout and tile",
+              "Pressure wash driveway, walkways, patios, and decks",
+              "Clean out and organize the garage — buyers open it",
+            ],
+          },
+          {
+            heading: "Small Repairs That Change a Buyer's First Impression",
+            body: "None of these items are individually expensive, but they compound. A dripping faucet, a door that sticks, a wobbly cabinet handle, a cracked outlet cover, or unpatched nail holes each read as small evidence of deferred maintenance — and buyers extrapolate from small evidence to bigger worries. Walk the entire home with a notepad and fix every item that makes you wince, before you worry about staging furniture at all.",
+            bulletPoints: [
+              "Fix dripping faucets and running toilets",
+              "Tighten loose cabinet and door hardware",
+              "Replace burnt-out bulbs with consistent, warm-white bulbs throughout",
+              "Patch nail holes and touch up scuffed paint",
+              "Re-caulk kitchen and bathroom seams that have yellowed or cracked",
+            ],
+          },
+        ],
+      },
+      {
+        eyebrow: "ROOM BY ROOM",
+        heading: "The Room-by-Room Staging Checklist",
+        body: "Once the punch list is done, staging itself is mostly about subtraction — removing what distracts and clarifying what a room is for — plus a handful of intentional additions that signal lifestyle. Here's what to prioritize in each major area of a New Braunfels home.",
+        subsections: [
+          {
+            heading: "Living Areas",
+            body: "The goal is a room that reads spacious and purposeful. Remove any furniture that doesn't earn its place — a general rule is to pull at least one piece of furniture out of every room that feels full. Arrange remaining furniture to create clear walking paths and a natural focal point, whether that's a fireplace, a window with a view, or a well-styled media wall.",
+            bulletPoints: [
+              "Remove excess furniture — aim for open, clear walking paths",
+              "Clear all surfaces except a few intentional, neutral decor pieces",
+              "Take down the majority of personal photos and memorabilia",
+              "Add fresh throw pillows or a neutral throw blanket for warmth",
+              "Open blinds and curtains fully to maximize natural light",
+            ],
+          },
+          {
+            heading: "Kitchen",
+            body: "Kitchens sell homes, and buyers scrutinize them harder than any other room. Every countertop should be completely clear except for one or two intentional items — a bowl of fruit, a single plant. Appliances should be spotless, including the front of the refrigerator (no magnets, no calendars). If cabinets are dated but structurally fine, updated hardware and a fresh coat of paint on the walls can meaningfully shift a buyer's perception without a full remodel.",
+            bulletPoints: [
+              "Clear all countertops except one or two styled items",
+              "Remove magnets, papers, and clutter from the refrigerator front",
+              "Deep clean stovetop, oven, and inside the microwave",
+              "Empty and wipe down visible cabinet interiors — buyers look",
+              "Replace worn cabinet hardware if budget allows",
+            ],
+          },
+          {
+            heading: "Primary Bedroom & Bathrooms",
+            body: "The primary bedroom should feel like a retreat, not a storage overflow room — this is the space where clutter accumulates fastest and where buyers most want to picture rest. Bathrooms should feel like a hotel: matching towels, no visible personal-care clutter, and a clean, unscented environment. A single new bath mat and a set of matching, folded towels is a low-cost swap that photographs disproportionately well.",
+            bulletPoints: [
+              "Clear nightstands and dressers down to one or two items each",
+              "Make the bed with simple, neutral bedding — no busy patterns",
+              "Remove personal-care items from bathroom counters",
+              "Add fresh, matching towels and a new bath mat",
+              "Close toilet lids and remove any visible trash cans from photos",
+            ],
+          },
+          {
+            heading: "Outdoor & Curb Appeal",
+            body: "New Braunfels buyers frequently drive a neighborhood before ever scheduling a showing, which means curb appeal isn't a bonus — it's the first filter a home has to pass. Given the Hill Country climate, outdoor living space is also a genuine selling point: a staged patio or porch with simple furniture communicates the lifestyle a buyer is picturing when they move here in the first place.",
+            bulletPoints: [
+              "Mow, edge, and add fresh mulch to visible beds",
+              "Trim overgrown shrubs and trees away from windows and walkways",
+              "Power wash or repaint a weathered front door",
+              "Stage the porch or patio with a small table and chairs",
+              "Remove hoses, toys, and yard equipment from view",
+            ],
+          },
+        ],
+      },
+      {
+        eyebrow: "DIY vs. PROFESSIONAL",
+        heading: "DIY Staging vs. Hiring a Professional Stager",
+        body: "Most occupied homes don't need a professional stager — a thorough application of this checklist, plus an honest eye, gets most sellers most of the way there. The calculation changes for vacant homes and higher-end listings, where the cost of professional staging is usually justified by what it protects against.",
+        subsections: [
+          {
+            heading: "What DIY Staging Can Handle",
+            body: "If your home is occupied and reasonably well-maintained, DIY staging — decluttering, depersonalizing, deep cleaning, and rearranging existing furniture — typically covers 80% of what a professional stager would do, for a fraction of the cost. The key is being genuinely honest about what needs to go, which is where a second opinion (from your agent, not just a friend) tends to be more useful than any product purchase.",
+          },
+          {
+            heading: "When a Vacant Home Needs Professional Staging",
+            body: "Empty rooms photograph poorly and are difficult for most buyers to mentally furnish — a vacant living room reads smaller online than a furnished one, even when the square footage is identical. Professional staging for a vacant home in the New Braunfels area typically runs from a few hundred dollars for a partial staging of key rooms to a few thousand for a full-home staging package on a longer listing timeline, and it consistently pays for itself through faster offers and stronger buyer perception in photos.",
+          },
+        ],
+      },
+      {
+        eyebrow: "PHOTOS vs. SHOWINGS",
+        heading: "Staging for Photos vs. Staging for Showings",
+        body: "Most sellers stage once and assume the job is done, but photos and in-person showings actually reward slightly different priorities. Photos are about composition and light — a room needs to look bright, uncluttered, and well-framed through a wide-angle lens. Showings are about how a space feels to move through and live in — scent, temperature, and small sensory details that a photo can't capture. Before your photography session, walk each room and check it strictly through the camera's likely angle: sightlines, reflections, and anything visible through doorways. Before each showing, do a five-minute reset: lights on, blinds open, a cool (not cold) interior temperature, and no cooking smells lingering from the last meal. This checklist pairs with everything else covered in the [Complete Seller's Guide](/blog/selling-home-new-braunfels-guide), and a [free home valuation](/new-braunfels-home-valuation) is the fastest way to know where your home lands before you start prepping.",
+      },
+      {
+        eyebrow: "COMMON MISTAKES",
+        heading: "Common Staging Mistakes New Braunfels Sellers Make",
+        body: "A few patterns show up again and again in homes that sit longer than they should, even in a healthy market.",
+        bulletPoints: [
+          "Over-personalizing rooms so buyers can't picture their own life there",
+          "Staging for the seller's taste instead of the broadest buyer appeal",
+          "Ignoring the garage, laundry room, and closets — buyers open everything",
+          "Ignoring exterior curb appeal while focusing only on interior staging",
+          "Waiting until the week of listing to start, instead of building in time for repairs to be completed properly",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "How much does it cost to stage a home in New Braunfels?",
+        answer: "For an occupied home, DIY staging following a checklist like this one costs little beyond a few small purchases — fresh linens, paint touch-ups, and minor repairs. For a vacant home, professional staging in the New Braunfels area typically ranges from a few hundred dollars for staging a handful of key rooms to a few thousand dollars for a full-home package, depending on square footage and how long the furniture stays in place. Most sellers find the cost is recovered many times over through faster offers and a stronger first impression online.",
+      },
+      {
+        question: "Do I need to stage every room?",
+        answer: "No. Focus staging effort on the rooms that carry the most weight in a buyer's decision: the living room, kitchen, primary bedroom, and primary bathroom. Secondary bedrooms and bonus rooms benefit from decluttering and depersonalizing, but rarely need full staging. A home office or flex room often photographs well simply staged as a clearly defined space — buyers respond well to rooms with an obvious purpose.",
+      },
+      {
+        question: "Should I stage a vacant home?",
+        answer: "Yes, in almost every case. Vacant rooms are one of the hardest things for buyers to evaluate — without furniture for scale, rooms tend to photograph smaller and colder than they actually are, and buyers struggle to picture their own furniture fitting the space. Even partial staging of the main living areas and primary bedroom meaningfully improves how a vacant home presents, both in photos and in person.",
+      },
+      {
+        question: "What's the difference between staging and just cleaning and decluttering?",
+        answer: "Decluttering and deep cleaning are the foundation every staged home needs — but staging goes a step further by intentionally arranging furniture, decor, and lighting to highlight a room's best features and help buyers picture themselves living there. A decluttered but unstaged room is neutral; a staged room actively sells a lifestyle. Both matter, but they're not the same task, and skipping straight to decorating without decluttering first usually backfires.",
+      },
+      {
+        question: "Can I stage my home myself, or do I need a professional?",
+        answer: "Most occupied homes can be effectively staged by the seller, working through a checklist and getting an honest second opinion from their agent on what to remove or rearrange. Professional staging becomes more valuable for vacant homes, higher-end listings where buyer expectations are elevated, or homes with awkward layouts that benefit from a trained eye on furniture placement. Todd can advise on which category your listing falls into during a pre-listing walkthrough.",
+      },
+      {
+        question: "How far in advance of listing should I start staging?",
+        answer: "Plan for two to four weeks before your target listing date. This allows time to complete any repairs identified during the pre-listing punch list, deep clean thoroughly rather than rushing it, and — if needed — schedule a professional stager or photographer around your timeline rather than settling for whoever is available on short notice. Starting early also means staging doesn't feel like a scramble the weekend before photos are scheduled.",
+      },
+    ],
+  },
+  {
+    slug: "repair-or-sell-as-is-new-braunfels",
+    eyebrow: "SELLER GUIDE",
+    title: "Should You Repair Your Home Before Selling in New Braunfels — or Sell As-Is?",
+    dek: "A clear-eyed breakdown of when repairs pay off before you list in New Braunfels, when selling as-is nets more, and how to decide with real numbers.",
+    imageSrc: "/images/website-blog-repair-vs-sell-as-is.webp",
+    imageAlt: "A New Braunfels home exterior mid-repair with a ladder and paint supplies staged near the front porch, warm late-afternoon light, Hill Country trees in the background.",
+    category: "Seller Guide",
+    publishDate: "August 25, 2026",
+    isNew: true,
+    intro: "At some point, almost every seller stands in front of an aging roof, a foundation crack, or a decade-old HVAC system and asks the same question: fix it now, or let the next buyer deal with it? The honest answer is that it depends — on the specific issue, your timeline, and what New Braunfels buyers are actually willing to pay for versus walk away from. This guide breaks the decision down the way we'd walk through it in person, with real numbers instead of a blanket rule, so you can decide with confidence instead of guessing. For the full process from pricing to closing, see the [Complete Seller's Guide](/blog/selling-home-new-braunfels-guide) — this one focuses specifically on the repair-or-as-is decision.",
+    sections: [
+      {
+        eyebrow: "REFRAMING THE QUESTION",
+        heading: "The Real Question Isn't 'Repair or Not' — It's 'Repair for a Buyer, or Price for a Buyer'",
+        body: "Every home eventually sells to somebody. The real decision isn't whether your home's issues get addressed — it's whether you address them before closing, at your pace and on your terms, or whether the next owner does, reflected in a lower price you negotiate today. Both paths can be the right call. The mistake is picking one without actually running the numbers on your specific situation.",
+        subsections: [
+          {
+            heading: "What 'Selling As-Is' Actually Means in Texas",
+            body: "Selling as-is does not mean a buyer can't inspect the home, and it does not exempt you from Texas's seller disclosure requirements. Under the Texas Property Code, sellers of most residential property must complete a Seller's Disclosure Notice describing known material defects — this obligation exists regardless of whether the listing says \"as-is.\" What as-is actually signals is pricing and negotiating posture: you're telling buyers upfront that you don't plan to make repairs or offer credits after inspection, and the price should already reflect that. Buyers can still inspect, and they can still walk away during their [option period](/blog/texas-option-period-earnest-money-guide) if what they find doesn't match what they expected — as-is limits your obligation to fix things, not a buyer's right to know what they're buying.",
+          },
+          {
+            heading: "The Three Categories of Repairs",
+            body: "Not all deferred maintenance carries the same weight in a buyer's mind or a lender's underwriting. It's useful to sort issues into three buckets before deciding anything: cosmetic (paint, worn flooring, dated fixtures — rarely deal-breakers, cheap to fix, high visual impact), functional or mechanical (aging HVAC, water heater, appliances — moderate cost, often negotiated after inspection either way), and structural or safety (foundation movement, roof leaks, electrical hazards, active water intrusion — expensive, can affect financing, and are the issues most likely to derail a contract if discovered mid-transaction rather than disclosed upfront).",
+          },
+        ],
+      },
+      {
+        eyebrow: "WHEN TO REPAIR",
+        heading: "When Repairing First Makes Financial Sense",
+        body: "The clearest case for repairing before listing is when the fix is inexpensive relative to its impact on buyer perception — and when leaving it undone would either scare off a meaningful share of buyers or become a bargaining chip that costs you more in negotiation than the repair itself.",
+        subsections: [
+          {
+            heading: "High-ROI Repairs Worth Making",
+            body: "Fresh interior paint in neutral tones is consistently the highest-return pre-listing repair in the New Braunfels market — inexpensive, fast, and it resets a buyer's impression of the entire home's condition. Worn flooring in main living areas, a serviced or repaired (not necessarily replaced) HVAC system, and a properly caulked and cleaned kitchen and bathroom all follow a similar pattern: relatively low cost, disproportionate effect on how buyers perceive overall home condition. A small roof repair — a few missing shingles, a minor flashing issue — is almost always worth fixing before listing, since roof condition is one of the first things a buyer's inspector and lender will flag.",
+          },
+          {
+            heading: "The Math: Repair Cost vs. Price Impact",
+            body: "As a rough framework: if a repair costs a few hundred to a couple thousand dollars and its absence would likely trigger a buyer request for a credit two to three times that amount — which is common, since buyers tend to pad repair credit requests for the hassle of dealing with it themselves — repairing first is almost always the better math. The exception is when you genuinely don't have the cash or the time before your target listing date; in that case, a documented quote from a licensed contractor, disclosed upfront, can sometimes achieve a similar outcome to the repair itself by giving buyers confidence about the actual cost involved rather than letting them assume the worst.",
+          },
+        ],
+      },
+      {
+        eyebrow: "WHEN TO SELL AS-IS",
+        heading: "When Selling As-Is Is the Smarter Move",
+        body: "As-is isn't a fallback for sellers who can't be bothered — it's frequently the financially correct choice for a specific set of circumstances, and pretending otherwise costs sellers money and time they didn't need to spend.",
+        subsections: [
+          {
+            heading: "Major Structural or Systems Issues",
+            body: "Full foundation repair, a full roof replacement, or a full HVAC system replacement can each run well into five figures — costs that rarely return dollar-for-dollar in New Braunfels' current price bands, particularly in neighborhoods where buyers expect mid-range finishes rather than a fully renovated home. In these cases, an honest, disclosed as-is listing with a price that reflects the needed work typically nets sellers more than spending the cash upfront and hoping the market rewards it fully at resale.",
+          },
+          {
+            heading: "Inherited, Distressed, or Time-Pressured Sales",
+            body: "Sellers handling an inherited property, relocating out of the area on a tight timeline, or managing a sale during a difficult personal circumstance often don't have the bandwidth to manage a repair-and-relist process — and that's a completely legitimate reason to prioritize speed and simplicity over maximizing every dollar. An as-is listing, priced honestly and marketed to the right buyer pool (which can include cash buyers and investors, not just traditional owner-occupants), can close faster and with far less stress than a repair-first approach, even if the top-line number is lower.",
+          },
+        ],
+      },
+      {
+        eyebrow: "HOW BUYERS RESPOND",
+        heading: "How New Braunfels Buyers and Inspectors Respond to Deferred Maintenance",
+        body: "Whatever you decide, it helps to understand what actually happens on the other side of the transaction once a buyer is under contract — because \"as-is\" doesn't remove the buyer's inspection from the process, it just changes what happens after it.",
+        subsections: [
+          {
+            heading: "The Option Period Reality",
+            body: "In Texas, buyers negotiate an option period — typically five to ten days — during which they can back out of the contract for any reason and receive their option fee back, inspection findings or not. Even on an as-is listing, buyers will almost always still order an inspection, and if the findings are worse than what was disclosed, or reveal something the buyer genuinely didn't anticipate, some will use the option period to walk rather than negotiate. A thorough, honest disclosure upfront — sometimes paired with a pre-listing inspection of your own — reduces the odds of a buyer being blindsided mid-contract, which is when deals are most likely to fall apart entirely rather than simply renegotiate.",
+          },
+        ],
+      },
+      {
+        eyebrow: "DECISION FRAMEWORK",
+        heading: "A Simple Framework for Deciding",
+        body: "When sellers ask us to just give them a rule of thumb, this is roughly it:",
+        bulletPoints: [
+          "If the fix costs under $2,000 and would likely trigger a buyer credit request 2–3x that amount — repair it first.",
+          "If the issue is purely cosmetic (paint, dated fixtures, worn carpet) and you have any time before listing — repair it; the ROI is consistently strong.",
+          "If the fix requires a five-figure investment (full roof, full foundation, full HVAC) — get quotes, then price as-is and disclose fully rather than spending the cash upfront.",
+          "If you're on a tight timeline (relocation, inherited property, personal circumstances) — as-is, priced honestly, is usually the lower-stress and often financially comparable path.",
+          "When in doubt on any specific repair — get a same-day opinion from your agent before committing money or time either way.",
+        ],
+      },
+      {
+        eyebrow: "PRICING AN AS-IS HOME",
+        heading: "Pricing an As-Is Home Correctly",
+        body: "The most common mistake with as-is listings isn't the decision to sell as-is — it's pricing it as though the issues don't exist and hoping buyers won't notice or won't mind. They will notice, and an overpriced as-is home tends to sit far longer than one priced honestly from day one, ultimately forcing a larger price cut than a realistic starting price would have required. The right approach is a comparative market analysis that starts from comparable sold prices for updated homes in your area, then subtracts a realistic, contractor-quoted cost for the known repairs — not a padded discount, and not a token one either. Pricing it this way tends to attract exactly the buyer pool who's already comfortable with the home's condition, which means fewer surprises and fewer renegotiations once you're under contract. If the repairs you're weighing are more cosmetic than structural, our [staging and pre-listing checklist](/blog/home-staging-prep-checklist-new-braunfels) covers the low-cost fixes that tend to matter most to buyers. The most reliable way to know where your specific home lands is a [free home valuation](/new-braunfels-home-valuation) that accounts for its actual condition.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I have to disclose known issues if I sell my home as-is in Texas?",
+        answer: "Yes. Texas law requires most residential sellers to complete a Seller's Disclosure Notice identifying known material defects, regardless of whether the home is marketed as-is. \"As-is\" changes your obligation to make repairs or offer credits after the buyer's inspection — it does not remove your obligation to disclose what you already know about the property's condition.",
+      },
+      {
+        question: "Will selling as-is scare away buyers?",
+        answer: "It will filter your buyer pool rather than eliminate it. Some buyers, particularly those relying on certain loan programs with strict condition requirements, will pass on an as-is home with significant issues. But a meaningful share of buyers — including cash buyers, investors, and buyers who simply want a lower price in exchange for handling repairs themselves — actively look for as-is listings. The key to attracting the right buyers is honest disclosure and pricing that already reflects the home's condition, rather than trying to disguise it.",
+      },
+      {
+        question: "What repairs give the best return before selling in New Braunfels?",
+        answer: "Fresh neutral-tone interior paint consistently returns the most relative to its cost, followed by refinished or replaced flooring in main living areas, a serviced HVAC system, and thorough deep cleaning with fresh caulking in kitchens and bathrooms. These are inexpensive, fast, and disproportionately shape a buyer's overall impression of the home's condition — far more than their dollar cost would suggest.",
+      },
+      {
+        question: "Can I sell to a cash buyer or investor if my home needs major work?",
+        answer: "Yes, and for homes needing significant structural or systems work, this is often the most efficient path. Cash buyers and investors typically factor repair costs directly into their offer rather than requesting credits after an inspection, which can mean a faster, more predictable closing — though usually at a lower price than a fully repaired home would command from a traditional buyer. Whether this trade-off makes sense depends on your timeline and how much the needed repairs would actually cost to complete.",
+      },
+      {
+        question: "Should I get a pre-listing inspection?",
+        answer: "For homes with any known or suspected issues, yes. A pre-listing inspection lets you see exactly what a buyer's inspector will likely find, on your own timeline rather than mid-contract, which gives you the option to repair known issues, get contractor quotes to support your as-is pricing, or simply disclose everything with confidence. Sellers who skip this step are often surprised — and lose negotiating leverage — when a buyer's inspector finds something unexpected after the home is already under contract.",
+      },
+      {
+        question: "How do I price a home that needs repairs?",
+        answer: "Start with a comparative market analysis based on recently sold, updated homes in your area, then subtract a realistic, contractor-quoted cost for the known repairs — not an arbitrary discount. Pricing too high risks the home sitting on market and eventually requiring a larger correction; pricing with an exaggerated discount leaves money on the table. An agent who builds a repair-adjusted CMA specific to your home and neighborhood will get you closer to the right number than a generic percentage-off rule.",
+      },
+    ],
+  },
+  {
     slug: "is-new-braunfels-a-good-place-to-live",
     eyebrow: "RELOCATION",
     title: "Is New Braunfels a Good Place to Live in 2026? A Local's Honest Answer",
@@ -81,7 +361,6 @@ export const journalPosts: JournalPost[] = [
     imageAlt: "Aerial view of the Comal River winding through downtown New Braunfels, Texas, with Hill Country oak trees and rooftops in warm late-afternoon light.",
     category: "Relocation",
     publishDate: "August 21, 2026",
-    isNew: true,
     intro: "\"Is New Braunfels a good place to live?\" is one of the most common questions Todd hears from people considering the move — and it deserves a direct answer, not a marketing pitch. The short version: yes, for most people relocating from Austin, San Antonio, or out of state, New Braunfels is a genuinely good place to live in 2026. It is not, however, the right fit for everyone, and pretending otherwise does a disservice to anyone weighing a six-figure decision. Below is the honest version — what this city actually costs, what the commute really looks like, what the weather does to you in August, and who New Braunfels is, and is not, built for.",
     sections: [
       {
@@ -197,7 +476,6 @@ export const journalPosts: JournalPost[] = [
     imageAlt: "A couple reviewing mortgage paperwork and a laptop showing a budget spreadsheet at a kitchen table with warm morning light.",
     category: "Buyer Guide",
     publishDate: "August 17, 2026",
-    isNew: true,
     intro: "The question almost every New Braunfels buyer asks before they ask anything else is some version of \"how much house can I actually afford?\" It's the right question, and it deserves a clear answer before you tour a single home. Affordability isn't just your maximum loan approval — it's the number that still leaves room for property taxes, insurance, maintenance, and the rest of your life. Here's how lenders actually calculate it, what the 2026 rate environment does to your budget, and what your number realistically buys in this market.",
     sections: [
       {
